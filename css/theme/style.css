@@ -147,7 +147,6 @@ input[type='radio'] {
 	color: #e67e22;
 }
 .input-type-file {
-	/*background: url('../../img/input-type-file.jpg') no-repeat 0 0;*/
 	text-transform: uppercase;
 	border-bottom-width: 2px;
 	border-color: #a1a6aa;
@@ -168,6 +167,7 @@ input[type='radio'] {
 	position: absolute;
 	top: 12px;
 	left: 52px;
+	font-weight: 400;
 }
 .input-type-file input {
 	filter: alpha(opacity:0);
@@ -540,16 +540,56 @@ input[type='radio'] {
 	padding: 0 10px;
 }
 .catalog.list > div .title{
-	
+	float: left;
+	width: 50%;
 }
 .catalog.list > div hr{
 	float: left;
 	left: 0;
 	width: 70px;
+	margin: 5px 40% 0 0;
+}
+.catalog.list > div .cat{
+	float: left;
+	margin: 12px 40% 8px 0;
+}
+.catalog.list > div p{
+	display: block;
+	width: 42%;
+	font-size: 13px;
+	float: left;
 }
 .catalog.list > div .actual-price{
 	float: right;
+	top: -72px;
+	right: 5px;
 }
+.catalog.list > div .btn-basket:hover, 
+.catalog.list > div .btn-basket:focus, 
+.catalog.list > div .btn-basket:active,
+.catalog.list > div .btn-basket{
+	text-transform: uppercase;
+	border-bottom-width: 2px;
+	border-color: #d35400;
+	background: #e67e22;
+	border-radius: 4px;
+	padding: 10px 15px;
+	position: relative;
+	margin-top: 10px;
+	font-size: 15px;
+	float: right;
+	color: #fff;
+	top: -70px;
+}
+.catalog.list > div  .fav{
+	float: left;
+	margin-right: 15px;	 
+}
+.catalog.list > div .compare{
+	float: left;
+}
+
+
 
 
 /****** --- [ BANNERS ] --- ******/
