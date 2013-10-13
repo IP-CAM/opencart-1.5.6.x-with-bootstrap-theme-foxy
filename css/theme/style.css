@@ -120,7 +120,7 @@ input[type='radio'] {
 	margin-top: 15px;
 }
 .checkbox label {
-	background: url('../../img/checkbox-tile.png') no-repeat 0px -27px;
+	background: url('../../img/checkbox-tile.png') no-repeat 0px -30px;
 	padding: 1px 0px 0px 32px;
 	overflow: hidden;
 	font-size: 14px;
@@ -135,17 +135,39 @@ input[type='radio'] {
 	display: block;
 	height: 20px;
 }
+.radio label:hover{
+	background: url('../../img/radio-tile.png') no-repeat 0 -60px;
+}
+.checkbox label:hover{
+	background: url('../../img/checkbox-tile.png') no-repeat 0px -60px;
+}
 .checkbox label.checked,
 .radio label.checked {
 	background-position: 0 0;
 	color: #e67e22;
 }
 .input-type-file {
-	background: url('../../img/input-type-file.jpg') no-repeat 0 0;
+	/*background: url('../../img/input-type-file.jpg') no-repeat 0 0;*/
+	text-transform: uppercase;
+	border-bottom-width: 2px;
+	border-color: #a1a6aa;
+	background: #bdc3c7;
+	border-radius: 4px;
+	padding: 10px 49px;
+	position: relative;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #fff;
 	overflow: hidden;
 	cursor: pointer;
 	height: 45px;
 	width: 208px;
+}
+.uploadFIle{
+	color: #fff;
+	position: absolute;
+	top: 12px;
+	left: 52px;
 }
 .input-type-file input {
 	filter: alpha(opacity:0);
@@ -508,6 +530,25 @@ input[type='radio'] {
 .catalog.list {
 }
 .catalog.list > div {
+	float: left;
+	width: 100%;
+	height: 245px;
+}
+.catalog.list > div  .img-holder {
+	float: left;
+	width: 270px;
+	padding: 0 10px;
+}
+.catalog.list > div .title{
+	
+}
+.catalog.list > div hr{
+	float: left;
+	left: 0;
+	width: 70px;
+}
+.catalog.list > div .actual-price{
+	float: right;
 }
 
 
