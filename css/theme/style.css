@@ -70,6 +70,9 @@ hr.short {
 .green {
 	color: #00be9c !important;
 }
+.red {
+	color: #ff3131 !important;
+}
 a.black-link {
 	color: #000 !important;
 }
@@ -78,11 +81,15 @@ textarea {
 	padding: 6px 12px;
 	border-radius: 4px;
 	background: #fff;
+	box-shadow: none;
 	min-height: 80px;
 	font-size: 14px;
 	color: #a9a9a9;
 	outline: none;
 	width: 205px;
+}
+input {
+	box-shadow: none;
 }
 input[type='text'] {
 	padding: 6px 12px;
@@ -157,6 +164,16 @@ input[type='radio'] {
 	background: #fff;
 	font-size: 13px;
 	color: #a9a9a9;
+}
+.btn-darkgrey,
+.btn-darkgrey:hover {
+	border-bottom: 2px solid #a1a6aa;
+	text-transform: uppercase;
+	background: #bdc3c7;
+	border-radius: 3px;
+	padding: 8px 64px;
+	font-size: 15px;
+	color: #fff;
 }
 
 
@@ -345,6 +362,7 @@ input[type='radio'] {
 		float: none;
 	}
 	#header .logo img {
+		height: 80%;
 		width: 80%;
 	}
 	#header .mini-cart {
@@ -373,6 +391,28 @@ input[type='radio'] {
 	.product-info .buttons .btn-grey {
 		margin-top: 10px;
 		margin-left: 0;
+	}
+	#pager a {
+		text-align: center;
+		width: 100%;
+	}
+	.review-form {
+		padding: 29px 7px 0 5px !important;
+	}
+	h3.line span {
+		padding: 0 15px 0 0;
+		font-size: 20px;
+	}
+	h3.line>i {
+		top: 13px;
+	}
+	.prouct-image-lg {
+		position: relative;
+		top: 20px;
+	}
+	.catalog-view .show-number {
+		margin-right: 50px !important;
+		float: left !important;
 	}
 }
 
@@ -461,6 +501,13 @@ input[type='radio'] {
 }
 .catalog>div:hover .btn-basket{
 	display: inline-block;
+}
+
+
+/****** --- [ LIST VIEW ] --- ******/
+.catalog.list {
+}
+.catalog.list > div {
 }
 
 
@@ -662,7 +709,7 @@ h4.sidebar-heading {
 .catalog-view a {
 	font-size: 15px;
 	color: #a9a9a9;
-	float: left;
+	/*float: left;*/
 }
 .catalog-view a.compare {
 	margin-left: 70px;
@@ -701,8 +748,8 @@ h4.sidebar-heading {
 	float: left;
 }
 .catalog-view .sort-order {
-	margin-left: 135px;
-	float: left;
+	margin-left: 0;
+	float: right;
 }
 .catalog-view .sort-order .bootstrap-select {
 	width: 170px !important;
@@ -732,7 +779,7 @@ h4.sidebar-heading {
 .catalog-view .show-number {
 	margin-right: 20px;
 	margin-left: 40px;
-	float: left;
+	float: right;
 }
 .catalog-view .show-number .bootstrap-select {
 	width: 70px !important;
@@ -751,6 +798,7 @@ h4.sidebar-heading {
 	.catalog-view .sort-order {
 		margin-right: 40px;
 		margin-left: 0;
+		float: left;
 	}
 }
 
@@ -772,6 +820,12 @@ h4.sidebar-heading {
 	}
 	.catalog-view .show-number .bootstrap-select {
 		left: 28px;
+	}
+	.review-form textarea {
+		width: 205px !important;
+	}
+	#pager a {
+		padding: 10px 8px !important;
 	}
 }
 
@@ -823,7 +877,7 @@ h4.sidebar-heading {
 }
 .product-images li.active,
 .product-images li.selected {
-	border: 1px solid #f9f9f9 !important;
+	border: 1px solid #ededed !important;
 	opacity: 1 !important;
 }
 .prouct-image-lg {
@@ -943,52 +997,52 @@ h4.sidebar-heading {
 .product-info .buttons a img {
 	margin: 0 2px 0 0px;
 }
-.product-info .options input::-webkit-input-placeholder {
+.options input::-webkit-input-placeholder {
     color: #b4bec6 !important;
 }
-.product-info .options input:-moz-placeholder {
+.options input:-moz-placeholder {
     color: #b4bec6 !important;
 }
-.product-info .options input::-moz-placeholder {
+.options input::-moz-placeholder {
     color: #b4bec6 !important;
 }
-.product-info .options input:-ms-input-placeholder {
+.options input:-ms-input-placeholder {
     color: #b4bec6 !important;
 }
-.product-info .options {
+.options {
 	margin-top: -5px;
 }
-.product-info .options input,
-.product-info .options .bootstrap-select,
-.product-info .options select {
+.options input,
+.options .bootstrap-select,
+.options select {
 	border: 2px solid #bdc3c7 !important;
 	width: 205px !important;
 }
-.product-info .options .bootstrap-select .btn {
+.options .bootstrap-select .btn {
 	color: #a9a9a9 !important;
 }
-.product-info .options .radio,
-.product-info .options .checkbox {
+.options .radio,
+.options .checkbox {
 	margin-top: 10px;
 	padding-left: 0;
 }
-.product-info .options .radio + .radio,
-.product-info .options .checkbox + .checkbox {
+.options .radio + .radio,
+.options .checkbox + .checkbox {
 	margin-top: -5px;
 }
-.product-info .options table tr td {
+.options table tr td {
 	padding-bottom: 9px;
 }
-.product-info .options table tr td:first-child {
+.options table tr td:first-child {
 	vertical-align: top;
 	padding-top: 11px;
 	font-size: 14px;
 	color: #323232;
 }
-.product-info .options table tr td:first-child span {
+.options table tr td:first-child span {
 	color: #ff3131;
 }
-.product-info .options table {
+.options table {
 	margin-top: 24px;
 }
 
@@ -2114,6 +2168,7 @@ All this is done for any sub-level being entered.
 
 .bootstrap-select.btn-group .dropdown-menu li {
     position: relative;
+    margin-bottom: 0;
     width: 100%;
     float: left;
 }
@@ -2375,11 +2430,11 @@ All this is done for any sub-level being entered.
 	width: 848px;
 	float: left;
 }
-#tabs h3 {
+/*#tabs > h3 {
 	font-size: 30px;
 	line-height: 20px;
 	margin: 60px 0 20px 0;
-} 
+} */
 #pager {
 	border-bottom: 3px solid #eee;
 	margin: 20px auto 25px auto;
@@ -2423,14 +2478,72 @@ All this is done for any sub-level being entered.
 .media-body .media-heading {
 	font-size: 14px;
 }
+.media-body p {
+	margin-top: 14px;
+}
 .media-body .media-heading span {
 	float: left;
 }
 .media-body .media-heading img {
 	position: relative;
+	margin-left: 17px;
 	float: left;
 	top: 0px;
 }
 .media > .pull-left {
-	margin-right: -10px; 
+	margin-right: 14px; 
+}
+.review-form {
+	border-bottom: 2px solid #ededed;
+	padding: 29px 29px 0;
+	background: #f7f7f7;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+}
+.review-form h3 {
+	font-size: 22px;
+	margin: 0 0 5px;
+	color: #e67e22;
+}
+.review-form textarea {
+	width: 303px;
+	height: 107px;
+	margin-bottom: 9px;
+}
+.review-form table {
+	margin-top: 28px;
+}
+.options .review-form table tr td:first-child {
+	width: 165px;
+}
+.options .review-form table tr td {
+	padding-bottom: 22px;
+}
+.review-form .radio {
+	margin-left: 8px;
+	float: left;
+}
+.review-form .radio + .radio {
+	margin-top: 10px;
+}
+.review-form .radio label {
+	width: 20px;
+	float: left;
+	padding: 0;
+}
+.review-form span.radio-title {	
+	margin: 0 0px 0 0px;
+	position: relative;
+	float: left;
+	top: 11px;
+}
+.review-form span.radio-title.good {
+	margin-left: 8px;
+}
+.review-form tr.review-text td {
+	padding-bottom: 5px !important;
+}
+.review-form .btn-darkgrey {
+	margin-top: -17px;
 }
