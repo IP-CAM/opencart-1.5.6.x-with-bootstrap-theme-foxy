@@ -35,7 +35,7 @@
 					</div>
 					<div class="col-lg-5 col-md-5 general-info hidden-sm hidden-xs">
 						<a href="#" class="wish-list-link">
-							<img src="img/heard-icon.png" title="" alt="">
+							<span class="glyphicon glyphicon-heart"></span>
 							Wish List (0)
 						</a>
 						<a href="#">Checkout</a>
@@ -43,10 +43,10 @@
 						<a href="#">Shopping Cart</a>
 					</div>
 					<div class="col-lg-4 visible-lg tR">
-						Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>.
+						Welcome visitor you can <a href="#" class="static">login</a> or <a href="#" class="static">create an account</a>.
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 hidden-lg tR">
-						<a href="#">Login</a> or <a href="#">create an account</a>.
+						<a href="#" class="static">Login</a> or <a href="#" class="static">create an account</a>.
 					</div>
 				</div><!-- end .row -->
 			</div><!-- end .container -->
@@ -57,14 +57,59 @@
 		<header id="header" class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
-					<a href="#" class="logo pull-left"><img src="img/logo.png" title="" alt=""></a>
+					<a href="#" class="logo pull-left"><img src="img/logo@2x.png" width="313" height="135" title="" alt=""></a>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="mini-cart pull-right">
 						<span>0 item(s) - $ 0.00</span>
 						<a href="#" class="btn btn-default btn-md">
-							<img src="img/mini-basket-icon.png" title="" alt="">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
 						</a>
+
+						<div class="mini-cart-popup">
+							<ul class="cart-popup">
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+									<div class="product-options">
+										<div>- Select Red</div>
+										<div>- Select Red</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+								</li>
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+									<div class="product-options">
+										<div>- Select Red</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="totals">
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Total:<span>$ 2,999.00</span></h6>
+							</div>
+
+							<div class="buttons">
+								<a href="#" class="btn btn-basket">View cart</a>
+								<a href="#" class="btn btn-basket">Checkout</a>
+							</div>
+						</div>
 					</div><!-- end .mini-cart -->
 				</div>
 			</div>
@@ -85,6 +130,22 @@
 									<input type="text" class="form-control search" placeholder="Search">
 								</div>
 								<input type="submit" class="btn btn-default" value="">
+								<div class="search-popup">
+									<ul class="featured">
+										<li>
+											<img src="img/content/product-featured-img-small.jpg">
+											<a href="#">Apple MacBook Air 13”</a>
+											<span class="price">$ 1,649.00</span>
+										</li>
+										<li>
+											<img src="img/content/product-featured-img-small.jpg">
+											<a href="#">Apple MacBook Air 13”</a>
+											<span class="price">$ 1,649.00</span>
+										</li>
+									</ul>
+
+									<a href="#" class="static">See all results</a>
+								</div>
 							</form>
 						</div>
 
@@ -266,9 +327,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -279,9 +340,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -292,9 +353,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -305,9 +366,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 			</div>
 
@@ -330,9 +391,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -343,9 +404,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -356,9 +417,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4">
 					<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
@@ -369,9 +430,9 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 						$ 175.00
 						<span class="sale-price">$ 299.00</span>
 					</span>
-					<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+					<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+					<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+					<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
 				</div>
 			</div>
 
@@ -581,17 +642,48 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 				// Add tooltops
 				$('.tooltiped').tooltip();
 
+				// Show mini-basket on hover
+				var miniCartTimer;
+
+				$(".mini-cart > .btn").mouseenter(function () {
+					clearTimeout(miniCartTimer);
+
+					$('.mini-cart-popup').show();
+				});
+
+				$(".mini-cart > .btn").mouseleave(function() {
+					miniCartTimer = setTimeout(function () {
+						$('.mini-cart-popup').hide();
+					}, 600);
+				});
+
+				$('.mini-cart-popup').mouseenter(function () {
+					clearTimeout(miniCartTimer);
+				});
+
+				$('.mini-cart-popup').mouseleave(function () {
+					miniCartTimer = setTimeout(function () {
+						$('.mini-cart-popup').hide();
+					}, 600);
+				});
+
 				// Increase width of the search input
 				$('.navbar form .search').on('focus', function () {
 					$(this).animate({
 						width: 250
-					}, 200);
+					}, 200, function () {
+						$('.search-popup').slideDown()
+					});
 				});
 
 				$('.navbar form .search').on('blur', function () {
-					$(this).animate({
-						width: 193
-					}, 200);
+					var $this = $(this);
+
+					$('.search-popup').slideUp(function () {
+						$this.animate({
+							width: 193
+						}, 200);
+					});
 				});
 
 				// Animate link colors
@@ -599,7 +691,7 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 					$(this).animate({
 						backgroundColor:"#fff",
 						color: '#000'
-				    }, 400 );
+				    }, 200 );
 				});
 
 				$(".btn-primary").mouseleave(function() {
@@ -609,16 +701,106 @@ distribution of letters, as opposed to using 'Content here, content here', makin
 				    }, 200 );
 				});
 
+				// Animate products view title color
+				$(".catalog .title, .featured a, .cart-popup .title").mouseenter(function () {
+					$(this).animate({
+						color: '#e67e22'
+				    }, 200 );
+				});
+
+				$(".catalog .title, .featured a, .cart-popup .title").mouseleave(function() {
+					$(this).animate({
+						color: '#323232'
+				    }, 200 );
+				});
+
+				// Animate products but btn
+				$(".btn-basket").mouseenter(function () {
+					$(this).animate({
+						backgroundColor: '#e98b39'
+				    }, 200 );
+				});
+
+				$(".btn-basket").mouseleave(function() {
+					$(this).animate({
+						backgroundColor: '#e67e22'
+				    }, 200 );
+				});
+
+				// Animate products view icons
+				$(".catalog .rounded-icon").mouseenter(function () {
+					$(this).animate({
+						color: '#fff',
+						backgroundColor: '#e67e22',
+						borderColor: '#e67e22'
+				    }, 200 );
+				});
+
+				$(".catalog .rounded-icon").mouseleave(function() {
+					$(this).animate({
+						color: '#888888',
+						backgroundColor: '#fff',
+						borderColor: '#f0f0f0'
+				    }, 200 );
+				});
+
+				// Animate mini product close icons
+				$(".cart-popup .close").mouseenter(function () {
+					$(this).animate({
+						color: '#fff',
+						backgroundColor: '#e67e22',
+						borderColor: '#e67e22'
+				    }, 200 );
+				});
+
+				$(".cart-popup .close").mouseleave(function() {
+					$(this).animate({
+						color: '#888888',
+						backgroundColor: '#fff',
+						borderColor: '#f0f0f0'
+				    }, 200 );
+				});
+
 				$(".navbar-nav li a").mouseenter(function () {
 					$(this).animate({
 						backgroundColor:"#d35400",
-				    }, 400 );
+				    }, 200 );
 				});
 
 				$(".navbar-nav li a").mouseleave(function() {
 					$(this).animate({
 						backgroundColor:"#e67e22",
 				    }, 200 );
+				});
+
+				// Animate top line links
+				$(".top-line .general-info a").mouseenter(function () {
+					$(this).animate({
+						color: "#e67e22",
+				    }, 200).find('span').animate({
+						color: "#505050",
+				    }, 200);
+				});
+
+				$(".top-line .general-info a").mouseleave(function() {
+					$(this).animate({
+						color: "#888888",
+				    }, 200).find('span').animate({
+						color: "#888888",
+				    }, 200);
+				});
+
+				// Animate static links
+				$("a.static").mouseenter(function () {
+					$(this).animate({
+						color: "#323232",
+				    }, 200);
+				});
+
+				$("a.static").mouseleave(function() {
+					$(this).animate({
+						color: "#888888",
+				    }, 200);
 				});
 			});
 
