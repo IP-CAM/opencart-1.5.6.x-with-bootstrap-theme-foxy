@@ -35,7 +35,7 @@
 					</div>
 					<div class="col-lg-5 col-md-5 general-info hidden-sm hidden-xs">
 						<a href="#" class="wish-list-link">
-							<img src="img/heard-icon.png" title="" alt="">
+							<span class="glyphicon glyphicon-heart"></span>
 							Wish List (0)
 						</a>
 						<a href="#">Checkout</a>
@@ -43,10 +43,10 @@
 						<a href="#">Shopping Cart</a>
 					</div>
 					<div class="col-lg-4 visible-lg tR">
-						Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>.
+						Welcome visitor you can <a href="#" class="static">login</a> or <a href="#" class="static">create an account</a>.
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 hidden-lg tR">
-						<a href="#">Login</a> or <a href="#">create an account</a>.
+						<a href="#" class="static">Login</a> or <a href="#" class="static">create an account</a>.
 					</div>
 				</div><!-- end .row -->
 			</div><!-- end .container -->
@@ -57,14 +57,59 @@
 		<header id="header" class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
-					<a href="#" class="logo pull-left"><img src="img/logo.png" title="" alt=""></a>
+					<a href="#" class="logo pull-left"><img src="img/logo@2x.png" width="313" height="135" title="" alt=""></a>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="mini-cart pull-right">
 						<span>0 item(s) - $ 0.00</span>
 						<a href="#" class="btn btn-default btn-md">
-							<img src="img/mini-basket-icon.png" title="" alt="">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
 						</a>
+
+						<div class="mini-cart-popup">
+							<ul class="cart-popup">
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+									<div class="product-options">
+										<div>- Select Red</div>
+										<div>- Select Red</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+								</li>
+								<li>
+									<img src="img/content/product-featured-img-small.jpg">
+									<a href="#" class="pull-left title">Apple MacBook Air 13”</a>
+									<span class="count pull-left">x 2</span>
+									<span class="price pull-left">$ 1,649.00</span>
+									<a class="close pull-left">×</a>
+									<div class="product-options">
+										<div>- Select Red</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="totals">
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Sub-Total:<span>$ 2,650.00</span></h6>
+								<h6>Total:<span>$ 2,999.00</span></h6>
+							</div>
+
+							<div class="buttons">
+								<a href="#" class="btn btn-basket">View cart</a>
+								<a href="#" class="btn btn-basket">Checkout</a>
+							</div>
+						</div>
 					</div><!-- end .mini-cart -->
 				</div>
 			</div>
@@ -85,6 +130,22 @@
 									<input type="text" class="form-control search" placeholder="Search">
 								</div>
 								<input type="submit" class="btn btn-default" value="">
+								<div class="search-popup">
+									<ul class="featured">
+										<li>
+											<img src="img/content/product-featured-img-small.jpg">
+											<a href="#">Apple MacBook Air 13”</a>
+											<span class="price">$ 1,649.00</span>
+										</li>
+										<li>
+											<img src="img/content/product-featured-img-small.jpg">
+											<a href="#">Apple MacBook Air 13”</a>
+											<span class="price">$ 1,649.00</span>
+										</li>
+									</ul>
+
+									<a href="#" class="static">See all results</a>
+								</div>
 							</form>
 						</div>
 
@@ -410,7 +471,7 @@
 											<td><span>*</span> File:</td>
 											<td>
 												<div class="input-type-file btn-darkgrey">
-													<input type="file" size="1">
+													<input type="file" size="1" id="uploadFile">
 													<label class="uploadFIle" for="uploadFile">UPLOAD FILE</label>
 												</div>
 											</td>
@@ -463,7 +524,7 @@
 								</div>
 								<div class="col-sm-6 col-xs-12 pull-left">
 									<a href="#" class="btn btn-basket">
-										<img src="img/mini-basket-icon.png" title="" alt="">
+										<span class="glyphicon glyphicon-shopping-cart"></span>
 										Add to cart
 									</a>
 								</div>
@@ -471,12 +532,12 @@
 
 							<div class="buttons pull-left w">
 								<a href="#" class="btn btn-grey col-xs-12 col-sm-4">
-									<img src="img/heard-icon.png">
+									<span class="glyphicon glyphicon-heart"></span>
 									Add to Wish List
 								</a>
 
 								<a href="#" class="btn btn-grey col-xs-12 col-sm-4">
-									<img src="img/icon-wishlist.png">
+									<span class="glyphicon glyphicon-stats"></span>
 									Add to Wish List
 								</a>
 							</div>
@@ -607,7 +668,10 @@
 
 					<div class="row catalog">
 						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
+							<div class="img-holder">
+								<img src="img/content/catalog-list-item-image.jpg" title="" alt="">
+								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+							</div>
 							<a href="#" class="title">Apple iPod Nano 16GB Blue</a>
 							<hr class="short">
 							<span class="cat">Mp3 players</span>
@@ -615,12 +679,17 @@
 								$ 175.00
 								<span class="sale-price">$ 299.00</span>
 							</span>
-							<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-							<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-							<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+							<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+							<div class="product-icon-holder">
+								<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+								<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
+							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
+							<div class="img-holder">
+								<img src="img/content/catalog-list-item-image.jpg" title="" alt="">
+								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+							</div>
 							<a href="#" class="title">Apple iPod Nano 16GB Blue</a>
 							<hr class="short">
 							<span class="cat">Mp3 players</span>
@@ -628,12 +697,17 @@
 								$ 175.00
 								<span class="sale-price">$ 299.00</span>
 							</span>
-							<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-							<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-							<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+							<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+							<div class="product-icon-holder">
+								<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+								<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
+							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="img-holder"><img src="img/content/catalog-list-item-image.jpg" title="" alt=""></div>
+							<div class="img-holder">
+								<img src="img/content/catalog-list-item-image.jpg" title="" alt="">
+								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+							</div>
 							<a href="#" class="title">Apple iPod Nano 16GB Blue</a>
 							<hr class="short">
 							<span class="cat">Mp3 players</span>
@@ -641,9 +715,11 @@
 								$ 175.00
 								<span class="sale-price">$ 299.00</span>
 							</span>
-							<a href="#" class="btn btn-basket"><img src="img/basket-icon.jpg" title="" alt="">add to cart</a>
-							<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"></a>
-							<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"></a>
+							<a href="#" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span>add to cart</a>
+							<div class="product-icon-holder">
+								<a href="#" class="rounded-icon fav tooltiped" data-toggle="tooltip" title="Add to favourite" data-placement="left"><span class="glyphicon glyphicon-heart"></span></a>
+								<a href="#" class="rounded-icon compare tooltiped" data-toggle="tooltip" title="Add to compare" data-placement="left"><span class="glyphicon glyphicon-stats"></span></a>
+							</div>
 						</div>
 					</div><!-- end .catalog -->
 				</div>
@@ -763,261 +839,7 @@
 		<script src="js/jquery.touchSwipe.min.js"></script>
 		<script src="js/jquery.select.js"></script>
 		<script src="js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/common.js"></script>
 
-		<script type="text/javascript">
-			$(document).ready(function () {
-				// Create header carousel
-				$("#header-carousel").carouFredSel({
-					width 		: 1170,
-					scroll		: 1,
-					auto		: true,
-					responsive  : true,
-					items       : {
-						visible : 1,
-						width   : 1170,
-						height  : "46%"
-					},
-					prev		: {	
-						button	: "#header-slider-prev"
-					},
-					next		: { 
-						button	: "#header-slider-next"
-					},
-					swipe		: {
-						onTouch	: true,
-						onMouse	: true
-					}
-				});
-
-				// Product image slider
-				var productIageThumbsHtml = $('#product-images-thumbs').html();
-
-				$("#prouct-image-lg").carouFredSel({
-					items		  : 1,
-					auto		  : false,
-					swipe		  : {
-						onTouch	  : true,
-						onMouse	  : true
-					},
-					scroll: {
-						onBefore: function () {
-							$('#product-images-thumbs').find('li').css({
-								opacity: "0.6",
-								borderColor: "f7f7f7"
-							});
-						}
-					},
-					pagination	  : {
-						container : "#product-images-thumbs",
-						anchorBuilder: function () {
-							if ($('#product-images-thumbs > li').length)
-							{
-								return;
-							}
-
-							return productIageThumbsHtml;
-						}
-					}
-				});
-
-				// Product tabs
-				$('#tabs').carouFredSel({
-					circular: false,
-					responsive: true, 
-					items: 1,
-					width: '100%',
-					auto: false,
-					swipe		  : {
-						onTouch	  : true
-					},
-					pagination: {
-						container: '#pager',
-						anchorBuilder: function( nr ) {
-							return '<a href="#">' + $(this).data('title') + '</a>';
-						}
-					}
-				});
-
-				// Set datetime picker
-				var updateDateTimeInput = function () {
-					$(this).siblings('.add-on').children('i').click();
-				};
-
-				$('#datetimepicker').datetimepicker()
-				.find('input').on('focus', updateDateTimeInput);
-
-				$('#timepicker').datetimepicker({
-					pickDate: false
-				}).find('input').on('focus', updateDateTimeInput);
-
-				$('#datepicker').datetimepicker({
-					pickTime: false
-				}).find('input').on('focus', updateDateTimeInput);
-
-				// Emulate input type number
-				$('.input-type-number a').on('click', function (e) {
-					var $this = $(this),
-						input = $this.siblings('input'),
-						newVal = parseInt(input.val()) + parseInt($this.data('num'));
-
-					// If new val is greater then 1
-					if (newVal)
-					{
-						input.val(parseInt(newVal));
-					}
-
-					e.preventDefault();
-				});
-
-				// Change main product image
-				$('.product-images > li > a').on('click', function (e) {
-					$('#prouct-image-lg img').attr({
-						src: $(this).data('image')
-					});
-
-					e.preventDefault();
-				});
-
-				// Animate product image thumbs border colors
-				$('.product-images > li').on('mouseenter', function () {
-					$(this).animate({
-						borderColor: "#ededed",
-						opacity: "1"
-					}, 200);
-				});
-
-				$('.product-images > li').on('mouseleave', function () {
-					$(this).animate({
-						borderColor: "#f7f7f7",
-						opacity: "0.6"
-					}, 200);
-				});
-
-				// Style selects
-				$('select').selectpicker();
-
-				// Switch to grid/list view
-				$('#catalog-grid-view, #catalog-list-view').on('click', function (e) {
-					$(this).siblings('a').removeClass('active').end().addClass('active');
-
-					e.preventDefault();
-				});
-
-				// Animate product preview bg and border colors
-				$('.catalog > div').on('mouseenter', function () {
-					$(this).animate({
-						backgroundColor: "#f9f9f9",
-						borderColor: "#f0f0f0"
-					}, 200);
-				});
-
-				$('.catalog > div').on('mouseleave', function () {
-					$(this).animate({
-						backgroundColor: "#fff",
-						borderColor: "#fff"
-					}, 200);
-				});
-				
-				// Animate product preview basket btn (show)
-				$('.catalog > div').on('mouseenter', function () {
-					var $this = $(this);
-
-					$this.find('.btn-basket').animate({
-						top: 0
-					}, 200);
-				});
-
-				// Animate product preview basket btn (hide)
-				$('.catalog > div').on('mouseleave', function () {
-					var $this = $(this);
-
-					$this.find('.btn-basket').animate({
-						top: 70
-					}, 200);
-				});
-
-				// Animate product preview icons (show)
-				$('.catalog > div').on('mouseenter', function () {
-					var $this = $(this);
-
-					$this.find('.rounded-icon').animate({
-						top: 15
-					}, 200);
-				});
-
-				// Animate product preview icons (hide)
-				$('.catalog > div').on('mouseleave', function () {
-					var $this = $(this);
-
-					$this.find('.rounded-icon').animate({
-						top: -45
-					}, 200);
-				});
-
-				// Init dl-menu
-				$( '#dl-menu' ).dlmenu();
-
-				// Add tooltops
-				$('.tooltiped').tooltip();
-
-				// Style form radio btn
-				$('input[type=radio]').on('change', function () {
-					var $this = $(this),
-						name = $this.attr('name'),
-						form  = $this.closest('form');
-
-					form.find('input[name=' + name + ']').parent().removeClass('checked');
-					form.find('input[name=' + name + ']:checked').parent().addClass('checked');
-				});
-
-
-				// Style form checkboxes
-				$('input[type=checkbox]').on('change', function () {
-					$(this).parent().toggleClass('checked');
-				});
-
-
-				// Increase width of the search input
-				$('.navbar form .search').on('focus', function () {
-					$(this).animate({
-						width: 250
-					}, 200);
-				});
-
-				$('.navbar form .search').on('blur', function () {
-					$(this).animate({
-						width: 193
-					}, 200);
-				});
-
-				// Animate link colors
-				$(".btn-primary").mouseenter(function () {
-					$(this).animate({
-						backgroundColor:"#fff",
-						color: '#000'
-				    }, 400 );
-				});
-
-				$(".btn-primary").mouseleave(function() {
-					$(this).animate({
-						backgroundColor:"#e67e22",
-						color: '#fff'
-				    }, 200 );
-				});
-
-				$(".navbar-nav li a").mouseenter(function () {
-					$(this).animate({
-						backgroundColor:"#d35400",
-				    }, 400 );
-				});
-
-				$(".navbar-nav li a").mouseleave(function() {
-					$(this).animate({
-						backgroundColor:"#e67e22",
-				    }, 200 );
-				});
-			});
-
-		</script>
 	</body>
 </html>
