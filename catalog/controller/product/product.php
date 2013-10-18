@@ -426,9 +426,10 @@ class ControllerProductProduct extends Controller {
 					$rating = false;
 				}
 
+				// krevnyi
 				$this->load->model('catalog/product');
 		
-				$product_info = $this->model_catalog_product->getProduct($result['product_id']);
+				$related_info = $this->model_catalog_product->getProduct($result['product_id']);
 
 				$images = $this->model_catalog_product->getProductImages($result['product_id']);
 				$product_images = array();
@@ -440,16 +441,16 @@ class ControllerProductProduct extends Controller {
 					);
 				}
 
-				if ($product_info['quantity'] <= 0) {
-					$stock = $product_info['stock_status'];
+				if ($related_info['quantity'] <= 0) {
+					$stock = $related_info['stock_status'];
 				} elseif ($this->config->get('config_stock_display')) {
-					$stock = $product_info['quantity'];
+					$stock = $related_info['quantity'];
 				} else {
 					$stock = $this->language->get('text_instock');
 				}
 
-				if ($product_info['minimum']) {
-					$minimum = $product_info['minimum'];
+				if ($related_info['minimum']) {
+					$minimum = $related_info['minimum'];
 				} else {
 					$minimum = 1;
 				}
@@ -461,7 +462,7 @@ class ControllerProductProduct extends Controller {
 				foreach ($discounts_result as $discount) {
 					$discounts[] = array(
 						'quantity' => $discount['quantity'],
-						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')))
+						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $related_info['tax_class_id'], $this->config->get('config_tax')))
 					);
 				}
 
@@ -483,12 +484,12 @@ class ControllerProductProduct extends Controller {
 
 					'images'      			 => $product_images,
 					'minimum'      			 => $minimum,
-					'model'			         => $product_info['model'],
+					'model'			         => $related_info['model'],
 					'tax'			         => $tax,
-					'reward'		         => $product_info['reward'],
-					'points'		         => $product_info['points'],
-					'manufacturer'	         => $product_info['manufacturer'],
-					'manufacturers'	         => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']),
+					'reward'		         => $related_info['reward'],
+					'points'		         => $related_info['points'],
+					'manufacturer'	         => $related_info['manufacturer'],
+					'manufacturers'	         => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $related_info['manufacturer_id']),
 					'stock'	         		 => $stock,
 					'discounts'        		 => $discounts,
 				);

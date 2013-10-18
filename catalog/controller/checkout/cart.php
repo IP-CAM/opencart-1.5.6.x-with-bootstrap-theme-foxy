@@ -807,5 +807,25 @@ class ControllerCheckoutCart extends Controller {
 		
 		$this->response->setOutput(json_encode($json));
 	}
+
+	// krevnyi
+	public function remove() {
+		$json = array();
+		
+		if (isset($this->request->post['product_key'])) {
+			$product_key = $this->request->post['product_key'];
+		} else {
+			$product_key = 0;
+		}
+
+		if ($product_key)
+		{
+			$this->cart->remove($product_key);
+		}
+
+		print_r($this->cart->getProducts());
+		
+		$this->response->setOutput(json_encode($json));		
+	}
 }
 ?>

@@ -1,9 +1,6 @@
 <?php if ($reviews) { ?>
 	<?php foreach ($reviews as $review) { ?>
 		<div class="media">
-			<a class="pull-left" href="#">
-				<img class="media-object" src="/image/no_image.jpg">
-			</a>
 			<div class="media-body">
 				<h4 class="media-heading pull-left w">
 					<span><?php echo $review['author']; ?></span>

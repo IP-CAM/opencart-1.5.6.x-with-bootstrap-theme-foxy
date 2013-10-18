@@ -20,6 +20,20 @@ $(document).ready(function () {
 			}
 		});
 	};
+
+	removeFromCart = function (product_key) {
+		$.ajax({
+			url: 'index.php?route=checkout/cart/remove',
+			type: 'post',
+			data: 'product_key=' + product_key,
+			dataType: 'json',
+			success: function(json) {
+				if (json['redirect']) {
+					location = json['redirect'];
+				}
+			}
+		});
+	};
 	
 	addToWishList = function (product_id) {
 		$.ajax({

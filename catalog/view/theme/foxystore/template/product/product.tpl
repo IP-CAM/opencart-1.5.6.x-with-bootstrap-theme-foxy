@@ -553,6 +553,7 @@
 				</h3>
 
 				<div class="row catalog">
+
 					<?php foreach ($products as $product) { ?>
 						<!-- Check if product is already in wishlist -->
 						<?php 
@@ -562,7 +563,7 @@
 
 						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
 							<div class="img-holder">
-								<img src="<?php echo $product['thumb']; ?>" title="" alt="">
+								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
 								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
 							</div>
 							<a href="<?php echo $product['href']; ?>" class="title"><?php echo $product['name']; ?></a>
@@ -689,7 +690,6 @@
 													<span class="pull-left"><?php echo $text_qty; ?></span>
 													<div class="input-type-number">
 														<input type="text" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
-														<input type="hidden" name="product_id" size="2" value="<?php echo $product['product_id']; ?>" />
 														<a href="#" class="up" data-num="1"></a>
 														<a href="#" class="down" data-num="-1"></a>
 													</div>
@@ -776,7 +776,7 @@ $('select[name="profile_id"], input[name="quantity"]').change(function(){
     $.ajax({
 		url: 'index.php?route=product/product/getRecurringDescription',
 		type: 'post',
-		data: $('input[name="product_id"], input[name="quantity"], select[name="profile_id"]'),
+		data: $('.product-info input[name="product_id"], .product-info input[name="quantity"], .product-info select[name="profile_id"]'),
 		dataType: 'json',
         beforeSend: function() {
             $('#profile-description').html('');

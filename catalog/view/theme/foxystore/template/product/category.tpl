@@ -4,7 +4,7 @@
 <!-- Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-4 col-sm-4">
+		<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
 			<?php echo $column_left; ?>
 		</div>
 		<div class="col-lg-9 col-md-8 col-sm-8 the-content">
@@ -107,7 +107,7 @@
 
 						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
 							<div class="img-holder">
-								<img src="<?php echo $product['thumb']; ?>" title="" alt="">
+								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
 								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
 							</div>
 							<a href="<?php echo $product['href']; ?>" class="title"><?php echo $product['name']; ?></a>
@@ -287,17 +287,18 @@
 							</div>
 						</div>
 					<?php } ?>
-
-					<!-- Pagination -->
-					<div class="pagination"><?php echo $pagination; ?></div>
-
-					<!-- No categories or products -->
-					<?php if (!$categories && !$products) { ?>
-						<h3><?php echo $text_empty; ?></h3>
-						<a href="<?php echo $continue; ?>" class="btn btn-basket pull-right"><?php echo $button_continue; ?></a>
-					<?php } ?>
-
 				</div>
+			<?php } ?>
+			
+			<!-- Pagination -->
+			<div class="row pagination-row">
+				<?php echo $pagination; ?>
+			</div>
+
+			<!-- No categories or products -->
+			<?php if (!$categories && !$products) { ?>
+				<h3><?php echo $text_empty; ?></h3>
+				<a href="<?php echo $continue; ?>" class="btn btn-basket pull-right"><?php echo $button_continue; ?></a>
 			<?php } ?>
 		</div>
 	</div>

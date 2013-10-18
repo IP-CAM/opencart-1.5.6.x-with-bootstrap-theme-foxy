@@ -209,6 +209,18 @@ $(document).ready(function () {
 	// Style selects
 	$('select').selectpicker();
 
+	// Remove product from mini ajax cart
+	$('.cart-popup a.close').on('click', function (e) {
+		var $this = $(this),
+			productKey = $this.data('product-key');
+
+		removeFromCart(productKey);
+
+		$this.closest('tr').fadeOut();
+
+		e.preventDefault();
+	});
+
 	// Add active class to rounded btn
 	$(".catalog .rounded-icon, .action-button").on('click', function (e) {
 		var $this = $(this),
