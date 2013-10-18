@@ -1,0 +1,120 @@
+/****** --- [ BUTTONS ] --- ******/
+.btn-primary {
+	background: #e67e22;
+	border: none;
+	color: #fff;
+}
+.btn-primary {
+	border: none !important;
+	color: #fff;
+}
+.btn-primary.active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background: #E67E22;
+	color: #fff;
+	border: none;
+}
+.top-line .btn-primary {
+	color: #fff;
+}
+.top-line .btn-primary.active,
+.top-line .btn-primary:hover,
+.top-line .btn-primary:focus,
+.top-line .btn-primary:active {
+	background: #fff !important;
+	color: #323232 !important;
+	border: none !important;
+}
+
+.btn-default.active,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default {
+	background: #e67e22;
+	border: none;
+	color: #fff;
+}
+a.btn-default {
+	color: #fff;
+}
+.btn-basket,
+.btn-basket:hover,
+.btn-basket:focus,
+.btn-basket:active {
+	border: none !important;
+	height: auto !important;
+	text-transform: uppercase;
+	border-bottom: 2px solid #d35400;
+	background: #e67e22;
+	border-radius: 4px;
+	padding: 10px 49px;
+	position: relative;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #fff;
+}
+.btn-basket img {
+	position: relative;
+	margin-right: 9px;
+	top: -4px;
+}
+
+/****** --- [ NAVBAR ] --- ******/
+.navbar-default {
+	border: none;
+	border-bottom: 2px solid #d35400;
+	background: #e67e22;
+	border-radius: 4px;
+}
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li.active>a:hover {
+	background: #d35400;
+	color: #fff;
+}
+.navbar-default .navbar-nav>li:first-child>a {
+	border-radius: 4px 0 0 4px;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+}
+
+
+/****** --- [ INPUTS ] --- ******/
+input[type='text'].search::-webkit-input-placeholder {
+	color: #EDD2BA !important;
+}
+input[type='text'].search:-moz-placeholder {
+	color: #EDD2BA !important;
+}
+input[type='text'].search::-moz-placeholder {
+	color: #EDD2BA !important;
+}
+input[type='text'].search:-ms-input-placeholder {
+	color: #EDD2BA !important;
+}
+input[type='text'].search {
+	background: #a96030;
+	color: #edd2ba;
+	outline: none;
+	border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #A9A9A9 !important;
+}
+:-moz-placeholder {
+    color: #A9A9A9 !important;
+}
+::-moz-placeholder {
+    color: #A9A9A9 !important;
+}
+:-ms-input-placeholder {
+    color: #A9A9A9 !important;
+}
