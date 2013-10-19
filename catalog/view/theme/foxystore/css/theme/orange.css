@@ -225,7 +225,6 @@ table.cart .repeat,
 	-webkit-transition: color ease-in-out .15s;
 	transition: color ease-in-out .15s;
 }
-.quick-view-btn,
 .navbar-nav li a,
 .btn-default,
 .btn-primary,
@@ -235,8 +234,7 @@ table.cart .repeat,
 }
 .action-button,
 .catalog .btn-grey,
-.product-info .btn-grey,
-.catalog .rounded-icon {
+.product-info .btn-grey {
 	-webkit-transition: 
 		background-color ease-in-out .15s,
 		border-color ease-in-out .15s,
@@ -271,13 +269,13 @@ table.cart .repeat,
 		border-color ease-in-out .15s;
 }
 .catalog > div .product-icon-holder a {
-	-webkit-transition-property: margin-top;
+	-webkit-transition-property: margin-top, border-color, background, color;
 	-webkit-transition-duration: 0.25s;
 }
 .catalog > div .btn-basket,
 .catalog>div .img-holder .quick-view-btn,
 .catalog-list>div .img-holder .quick-view-btn {
-	-webkit-transition-property: top;
+	-webkit-transition-property: top, background-color;
 	-webkit-transition-duration: 0.25s;
 }
 .product-images > li {

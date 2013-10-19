@@ -295,11 +295,105 @@ $(document).ready(function () {
 		return sprintf(text, quantity, price);
 	});
 
+	// Check if product is in compare/wish list
+	Handlebars.registerHelper('in_list', function(productId, listType, btnText, options) {
+		var inList = false,
+			list;
+
+		// Set list to search for
+		if (listType == 'compare')
+		{
+			list = window.products.compare_list;
+		}
+		else
+		{
+			list = window.products.wish_list;
+		}
+
+		// Search for productId
+		$.each(list, function (index, obj) {
+			if (productId == obj)
+			{
+				inList = true;
+			}
+		});
+
+		if (inList)
+		{
+			if (listType == 'compare')
+			{
+				return "<a href='#' data-product-id='" + productId + "' class='compare active action-button btn btn-grey col-xs-12 col-sm-5'><span class='glyphicon glyphicon-stats'></span><span>" + btnText + "</span></a>";
+			}
+			else
+			{
+				return "<a href='#' data-product-id='" + productId + "' class='fav active action-button btn btn-grey col-xs-12 col-sm-5'><span class='glyphicon glyphicon-heart'></span><span>" + btnText + "</span></a>";
+			}
+		}
+		else
+		{
+			if (listType == 'compare')
+			{
+				return "<a href='#' data-product-id='" + productId + "' class='compare action-button btn btn-grey col-xs-12 col-sm-5'><span class='glyphicon glyphicon-stats'></span><span>" + btnText + "</span></a>";
+			}
+			else
+			{
+				return "<a href='#' data-product-id='" + productId + "' class='fav action-button btn btn-grey col-xs-12 col-sm-5'><span class='glyphicon glyphicon-heart'></span><span>" + btnText + "</span></a>";
+			}
+		}
+	});
+
 	// Switch to grid/list view
 	$('#catalog-grid-view, #catalog-list-view').on('click', function (e) {
-		$(this).siblings('a').removeClass('active').end().addClass('active');
+		var $this = $(this),
+			_appendListView = function () {
+				var tmp = Handlebars.compile($('#product-list-view').html()),
+					phtml = tmp(window.products);
+
+				// Append template
+				$('#products-grid-container').hide().after(phtml);
+
+				// Rebind events
+				init();
+			};
+
+		$this.siblings('a').removeClass('active').end().addClass('active');
+
+		// Switch to grid view
+		if ($this.attr('id') == 'catalog-grid-view')
+		{
+			// If there is a grid view ---> abort
+			if ($('#products-grid-container').css('display') == 'block')
+			{
+				return false;
+			}
+
+			$('#products-list-container').hide();
+			$('#products-grid-container').show();
+		}
+		// Switch to list view
+		if ($this.attr('id') == 'catalog-list-view')
+		{
+			// If there is a list view ---> abort
+			if ($('#products-list-container').css('display') == 'block')
+			{
+				return false;
+			}
+
+			_appendListView();
+		}
 
 		e.preventDefault();
+	});
+
+	// Automaticly change to grid view, if .col-xs
+	$(window).on('resize', function () {
+		if ($(this).width() <= 768)
+		{
+			$('#catalog-list-view').removeClass('active');
+			$('#catalog-grid-view').addClass('active');
+			$('#products-list-container').hide();
+			$('#products-grid-container').show();
+		}
 	});
 
 	// Init dl-menu
@@ -354,7 +448,6 @@ $(document).ready(function () {
 
 	window.init = function () {
 		$('.quick-view-btn').on('click', bindQuickView);
-		bindQuickViewBtnSlide();
 		bindActionBtns();
 		bindInputTypeNumber();
 	};

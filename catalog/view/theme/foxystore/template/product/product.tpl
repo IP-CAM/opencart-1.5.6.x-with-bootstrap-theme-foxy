@@ -19,7 +19,7 @@
 				<div class="col-lg-6">
 
 					<!-- Breadcrumbs -->
-					<div class="breadcrumb">
+					<div class="breadcrumb hidden-lg">
 						<?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
 							<?php if ($key == count($breadcrumbs) - 1): ?>
 								<li><?php echo $breadcrumb['text']; ?></li>
@@ -92,7 +92,7 @@
 				</div>
 				<div class="col-lg-6">
 					<!-- Breadcrumbs -->
-					<div class="breadcrumb">
+					<div class="breadcrumb visible-lg">
 						<?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
 							<?php if ($key == count($breadcrumbs) - 1): ?>
 								<li><?php echo $breadcrumb['text']; ?></li>
@@ -436,7 +436,7 @@
 
 			<!-- PRODUCT TABS -->
 			<div class="row">
-				<div class="col-md-12">
+				<div class="product-tabs-container col-md-12">
 					<div id="pager"></div>
 					<div id="tabs">
 

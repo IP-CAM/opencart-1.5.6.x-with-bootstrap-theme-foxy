@@ -55,7 +55,7 @@
 			<!-- Catalog view -->
 			<div class="row catalog-view">
 				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-					<a href="#" id="catalog-grid-view">
+					<a href="#" id="catalog-grid-view" class="active">
 						<span class="glyphicon glyphicon-th-large"></span><?php echo $text_grid ?>
 					</a>
 					<a href="#" id="catalog-list-view">
@@ -95,7 +95,7 @@
 
 			<!-- Products -->
 			<?php if ($products) { ?>
-				<div class="row catalog" id="products-container">
+				<div class="row catalog" id="products-grid-container">
 
 					<?php foreach ($products as $product) { ?>
 						<!-- Check if product is already in wishlist -->
@@ -304,6 +304,7 @@
 
 
 <script type="template/x-handlebars" id="product-list-view">
+<div class="row catalog-list">
 	{{#each products}}
 		<div class="product-preview-block-{{product_id}} col-lg-12">
 			<!-- Image -->
@@ -323,30 +324,10 @@
 
 				<div class="buttons pull-left w">
 					<!-- Compare btn -->
-					<?php if ($in_compare): ?>
-						<a href="#" data-product-id="{{product_id}}" class="compare active action-button btn btn-grey col-xs-12 col-sm-5">
-							<span class="glyphicon glyphicon-stats"></span>
-							<span><?php echo $button_compare; ?></span>
-						</a>
-					<?php else: ?>
-						<a href="#" data-product-id="{{product_id}}" class="compare action-button btn btn-grey col-xs-12 col-sm-5">
-							<span class="glyphicon glyphicon-stats"></span>
-							<span><?php echo $button_compare; ?></span>
-						</a>
-					<?php endif ?>
+					{{#in_list product_id 'compare' '<?php echo $button_compare; ?>'}}{{/in_list}}
 
 					<!-- Wishlist btn -->
-					<?php if ($in_wishlist): ?>
-						<a href="#" data-product-id="{{product_id}}" class="active fav action-button btn btn-grey col-xs-12 col-sm-5">
-							<span class="glyphicon glyphicon-heart"></span>
-							<span><?php echo $button_wishlist; ?></span>
-						</a>
-					<?php else: ?>
-						<a href="#" data-product-id="{{product_id}}" class="fav action-button btn btn-grey col-xs-12 col-sm-5">
-							<span class="glyphicon glyphicon-heart"></span>
-							<span><?php echo $button_wishlist; ?></span>
-						</a>
-					<?php endif ?>
+					{{#in_list product_id 'fav' '<?php echo $button_wishlist; ?>'}}{{/in_list}}
 				</div>
 			</div>
 
@@ -510,12 +491,15 @@
 			</div>
 		</div>
 	{{/each}}
+</div>
 </script>
 
 <script type="text/javascript">
 	var products = {};
 
-	products.products = <?php echo json_encode($products); ?>
+	products.products = <?php echo json_encode($products); ?>;
+	products.compare_list = <?php echo json_encode($this->session->data['compare']); ?>;
+	products.wish_list = <?php echo json_encode($this->session->data['wishlist']); ?>;
 
 	window.products = products;
 </script>
