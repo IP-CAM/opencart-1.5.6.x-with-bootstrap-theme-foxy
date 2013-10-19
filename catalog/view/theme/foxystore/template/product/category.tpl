@@ -1,6 +1,5 @@
 <?php echo $header; ?>
 
-
 <!-- Content -->
 <div class="container">
 	<div class="row">
@@ -96,7 +95,7 @@
 
 			<!-- Products -->
 			<?php if ($products) { ?>
-				<div class="row catalog">
+				<div class="row catalog" id="products-container">
 
 					<?php foreach ($products as $product) { ?>
 						<!-- Check if product is already in wishlist -->
@@ -234,7 +233,6 @@
 													<span class="pull-left"><?php echo $text_qty; ?></span>
 													<div class="input-type-number">
 														<input type="text" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
-														<input type="hidden" name="product_id" size="2" value="<?php echo $product['product_id']; ?>" />
 														<a href="#" class="up" data-num="1"></a>
 														<a href="#" class="down" data-num="-1"></a>
 													</div>
@@ -303,5 +301,223 @@
 		</div>
 	</div>
 </div>
+
+
+<script type="template/x-handlebars" id="product-list-view">
+	{{#each products}}
+		<div class="product-preview-block-{{product_id}} col-lg-12">
+			<!-- Image -->
+			<div class="img-holder col-lg-3 col-md-3 col-sm-3">
+				<a href="{{escape href}}"><img src="{{thumb}}" title="" alt=""></a>
+				<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+			</div>
+
+			<!-- Title container -->
+			<div class="pull-left title-container col-lg-6 col-md-6 col-sm-6">
+				<a href="{{escape href}}" class="title hh">{{escape name}}</a>
+				<hr class="short">
+				<span class="cat">Mp3 players</span>
+
+				<!-- Description -->
+				<p class="visible-lg">{{description}}</p>
+
+				<div class="buttons pull-left w">
+					<!-- Compare btn -->
+					<?php if ($in_compare): ?>
+						<a href="#" data-product-id="{{product_id}}" class="compare active action-button btn btn-grey col-xs-12 col-sm-5">
+							<span class="glyphicon glyphicon-stats"></span>
+							<span><?php echo $button_compare; ?></span>
+						</a>
+					<?php else: ?>
+						<a href="#" data-product-id="{{product_id}}" class="compare action-button btn btn-grey col-xs-12 col-sm-5">
+							<span class="glyphicon glyphicon-stats"></span>
+							<span><?php echo $button_compare; ?></span>
+						</a>
+					<?php endif ?>
+
+					<!-- Wishlist btn -->
+					<?php if ($in_wishlist): ?>
+						<a href="#" data-product-id="{{product_id}}" class="active fav action-button btn btn-grey col-xs-12 col-sm-5">
+							<span class="glyphicon glyphicon-heart"></span>
+							<span><?php echo $button_wishlist; ?></span>
+						</a>
+					<?php else: ?>
+						<a href="#" data-product-id="{{product_id}}" class="fav action-button btn btn-grey col-xs-12 col-sm-5">
+							<span class="glyphicon glyphicon-heart"></span>
+							<span><?php echo $button_wishlist; ?></span>
+						</a>
+					<?php endif ?>
+				</div>
+			</div>
+
+			<!-- Price container -->
+			<div class="price-container col-lg-3 col-md-3 col-sm-3">
+				<!-- Prices -->
+				<span class="actual-price pR">
+					{{#if price }}
+						<div class="price">
+							{{#if special}}
+								{{special}}
+								<span class="sale-price">{{price}}</span>
+							{{else}}
+								{{price}}
+							{{/if}}
+						</div>
+					{{/if}}
+				</span>
+
+				<!-- Add to cart btn -->
+				<a href="#" onclick="addToCart('{{product_id}}'); return false;" class="btn btn-basket"><span class="glyphicon glyphicon-shopping-cart"></span><span><?php echo $button_cart; ?></span></a>
+			</div>
+
+			<!-- Product quick view -->
+			<div class="quick-product-info hidden-xs">
+				<div class="col-lg-12 the-content">
+					<div class="row product-info">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							{{#if images}}
+								<div class="quick-prouct-image-lg-{{product_id}} quick-prouct-image-lg prouct-image-lg">
+									<div class="quick-prouct-image-lg-id">
+										{{#each images}}
+											<a href="{{escape popup}}"><img src="{{escape popup}}" /></a>
+										{{/each}}
+									</div>
+									<a href="#" class="quick-prouct-image-lg-prev quick-prouct-image-lg-navigation hidden-sm"><span class="glyphicon glyphicon-chevron-left"></span></a>
+									<a href="#" class="quick-prouct-image-lg-next quick-prouct-image-lg-navigation hidden-sm"><span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+							{{/if}}
+						</div>
+						<div class="product-preview-block-popup-{{product_id}} col-lg-6 col-md-6 col-sm-12">
+							<h1>{{escape name}}</h1>
+
+							<hr class="short">
+
+							<!-- Prices -->
+							{{#if price}}
+								<div class="price">
+									{{#if special}}
+										<div class="actual">{{price}}</div>
+										<div class="discount">{{special}}</div>
+									{{else}}
+										<span class="actual">{{price}}</span>
+									{{/if}}
+
+									{{#if points}}
+										<div class="tax"><?php echo $text_points; ?> {{points}}</div>
+									{{/if}}
+									
+									{{#if tax}}
+										<span class="tax"><?php echo $text_tax; ?> {{tax}}</span>
+									{{/if}}
+
+									{{#if discounts}}
+										<hr class="small" />
+
+										<div class="tax">
+											{{#each discounts}}
+												{{product_discount '<?php echo $text_discount; ?>' quantity price}}<br>
+											{{/each}}
+										</div>
+									{{/if}}
+								</div>
+							{{/if}}
+
+							<!-- Rating -->
+							<div class="review-info">
+								<span class="rating"><img src="/catalog/view/theme/foxystore/img/product-rating-{{rating}}.png"></span>
+								<span class="total">{{reviews}}</span>
+							</div>
+
+							<!-- Attributes -->
+							<div class="attrs pull-left w">
+								<!-- Manufacturer -->
+								<?php if ($product['manufacturer']) { ?>
+									<div class="col-sm-4 col-xs-6 dark"><?php echo $text_manufacturer; ?></div>
+									<div class="col-sm-8 col-xs-6"><a href="{{escape manufacturers}}">{{manufacturer}}</a></div>
+								<?php } ?>
+
+								<!-- Model -->
+								<div class="col-sm-4 col-xs-6 dark"><?php echo $text_model; ?></div>
+								<div class="col-sm-8 col-xs-6">{{model}}</div>
+
+								<!-- Reward -->
+								<?php if ($product['reward']) { ?>
+									<div class="col-sm-4 col-xs-6 dark"><?php echo $text_reward; ?></div>
+									<div class="col-sm-8 col-xs-6">{{reward}}</div>
+								<?php } ?>
+
+								<!-- Stock -->
+								<div class="col-sm-4 col-xs-6 dark"><?php echo $text_stock; ?></div>
+								<div class="col-sm-8 col-xs-6"><span class="green">{{stock}}</span></div>
+							</div>
+
+
+							<!-- PRICE BOX -->
+							<div class="price-box pull-left w">
+								<div class="col-sm-6 col-xs-12 pull-left">
+									<span class="pull-left"><?php echo $text_qty; ?></span>
+									<div class="input-type-number">
+										<input type="text" value="{{minimum}}" min="{{minimum}}" class="number">
+										<a href="#" class="up" data-num="1"></a>
+										<a href="#" class="down" data-num="-1"></a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12 pull-left">
+									<a href="#" class="btn btn-basket" onclick="addToCart('{{product_id}}'); return false;">
+										<span class="glyphicon glyphicon-shopping-cart"></span>
+										<?php echo $button_cart; ?>
+									</a>
+								</div>
+							</div>
+
+							<!-- Wishlist btn -->
+							<!-- Check if product is already in wishlist -->
+							<?php 
+								$in_compare = in_array($product['product_id'], $this->session->data['compare']);
+								$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
+							?>
+
+							<div class="buttons pull-left w">
+								<!-- Compare btn -->
+								<?php if ($in_compare): ?>
+									<a href="#" data-product-id="{{product_id}}" class="compare active action-button btn btn-grey col-xs-12 col-sm-4">
+										<span class="glyphicon glyphicon-stats"></span>
+										<?php echo $button_compare; ?>
+									</a>
+								<?php else: ?>
+									<a href="#" data-product-id="{{product_id}}" class="compare action-button btn btn-grey col-xs-12 col-sm-4">
+										<span class="glyphicon glyphicon-stats"></span>
+									<?php echo $button_compare; ?>
+									</a>
+								<?php endif ?>
+
+								<!-- Wishlist btn -->
+								<?php if ($in_wishlist): ?>
+									<a href="#" data-product-id="{{product_id}}" class="active fav action-button btn btn-grey col-xs-12 col-sm-4">
+										<span class="glyphicon glyphicon-heart"></span>
+										<?php echo $button_wishlist; ?>
+									</a>
+								<?php else: ?>
+									<a href="#" data-product-id="{{product_id}}" class="fav action-button btn btn-grey col-xs-12 col-sm-4">
+										<span class="glyphicon glyphicon-heart"></span>
+										<?php echo $button_wishlist; ?>
+									</a>
+								<?php endif ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+
+<script type="text/javascript">
+	var products = {};
+
+	products.products = <?php echo json_encode($products); ?>
+
+	window.products = products;
+</script>
 
 <?php echo $footer; ?>
