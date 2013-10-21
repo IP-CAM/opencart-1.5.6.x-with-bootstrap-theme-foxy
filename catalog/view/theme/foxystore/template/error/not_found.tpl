@@ -3,10 +3,14 @@
 <!-- Content -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-3 col-md-4 col-sm-4">
-      <?php echo $column_left; ?>
-    </div>
-    <div class="col-lg-9 col-md-8 col-sm-8 the-content">
+    <?php if (trim($column_left)): ?>
+      <div class="col-lg-3 col-md-4 col-sm-4">
+        <?php echo $column_left; ?>
+      </div>
+      <div class="col-lg-9 col-md-8 col-sm-8 the-content">
+    <?php else: ?>
+      <div class="col-lg-12">
+    <?php endif ?>
 
       <!-- Breadcrumbs -->
       <div class="breadcrumb">

@@ -822,8 +822,6 @@ class ControllerCheckoutCart extends Controller {
 		{
 			$this->cart->remove($product_key);
 		}
-
-		print_r($this->cart->getProducts());
 		
 		$this->response->setOutput(json_encode($json));		
 	}

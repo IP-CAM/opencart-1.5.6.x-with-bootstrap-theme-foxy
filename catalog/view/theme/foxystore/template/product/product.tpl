@@ -4,8 +4,15 @@
 
 <!-- Check if product is already in wishlist -->
 <?php 
-	$in_compare = in_array($product_id, $this->session->data['compare']);
-	$in_wishlist = in_array($product_id, $this->session->data['wishlist']);
+	$in_compare = 
+		isset($this->session->data['compare']) 
+		? in_array($product_id, $this->session->data['compare']) 
+		: false;
+
+	$in_wishlist = 
+		isset($this->session->data['wishlist']) 
+		? in_array($product_id, $this->session->data['wishlist']) 
+		: false;
 ?>
 
 <!-- Content -->
@@ -557,8 +564,15 @@
 					<?php foreach ($products as $product) { ?>
 						<!-- Check if product is already in wishlist -->
 						<?php 
-							$in_compare = in_array($product['product_id'], $this->session->data['compare']);
-							$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
+							$in_compare = 
+								isset($this->session->data['compare']) 
+								? in_array($product['product_id'], $this->session->data['compare']) 
+								: false;
+
+							$in_wishlist = 
+								isset($this->session->data['wishlist']) 
+								? in_array($product['product_id'], $this->session->data['wishlist']) 
+								: false;
 						?>
 
 						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
@@ -705,8 +719,15 @@
 											<!-- Wishlist btn -->
 											<!-- Check if product is already in wishlist -->
 											<?php 
-												$in_compare = in_array($product['product_id'], $this->session->data['compare']);
-												$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
+												$in_compare = 
+													isset($this->session->data['compare']) 
+													? in_array($product['product_id'], $this->session->data['compare']) 
+													: false;
+
+												$in_wishlist = 
+													isset($this->session->data['wishlist']) 
+													? in_array($product['product_id'], $this->session->data['wishlist']) 
+													: false;
 											?>
 
 											<div class="buttons pull-left w">

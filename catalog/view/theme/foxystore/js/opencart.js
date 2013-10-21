@@ -1,6 +1,7 @@
 var addToCart, addToWishList, addToCompare;
 
 $(document).ready(function () {
+
 	addToCart = function (product_id, quantity) {
 		quantity = typeof(quantity) != 'undefined' ? quantity : 1;
 
@@ -45,6 +46,25 @@ $(document).ready(function () {
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
+
+				// Add to local var
+				var count = 0,
+					curCount = 0,
+					curIndex = 0;
+
+				// Get total size
+				$.each(products.wish_list, function (index, obj) { count++; });
+
+				// Get last index
+				$.each(products.wish_list, function (index, obj) {
+					if (++curCount >= count)
+					{
+						curIndex = index;
+					}
+				});
+
+				// Add new product_id to list
+				products.wish_list[++curIndex] = product_id;
 			}
 		});
 	};
@@ -59,6 +79,14 @@ $(document).ready(function () {
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
+
+				// Remove product_if from list
+				$.each(products.wish_list, function (index, obj) {
+					if (product_id == obj)
+					{
+						delete products.wish_list[index];
+					}
+				});
 			}
 		});
 	}
@@ -73,6 +101,25 @@ $(document).ready(function () {
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
+
+				// Add to local var
+				var count = 0,
+					curCount = 0,
+					curIndex = 0;
+
+				// Get total size
+				$.each(products.compare_list, function (index, obj) { count++; });
+
+				// Get last index
+				$.each(products.compare_list, function (index, obj) {
+					if (++curCount >= count)
+					{
+						curIndex = index;
+					}
+				});
+
+				// Add new product_id to list
+				products.compare_list[++curIndex] = product_id;
 			}
 		});
 	};
@@ -87,6 +134,14 @@ $(document).ready(function () {
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
+
+				// Remove product_if from list
+				$.each(products.compare_list, function (index, obj) {
+					if (product_id == obj)
+					{
+						delete products.compare_list[index];
+					}
+				});
 			}
 		});
 	};

@@ -1,6 +1,6 @@
 <div class="mini-cart pull-right">
 	<span><?php echo $text_items; ?></span>
-	<a href="#" class="btn btn-default btn-md">
+	<a href="<?php echo $cart; ?>" class="btn btn-default btn-md">
 		<span class="glyphicon glyphicon-shopping-cart"></span>
 	</a>
 

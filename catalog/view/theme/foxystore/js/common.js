@@ -26,14 +26,13 @@ $(document).ready(function () {
 	// Open quick view popup
 	window.bindQuickView = function (e) {
 		var content = $(this).parent().parent().find('.quick-product-info');
-
+console.log(content);
 		$.fancybox.open({
 			content    : content,
 			type	   : 'ajax',
 			padding    : 30,
 			width      : 870,
 			autoHeight : true,
-			
 			autoSize   : false,
 			fitToView  : true
 		});
@@ -144,12 +143,13 @@ $(document).ready(function () {
 
 	// Style form radio btn
 	$('input[type=radio]').on('change', function () {
-			var $this = $(this),
-					name = $this.attr('name'),
-					form  = $this.closest('form');
+		var $this = $(this),
+			name = $this.attr('name'),
+			form  = $this.closest('form');
 
-			form.find('input[name="' + name + '"]').parent().removeClass('checked');
-			form.find('input[name="' + name + '"]:checked').parent().addClass('checked');
+		form.find('input[name="' + name + '"]').parent().removeClass('checked');
+		form.find('input[name="' + name + '"]:checked').parent().addClass('checked');
+		console.log(form.find('input[name="' + name + '"]:checked'));
 	});
 
 
@@ -210,7 +210,7 @@ $(document).ready(function () {
 	$('select').selectpicker();
 
 	// Remove product from mini ajax cart
-	$('.cart-popup a.close').on('click', function (e) {
+	$('.cart-popup a.close, table.cart tr td.count .close-holder .close').on('click', function (e) {
 		var $this = $(this),
 			productKey = $this.data('product-key');
 
@@ -238,6 +238,7 @@ $(document).ready(function () {
 				{
 					addToWishList(productId);
 				}
+
 
 				// Toggle active class
 				$('.product-preview-block-' + productId + ', ' + '.product-preview-block-popup-' + productId)
@@ -311,12 +312,15 @@ $(document).ready(function () {
 		}
 
 		// Search for productId
-		$.each(list, function (index, obj) {
-			if (productId == obj)
-			{
-				inList = true;
-			}
-		});
+		if (list)
+		{
+			$.each(list, function (index, obj) {
+				if (productId == obj)
+				{
+					inList = true;
+				}
+			});
+		}
 
 		if (inList)
 		{
@@ -447,7 +451,7 @@ $(document).ready(function () {
 	});
 
 	window.init = function () {
-		$('.quick-view-btn').on('click', bindQuickView);
+		$('.quick-view-btn').off().on('click', bindQuickView);
 		bindActionBtns();
 		bindInputTypeNumber();
 	};

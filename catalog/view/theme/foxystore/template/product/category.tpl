@@ -100,8 +100,15 @@
 					<?php foreach ($products as $product) { ?>
 						<!-- Check if product is already in wishlist -->
 						<?php 
-							$in_compare = in_array($product['product_id'], $this->session->data['compare']);
-							$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
+							$in_compare = 
+								isset($this->session->data['compare']) 
+								? in_array($product['product_id'], $this->session->data['compare']) 
+								: false;
+
+							$in_wishlist = 
+								isset($this->session->data['wishlist']) 
+								? in_array($product['product_id'], $this->session->data['wishlist']) 
+								: false;
 						?>
 
 						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
@@ -248,8 +255,15 @@
 											<!-- Wishlist btn -->
 											<!-- Check if product is already in wishlist -->
 											<?php 
-												$in_compare = in_array($product['product_id'], $this->session->data['compare']);
-												$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
+												$in_compare = 
+													isset($this->session->data['compare']) 
+													? in_array($product['product_id'], $this->session->data['compare']) 
+													: false;
+
+												$in_wishlist = 
+													isset($this->session->data['wishlist']) 
+													? in_array($product['product_id'], $this->session->data['wishlist']) 
+													: false;
 											?>
 
 											<div class="buttons pull-left w">
@@ -451,39 +465,12 @@
 								</div>
 							</div>
 
-							<!-- Wishlist btn -->
-							<!-- Check if product is already in wishlist -->
-							<?php 
-								$in_compare = in_array($product['product_id'], $this->session->data['compare']);
-								$in_wishlist = in_array($product['product_id'], $this->session->data['wishlist']);
-							?>
-
 							<div class="buttons pull-left w">
 								<!-- Compare btn -->
-								<?php if ($in_compare): ?>
-									<a href="#" data-product-id="{{product_id}}" class="compare active action-button btn btn-grey col-xs-12 col-sm-4">
-										<span class="glyphicon glyphicon-stats"></span>
-										<?php echo $button_compare; ?>
-									</a>
-								<?php else: ?>
-									<a href="#" data-product-id="{{product_id}}" class="compare action-button btn btn-grey col-xs-12 col-sm-4">
-										<span class="glyphicon glyphicon-stats"></span>
-									<?php echo $button_compare; ?>
-									</a>
-								<?php endif ?>
+								{{#in_list product_id 'compare' '<?php echo $button_compare; ?>'}}{{/in_list}}
 
 								<!-- Wishlist btn -->
-								<?php if ($in_wishlist): ?>
-									<a href="#" data-product-id="{{product_id}}" class="active fav action-button btn btn-grey col-xs-12 col-sm-4">
-										<span class="glyphicon glyphicon-heart"></span>
-										<?php echo $button_wishlist; ?>
-									</a>
-								<?php else: ?>
-									<a href="#" data-product-id="{{product_id}}" class="fav action-button btn btn-grey col-xs-12 col-sm-4">
-										<span class="glyphicon glyphicon-heart"></span>
-										<?php echo $button_wishlist; ?>
-									</a>
-								<?php endif ?>
+								{{#in_list product_id 'fav' '<?php echo $button_wishlist; ?>'}}{{/in_list}}
 							</div>
 						</div>
 					</div>
@@ -498,8 +485,15 @@
 	var products = {};
 
 	products.products = <?php echo json_encode($products); ?>;
-	products.compare_list = <?php echo json_encode($this->session->data['compare']); ?>;
-	products.wish_list = <?php echo json_encode($this->session->data['wishlist']); ?>;
+
+	<?php if (isset($this->session->data['compare'])): ?>
+		products.compare_list = <?php echo json_encode($this->session->data['compare']); ?>;
+	<?php endif; ?>
+
+	<?php if (isset($this->session->data['wishlist'])): ?>
+		products.wish_list = <?php echo json_encode($this->session->data['wishlist']); ?>;
+	<?php endif; ?>
+	
 
 	window.products = products;
 </script>

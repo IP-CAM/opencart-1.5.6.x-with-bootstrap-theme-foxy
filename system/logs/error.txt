@@ -594,3 +594,339 @@
 2013-10-19 18:06:08 - PHP Notice:  Undefined index: wish in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 522
 2013-10-19 18:06:12 - PHP Notice:  Undefined index: wish in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 522
 2013-10-19 18:06:14 - PHP Notice:  Undefined index: wish in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 522
+2013-10-21 11:15:56 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 7
+2013-10-21 11:16:18 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 9
+2013-10-21 11:28:23 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 9
+2013-10-21 11:29:01 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 9
+2013-10-21 11:29:12 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 9
+2013-10-21 11:29:12 - PHP Notice:  Undefined variable: product_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 9
+2013-10-21 13:24:29 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_address.tpl on line 94
+2013-10-21 13:25:39 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_address.tpl on line 94
+2013-10-21 13:26:33 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_address.tpl on line 94
+2013-10-21 13:28:03 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_address.tpl on line 94
+2013-10-21 13:31:55 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_address.tpl on line 94
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 104
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 252
+2013-10-21 13:40:09 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 475
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:26 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 482
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:42:56 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 482
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 110
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:43:14 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 482
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 259
+2013-10-21 13:44:07 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 482
+2013-10-21 13:50:40 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 8
+2013-10-21 13:50:40 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 8
+2013-10-21 13:50:40 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 561
+2013-10-21 13:50:40 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 561
+2013-10-21 13:50:40 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 709
+2013-10-21 13:50:40 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 709
+2013-10-21 13:50:40 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 561
+2013-10-21 13:50:40 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 561
+2013-10-21 13:50:40 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 709
+2013-10-21 13:50:40 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 709
+2013-10-21 13:52:15 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 9
+2013-10-21 13:52:15 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:15 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:15 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:15 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:39 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:39 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:39 - PHP Notice:  Undefined index: wishlist in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:52:39 - PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\product.tpl on line 568
+2013-10-21 13:54:07 - PHP Notice:  Undefined variable: account in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\checkout.tpl on line 20
+2013-10-21 13:54:08 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 13:54:42 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 13:54:52 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 13:54:58 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 13:55:52 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 14:02:44 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 14:04:33 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 14:05:16 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 14:16:07 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 39
+2013-10-21 14:17:45 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 44
+2013-10-21 14:18:00 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 34
+2013-10-21 14:18:10 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 44
+2013-10-21 14:18:45 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 43
+2013-10-21 14:19:45 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 47
+2013-10-21 14:19:59 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 47
+2013-10-21 14:21:57 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:23:49 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:24:01 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:27:20 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:27:55 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:31:33 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:33:44 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:37:55 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:39:47 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:39:59 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:40:40 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:43:37 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:54:14 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:57:04 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 14:57:07 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:01:26 - PHP Notice:  Undefined variable: entry_shipping in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\payment_method.tpl on line 38
+2013-10-21 16:11:06 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:11:54 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:12:55 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:14:26 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:16:04 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:17:16 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:18:43 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:19:53 - PHP Notice:  Undefined index: company_id in C:\xampp2\sites\opencart.dev\www\catalog\model\account\customer.php on line 18
+2013-10-21 16:19:53 - PHP Notice:  Undefined index: tax_id in C:\xampp2\sites\opencart.dev\www\catalog\model\account\customer.php on line 18
+2013-10-21 16:22:19 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:23:45 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:26:25 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 16:27:02 - PHP Notice:  Undefined index: company_id in C:\xampp2\sites\opencart.dev\www\catalog\controller\checkout\guest.php on line 269
+2013-10-21 16:27:02 - PHP Notice:  Undefined index: tax_id in C:\xampp2\sites\opencart.dev\www\catalog\controller\checkout\guest.php on line 270
+2013-10-21 16:51:54 - PHP Notice:  Undefined index: id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\shipping_method.tpl on line 18
+2013-10-21 16:51:54 - PHP Notice:  Undefined index: id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\shipping_method.tpl on line 19
+2013-10-21 16:51:54 - PHP Notice:  Undefined index: id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\shipping_method.tpl on line 18
+2013-10-21 16:51:54 - PHP Notice:  Undefined index: id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\shipping_method.tpl on line 19
+2013-10-21 17:02:42 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:04:24 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:04:41 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:06:41 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:06:56 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:31:57 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:33:07 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:33:13 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:33:46 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:37:01 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:38:21 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:39:02 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:41:59 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 31
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_status in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 32
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 33
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 34
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_customer in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 35
+2013-10-21 17:44:36 - PHP Notice:  Undefined variable: column_total in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 36
+2013-10-21 17:49:57 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\download.tpl on line 30
+2013-10-21 17:49:57 - PHP Notice:  Undefined variable: column_name in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\download.tpl on line 31
+2013-10-21 17:49:57 - PHP Notice:  Undefined variable: column_size in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\download.tpl on line 32
+2013-10-21 17:49:57 - PHP Notice:  Undefined variable: column_remaining in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\download.tpl on line 33
+2013-10-21 17:49:57 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\download.tpl on line 34
+2013-10-21 17:52:14 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:54:04 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:54:33 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:54:46 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:55:07 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:55:14 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:55:43 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:56:07 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 17:59:39 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 18:00:14 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49
+2013-10-21 18:00:33 - PHP Notice:  Undefined variable: text_loading in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\login.tpl on line 49

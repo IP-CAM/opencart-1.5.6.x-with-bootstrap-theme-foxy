@@ -1,41 +1,54 @@
 <?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
+<div class="alert alert-warning"><i class="icon-exclamation-sign"></i> <?php echo $error_warning; ?></div>
 <?php } ?>
 <?php if ($shipping_methods) { ?>
 <p><?php echo $text_shipping_method; ?></p>
-<table class="radio">
-  <?php foreach ($shipping_methods as $shipping_method) { ?>
-  <tr>
-    <td colspan="3"><b><?php echo $shipping_method['title']; ?></b></td>
-  </tr>
-  <?php if (!$shipping_method['error']) { ?>
-  <?php foreach ($shipping_method['quote'] as $quote) { ?>
-  <tr class="highlight">
-    <td><?php if ($quote['code'] == $code || !$code) { ?>
-      <?php $code = $quote['code']; ?>
-      <input type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>" id="<?php echo $quote['code']; ?>" checked="checked" />
-      <?php } else { ?>
-      <input type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>" id="<?php echo $quote['code']; ?>" />
-      <?php } ?></td>
-    <td><label for="<?php echo $quote['code']; ?>"><?php echo $quote['title']; ?></label></td>
-    <td style="text-align: right;"><label for="<?php echo $quote['code']; ?>"><?php echo $quote['text']; ?></label></td>
-  </tr>
-  <?php } ?>
+<?php $count = 0;  ?>
+<form>
+<?php foreach ($shipping_methods as $shipping_method) { ?>
+<div class="pull-left delivery-title" title="<?php echo $shipping_method['title']; ?>"><strong><?php echo $shipping_method['title']; ?></strong></div>
+<?php if (!$shipping_method['error']) { ?>
+<?php foreach ($shipping_method['quote'] as $quote) { ?>
+<?php $count++;  ?>
+<div class="radio">
+  <?php if ($quote['code'] == $code || !$code) { ?>
+  <?php $code = $quote['code']; ?>
+  <label for="shipping_method-<?php echo $count; ?>" class="checked">
+    <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" checked="checked" />
+    <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
+  </label>
   <?php } else { ?>
-  <tr>
-    <td colspan="3"><div class="error"><?php echo $shipping_method['error']; ?></div></td>
-  </tr>
+  <label for="shipping_method-<?php echo $count; ?>">
+    <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" />
+    <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
+  </label>
   <?php } ?>
-  <?php } ?>
-</table>
-<br />
+</div>
 <?php } ?>
-<b><?php echo $text_comments; ?></b>
-<textarea name="comment" rows="8" style="width: 98%;"><?php echo $comment; ?></textarea>
-<br />
-<br />
+<?php } else { ?>
+<div class="alert alert-danger"><?php echo $shipping_method['error']; ?></div>
+<?php } ?>
+<?php } ?>
+</form>
+<?php } ?>
+<p><strong><?php echo $text_comments; ?></strong></p>
+<p>
+  <textarea name="comment" rows="8" class="form-control"><?php echo $comment; ?></textarea>
+</p>
 <div class="buttons">
-  <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="button" />
+  <div class="pull-right w">
+    <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="btn btn-primary" />
   </div>
 </div>
+<script type="text/javascript">$('select').selectpicker();</script>
+<script type="text/javascript">
+  // Style form radio btn
+  $('input[type=radio]').on('change', function () {
+    var $this = $(this),
+      name = $this.attr('name'),
+      form  = $this.closest('form');
+
+    form.find('input[name="' + name + '"]').parent().removeClass('checked');
+    form.find('input[name="' + name + '"]:checked').parent().addClass('checked');
+  });
+</script>

@@ -138,6 +138,7 @@ input[type='radio'] {
 	font-size: 14px;
 	display: block;
 	height: 20px;
+	white-space: normal;
 }
 .radio label:hover{
 	background: url('../../img/radio-tile.png') no-repeat 0 -60px;
@@ -207,6 +208,9 @@ input[type='radio'] {
 	background: #fff;
 	font-size: 13px;
 	color: #a9a9a9;
+}
+.btn-grey .glyphicon {
+	margin-right: 4px;
 }
 .btn-darkgrey,
 .btn-darkgrey:hover {
@@ -891,12 +895,11 @@ h4.sidebar-heading {
 	.options #captcha {
 		margin-left: -15px;
 	}
-	.catalog-list .price-container .glyphicon,
-	.catalog-list .title-container .glyphicon {
+	.catalog-list .glyphicon,
+	.catalog-list .glyphicon {
 		display: inline !important;
-	
 		margin-right: 4px;
-}
+	}
 }
 
 @media (max-width: 1200px) {
@@ -1033,6 +1036,9 @@ h4.sidebar-heading {
 	}
 	.catalog-list > div .img-holder .quick-view-btn {
 		margin-left: -59px !important;
+	}
+	.checkout #button-account {
+		margin-top: 22px !important;
 	}
 }
 
@@ -1190,6 +1196,43 @@ h4.sidebar-heading {
 	}
 	.catalog > div .btn-basket {
 		top: 0 !important;
+	}
+	table.cart tr.recurring td img {
+		display: none;
+	}
+	table.cart tr.recurring td {
+		font-size: 11px;
+	}
+	table.cart tr th {
+		font-size: 13px !important;
+	}
+	table.cart tr td.price {
+		white-space: nowrap;
+	}
+	.checkout .panel-default>.panel-heading {
+    	padding: 20px 0 0 10px !important;
+	}
+	.checkout .panel-body {
+    	padding: 0 10px 20px !important;	
+	}
+	.checkout #button-account {
+		margin: -5px 0 10px 0 !important;
+		width: 100%;
+	}
+	.checkout .checkout-customer-box {
+		overflow: hidden;
+	}
+	.checkout .checkout-login-box {
+		overflow: hidden;
+	}
+	#button-confirm, .checkout .btn-primary {
+		width: 100% !important;
+	}
+	.checkout .forgot-password {
+		margin-top: 10px !important;
+	}
+	.checkout input[type="text"], .checkout input[type="password"], .checkout input[type="number"], .checkout .bootstrap-select, .checkout input[type="email"] {
+		width: 100% !important;
 	}
 }
 
@@ -3108,6 +3151,7 @@ All this is done for any sub-level being entered.
 .cart-popup img {
 	float: left;
 	margin: 0px 0px 0 0px;
+	width: 70px;
 }
 .cart-popup .title {
 	padding-left: 12px;
@@ -3578,7 +3622,7 @@ table.cart tr td.price {
 }
 .cart-totals h6 span {
 	text-align: right;
-	min-width: 160px;
+	min-width: 145px;
 	color: #e67e22;
 	float: right;
 }
@@ -3787,4 +3831,102 @@ table.cart tr td.price {
 	background: #DE7F40;
 	color: #FFF;
 	font-size: 14px;
+}
+table.cart tr.recurring {
+	border-top: none;
+}
+.checkout-shipping-details {
+}
+.checkout-shipping-details tr td b {
+}
+.checkout-shipping-details td.radio {
+	text-align: left;
+	padding-left: 0;
+}
+
+
+/****** --- [ CHECKOUT ] --- ******/
+.checkout {
+}
+.checkout h2 {
+	font-size: 20px;
+}
+.checkout .radio,
+.checkout .checkbox{
+	padding-left: 0;
+}
+.checkout .btn-primary, #button-confirm {
+	border: none !important;
+	border-bottom: 2px solid #D35400 !important;
+	text-transform: uppercase;
+	height: auto !important;
+	border-radius: 4px;
+	padding: 10px 49px;
+	position: relative;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #FFF;
+	float: right;
+	background: #E67E22;
+	outline: none;
+}
+.checkout input[type="text"],
+.checkout input[type="password"],
+.checkout input[type="number"],
+.checkout .bootstrap-select,
+.checkout input[type="email"] {
+	border: 2px solid #BDC3C7 !important;
+	border-radius: 4px !important;
+	width: 205px;
+	display: block;
+}
+.checkout .form-group .control-label {
+	font-weight: 400;
+	color: #323232;
+}
+.checkout .forgot-password {
+	float: left;
+	margin: 40px 30px 0px 5px;
+}
+.checkout #button-account {
+	margin-top: 40px;
+}
+.checkout .panel-title>a {
+    font-size: 26px;
+    color: #323232;
+}
+.checkout .panel-default>.panel-heading {
+    padding: 20px 0px 0px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.checkout .panel-default>.panel-heading a {
+	font-weight: 600;
+}
+.checkout .panel-body {
+	padding: 0 30px 20px;
+}
+.checkout .panel-title {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+.checkout .form-horizontal .bootstrap-select .btn {
+	border: none !important;
+}
+.checkout .panel-group .panel+.panel {
+    margin-top: 12px;
+}
+#shipping-existing,
+#payment-existing {
+	margin: 20px 0px 15px 0px;
+}
+#collapse-shipping-method .panel-body .delivery-title {
+	float: left;
+	margin: 3px 10px 0px 0px;
+	width: 90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#checkoutContent {
+	padding: 0;
 }
