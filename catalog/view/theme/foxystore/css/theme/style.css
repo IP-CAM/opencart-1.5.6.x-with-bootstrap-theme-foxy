@@ -2677,6 +2677,15 @@ All this is done for any sub-level being entered.
 .review-form table {
 	margin-top: 28px;
 }
+.contact-page .options .review-form table tr td {
+	padding-bottom: 2px !important;
+}
+.contact-page .options .review-form table {
+	margin-top: 10px !important;
+}
+.contact-page .options .review-form .btn-darkgrey {
+	margin-top: 0 !important;
+}
 .options .review-form table tr td:first-child {
 	width: 165px;
 }
@@ -3628,9 +3637,18 @@ table.cart tr.recurring {
 }
 
 
+/****** --- [ SITEMAP ] --- ******/
+.sitemap ul {
+	margin: 5px 0;
+}
+.sitemap ul li {
+	margin: 0 0 !important;
+}
+
+
 @media (min-width: 1200px) {
 	.options #captcha {
-		margin-left: -15px;
+		margin-bottom: 10px;
 	}
 	.catalog-list .glyphicon,
 	.catalog-list .glyphicon {

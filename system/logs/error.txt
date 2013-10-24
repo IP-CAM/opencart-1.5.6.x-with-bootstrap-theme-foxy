@@ -1526,3 +1526,38 @@
 2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
 2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
 2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 37
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_status in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 38
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 39
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 40
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_customer in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 41
+2013-10-24 17:13:02 - PHP Notice:  Undefined variable: column_total in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 42
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 37
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_status in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 38
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 39
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 40
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_customer in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 41
+2013-10-24 17:13:05 - PHP Notice:  Undefined variable: column_total in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 42
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 37
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_status in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 38
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 39
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 40
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_customer in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 41
+2013-10-24 17:13:08 - PHP Notice:  Undefined variable: column_total in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 42
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_order_id in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 37
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_status in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 38
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_date_added in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 39
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 40
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_customer in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 41
+2013-10-24 17:13:10 - PHP Notice:  Undefined variable: column_total in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\account\order_list.tpl on line 42
+2013-10-24 17:39:52 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 186
+2013-10-24 17:40:06 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 185
+2013-10-24 17:43:41 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 99
+2013-10-24 17:43:41 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:44:15 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:46:04 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:46:22 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:47:12 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:47:14 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\checkout\cart.tpl on line 197
+2013-10-24 17:52:29 - PHP Notice:  Undefined variable: continue in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\information\sitemap.tpl on line 84
+2013-10-24 17:52:29 - PHP Notice:  Undefined variable: button_continue in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\information\sitemap.tpl on line 84

@@ -1,8 +1,17 @@
 <?php echo $header; ?>
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-4 col-sm-4"><?php echo $column_left; ?></div>
-		<div class="col-lg-9 col-md-8 col-sm-8 the-content options"><?php echo $content_top; ?>
+		<?php if (trim($column_left)): ?>
+			<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+				<?php echo $column_left; ?>
+			</div>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content options">
+		<?php elseif (trim($column_right)): ?>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content options">
+		<?php else: ?>
+			<div class="col-lg-12 the-content options">
+		<?php endif ?>
+
 			<div class="breadcrumb">
 				<?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
 					<?php if ($key == count($breadcrumbs) - 1): ?>
@@ -12,6 +21,7 @@
 					<?php endif ?>
 				<?php } ?>
 			</div>
+
 			<h1><?php echo $heading_title; ?></h1>
 			<p><?php echo $text_account_already; ?></p>
 			<?php if ($error_warning) { ?>
@@ -271,8 +281,13 @@
 				</div>
 				<?php } ?>
 			</form>
-			<?php echo $content_bottom; ?></div>
-		<?php echo $column_right; ?></div>
+			</div>
+			<?php if (trim($column_right) AND ! trim($column_left)): ?>
+			<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+				<?php echo $column_right; ?>
+			</div>
+		<?php endif ?>
+		</div>
 </div>
 <script type="text/javascript"><!--
 $('input[name=\'customer_group_id\']:checked').change(function() {

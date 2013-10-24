@@ -303,9 +303,9 @@
 </div>
 
 
-<script type="template/x-handlebars" id="product-list-view">
+<script type="template/x-handlebars" id="product-list-view" id="products-list-container">
 <?php if ( ! trim($column_left) AND ! trim($column_right)): ?>
-	<div class="row catalog-list catalog-list-large">
+	<div class="row catalog-list catalog-list-large" id="products-list-container">
 <?php else: ?>
 	<div class="row catalog-list">
 <?php endif ?>

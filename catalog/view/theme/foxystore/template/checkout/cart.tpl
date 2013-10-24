@@ -83,17 +83,28 @@
 								<?php echo $product['total'] ?>
 							</td>
 						</tr>
-						<?php foreach ($vouchers as $vouchers) { ?>
-							<tr>
-								<td class="image"></td>
-								<td class="name"><?php echo $vouchers['description']; ?></td>
-								<td class="model"></td>
-								<td class="quantity"><input type="text" name="" value="1" size="1" disabled="disabled" />
-								&nbsp;<a href="<?php echo $vouchers['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
-								<td class="price"><?php echo $vouchers['amount']; ?></td>
-								<td class="total"><?php echo $vouchers['amount']; ?></td>
-							</tr>
-						<?php } ?>
+					<?php } ?>
+					<?php foreach ($vouchers as $vouchers) { ?>
+						<tr>
+							<td class="info">
+								<?php echo $vouchers['description']; ?>
+							</td>
+							<td class="model hidden-xs"></td>
+							<td class="count">
+								<div class="input-type-number">
+									<input type="text" name="" value="1" min="1" class="number" disabled="disabled">
+									<a href="#" class="up hidden-xs" data-num="1"></a>
+									<a href="#" class="down hidden-xs" data-num="-1"></a>
+								</div>
+								<a href="<?php echo $vouchers['remove']; ?>" title="<?php echo $button_remove; ?>" data-toggle="tooltip" data-placement="left" class="close-holder tooltiped"><span class="close" data-product-key="<?php echo $product['key'] ?>">&times;</span></a>
+							</td>
+							<td class="price hidden-sm hidden-xs">
+								<?php echo $vouchers['amount']; ?>
+							</td>
+							<td class="price">
+								<?php echo $vouchers['amount']; ?>
+							</td>
+						</tr>
 					<?php } ?>
 				</table>
 			</form>
@@ -242,8 +253,8 @@
 			</div>
 
 			<div class="cart-actions pull-left w">
-				<a href="<?php echo $checkout; ?>" class="btn btn-basket pull-left"><?php echo $button_checkout ?></a>
-				<a href="<?php echo $checkout; ?>" class="btn btn-basket pull-right"><?php echo $button_shopping ?></a>
+				<a href="<?php echo $continue; ?>" class="btn btn-basket pull-left"><?php echo $button_shopping ?></a>
+				<a href="<?php echo $checkout; ?>" class="btn btn-basket pull-right"><?php echo $button_checkout ?></a>
 			</div>
 
 
