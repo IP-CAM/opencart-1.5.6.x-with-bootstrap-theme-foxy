@@ -18,10 +18,17 @@
 <!-- Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-4 col-sm-4">
-			<?php echo $column_left; ?>
-		</div>
-		<div class="product-preview-block-<?php echo $product_id; ?> col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php if (trim($column_left)): ?>
+			<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+				<?php echo $column_left; ?>
+			</div>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php elseif (trim($column_right)): ?>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php else: ?>
+			<div class="col-lg-12 the-content">
+		<?php endif ?>
+
 			<div class="row product-info">
 				<div class="col-lg-6">
 
@@ -575,7 +582,12 @@
 								: false;
 						?>
 
-						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
+						<?php if ( ! trim($column_left) AND ! trim($column_right)): ?>
+							<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-3 col-md-4 col-sm-4">
+						<?php else: ?>
+							<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
+						<?php endif ?>
+
 							<div class="img-holder">
 								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
 								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
@@ -624,6 +636,7 @@
 											<?php if ($product['images']) { ?>
 												<div class="quick-prouct-image-lg-<?php echo $product['product_id']; ?> quick-prouct-image-lg prouct-image-lg">
 													<div class="quick-prouct-image-lg-id">
+														<a href="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
 														<?php foreach ($product['images'] as $product_image) { ?>
 															<a href="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
 														<?php } ?>

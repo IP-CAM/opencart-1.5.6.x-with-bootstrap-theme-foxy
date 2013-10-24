@@ -306,6 +306,12 @@ class ControllerProductCategory extends Controller {
 						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')))
 					);
 				}
+
+				if ($result['image']) {
+					$popup = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+				} else {
+					$popup = false;
+				}
 								
 				$this->data['products'][] = array(
 					'product_id'  			 => $result['product_id'],
@@ -320,6 +326,7 @@ class ControllerProductCategory extends Controller {
 					'href'        			 => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url),
 					
 					'images'      			 => $product_images,
+					'popup'      			 => $popup,
 					'minimum'      			 => $minimum,
 					'model'			         => $product_info['model'],
 					'reward'		         => $product_info['reward'],

@@ -167,6 +167,7 @@
                         <div class="quick-prouct-image-lg-<?php echo $product['product_id']; ?> quick-prouct-image-lg prouct-image-lg">
                           <div class="quick-prouct-image-lg-id">
                             <?php foreach ($product['images'] as $product_image) { ?>
+                              <a href="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
                               <a href="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
                             <?php } ?>
                           </div>

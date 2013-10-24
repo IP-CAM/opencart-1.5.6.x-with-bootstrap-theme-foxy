@@ -471,6 +471,12 @@ class ControllerProductProduct extends Controller {
 				} else {
 					$tax = false;
 				}
+
+				if ($result['image']) {
+					$popup = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+				} else {
+					$popup = false;
+				}
 							
 				$this->data['products'][] = array(
 					'product_id' => $result['product_id'],
@@ -483,6 +489,7 @@ class ControllerProductProduct extends Controller {
 					'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id']),
 
 					'images'      			 => $product_images,
+					'popup'      			 => $popup,
 					'minimum'      			 => $minimum,
 					'model'			         => $related_info['model'],
 					'tax'			         => $tax,

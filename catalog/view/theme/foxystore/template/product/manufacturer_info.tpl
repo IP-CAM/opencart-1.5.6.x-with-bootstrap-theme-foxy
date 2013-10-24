@@ -140,6 +140,7 @@
 											<?php if ($product['images']) { ?>
 												<div class="quick-prouct-image-lg-<?php echo $product['product_id']; ?> quick-prouct-image-lg prouct-image-lg">
 													<div class="quick-prouct-image-lg-id">
+														<a href="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
 														<?php foreach ($product['images'] as $product_image) { ?>
 															<a href="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $product_image['popup']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
 														<?php } ?>
@@ -364,6 +365,7 @@
 							{{#if images}}
 								<div class="quick-prouct-image-lg-{{product_id}} quick-prouct-image-lg prouct-image-lg">
 									<div class="quick-prouct-image-lg-id">
+										<a href="{{escape popup}}"><img src="{{escape popup}}" /></a>
 										{{#each images}}
 											<a href="{{escape popup}}"><img src="{{escape popup}}" /></a>
 										{{/each}}

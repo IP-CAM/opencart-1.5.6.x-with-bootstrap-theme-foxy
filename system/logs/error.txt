@@ -1514,3 +1514,15 @@
 2013-10-24 16:18:33 - PHP Notice:  Undefined variable: products in C:\xampp2\sites\opencart.dev\www\catalog\controller\product\search.php on line 662
 2013-10-24 16:20:10 - PHP Notice:  Undefined variable: products in C:\xampp2\sites\opencart.dev\www\catalog\controller\product\search.php on line 662
 2013-10-24 16:20:21 - PHP Notice:  Undefined variable: products in C:\xampp2\sites\opencart.dev\www\catalog\controller\product\search.php on line 662
+2013-10-24 16:40:59 - PHP Notice:  Undefined variable: thumb in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 32
+2013-10-24 16:40:59 - PHP Notice:  Undefined variable: description in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 32
+2013-10-24 16:40:59 - PHP Notice:  Undefined variable: categories in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 44
+2013-10-24 16:40:59 - PHP Notice:  Undefined variable: categories in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 321
+2013-10-24 16:43:11 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:11 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:46 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:46 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143
+2013-10-24 16:43:59 - PHP Notice:  Undefined index: popup in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\special.tpl on line 143

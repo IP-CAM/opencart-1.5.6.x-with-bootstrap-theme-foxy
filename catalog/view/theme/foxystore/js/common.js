@@ -51,8 +51,7 @@ $(document).ready(function () {
 			items       : {
 				visible : 1,
 				width   : 300,
-				height  : 300,
-				start   : 2
+				height  : 300
 			},
 			auto		  : true,
 			swipe		  : {
