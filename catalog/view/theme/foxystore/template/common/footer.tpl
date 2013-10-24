@@ -114,6 +114,32 @@
 	<script src="/catalog/view/theme/foxystore/js/common.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/opencart.js"></script>
 
+	<script type="template/x-handlebars" id="quick-search">
+		{{#if products}}
+			<ul class="featured">
+				{{#each products}}
+					<li>
+						<img src="{{escape thumb}}">
+						<a href="{{escape href}}">{{name}}</a>
+
+						{{#if special}}
+							<span class="price">
+								{{special}}
+								<span class="price-old">{{price}}</span>
+							</span>
+						{{else}}
+							<span class="price">{{price}}</span>
+						{{/if}}
+					</li>
+				{{/each}}
+			</ul>
+
+			<a href="{{escape all}}" class="static more">See all results</a>
+		{{else}}
+			<h5>{{error}}</h5>
+		{{/if}}
+	</script>
+
 </body>
 
 </html>

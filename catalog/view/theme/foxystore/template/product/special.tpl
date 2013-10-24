@@ -110,7 +110,7 @@ function display(view) {
 		
 		$('.display').html('<b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
 		
-		$.totalStorage('display', 'list'); 
+		$.totalStorage('display', 'list');
 	} else {
 		$('.product-list').attr('class', 'product-grid');
 		

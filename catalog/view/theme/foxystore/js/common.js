@@ -26,7 +26,7 @@ $(document).ready(function () {
 	// Open quick view popup
 	window.bindQuickView = function (e) {
 		var content = $(this).parent().parent().find('.quick-product-info');
-console.log(content);
+
 		$.fancybox.open({
 			content    : content,
 			type	   : 'ajax',
@@ -123,6 +123,78 @@ console.log(content);
 		}
 	});
 
+	// Search
+	$('#header input[type=\'submit\'].btn').bind('click', function(e) {
+		url = $('base').attr('href') + 'index.php?route=product/search';
+
+		var search = $('#header input[name=\'search\']').val();
+
+		if (search) {
+			url += '&search=' + encodeURIComponent(search);
+		}
+
+		location = url;
+
+		e.preventDefault();
+	});
+
+	
+	var timer;
+	
+	$('#header input[name=\'search\']').bind('keyup', function(e) {
+		var inputBtn = $('#header input[type=\'submit\'].btn'),
+			inputValue = $('#header input[name=\'search\']').val(),
+			tmp = Handlebars.compile($('#quick-search').html());
+
+		clearTimeout(timer);
+
+		timer = setTimeout(function () {
+			if (inputValue != '')
+			{
+				inputBtn.addClass('loading');
+
+				$.ajax({
+					url: "/index.php?route=product/search/preview",
+					data: {
+						search: inputValue,
+						limit: 5
+					},
+					dataType: 'json',
+					success: function (resp) {
+						var html = tmp(resp);
+
+						inputBtn.removeClass('loading');
+						$('.navbar form[role="search"] .search-popup').html(html).slideDown();
+					},
+					error: function (resp) {
+						var html = tmp(resp);
+
+						inputBtn.removeClass('loading');
+						$('.navbar form[role="search"] .search-popup').html(html).slideDown();
+					}
+				});
+			}
+			else
+			{
+				$('.navbar form[role="search"] .search-popup').slideUp();
+			}
+		}, 500);
+
+		if (e.keyCode == 13) {
+			var url = $('base').attr('href') + 'index.php?route=product/search';
+
+			var search = inputValue;
+
+			if (search) {
+				url += '&search=' + encodeURIComponent(search);
+			}
+
+			location = url;
+
+			e.preventDefault();
+		}
+	});
+
 	// Open sidebar categories submenu
 	$('.nav.nav-sidebar > li > a > span').on('click', function (e) {
 		$(this).closest('li').children('ul').slideToggle();
@@ -155,7 +227,7 @@ console.log(content);
 
 	// Style form checkboxes
 	$('input[type=checkbox]').on('change', function () {
-			$(this).parent().toggleClass('checked');
+		$(this).parent().toggleClass('checked');
 	});
 
 	// Set datetime picker
@@ -436,7 +508,12 @@ console.log(content);
 		$(this).animate({
 			width: 250
 		}, 200, function () {
-			$('.search-popup').slideDown()
+			var popup = $('.search-popup');
+
+			if (popup.find('ul').length)
+			{
+				popup.slideDown();
+			}
 		});
 	});
 

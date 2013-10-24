@@ -174,6 +174,27 @@ class ControllerProductManufacturer extends Controller {
 			$this->data['button_wishlist'] = $this->language->get('button_wishlist');
 			$this->data['button_compare'] = $this->language->get('button_compare');
 			$this->data['button_continue'] = $this->language->get('button_continue');
+
+			$this->language->load('product/product');
+
+			$this->data['text_select'] = $this->language->get('text_select');
+			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
+			$this->data['text_model'] = $this->language->get('text_model');
+			$this->data['text_reward'] = $this->language->get('text_reward');
+			$this->data['text_points'] = $this->language->get('text_points');	
+			$this->data['text_discount'] = $this->language->get('text_discount');
+			$this->data['text_stock'] = $this->language->get('text_stock');
+			$this->data['text_price'] = $this->language->get('text_price');
+			$this->data['text_tax'] = $this->language->get('text_tax');
+			$this->data['text_discount'] = $this->language->get('text_discount');
+			$this->data['text_option'] = $this->language->get('text_option');
+			$this->data['text_qty'] = $this->language->get('text_qty');
+			$this->data['text_or'] = $this->language->get('text_or');
+			$this->data['text_write'] = $this->language->get('text_write');
+			$this->data['text_note'] = $this->language->get('text_note');
+			$this->data['text_share'] = $this->language->get('text_share');
+			$this->data['text_wait'] = $this->language->get('text_wait');
+			$this->data['text_tags'] = $this->language->get('text_tags');
 			
 			$this->data['compare'] = $this->url->link('product/compare');
 			
@@ -221,6 +242,46 @@ class ControllerProductManufacturer extends Controller {
 				} else {
 					$rating = false;
 				}
+
+				// krevnyi
+				$this->load->model('catalog/product');
+		
+				$product_info = $this->model_catalog_product->getProduct($result['product_id']);
+
+				$images = $this->model_catalog_product->getProductImages($result['product_id']);
+				$product_images = array();
+			
+				foreach ($images as $image_item) {
+					$product_images[] = array(
+						'popup' => $this->model_tool_image->resize($image_item['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+						'thumb' => $this->model_tool_image->resize($image_item['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'))
+					);
+				}
+
+				if ($product_info['quantity'] <= 0) {
+					$stock = $product_info['stock_status'];
+				} elseif ($this->config->get('config_stock_display')) {
+					$stock = $product_info['quantity'];
+				} else {
+					$stock = $this->language->get('text_instock');
+				}
+
+				if ($product_info['minimum']) {
+					$minimum = $product_info['minimum'];
+				} else {
+					$minimum = 1;
+				}
+
+				$discounts_result = $this->model_catalog_product->getProductDiscounts($result['product_id']);
+			
+				$discounts = array(); 
+				
+				foreach ($discounts_result as $discount) {
+					$discounts[] = array(
+						'quantity' => $discount['quantity'],
+						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')))
+					);
+				}
 			
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
@@ -232,7 +293,17 @@ class ControllerProductManufacturer extends Controller {
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
-					'href'        => $this->url->link('product/product', '&manufacturer_id=' . $result['manufacturer_id'] . '&product_id=' . $result['product_id'] . $url)
+					'href'        => $this->url->link('product/product', '&manufacturer_id=' . $result['manufacturer_id'] . '&product_id=' . $result['product_id'] . $url),
+
+					'images'      			 => $product_images,
+					'minimum'      			 => $minimum,
+					'model'			         => $product_info['model'],
+					'reward'		         => $product_info['reward'],
+					'points'		         => $product_info['points'],
+					'manufacturer'	         => $product_info['manufacturer'],
+					'manufacturers'	         => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']),
+					'stock'	         		 => $stock,
+					'discounts'        		 => $discounts,
 				);
 			}
 					

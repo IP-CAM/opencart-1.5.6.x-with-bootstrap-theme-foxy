@@ -121,25 +121,10 @@
 						</ul>
 						<form class="navbar-form navbar-left pull-right hidden-sm hidden-xs" role="search">
 							<div class="form-group">
-								<input type="text" name="search" class="form-control search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
+								<input type="text" name="search" class="form-control search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" autocomplete="off" />
 							</div>
 							<input type="submit" class="btn btn-default" value="">
-							<div class="search-popup">
-								<ul class="featured">
-									<li>
-										<img src="img/content/product-featured-img-small.jpg">
-										<a href="#">Apple MacBook Air 13”</a>
-										<span class="price">$ 1,649.00</span>
-									</li>
-									<li>
-										<img src="img/content/product-featured-img-small.jpg">
-										<a href="#">Apple MacBook Air 13”</a>
-										<span class="price">$ 1,649.00</span>
-									</li>
-								</ul>
-
-								<a href="#" class="static">See all results</a>
-							</div>
+							<div class="search-popup"></div>
 						</form>
 					</div>
 

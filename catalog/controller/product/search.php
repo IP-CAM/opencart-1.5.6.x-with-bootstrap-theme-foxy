@@ -158,6 +158,27 @@ class ControllerProductSearch extends Controller {
 		$this->data['button_wishlist'] = $this->language->get('button_wishlist');
 		$this->data['button_compare'] = $this->language->get('button_compare');
 
+		$this->language->load('product/product');
+
+		$this->data['text_select'] = $this->language->get('text_select');
+		$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
+		$this->data['text_model'] = $this->language->get('text_model');
+		$this->data['text_reward'] = $this->language->get('text_reward');
+		$this->data['text_points'] = $this->language->get('text_points');	
+		$this->data['text_discount'] = $this->language->get('text_discount');
+		$this->data['text_stock'] = $this->language->get('text_stock');
+		$this->data['text_price'] = $this->language->get('text_price');
+		$this->data['text_tax'] = $this->language->get('text_tax');
+		$this->data['text_discount'] = $this->language->get('text_discount');
+		$this->data['text_option'] = $this->language->get('text_option');
+		$this->data['text_qty'] = $this->language->get('text_qty');
+		$this->data['text_or'] = $this->language->get('text_or');
+		$this->data['text_write'] = $this->language->get('text_write');
+		$this->data['text_note'] = $this->language->get('text_note');
+		$this->data['text_share'] = $this->language->get('text_share');
+		$this->data['text_wait'] = $this->language->get('text_wait');
+		$this->data['text_tags'] = $this->language->get('text_tags');
+
 		$this->data['compare'] = $this->url->link('product/compare');
 		
 		$this->load->model('catalog/category');
@@ -247,6 +268,46 @@ class ControllerProductSearch extends Controller {
 				} else {
 					$rating = false;
 				}
+
+				// krevnyi
+				$this->load->model('catalog/product');
+		
+				$product_info = $this->model_catalog_product->getProduct($result['product_id']);
+
+				$images = $this->model_catalog_product->getProductImages($result['product_id']);
+				$product_images = array();
+			
+				foreach ($images as $image_item) {
+					$product_images[] = array(
+						'popup' => $this->model_tool_image->resize($image_item['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+						'thumb' => $this->model_tool_image->resize($image_item['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'))
+					);
+				}
+
+				if ($product_info['quantity'] <= 0) {
+					$stock = $product_info['stock_status'];
+				} elseif ($this->config->get('config_stock_display')) {
+					$stock = $product_info['quantity'];
+				} else {
+					$stock = $this->language->get('text_instock');
+				}
+
+				if ($product_info['minimum']) {
+					$minimum = $product_info['minimum'];
+				} else {
+					$minimum = 1;
+				}
+
+				$discounts_result = $this->model_catalog_product->getProductDiscounts($result['product_id']);
+			
+				$discounts = array(); 
+				
+				foreach ($discounts_result as $discount) {
+					$discounts[] = array(
+						'quantity' => $discount['quantity'],
+						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')))
+					);
+				}
 			
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
@@ -258,7 +319,17 @@ class ControllerProductSearch extends Controller {
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
-					'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+					'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url),
+
+					'images'      			 => $product_images,
+					'minimum'      			 => $minimum,
+					'model'			         => $product_info['model'],
+					'reward'		         => $product_info['reward'],
+					'points'		         => $product_info['points'],
+					'manufacturer'	         => $product_info['manufacturer'],
+					'manufacturers'	         => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']),
+					'stock'	         		 => $stock,
+					'discounts'        		 => $discounts,
 				);
 			}
 					
@@ -459,6 +530,140 @@ class ControllerProductSearch extends Controller {
 		);
 				
 		$this->response->setOutput($this->render());
+  	}
+
+
+  	// krevnyi
+  	public function preview()
+  	{
+  		$this->language->load('product/search');
+
+  		$text_empty = $this->language->get('text_empty');
+
+  		if (isset($this->request->get['search'])) {
+			$search = $this->request->get['search'];
+		} else {
+			$search = '';
+		} 
+		
+		if (isset($this->request->get['tag'])) {
+			$tag = $this->request->get['tag'];
+		} elseif (isset($this->request->get['search'])) {
+			$tag = $this->request->get['search'];
+		} else {
+			$tag = '';
+		} 
+				
+		if (isset($this->request->get['description'])) {
+			$description = $this->request->get['description'];
+		} else {
+			$description = '';
+		} 
+				
+		if (isset($this->request->get['category_id'])) {
+			$category_id = $this->request->get['category_id'];
+		} else {
+			$category_id = 0;
+		} 
+		
+		if (isset($this->request->get['sub_category'])) {
+			$sub_category = $this->request->get['sub_category'];
+		} else {
+			$sub_category = '';
+		} 
+								
+		if (isset($this->request->get['sort'])) {
+			$sort = $this->request->get['sort'];
+		} else {
+			$sort = 'p.sort_order';
+		} 
+
+		if (isset($this->request->get['order'])) {
+			$order = $this->request->get['order'];
+		} else {
+			$order = 'ASC';
+		}
+  		
+		if (isset($this->request->get['page'])) {
+			$page = $this->request->get['page'];
+		} else {
+			$page = 1;
+		}
+				
+		if (isset($this->request->get['limit'])) {
+			$limit = $this->request->get['limit'];
+		} else {
+			$limit = $this->config->get('config_catalog_limit');
+		}
+
+		$data = array(
+			'filter_name'         => $search, 
+			'filter_tag'          => $tag, 
+			'filter_description'  => $description,
+			'filter_category_id'  => $category_id, 
+			'filter_sub_category' => $sub_category, 
+			'sort'                => $sort,
+			'order'               => $order,
+			'start'               => ($page - 1) * $limit,
+			'limit'               => $limit
+		);
+
+		$this->load->model('tool/image');
+		$this->load->model('catalog/product');
+
+		$results = $this->model_catalog_product->getProducts($data);
+		$products = array();
+
+		foreach ($results as $result) {
+			if ($result['image']) {
+				$image = $this->model_tool_image->resize($result['image'], 40, 40);
+			} else {
+				$image = false;
+			}
+			
+			if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+				$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+			} else {
+				$price = false;
+			}
+			
+			if ((float)$result['special']) {
+				$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			} else {
+				$special = false;
+			}	
+			
+			if ($this->config->get('config_tax')) {
+				$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price']);
+			} else {
+				$tax = false;
+			}				
+			
+			if ($this->config->get('config_review_status')) {
+				$rating = (int)$result['rating'];
+			} else {
+				$rating = false;
+			}
+
+			$products[] = array(
+				'product_id'  => $result['product_id'],
+				'thumb'       => $image,
+				'name'        => $result['name'],
+				'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 100) . '..',
+				'price'       => $price,
+				'special'     => $special,
+				'tax'         => $tax,
+				'rating'      => $result['rating'],
+				'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
+				'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+			);
+		}
+
+		$this->response->setOutput(json_encode(array(
+			'products' => $products,
+			'error'    => $text_empty,
+			'all'	   => $this->url->link('product/search', 'search=' . $search)
+		)));
   	}
 }
 ?>

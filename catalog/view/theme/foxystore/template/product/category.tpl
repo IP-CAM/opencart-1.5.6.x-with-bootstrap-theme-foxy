@@ -3,10 +3,16 @@
 <!-- Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
-			<?php echo $column_left; ?>
-		</div>
-		<div class="col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php if (trim($column_left)): ?>
+			<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+				<?php echo $column_left; ?>
+			</div>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php elseif (trim($column_right)): ?>
+			<div class="col-lg-9 col-md-8 col-sm-8 the-content">
+		<?php else: ?>
+			<div class="col-lg-12 the-content">
+		<?php endif ?>
 
 			<!-- Breadcrumbs -->
 			<div class="breadcrumb">
@@ -55,14 +61,14 @@
 			<!-- Catalog view -->
 			<div class="row catalog-view">
 				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-					<a href="#" id="catalog-grid-view" class="active">
+					<a href="#" id="catalog-grid-view" class="active hidden-xs">
 						<span class="glyphicon glyphicon-th-large"></span><?php echo $text_grid ?>
 					</a>
-					<a href="#" id="catalog-list-view">
+					<a href="#" id="catalog-list-view" class="hidden-xs">
 						<span class="glyphicon glyphicon-th-list"></span><?php echo $text_list; ?>
 					</a>
 
-					<a href="<?php echo $compare; ?>" class="pull-right hidden-xs"><?php echo $text_compare; ?></a>
+					<a href="<?php echo $compare; ?>" class="compare-link pull-right hidden-xs"><?php echo $text_compare; ?></a>
 				</div>
 				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
 					<div class="show-number">
@@ -111,7 +117,11 @@
 								: false;
 						?>
 
-						<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
+						<?php if ( ! trim($column_left) AND ! trim($column_right)): ?>
+							<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-3 col-md-4 col-sm-4">
+						<?php else: ?>
+							<div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-4 col-md-6 col-sm-6">
+						<?php endif ?>
 							<div class="img-holder">
 								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
 								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
@@ -313,12 +323,22 @@
 				<a href="<?php echo $continue; ?>" class="btn btn-basket pull-right"><?php echo $button_continue; ?></a>
 			<?php } ?>
 		</div>
+		<?php if (trim($column_right) AND ! trim($column_left)): ?>
+			<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+				<?php echo $column_right; ?>
+			</div>
+		<?php endif ?>
 	</div>
 </div>
 
 
 <script type="template/x-handlebars" id="product-list-view">
-<div class="row catalog-list">
+<?php if ( ! trim($column_left) AND ! trim($column_right)): ?>
+	<div class="row catalog-list catalog-list-large">
+<?php else: ?>
+	<div class="row catalog-list">
+<?php endif ?>
+
 	{{#each products}}
 		<div class="product-preview-block-{{product_id}} col-lg-12">
 			<!-- Image -->
