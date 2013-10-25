@@ -374,6 +374,9 @@ input[type='radio'] {
 	margin-right: 0;
 	margin-left: 0;
 }
+.catalog-module {
+	margin-bottom: 30px;
+}
 .catalog + .row h3{
 	margin-top: 0;
 }
