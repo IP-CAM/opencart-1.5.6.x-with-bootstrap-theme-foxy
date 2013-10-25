@@ -52,6 +52,9 @@ class ControllerModuleBestSeller extends Controller {
 			);
 		}
 
+		// krevnyi
+		$this->data['position'] = $setting['position'];
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/bestseller.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/bestseller.tpl';
 		} else {

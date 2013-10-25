@@ -57,6 +57,9 @@ class ControllerModuleSpecial extends Controller {
 				'reviews'    => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
 				'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id'])
 			);
+
+			// krevnyi
+			$this->data['position'] = $setting['position'];
 		}
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/special.tpl')) {

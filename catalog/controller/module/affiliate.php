@@ -1,6 +1,6 @@
 <?php  
 class ControllerModuleAffiliate extends Controller {
-	protected function index() {
+	protected function index($setting) {
 		$this->language->load('module/affiliate');
 		
     	$this->data['heading_title'] = $this->language->get('heading_title');
@@ -27,6 +27,9 @@ class ControllerModuleAffiliate extends Controller {
 		$this->data['payment'] = $this->url->link('affiliate/payment', '', 'SSL');
 		$this->data['tracking'] = $this->url->link('affiliate/tracking', '', 'SSL');
 		$this->data['transaction'] = $this->url->link('affiliate/transaction', '', 'SSL');
+
+		// krevnyi
+		$this->data['position'] = $setting['position'];
 		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/affiliate.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/affiliate.tpl';

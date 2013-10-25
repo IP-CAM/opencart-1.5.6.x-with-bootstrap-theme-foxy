@@ -137,20 +137,39 @@
           <div class="form-group required">
             <label class="col-sm-2 control-label"><?php echo $entry_opened; ?></label>
             <div class="col-sm-10">
-              <label class="radio-inline">
-                <?php if ($opened) { ?>
-                <input type="radio" name="opened" value="1" checked="checked" />
-                <?php } else { ?>
-                <input type="radio" name="opened" value="1" />
-                <?php } ?>
-                <?php echo $text_yes; ?></label>
-              <label class="radio-inline">
-                <?php if (!$opened) { ?>
-                <input type="radio" name="opened" value="0" checked="checked" />
-                <?php } else { ?>
-                <input type="radio" name="opened" value="0" />
-                <?php } ?>
-                <?php echo $text_no; ?></label>
+              
+              <?php if ($opened) { ?>
+                <div class="radio radio-inline">
+                  <label for="opened-1" class="checked">
+                    <input id="opened-1" type="radio" name="opened" value="1" checked="checked" />
+                    <?php echo $text_yes; ?>
+                  </label>
+                </div>
+              <?php } else { ?>
+                <div class="radio radio-inline">
+                  <label for="opened-2">
+                    <input id="opened-2" type="radio" name="opened" value="1" />
+                    <?php echo $text_yes; ?>
+                  </label>
+                </div>
+              <?php } ?>
+
+              <?php if (!$opened) { ?>
+                <div class="radio radio-inline">
+                  <label for="opened-3" class="checked">
+                    <input id="opened-3" type="radio" name="opened" value="0" checked="checked" />
+                    <?php echo $text_yes; ?>
+                  </label>
+                </div>
+              <?php } else { ?>
+                <div class="radio radio-inline">
+                  <label for="opened-4">
+                    <input id="opened-4" type="radio" name="opened" value="0" />
+                    <?php echo $text_yes; ?>
+                  </label>
+                </div>
+              <?php } ?>
+
             </div>
           </div>
           <div class="form-group">
@@ -163,7 +182,7 @@
             <label class="col-sm-2 control-label" for="input-captcha"><?php echo $entry_captcha; ?></label>
             <div class="col-sm-10">
               <input type="text" name="captcha" value="<?php echo $captcha; ?>" placeholder="<?php echo $entry_captcha; ?>" id="input-captcha" class="form-control" />
-              <img src="index.php?route=account/return/captcha" alt="" />
+              <img src="index.php?route=account/return/captcha" alt="" class="captcha" />
               <?php if ($error_captcha) { ?>
               <div class="text-danger"><?php echo $error_captcha; ?></div>
               <?php } ?>

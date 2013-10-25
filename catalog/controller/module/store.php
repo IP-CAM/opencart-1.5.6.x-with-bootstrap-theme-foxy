@@ -1,6 +1,6 @@
 <?php   
 class ControllerModuleStore extends Controller {
-	protected function index() {
+	protected function index($setting) {
 		$status = true;
 		
 		if ($this->config->get('store_admin')) {
@@ -39,6 +39,9 @@ class ControllerModuleStore extends Controller {
 					'url'      => $result['url'] . 'index.php?route=common/home&session_id=' . $this->session->getId()
 				);
 			}
+
+			// krevnyi
+			$this->data['position'] = $setting['position'];
 	
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/store.tpl')) {
 				$this->template = $this->config->get('config_template') . '/template/module/store.tpl';

@@ -13,6 +13,9 @@ class ControllerModuleMenu extends Controller {
 		// Locat variables
 		$this->data['module'] = $module++;
 		$this->data['menu_code'] = $menu_code;
+
+		// krevnyi
+		$this->data['position'] = $setting['position'];
 		
 		// Render
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/menu.tpl')) {

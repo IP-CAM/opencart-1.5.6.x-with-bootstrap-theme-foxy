@@ -70,6 +70,9 @@ class ControllerModuleFilter extends Controller {
 						'filter'          => $filter_data
 					);
 				} 
+
+				// krevnyi
+				$this->data['position'] = $setting['position'];
 			
 				if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/filter.tpl')) {
 					$this->template = $this->config->get('config_template') . '/template/module/filter.tpl';

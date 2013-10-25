@@ -1,5 +1,7 @@
 <?php echo $header; ?>
 
+<?php echo $content_top; ?>
+
 <!-- Content -->
 <div class="container">
 	<div class="row">

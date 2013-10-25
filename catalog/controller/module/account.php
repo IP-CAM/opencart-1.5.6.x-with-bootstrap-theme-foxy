@@ -1,6 +1,6 @@
 <?php  
 class ControllerModuleAccount extends Controller {
-	protected function index() {
+	protected function index($setting) {
 		$this->language->load('module/account');
 		
     	$this->data['heading_title'] = $this->language->get('heading_title');
@@ -37,6 +37,9 @@ class ControllerModuleAccount extends Controller {
 		$this->data['transaction'] = $this->url->link('account/transaction', '', 'SSL');
 		$this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 		$this->data['recurring'] = $this->url->link('account/recurring', '', 'SSL');
+
+		// krevnyi
+		$this->data['position'] = $setting['position'];
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/account.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/account.tpl';

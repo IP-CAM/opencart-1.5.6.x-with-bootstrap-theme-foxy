@@ -30,18 +30,6 @@
 		<script src="/catalog/view/theme/foxystore/js/html5shiv.js"></script>
 		<script src="/catalog/view/theme/foxystore/js/respond.min.js"></script>
 	<![endif]-->
-
-	<?php foreach ($links as $link) { ?>
-		<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-	<?php } ?>
-	
-	<?php foreach ($styles as $style) { ?>
-		<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
-	<?php } ?>
-	
-	<?php foreach ($scripts as $script) { ?>
-		<script type="text/javascript" src="<?php echo $script; ?>"></script>
-	<?php } ?>
 	
 	<?php if ($stores) { ?>
 		<script type="text/javascript"><!--
@@ -61,33 +49,37 @@
 	<div class="top-line">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
 					<?php echo $language; ?>
 					<?php echo $currency; ?>
 				</div>
-				<div class="col-lg-5 col-md-5 general-info hidden-sm hidden-xs">
-					<a href="<?php echo $wishlist; ?>" class="wish-list-link">
-						<span class="glyphicon glyphicon-heart"></span>
-						<?php echo $text_wishlist; ?>
-					</a>
-					<a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
-					<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
-					<a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
-				</div>
-				<div class="col-lg-4 visible-lg tR">
-					<?php if (!$logged) { ?>
-						<?php echo $text_welcome; ?>
-					<?php } else { ?>
-						<?php echo $text_logged; ?>
-					<?php } ?>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 hidden-lg tR">
-					<?php if (!$logged) { ?>
-						<?php echo $text_welcome; ?>
-					<?php } else { ?>
-						<?php echo $text_logged; ?>
-					<?php } ?>
-				</div>
+				<?php if ($logged): ?>
+					<div class="col-lg-6 col-md-6 col-sm-7 sol-xs-12 general-info">
+						<a href="<?php echo $wishlist; ?>" class="wish-list-link">
+							<span class="glyphicon glyphicon-heart"></span>
+							<?php echo $text_wishlist; ?>
+						</a>
+						<a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
+						<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
+						<a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
+					</div>
+				<?php endif ?>
+				<?php if ( ! $logged): ?>
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 visible-lg tR">
+						<?php if (!$logged) { ?>
+							<?php echo $text_welcome; ?>
+						<?php } else { ?>
+							<?php echo $text_logged; ?>
+						<?php } ?>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 hidden-lg tR">
+						<?php if (!$logged) { ?>
+							<?php echo $text_welcome; ?>
+						<?php } else { ?>
+							<?php echo $text_logged; ?>
+						<?php } ?>
+					</div>
+				<?php endif ?>
 			</div><!-- end .row -->
 		</div><!-- end .container -->
 	</div><!-- end .top-line -->

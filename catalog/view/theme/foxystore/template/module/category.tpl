@@ -1,3 +1,9 @@
+<?php if ($position == 'content_top' || $position == 'content_bottom'): ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+<?php endif; ?>
+
 <h4 class="sidebar-heading"><?php echo $heading_title; ?></h4>
 
 <ul class="nav nav-stacked nav-sidebar sidebar-block">
@@ -34,3 +40,9 @@
 		</li>
 	<?php } ?>
 </ul>
+
+<?php if ($position == 'content_top' || $position == 'content_bottom'): ?>
+		</div>
+	</div>
+</div>
+<?php endif; ?>

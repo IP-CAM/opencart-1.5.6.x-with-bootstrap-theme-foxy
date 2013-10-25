@@ -62,6 +62,9 @@ class ControllerModuleCategory extends Controller {
 				'href'        => $this->url->link('product/category', 'path=' . $category['category_id'])
 			);	
 		}
+
+		// krevnyi
+		$this->data['position'] = $setting['position'];
 		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/category.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/category.tpl';

@@ -38,7 +38,7 @@
 					<tr>
 						<th><?php echo $column_name; ?></th>
 						<th class="hidden-xs"><?php echo $column_model; ?></th>
-						<th><?php echo $column_quantity; ?></th>
+						<th class="qty"><?php echo $column_quantity; ?></th>
 						<th class="hidden-sm hidden-xs"><?php echo $column_price; ?></th>
 						<th><?php echo $column_total; ?></th>
 					</tr>
