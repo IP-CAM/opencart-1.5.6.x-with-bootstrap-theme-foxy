@@ -1,6 +1,11 @@
 <?php if ($position == 'content_top' || $position == 'content_bottom'): ?>
 <div class="container">
 
+    <h3 class="line">
+      <span><?php echo $heading_title; ?></span>
+      <i></i>
+    </h3>
+
     <!-- Products -->
     <?php if ($products) { ?>
       <div class="row catalog catalog-module" id="products-grid-container">

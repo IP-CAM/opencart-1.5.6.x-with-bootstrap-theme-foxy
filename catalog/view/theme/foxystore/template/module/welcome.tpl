@@ -4,13 +4,7 @@
 		<div class="col-md-12">
 <?php endif; ?>
 
-<h4 class="sidebar-heading">
-	<?php echo $heading_title; ?>
-</h4>
-
-<div class="sidebar-block oH">
-	<?php echo $message; ?>
-</div>
+<?php echo $message; ?>
 
 <?php if ($position == 'content_top' || $position == 'content_bottom'): ?>
 		</div>

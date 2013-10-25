@@ -3156,3 +3156,5 @@
 2013-10-25 18:09:16 - PHP Notice:  Undefined variable: result in C:\xampp2\sites\opencart.dev\www\catalog\controller\module\featured.php on line 119
 2013-10-25 18:09:16 - PHP Notice:  Undefined variable: result in C:\xampp2\sites\opencart.dev\www\catalog\controller\module\featured.php on line 126
 2013-10-25 18:09:16 - PHP Notice:  Undefined variable: result in C:\xampp2\sites\opencart.dev\www\catalog\controller\module\featured.php on line 126
+2013-10-25 18:20:11 - PHP Notice:  Undefined variable: breadcrumbs in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\common\home.tpl on line 21
+2013-10-25 18:20:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\common\home.tpl on line 21
