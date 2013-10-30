@@ -98,7 +98,7 @@
 					</a>
 				<?php } ?>
 			</div>
-			<div class="col-md-6 col-xs-12">
+			<div class="col-md-6 col-xs-12" id="header-mini-cart">
 				<?php echo $cart; ?>
 			</div>
 		</div>
@@ -115,7 +115,7 @@
 							<div class="form-group">
 								<input type="text" name="search" class="form-control search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" autocomplete="off" />
 							</div>
-							<input type="submit" class="btn btn-default" value="">
+							<input type="submit" class="btn btn-default search-btn" value="">
 							<div class="search-popup"></div>
 						</form>
 					</div>

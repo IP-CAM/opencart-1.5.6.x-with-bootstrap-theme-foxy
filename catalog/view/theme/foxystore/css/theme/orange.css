@@ -70,6 +70,9 @@ a.btn-default {
 	margin-right: 9px;
 	top: -4px;
 }
+.btn-danger {
+	border: none;
+}
 
 /****** --- [ NAVBAR ] --- ******/
 .navbar-default {
@@ -228,6 +231,7 @@ table.cart .repeat,
 .navbar-nav li a,
 .btn-default,
 .btn-primary,
+.btn-danger,
 .btn-darkgrey {
 	-webkit-transition: background-color ease-in-out .15s;
 	transition: background-color ease-in-out .15s;
@@ -282,6 +286,13 @@ table.cart .repeat,
 	-webkit-transition-property: opacity, border-color;
 	-webkit-transition-duration: 0.25s;
 }
+.search-btn,
+.search-btn:hover,
+.search-btn:focus,
+.search-btn:active {
+	background: transparent url('../../img/icon-search.png') no-repeat center center !important;
+}
+
 
 /****** --- [ INPUTS ] --- ******/
 input[type='text'].search::-webkit-input-placeholder {

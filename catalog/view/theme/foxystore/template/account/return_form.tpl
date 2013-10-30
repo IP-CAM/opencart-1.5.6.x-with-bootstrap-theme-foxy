@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <!-- Content -->
 <div class="container">
@@ -158,14 +158,14 @@
                 <div class="radio radio-inline">
                   <label for="opened-3" class="checked">
                     <input id="opened-3" type="radio" name="opened" value="0" checked="checked" />
-                    <?php echo $text_yes; ?>
+                    <?php echo $text_no; ?>
                   </label>
                 </div>
               <?php } else { ?>
                 <div class="radio radio-inline">
                   <label for="opened-4">
                     <input id="opened-4" type="radio" name="opened" value="0" />
-                    <?php echo $text_yes; ?>
+                    <?php echo $text_no; ?>
                   </label>
                 </div>
               <?php } ?>
@@ -219,4 +219,4 @@
   </div>
 </div>
 
-<?php echo $footer; ?>
+<?php echo $content_bottom; ?><?php echo $footer; ?>

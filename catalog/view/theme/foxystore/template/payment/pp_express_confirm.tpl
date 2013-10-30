@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <?php if ($attention) { ?>
     <div class="attention"><?php echo $attention; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>

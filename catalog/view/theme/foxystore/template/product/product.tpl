@@ -1,6 +1,4 @@
-<?php // print_r($images); die(); ?>
-
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <!-- Check if product is already in wishlist -->
 <?php 
@@ -26,10 +24,10 @@
 		<?php elseif (trim($column_right)): ?>
 			<div class="col-lg-9 col-md-8 col-sm-8 the-content">
 		<?php else: ?>
-			<div class="col-lg-12 the-content">
+			<div class="col-lg-12 the-content product-page-large">
 		<?php endif ?>
 
-			<div class="row product-info">
+			<div class="row product-info product-preview-block-<?php echo $product_id; ?>">
 				<div class="col-lg-6">
 
 					<!-- Breadcrumbs -->
@@ -400,7 +398,7 @@
 						<div class="col-sm-6 col-xs-12 pull-left">
 							<span class="pull-left"><?php echo $text_qty; ?></span>
 							<div class="input-type-number">
-								<input type="text" value="<?php echo $minimum; ?>" min="<?php echo $minimum; ?>" class="number">
+								<input type="number" value="<?php echo $minimum; ?>" min="<?php echo $minimum; ?>" class="number">
 								<input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
 								<a href="#" class="up" data-num="1"></a>
 								<a href="#" class="down" data-num="-1"></a>
@@ -716,7 +714,7 @@
 												<div class="col-sm-6 col-xs-12 pull-left">
 													<span class="pull-left"><?php echo $text_qty; ?></span>
 													<div class="input-type-number">
-														<input type="text" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
+														<input type="number" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
 														<a href="#" class="up" data-num="1"></a>
 														<a href="#" class="down" data-num="-1"></a>
 													</div>
@@ -857,7 +855,18 @@ $('#button-cart').on('click', function(e) {
 			} 
 			
 			if (json['success']) {
-				$.fancybox.open(json['success']);
+				$.pnotify.defaults.delay = 1500;
+
+				$.pnotify({
+					text: json['success'],
+					cornerclass: 'ui-pnotify-sharp',
+					shadow: false,
+					type: 'success'
+				});
+
+				$('#header-mini-cart').load('index.php?route=module/cart', function () {
+					window.bindMiniCart();
+				});
 			}	
 		}
 	});
@@ -986,4 +995,4 @@ $('#button-review').on('click', function(e) {
 });
 //--></script>
 
-<?php echo $footer; ?>
+<?php echo $content_bottom; ?><?php echo $footer; ?>

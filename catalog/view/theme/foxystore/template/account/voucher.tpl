@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <!-- Content -->
 <div class="container">
@@ -136,4 +136,4 @@
   </div>
 </div>
 
-<?php echo $footer; ?>
+<?php echo $content_bottom; ?><?php echo $footer; ?>

@@ -196,7 +196,19 @@ $(document).ready(function () {
 
 	// Open sidebar categories submenu
 	$('.nav.nav-sidebar > li > a > span').on('click', function (e) {
-		$(this).closest('li').children('ul').slideToggle();
+		var $this = $(this),
+			item = $this.closest('li');
+
+		if (item.children('ul').css('display') == 'none')
+		{
+			$this.html("-").addClass('active');
+		}
+		else
+		{
+			$this.html("+").removeClass('active');
+		}
+
+		item.children('ul').slideToggle();
 
 		e.preventDefault();
 	});
@@ -280,17 +292,22 @@ $(document).ready(function () {
 	// Style selects
 	$('select').selectpicker();
 
-	// Remove product from mini ajax cart
-	$('.cart-popup a.close, table.cart tr td.count .close-holder .close').on('click', function (e) {
-		var $this = $(this),
-			productKey = $this.data('product-key');
+	window.bindRemovableLinks = function () {
+		// Remove product from mini ajax cart
+		$('.cart-popup a.close, table.cart tr td.count .close-holder .close').on('click', function (e) {
+			var $this = $(this),
+				productKey = $this.data('product-key');
 
-		removeFromCart(productKey);
+			removeFromCart(productKey);
 
-		$this.closest('tr').fadeOut();
+			$this.closest('tr').fadeOut();
 
-		e.preventDefault();
-	});
+			e.preventDefault();
+		});
+	};
+
+	window.bindRemovableLinks();
+	
 
 	window.bindActionBtns = function () {
 		// Add active class to rounded btn
@@ -477,30 +494,34 @@ $(document).ready(function () {
 	// Add tooltops
 	$('.tooltiped').tooltip();
 
-	// Show mini-basket on hover
-	var miniCartTimer;
+	window.bindMiniCart = function () {
+		// Show mini-basket on hover
+		var miniCartTimer;
+		
+		$(".mini-cart > .btn").mouseenter(function () {
+			clearTimeout(miniCartTimer);
 
-	$(".mini-cart > .btn").mouseenter(function () {
-		clearTimeout(miniCartTimer);
+			$('.mini-cart-popup').show();
+		});
 
-		$('.mini-cart-popup').show();
-	});
+		$(".mini-cart > .btn").mouseleave(function() {
+			miniCartTimer = setTimeout(function () {
+				$('.mini-cart-popup').hide();
+			}, 600);
+		});
 
-	$(".mini-cart > .btn").mouseleave(function() {
-		miniCartTimer = setTimeout(function () {
-			$('.mini-cart-popup').hide();
-		}, 600);
-	});
+		$('.mini-cart-popup').mouseenter(function () {
+			clearTimeout(miniCartTimer);
+		});
 
-	$('.mini-cart-popup').mouseenter(function () {
-		clearTimeout(miniCartTimer);
-	});
+		$('.mini-cart-popup').mouseleave(function () {
+			miniCartTimer = setTimeout(function () {
+				$('.mini-cart-popup').hide();
+			}, 600);
+		});
+	};
 
-	$('.mini-cart-popup').mouseleave(function () {
-		miniCartTimer = setTimeout(function () {
-			$('.mini-cart-popup').hide();
-		}, 600);
-	});
+	window.bindMiniCart();
 
 	// Increase width of the search input
 	$('.navbar form .search').on('focus', function () {

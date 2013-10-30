@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <!-- Content -->
 <div class="container">
@@ -69,7 +69,7 @@
 							<td class="model hidden-xs"><?php echo $product['model']; ?></td>
 							<td class="count">
 								<div class="input-type-number">
-									<input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" min="1" class="number">
+									<input type="number" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" min="1" class="number">
 									<a href="#" class="up hidden-xs" data-num="1"></a>
 									<a href="#" class="down hidden-xs" data-num="-1"></a>
 								</div>
@@ -92,7 +92,7 @@
 							<td class="model hidden-xs"></td>
 							<td class="count">
 								<div class="input-type-number">
-									<input type="text" name="" value="1" min="1" class="number" disabled="disabled">
+									<input type="number" name="" value="1" min="1" class="number" disabled="disabled">
 									<a href="#" class="up hidden-xs" data-num="1"></a>
 									<a href="#" class="down hidden-xs" data-num="-1"></a>
 								</div>
@@ -415,4 +415,4 @@ $(document).ready(function () {
 });
 //--></script>
 <?php } ?>
-<?php echo $footer; ?>
+<?php echo $content_bottom; ?><?php echo $footer; ?>

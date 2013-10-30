@@ -153,7 +153,7 @@
                       <div class="col-sm-6 col-xs-12 pull-left">
                         <span class="pull-left"><?php echo $text_qty; ?></span>
                         <div class="input-type-number">
-                          <input type="text" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
+                          <input type="number" value="<?php echo $product['minimum']; ?>" min="<?php echo $product['minimum']; ?>" class="number">
                           <a href="#" class="up" data-num="1"></a>
                           <a href="#" class="down" data-num="-1"></a>
                         </div>

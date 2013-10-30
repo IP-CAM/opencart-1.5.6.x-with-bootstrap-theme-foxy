@@ -102,7 +102,7 @@
 
 	<script src="/catalog/view/theme/foxystore/js/modernizr.custom.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/modernizr.custom.79639.js"></script>
-	<script src="/catalog/view/theme/foxystore/js/sprintf.min.js"></script>
+	<script src="/catalog/view/theme/foxystore/js/jquery.pnotify.min.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.ba-cond.min.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.slitslider.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/handlebars.js"></script>

@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 
 <!-- Content -->
 <div class="container">
@@ -212,4 +212,4 @@ $('select[name=\'country_id\']').bind('change', function() {
 $('select[name=\'country_id\']').trigger('change');
 //--></script> 
 
-<?php echo $footer; ?>
+<?php echo $content_bottom; ?><?php echo $footer; ?>

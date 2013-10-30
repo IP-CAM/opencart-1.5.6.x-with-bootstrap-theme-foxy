@@ -30,8 +30,9 @@
     <script type="text/javascript"><!--
       $(document).ready(function() {
         $("#banners").carouFredSel({
-          width     : 260,
+          // width     : 260,
           height    : 350,
+          responsive: true;
           scroll    : {
             fx: "crossfade"
           },
