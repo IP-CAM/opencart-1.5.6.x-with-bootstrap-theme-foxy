@@ -42,6 +42,13 @@ $_['item_link_type_product_text']			= 'Товар';
 $_['item_link_type_manufacturer_text']		= 'Производитель';
 $_['item_link_type_information_text']		= 'Статья';
 $_['item_target_link_text']            		= 'Открывать в новом окне';
+$_['text_image_field']						= 'Изображение';
+$_['text_developer_mode']					= 'Показать сложные поля';
+$_['text_link_view_type']					= 'Способ отображения';
+$_['text_link_view_type_link']				= 'Простая ссылка';
+$_['text_link_view_type_heading']			= 'Заголовок';
+$_['text_link_view_type_banner']			= 'Баннер';
+
 
 // Mesages
 $_['menu_saved_text']            			= 'Порядок меню успешно сохранен!';

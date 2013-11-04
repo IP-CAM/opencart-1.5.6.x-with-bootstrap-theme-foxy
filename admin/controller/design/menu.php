@@ -94,6 +94,15 @@ class ControllerDesignMenu extends Controller {
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
             $this->data['delete_menu_item_confirm_text'] = $this->language->get('delete_menu_item_confirm_text');
             $this->data['delete_menu_confirm_text'] = $this->language->get('delete_menu_confirm_text');
+            
+            $this->data['text_image_field'] = $this->language->get('text_image_field');
+            $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
+            $this->data['text_link_view_type'] = $this->language->get('text_link_view_type');
+            $this->data['text_link_view_type_link'] = $this->language->get('text_link_view_type_link');
+            $this->data['text_link_view_type_heading'] = $this->language->get('text_link_view_type_heading');
+            $this->data['text_link_view_type_banner'] = $this->language->get('text_link_view_type_banner');
+
+
 
             // Render
             $this->children = array(
@@ -179,6 +188,7 @@ class ControllerDesignMenu extends Controller {
             $this->data['edit_btn_title_text'] = $this->language->get('edit_btn_title_text');
             $this->data['new_menu_item_btn_title_text'] = $this->language->get('new_menu_item_btn_title_text');
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
+            $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
 
             // Default varialbles values
             $this->data['show_identifer'] = true;
@@ -282,6 +292,7 @@ class ControllerDesignMenu extends Controller {
             $this->data['edit_btn_title_text'] = $this->language->get('edit_btn_title_text');
             $this->data['new_menu_item_btn_title_text'] = $this->language->get('new_menu_item_btn_title_text');
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
+            $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
 
             // Render
             $this->children = array(

@@ -3352,3 +3352,27 @@
 2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
 2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
 2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-11-04 12:29:11 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 451
+2013-11-04 12:29:11 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 461
+2013-11-04 15:15:05 - PHP Notice:  Undefined index: dev_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 113
+2013-11-04 15:20:29 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 113
+2013-11-04 15:20:50 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 113
+2013-11-04 15:30:17 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 392
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 109
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 111
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 112
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 113
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 114
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 115
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 116
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 117
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 118
+2013-11-04 15:30:38 - PHP Notice:  Undefined variable: results in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 129
+2013-11-04 15:30:38 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 129
+2013-11-04 15:40:28 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 394
+2013-11-04 16:25:27 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 398
+2013-11-04 16:27:39 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 398
+2013-11-04 16:28:50 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 398
+2013-11-04 16:47:03 - PHP Notice:  Undefined variable: text_link_view_type in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_list.tpl on line 88
+2013-11-04 16:51:44 - PHP Notice:  Undefined variable: text_developer_mode in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 57
+2013-11-04 16:52:11 - PHP Notice:  Undefined variable: text_developer_mode in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 57

@@ -54,15 +54,36 @@
                         <i><?=$edit_identifer_hint_text?></i>
                     </li>
                     <li>
-                        <span><?=$edit_wrapper_text?></span>
-                        <input name="menu_wrapper" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper?>">
-                        <i><?=$edit_wrapper_hint_text?></i>
+                        <span><?=$text_developer_mode;?></span>
+                        <?php if (isset($this->session->data['teil_menu_developer_mode']) AND $this->session->data['teil_menu_developer_mode']): ?>
+                            <input name="developer_mode" id="developer_mode" type="checkbox" checked="checked">
+                        <?php else: ?>
+                            <input name="developer_mode" id="developer_mode" type="checkbox">
+                        <?php endif ?>
                     </li>
-                    <li>
-                        <span><?=$edit_template?></span>
-                        <textarea name="menu_template" class="template"><?=$default_template?></textarea>
-                        <p><?=$edit_template_hint_text?></p>
-                    </li>
+                    <?php if (isset($this->session->data['teil_menu_developer_mode']) AND $this->session->data['teil_menu_developer_mode']): ?>
+                        <li class="isDeveloperOption">
+                            <span><?=$edit_wrapper_text?></span>
+                            <input name="menu_wrapper" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper?>">
+                            <i><?=$edit_wrapper_hint_text?></i>
+                        </li>
+                        <li class="isDeveloperOption">
+                            <span><?=$edit_template?></span>
+                            <textarea name="menu_template" class="template"><?=$default_template?></textarea>
+                            <p><?=$edit_template_hint_text?></p>
+                        </li>
+                    <?php else: ?>
+                        <li class="isDeveloperOption hidden">
+                            <span><?=$edit_wrapper_text?></span>
+                            <input name="menu_wrapper" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper?>">
+                            <i><?=$edit_wrapper_hint_text?></i>
+                        </li>
+                        <li class="isDeveloperOption hidden">
+                            <span><?=$edit_template?></span>
+                            <textarea name="menu_template" class="template"><?=$default_template?></textarea>
+                            <p><?=$edit_template_hint_text?></p>
+                        </li>
+                    <?php endif; ?>
                 </ul>
 	    </form>
 	</div><!-- end .content -->
@@ -71,5 +92,23 @@
 
 <script lang="javascript" src="/admin/view/javascript/jquery/nestedsortable/nestedsortable.js"></script>
 <script lang="javascript" src="/admin/view/javascript/jquery/nestedsortable/common.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Toggle developer mode
+        $('#developer_mode').on('click', function () {
+            var developerFields = $(this).closest('li').siblings('.isDeveloperOption');
+
+            if ($('#developer_mode:checked').length)
+            {
+                developerFields.slideDown();
+            }
+            else
+            {
+                developerFields.slideUp();
+            }
+        });
+    });
+</script>
 
 <?php echo $footer; ?>

@@ -73,6 +73,18 @@ var teilMenu = {
 
             return name;
         });
+
+        // Check if user want to se developer options
+        Handlebars.registerHelper('developerMode', function(options) {
+            var devMode = window.localStorage.teilMenuDeveloperMode || 0;
+
+            if (devMode)
+            {
+                return true;
+            }
+
+            return false;
+        });
     },
 
     // Creates new menu item
@@ -306,7 +318,7 @@ var teilMenu = {
             // Handlebars creates template
             _appendForm = function () {
                 var form = self.currentItem.after(self.template(data)).parent().find('#form_table'),
-                    height = form.height(); // Height fix (image is loading)
+                    height = form.height();
 
                 form
                     .height(0)
@@ -369,9 +381,11 @@ var teilMenu = {
     save: function (e) {
         var self = teilMenu,
             select = $('#link_type'),
+            selectView = $('#link_view_type'),
             linkType = select.val(),
             theData = {
-                id: self.currentItemId
+                id: self.currentItemId,
+                linkViewType: selectView.val()
             },
 
             // Returns current selected option

@@ -96,6 +96,10 @@ a.btn-default {
 	font-size: 15px;
 	color: #fff;
 }
+#header .navbar-default a .title,
+#header .navbar-default a:hover .title {
+	color: #fff !important;
+}
 .quick-view-btn:hover,
 .quick-view-btn:active,
 .quick-view-btn:focus {
@@ -218,6 +222,7 @@ table.cart .repeat:focus {
 /****** --- [ ANAMATION ] --- ******/
 a,
 .title,
+.featured li a,
 table.cart .close,
 table.cart .repeat,
 .nav-sidebar > li > a,

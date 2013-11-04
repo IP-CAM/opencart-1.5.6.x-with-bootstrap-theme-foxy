@@ -228,6 +228,8 @@ body > #container {
 	border: 1px solid #EEEEEE;
 	padding: 10px;
 	display: inline-block;
+	height: 123px;
+	width: 122px;
 }
 .image img {
 	margin-bottom: 5px;

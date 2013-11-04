@@ -105,26 +105,28 @@ class ModelDesignMenu extends Model {
 				  WHERE `menu_items`.`id` = '" . $id . "' 
 				  ORDER BY `menu_items_lang`.`language_id`";
 
-
 		$results = $this->db->query($query)->rows;
 
 		// Copy needle params
-		$data['code']           = $results[0]['code'];
-		$data['href']           = $results[0]['href'];
-		$data['self_class']     = $results[0]['self_class'];
-		$data['params']         = htmlspecialchars_decode($results[0]['params']);
-		$data['id']             = $results[0]['menu_item_id'];
-		$data['parent']         = $results[0]['parent'];
-		$data['sort_order']     = $results[0]['sort_order'];
-		$data['target']         = $results[0]['target'];
-		$data['type']           = $results[0]['type'];
-		$data['thumb']          = 0;
+		$data['code']            = $results[0]['code'];
+		$data['developer_mode']  = isset($this->session->data['teil_menu_developer_mode']) ? $this->session->data['teil_menu_developer_mode'] : 0;
+		$data['href']            = $results[0]['href'];
+		$data['self_class']      = $results[0]['self_class'];
+		$data['params']          = htmlspecialchars_decode($results[0]['params']);
+		$data['id']              = $results[0]['menu_item_id'];
+		$data['parent']          = $results[0]['parent'];
+		$data['sort_order']      = $results[0]['sort_order'];
+		$data['target']          = $results[0]['target'];
+		$data['type']            = $results[0]['type'];
+		$data['thumb']           = 0;
 
 		// Set image
 		if (!empty($results[0]) && $results[0]['image'] && file_exists(DIR_IMAGE . $results[0]['image'])) {
 			$data['thumb'] = $this->model_tool_image->resize($results[0]['image'], 100, 100);
+			$data['image'] = $results[0]['image'];
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+			$data['image'] = 0;
 		}
 
 		// Each name/title values with diff langs
@@ -192,6 +194,7 @@ class ModelDesignMenu extends Model {
 		$image = isset($data['image']) ? $this->check_string($data['image']) : '';
 		$params = isset($data['params']) ? $this->check_string($data['params']) : '/';
 		$self_class = isset($data['self_class']) ? $this->check_string($data['self_class']) : '/';
+		$link_view_type = isset($data['linkViewType']) ? $this->check_string($data['linkViewType']) : '/';
 
 		$names = explode('&amp;', $name);
 		$titles = explode('&amp;', $title);
@@ -228,6 +231,7 @@ class ModelDesignMenu extends Model {
 					  `image` = '" . $image . "', 
 					  `params` = '" . $params . "', 
 					  `self_class` = '" . $self_class . "', 
+					  `view_type` = '" . $link_view_type . "', 
 					  `target` = '" . $target . "' 
 				  WHERE `id` = '" . $id . "'";
 
@@ -387,6 +391,12 @@ class ModelDesignMenu extends Model {
 		$code = $this->request->post['menu_code'];
 		$template_wrapper = $this->db->escape($this->request->post['menu_wrapper']);
 		$template = $this->db->escape($this->request->post['menu_template']);
+
+		// Set developer mode
+		if (isset($this->request->post['menu_name']))
+		{
+			$this->session->data['teil_menu_developer_mode'] = !!$this->request->post['developer_mode'];
+		}
 		
 		// Query
 		$que = "UPDATE `menu`

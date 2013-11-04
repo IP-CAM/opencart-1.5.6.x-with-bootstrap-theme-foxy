@@ -85,6 +85,16 @@
 				</td>
 			</tr>
 			<tr>
+				<td><?=$text_link_view_type;?></td>
+				<td>
+					<select id='link_view_type' name='link_view_type'>
+						<option value='link'><?=$text_link_view_type_link;?></option>
+						<option value='heading'><?=$text_link_view_type_heading;?></option>
+						<option value='banner'><?=$text_link_view_type_banner;?></option>
+					</select>
+				</td>
+			</tr>
+			<tr>
 				<td><?=$item_link_type_text?></td>
 				<td>
 					<select id='link_type'>
@@ -161,13 +171,8 @@
 				</td>
 			</tr>
 
-			<tr class="params">
-				<td><?=$item_link_type_params_text?></td>
-				<td><input type="text" value="{{item.params}}" id="form_params"></td>
-			</tr>
-
 			<tr>
-				<td>Изображение:</td>
+				<td><?=$text_image_field;?></td>
 				<td>
 					<div class="image"><img src="{{item.thumb}}" alt="" id="thumb" /><br /><input type="hidden" name="image" value="{{item.image}}" id="image" />
 						<a onclick="image_upload('image', 'thumb');">
@@ -176,16 +181,24 @@
 					</div>
 				</td>
 			</tr>
-			
-			<tr class="self_class">
-				<td><?=$item_self_class_text?></td>
-				<td><input type="text" value="{{item.self_class}}" id="form_self_class"></td>
-			</tr>
 
 			<tr>
 				<td><?=$item_target_link_text?></td>
 				<td><input type="checkbox" id="form_target" {{pageTarget item.target}}></td>
 			</tr>
+			
+			{{#if item.developer_mode}}
+				<tr class="self_class">
+					<td><?=$item_self_class_text?></td>
+					<td><input type="text" value="{{item.self_class}}" id="form_self_class"></td>
+				</tr>
+
+				<tr class="params">
+					<td><?=$item_link_type_params_text?></td>
+					<td><input type="text" value="{{item.params}}" id="form_params"></td>
+				</tr>
+			{{/if}}
+
 			<tr>
 				<td><a href='#' id='form_save' class='button'><?=$save_btn_text?></a><img src="/admin/view/image/teilMenuLoader.gif" class="teilLoader fL" style="display: none; "></td>
 				<td><a href='#' id='form_calcel' class='button'><?=$cancel_btn_text?></a></td>

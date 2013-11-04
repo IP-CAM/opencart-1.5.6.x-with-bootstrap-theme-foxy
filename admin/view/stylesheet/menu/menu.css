@@ -5,7 +5,7 @@
     float:left;
 }
 .hidden{
-    display:none !important;
+    display: none;
 }
 .teilLoader{
     display:none;
@@ -46,6 +46,7 @@ ol.sortable {
     padding: 12px;
     margin: 0;
     cursor: move;
+    min-height: 15px;
     background: #f6f6f6;
     background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));

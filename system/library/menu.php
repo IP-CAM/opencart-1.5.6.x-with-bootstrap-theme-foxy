@@ -105,6 +105,9 @@ class Menu {
 
             if ($row['parent'] == $parent)
             {
+                // Append class depending on link view type
+                $row['self_class'] .= " " . $row['view_type'];
+
                 // Replacing template values
                 $r = str_replace('{{id}}', $row['id'], $structure);
                 $r = str_replace('{{num_children}}', $num_children, $r);
