@@ -3272,3 +3272,83 @@
 2013-10-30 12:26:57 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 461
 2013-10-30 12:27:00 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 451
 2013-10-30 12:27:00 - PHP Notice:  Undefined variable: product in C:\xampp2\sites\opencart.dev\www\catalog\view\theme\foxystore\template\product\category.tpl on line 461
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Notice:  Undefined variable: all_menu_items in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97
+2013-10-31 10:06:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 97

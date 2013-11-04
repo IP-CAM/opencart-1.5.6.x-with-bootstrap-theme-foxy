@@ -552,4 +552,78 @@ $(document).ready(function () {
 		bindActionBtns();
 		bindInputTypeNumber();
 	};
+
+	var currentWindowLayout = '';
+
+	$(window).on('resize', function () {
+		var windowWidth = $(this).width();
+
+		if (currentWindowLayout != 'lg' && windowWidth >= 1200)
+		{
+			currentWindowLayout = 'lg';
+
+			createCatalogCarousel();
+		}
+		else if (currentWindowLayout != 'md' && windowWidth >= 992 && windowWidth < 1200)
+		{
+			currentWindowLayout = 'md';
+
+			createCatalogCarousel();
+		}
+		else if (currentWindowLayout != 'sm' && windowWidth >= 767 && windowWidth < 992)
+		{
+			currentWindowLayout = 'sm';
+
+			createCatalogCarousel();
+		}
+		else if (currentWindowLayout != 'xs' && windowWidth < 767)
+		{
+			currentWindowLayout = 'xs';
+
+			$('.create-carousel .catalog').trigger("destroy");
+		}
+	});
+
+	var createCatalogCarousel = function () {
+		$.each($('.create-carousel .catalog'), function (index, obj) {
+			var catalog = $(obj),
+				itemClass = catalog.children('div:first').attr('class'),
+				pattern = new RegExp("col-" + currentWindowLayout + "-(\\d+)"),
+				itemLayoutCol = itemClass.match(pattern)[1],
+				visibleItems = 12 / parseInt(itemLayoutCol);
+
+			catalog.attr('id', 'carousel-' + index);
+
+			if (catalog.children().length <= visibleItems)
+			{
+				$('.create-carousel .catalog').trigger("destroy");
+				return;
+			}
+
+			console.log(catalog, catalog.children().length, visibleItems, itemLayoutCol, currentWindowLayout);
+
+			$('#' + 'carousel-' + index).caroufredsel({
+				scroll		: 1,
+				auto		: false,
+				responsive  : true,
+				items       : {
+					visible : visibleItems
+				},
+				swipe		: {
+					onTouch	: true,
+					onMouse	: true
+				},
+				prev: {
+					button: function() {
+						return $(this).parent().siblings(".prev");
+					}
+				},
+				next: {
+					button: function() {
+						return $(this).parent().siblings(".next");
+					}
+				}
+			});
+		});
+	};
 });

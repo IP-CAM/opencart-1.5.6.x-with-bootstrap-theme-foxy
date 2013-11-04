@@ -238,7 +238,9 @@ table.cart .repeat,
 }
 .action-button,
 .catalog .btn-grey,
-.product-info .btn-grey {
+.product-info .btn-grey,
+.create-carousel > a,
+.create-carousel > a > .glyphicon {
 	-webkit-transition: 
 		background-color ease-in-out .15s,
 		border-color ease-in-out .15s,
@@ -291,6 +293,14 @@ table.cart .repeat,
 .search-btn:focus,
 .search-btn:active {
 	background: transparent url('../../img/icon-search.png') no-repeat center center !important;
+}
+.create-carousel > a.prev {
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.25s;
+}
+.create-carousel > a.next {
+	-webkit-transition-property: right;
+	-webkit-transition-duration: 0.25s;
 }
 
 

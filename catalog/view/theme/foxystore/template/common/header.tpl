@@ -104,13 +104,10 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-default top-menu" role="navigation">
 					<div class="navbar-collapse hidden-xs">
-						<ul class="nav navbar-nav">
-							<?php foreach ($categories as $category) { ?>
-								<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-							<?php } ?>
-						</ul>
+						
+						<?php Menu::call('demo'); ?>
 						<form class="navbar-form navbar-left pull-right hidden-sm hidden-xs" role="search">
 							<div class="form-group">
 								<input type="text" name="search" class="form-control search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" autocomplete="off" />

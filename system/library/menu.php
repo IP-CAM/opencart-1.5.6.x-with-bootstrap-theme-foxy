@@ -91,10 +91,23 @@ class Menu {
         
         foreach ($rows as $row)
         {
+            // Define how mutch children has current menu item
+            $num_children = 0;
+
+            foreach ($rows as $menu_item)
+            {
+                if ($menu_item['parent'] == $row['id'])
+                {
+                    $num_children++;
+                }
+            }
+
+
             if ($row['parent'] == $parent)
             {
                 // Replacing template values
                 $r = str_replace('{{id}}', $row['id'], $structure);
+                $r = str_replace('{{num_children}}', $num_children, $r);
                 $r = str_replace('{{name}}', $row['name'], $r);
                 $r = str_replace('{{href}}', $row['href'], $r);
                 $r = str_replace('{{params}}', $row['params'], $r);

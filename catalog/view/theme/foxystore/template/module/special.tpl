@@ -1,5 +1,5 @@
 <?php if ($position == 'content_top' || $position == 'content_bottom'): ?>
-<div class="container">
+<div class="container create-carousel">
 
     <h3 class="line">
       <span><?php echo $heading_title; ?></span>
@@ -214,6 +214,8 @@
           </div>
         <?php } ?>
       </div>
+      <a href="#" class="prev hidden"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a href="#" class="next hidden"><span class="glyphicon glyphicon-chevron-right"></span></a>
     <?php } ?>
 <?php else: ?>
   <h4 class="sidebar-heading"><?php echo $heading_title; ?></h4>
