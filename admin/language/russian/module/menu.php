@@ -20,6 +20,8 @@ $_['delete_menu_confirm_text']				= 'Удаляя меню вы удаляете
 // Welcome                     
 $_['welcome_heading_text']             		= 'У вас еще ни одного меню!';
 $_['welcome_text']            				= 'Почему бы не создать одно?';
+$_['text_menu_template_static']            	= 'Статические настройки';
+$_['text_menu_template_responsive'] 		= 'Динамические настройки';
 
 // Edit
 $_['edit_name_text']              			= 'Название';

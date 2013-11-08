@@ -36,9 +36,9 @@
                 <?php } else { ?>
                     <a href="<?=$create_menu?>" title="<?=$create_menu_text?>">+</a>
                 <?php } ?>
-	    </div><!-- end #tabs -->
-	    <form action="" method="post" enctype="multipart/form-data" id="form">
-		<ul id="create_menu">
+    	    </div><!-- end #tabs -->
+    	    <form action="" method="post" enctype="multipart/form-data" id="form">
+        		<ul id="create_menu">
                     <li>
                         <span><?=$edit_name_text?></span>
                         <input name="menu_name" type="text" value="<?=$default_name?>" placeholder="<?=$edit_name_text?>...">
@@ -62,6 +62,7 @@
                         <?php endif ?>
                     </li>
                     <?php if (isset($this->session->data['teil_menu_developer_mode']) AND $this->session->data['teil_menu_developer_mode']): ?>
+                        <li class="isDeveloperOption"><h3><?php echo $text_menu_template_static; ?></h3></li>
                         <li class="isDeveloperOption">
                             <span><?=$edit_wrapper_text?></span>
                             <input name="menu_wrapper" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper?>">
@@ -70,9 +71,20 @@
                         <li class="isDeveloperOption">
                             <span><?=$edit_template?></span>
                             <textarea name="menu_template" class="template"><?=$default_template?></textarea>
+                        </li>
+                        <li class="isDeveloperOption"><h3><?php echo $text_menu_template_responsive; ?></h3></li>
+                        <li class="isDeveloperOption">
+                            <span><?=$edit_wrapper_text?></span>
+                            <input name="menu_wrapper_responsive" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper_responsive;?>">
+                            <i><?=$edit_wrapper_hint_text?></i>
+                        </li>
+                        <li class="isDeveloperOption">
+                            <span><?=$edit_template?></span>
+                            <textarea name="menu_template_responsive" class="template"><?=$default_template_responsive;?></textarea>
                             <p><?=$edit_template_hint_text?></p>
                         </li>
                     <?php else: ?>
+                        <li class="isDeveloperOption hidden"><h3><?php echo $text_menu_template_static; ?></h3></li>
                         <li class="isDeveloperOption hidden">
                             <span><?=$edit_wrapper_text?></span>
                             <input name="menu_wrapper" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper?>">
@@ -81,12 +93,22 @@
                         <li class="isDeveloperOption hidden">
                             <span><?=$edit_template?></span>
                             <textarea name="menu_template" class="template"><?=$default_template?></textarea>
+                        </li>
+                        <li class="isDeveloperOption hidden"><h3><?php echo $text_menu_template_responsive; ?></h3></li>
+                        <li class="isDeveloperOption hidden">
+                            <span><?=$edit_wrapper_text?></span>
+                            <input name="menu_wrapper_responsive" type="text" placeholder="edit_wrapper_text" value="<?=$default_template_wrapper_responsive;?>">
+                            <i><?=$edit_wrapper_hint_text?></i>
+                        </li>
+                        <li class="isDeveloperOption hidden">
+                            <span><?=$edit_template?></span>
+                            <textarea name="menu_template_responsive" class="template"><?=$default_template_responsive;?></textarea>
                             <p><?=$edit_template_hint_text?></p>
                         </li>
                     <?php endif; ?>
                 </ul>
-	    </form>
-	</div><!-- end .content -->
+    	    </form>
+    	</div><!-- end .content -->
     </div><!-- end .box -->
 </div><!-- end #content -->
 

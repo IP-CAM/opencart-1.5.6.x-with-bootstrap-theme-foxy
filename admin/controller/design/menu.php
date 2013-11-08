@@ -94,6 +94,8 @@ class ControllerDesignMenu extends Controller {
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
             $this->data['delete_menu_item_confirm_text'] = $this->language->get('delete_menu_item_confirm_text');
             $this->data['delete_menu_confirm_text'] = $this->language->get('delete_menu_confirm_text');
+            $this->data['text_menu_template_static'] = $this->language->get('text_menu_template_static');
+            $this->data['text_menu_template_responsive'] = $this->language->get('text_menu_template_responsive');
             
             $this->data['text_image_field'] = $this->language->get('text_image_field');
             $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
@@ -189,13 +191,17 @@ class ControllerDesignMenu extends Controller {
             $this->data['new_menu_item_btn_title_text'] = $this->language->get('new_menu_item_btn_title_text');
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
             $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
+            $this->data['text_menu_template_static'] = $this->language->get('text_menu_template_static');
+            $this->data['text_menu_template_responsive'] = $this->language->get('text_menu_template_responsive');
 
             // Default varialbles values
             $this->data['show_identifer'] = true;
             $this->data['default_name'] = isset($menuInfo['name']) ? $menuInfo['name'] : '';
             $this->data['default_identifer'] = isset($menuInfo['code']) ? $menuInfo['code'] : '';
             $this->data['default_template'] = empty($menuInfo['template']) ? "<li class='{{id}}'>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template'];
+            $this->data['default_template_responsive'] = empty($menuInfo['template_responsive']) ? "<li>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['default_template_responsive'];
             $this->data['default_template_wrapper'] = empty($menuInfo['template_wrapper']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper'];
+            $this->data['default_template_wrapper_responsive'] = empty($menuInfo['template_wrapper_responsive']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper_responsive'];
             
             
             // Render
@@ -268,7 +274,10 @@ class ControllerDesignMenu extends Controller {
             $this->data['default_name'] = isset($menuInfo['name']) ? $menuInfo['name'] : '';
             $this->data['default_identifer'] = isset($menuInfo['code']) ? $menuInfo['code'] : '';
             $this->data['default_template'] = empty($menuInfo['template']) ? "<li class='{{id}}'>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template'];
+            $this->data['default_template_responsive'] = empty($menuInfo['template_responsive']) ? "<li>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template_responsive'];
             $this->data['default_template_wrapper'] = empty($menuInfo['template_wrapper']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper'];
+            $this->data['default_template_wrapper_responsive'] = empty($menuInfo['template_wrapper_responsive']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper_responsive'];
+
             
             // Multi languages
             $this->data['heading_title'] = $this->language->get('heading_title');
@@ -293,6 +302,8 @@ class ControllerDesignMenu extends Controller {
             $this->data['new_menu_item_btn_title_text'] = $this->language->get('new_menu_item_btn_title_text');
             $this->data['create_menu_text'] = $this->language->get('create_menu_text');
             $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
+            $this->data['text_menu_template_static'] = $this->language->get('text_menu_template_static');
+            $this->data['text_menu_template_responsive'] = $this->language->get('text_menu_template_responsive');
 
             // Render
             $this->children = array(

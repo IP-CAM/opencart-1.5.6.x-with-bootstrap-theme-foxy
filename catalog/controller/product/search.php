@@ -131,6 +131,7 @@ class ControllerProductSearch extends Controller {
 			$this->data['heading_title'] = $this->language->get('heading_title');
 		}
 		
+		$this->data['text_quick_view'] = $this->language->get('text_quick_view');
 		$this->data['text_empty'] = $this->language->get('text_empty');
     	$this->data['text_critea'] = $this->language->get('text_critea');
     	$this->data['text_search'] = $this->language->get('text_search');
@@ -655,7 +656,7 @@ class ControllerProductSearch extends Controller {
 			$products[] = array(
 				'product_id'  => $result['product_id'],
 				'thumb'       => $image,
-				'name'        => $result['name'],
+				'name'        => htmlspecialchars_decode($result['name']),
 				'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 100) . '..',
 				'price'       => $price,
 				'special'     => $special,

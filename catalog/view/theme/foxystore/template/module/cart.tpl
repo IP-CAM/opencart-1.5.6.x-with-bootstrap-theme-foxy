@@ -15,7 +15,7 @@
 							</div>
 							</td>
 							<td class="title">
-								<a href="<?php echo $product['href']; ?>" class="pull-left title"><?php echo $product['name']; ?></a>
+								<a href="<?php echo $product['href']; ?>" class="pull-left title"><?php echo htmlspecialchars_decode($product['name']); ?></a>
 								<div class="product-options">
 								<?php foreach ($product['option'] as $option) { ?>
 									<div>- <?php echo $option['name']; ?> <?php echo $option['value']; ?></div>
@@ -36,7 +36,7 @@
 
 				<div class="totals pull-left w">
 					<?php foreach ($totals as $total) { ?>
-						<h6><?php echo $total['title']; ?>:<span><?php echo $total['text']; ?></span></h6>
+						<h6><b><?php echo $total['title']; ?>:</b><span><?php echo $total['text']; ?></span></h6>
 					<?php } ?>
 				</div>
 

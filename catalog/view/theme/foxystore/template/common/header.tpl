@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=10.0, minimum-scale=0.25" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<base href="<?php echo $base; ?>" />
 	
 	<title><?php echo $title; ?></title>
@@ -105,9 +106,10 @@
 		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-default top-menu" role="navigation">
-					<div class="navbar-collapse hidden-xs">
-						
+					<div class="navbar-collapse visible-lg">
+						<!-- Get static menu -->
 						<?php Menu::call('demo'); ?>
+
 						<form class="navbar-form navbar-left pull-right hidden-sm hidden-xs" role="search">
 							<div class="form-group">
 								<input type="text" name="search" class="form-control search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" autocomplete="off" />
@@ -117,39 +119,8 @@
 						</form>
 					</div>
 
-					<div id="dl-menu" class="dl-menuwrapper visible-xs">
-						<button class="pull-left">
-							<div class="button-wrapper">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</div>
-
-							<span class="navbar-brand">Toggle menu</span>
-						</button>
-						<div class="button-wrapper-fix"></div>
-						
-						<ul class="dl-menu">
-							<?php foreach ($categories as $category) { ?>
-								<?php if ($category['children']) { ?>
-									<li>
-										<a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-										<ul class="dl-submenu">
-											<li class="dl-back"><a href="#">back</a></li>
-											<?php for ($i = 0; $i < count($category['children']);) { ?>
-												<?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-												<?php for (; $i < $j; $i++) { ?>
-													<?php if (isset($category['children'][$i])) { ?>
-														<li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-													<?php } ?>
-												<?php } ?>
-											<?php } ?>
-										</ul>
-									</li>
-								<?php } ?>
-							<?php } ?>
-						</ul>
-					</div><!-- /dl-menuwrapper -->
+					<!-- Get responsive menu -->
+					<?php Menu::call('demo', 1); ?>
 				</nav>
 			</div>
 		</div>

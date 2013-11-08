@@ -34,12 +34,12 @@
         <table class="table table-bordered table-hover">
           <thead>
             <tr>
-              <td class="text-right"><?php echo $column_order_id; ?></td>
-              <td class="text-left"><?php echo $column_status; ?></td>
-              <td class="text-left"><?php echo $column_date_added; ?></td>
-              <td class="text-right"><?php echo $column_product; ?></td>
-              <td class="text-left"><?php echo $column_customer; ?></td>
-              <td class="text-right"><?php echo $column_total; ?></td>
+              <td class="text-right"><?php echo $text_order_id; ?></td>
+              <td class="text-left"><?php echo $text_status; ?></td>
+              <td class="text-left"><?php echo $text_date_added; ?></td>
+              <td class="text-right"><?php echo $text_products; ?></td>
+              <td class="text-left"><?php echo $text_customer; ?></td>
+              <td class="text-right"><?php echo $text_total; ?></td>
               <td></td>
             </tr>
           </thead>
@@ -52,7 +52,11 @@
               <td class="text-right"><?php echo $order['products']; ?></td>
               <td class="text-left"><?php echo $order['name']; ?></td>
               <td class="text-right"><?php echo $order['total']; ?></td>
-              <td><a href="<?php echo $order['href']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-default"><i class="icon-eye-open"></i></a> <a href="<?php echo $order['reorder']; ?>" data-toggle="tooltip" title="<?php echo $button_reorder; ?>" class="btn btn-default"><i class="icon-refresh"></i></a></td>
+              
+              <td>
+                <a class="btn btn-primary" href="<?php echo $order['href']; ?>"><span class="glyphicon glyphicon-eye-open"></span></a>
+                <a class="btn btn-danger" href="<?php echo $order['reorder']; ?>"><span class="glyphicon glyphicon-refresh"></span></a>
+              </td>
             </tr>
             <?php } ?>
           </tbody>

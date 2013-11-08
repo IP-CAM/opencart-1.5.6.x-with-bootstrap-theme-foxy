@@ -103,6 +103,7 @@
 	<script src="/catalog/view/theme/foxystore/js/modernizr.custom.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.pnotify.min.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.ba-cond.min.js"></script>
+	<script src="/catalog/view/theme/foxystore/js/sprintf.min.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/handlebars.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.fancybox.pack.js"></script>
 	<script src="/catalog/view/theme/foxystore/js/jquery.dlmenu.js"></script>

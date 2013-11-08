@@ -389,7 +389,9 @@ class ModelDesignMenu extends Model {
 		// Information
 		$name = $this->request->post['menu_name'];
 		$code = $this->request->post['menu_code'];
+		$template_wrapper_responsive = $this->db->escape($this->request->post['menu_wrapper_responsive']);
 		$template_wrapper = $this->db->escape($this->request->post['menu_wrapper']);
+		$template_responsive = $this->db->escape($this->request->post['menu_template_responsive']);
 		$template = $this->db->escape($this->request->post['menu_template']);
 
 		// Set developer mode
@@ -403,7 +405,9 @@ class ModelDesignMenu extends Model {
 				SET 
 					`name` = '" . $name . "',
 					`template_wrapper` = '" . $template_wrapper . "',
-					`template` = '" . $template . "' 
+					`template_wrapper_responsive` = '" . $template_wrapper_responsive . "',
+					`template` = '" . $template . "' ,
+					`template_responsive` = '" . $template_responsive . "' 
 				WHERE `code` = '" . $code . "'";
 		//echo $que; die();
 		$this->db->query($que);

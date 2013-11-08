@@ -3,6 +3,7 @@ class Menu {
     
     static private 
             $code = 0,
+            $responsive = 0,
             $template = "",
             $wrapper = "",
             $currentLanguageId = 0;
@@ -13,10 +14,14 @@ class Menu {
      * 
      * ! Initialization function
      * ! USAGE
-     * ! Menu::call('mainmenu');
+     * ! Menu::call('mainmenu', 'responsive');
+     * 
+     * @param $layout_type Type of the menu to generate
+     * 
      */
-    static public function call($menu_code)
+    static public function call($menu_code, $layout_type = 0)
     {
+        self::$responsive = !! $layout_type;
         self::$code = $menu_code;
         self::$template = self::getTemplate();
         self::$wrapper = self::getWrapper();
@@ -70,7 +75,7 @@ class Menu {
      */
     static private function renderMenu($result)
     {
-        $wrapper = self::$wrapper['template_wrapper'];
+        $wrapper = (self::$responsive) ? self::$wrapper['template_wrapper_responsive'] : self::$wrapper['template_wrapper'];
         $html = self::buildMenu($result);
         
         // Wrap result with template wrapper
@@ -87,7 +92,8 @@ class Menu {
     {
         $result = "";
         // Replace last </li> to avoid errors
-        $structure = str_replace(htmlspecialchars('</li>'), '', self::$template['template']);
+        $template = (self::$responsive) ? self::$template['template_responsive'] : self::$template['template'];
+        $structure = str_replace(htmlspecialchars('</li>'), '', $template);
         
         foreach ($rows as $row)
         {
@@ -107,6 +113,12 @@ class Menu {
             {
                 // Append class depending on link view type
                 $row['self_class'] .= " " . $row['view_type'];
+
+                // If link name is empty (at the responsive menu) ---> continue
+                if (self::$responsive AND (! isset($row['name']) OR ! trim($row['name'])))
+                {
+                    continue;
+                }
 
                 // Replacing template values
                 $r = str_replace('{{id}}', $row['id'], $structure);
@@ -152,11 +164,24 @@ class Menu {
                 
                 $result .= $r;
                 
+                // Set diffrent layout to static/responsive menus
                 if (self::menuItemHasChildren($rows, $row['id']))
                 {
-                    $result .= "<div><ul>";
-                    $result .= self::buildMenu($rows, $row['id']);
-                    $result .= "</ul></div>";
+                    if (self::$responsive)
+                    {
+                        // Static view
+                        $result .= "<ul class='dl-submenu'>";
+                        $result .= "<li class='dl-back'><a href='#''>back</a></li>";
+                        $result .= self::buildMenu($rows, $row['id']);
+                        $result .= "</ul>";
+                    }
+                    else
+                    {
+                        // Responsive view
+                        $result .= "<div><ul>";
+                        $result .= self::buildMenu($rows, $row['id']);
+                        $result .= "</ul></div>";
+                    }
                 }
                 
                 $result .= "</li>";
@@ -232,7 +257,15 @@ class Menu {
      */
     static private function getTemplate()
     {
-        return self::query("SELECT `template` FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
+        $template_field_name = 'template';
+
+        // Check if user want to generate responsive menu structure
+        if (self::$responsive)
+        {
+            $template_field_name = 'template_responsive';
+        }
+
+        return self::query("SELECT `" . $template_field_name . "` FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
     }
     
     
@@ -241,7 +274,15 @@ class Menu {
      */
     static private function getWrapper()
     {
-        return self::query("SELECT `template_wrapper` FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
+        $template_field_name = 'template_wrapper';
+
+        // Check if user want to generate responsive menu structure
+        if (self::$responsive)
+        {
+            $template_field_name = 'template_wrapper_responsive';
+        }
+
+        return self::query("SELECT `" . $template_field_name . "` FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
     }
     
     
@@ -283,7 +324,8 @@ class Menu {
         }
         else
         {
-            echo 'Error!';
+            echo 'Error!\r\n' . $sql;
+
             exit();
         }
     }

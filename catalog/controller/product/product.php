@@ -231,6 +231,7 @@ class ControllerProductProduct extends Controller {
 			
 			$this->data['heading_title'] = $product_info['name'];
 			
+			$this->data['text_quick_view'] = $this->language->get('text_quick_view');
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');

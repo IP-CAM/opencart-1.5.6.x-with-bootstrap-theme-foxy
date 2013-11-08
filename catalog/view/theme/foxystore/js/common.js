@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$("#header-carousel").carouFredSel({
 		width 		: 1170,
 		scroll		: 1,
-		auto		: true,
+		auto		: false,
 		responsive  : true,
 		items       : {
 			visible : 1,

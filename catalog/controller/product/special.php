@@ -32,6 +32,7 @@ class ControllerProductSpecial extends Controller {
 		}
 				    	
 		$this->document->setTitle($this->language->get('heading_title'));
+		$this->data['text_quick_view'] = $this->language->get('text_quick_view');
 		$this->document->addScript('catalog/view/javascript/jquery/jquery.total-storage.min.js');
 
 		$this->data['breadcrumbs'] = array();

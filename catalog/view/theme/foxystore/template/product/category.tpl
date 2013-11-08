@@ -124,7 +124,7 @@
 						<?php endif ?>
 							<div class="img-holder">
 								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
-								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+								<a href="#" class="quick-view-btn btn hidden-xs"><?php echo $text_quick_view; ?></a>
 							</div>
 							<a href="<?php echo $product['href']; ?>" class="title"><?php echo $product['name']; ?></a>
 							<hr class="short">
@@ -345,7 +345,7 @@
 			<!-- Image -->
 			<div class="img-holder col-lg-3 col-md-3 col-sm-3">
 				<a href="{{escape href}}"><img src="{{thumb}}" title="" alt=""></a>
-				<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+				<a href="#" class="quick-view-btn btn hidden-xs"><?php echo $text_quick_view; ?></a>
 			</div>
 
 			<!-- Title container -->

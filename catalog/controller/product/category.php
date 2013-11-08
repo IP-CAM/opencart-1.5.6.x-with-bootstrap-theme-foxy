@@ -99,6 +99,7 @@ class ControllerProductCategory extends Controller {
 			
 			$this->data['heading_title'] = $category_info['name'];
 			
+			$this->data['text_quick_view'] = $this->language->get('text_quick_view');
 			$this->data['text_refine'] = $this->language->get('text_refine');
 			$this->data['text_empty'] = $this->language->get('text_empty');			
 			$this->data['text_quantity'] = $this->language->get('text_quantity');

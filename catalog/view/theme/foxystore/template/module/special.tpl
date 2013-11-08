@@ -27,7 +27,7 @@
             <div class="product-preview-block-<?php echo $product['product_id']; ?> col-lg-3 col-md-4 col-sm-4">
             <div class="img-holder">
               <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
-              <a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+              <a href="#" class="quick-view-btn btn hidden-xs"><?php echo $text_quick_view; ?></a>
             </div>
             <a href="<?php echo $product['href']; ?>" class="title"><?php echo $product['name']; ?></a>
             <hr class="short">

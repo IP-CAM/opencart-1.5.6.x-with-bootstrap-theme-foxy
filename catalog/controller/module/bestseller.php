@@ -8,6 +8,7 @@ class ControllerModuleBestSeller extends Controller {
 		$this->data['button_cart'] = $this->language->get('button_cart');
 		$this->data['button_wishlist'] = $this->language->get('button_wishlist');
 		$this->data['button_compare'] = $this->language->get('button_compare');
+		$this->data['text_quick_view'] = $this->language->get('text_quick_view');
 		
 		$this->load->model('catalog/product');
 		

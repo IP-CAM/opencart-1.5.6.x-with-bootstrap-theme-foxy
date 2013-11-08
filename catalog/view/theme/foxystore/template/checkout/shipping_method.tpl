@@ -6,28 +6,31 @@
 <?php $count = 0;  ?>
 <form>
 <?php foreach ($shipping_methods as $shipping_method) { ?>
-<div class="pull-left delivery-title" title="<?php echo $shipping_method['title']; ?>"><strong><?php echo $shipping_method['title']; ?></strong></div>
-<?php if (!$shipping_method['error']) { ?>
-<?php foreach ($shipping_method['quote'] as $quote) { ?>
-<?php $count++;  ?>
-<div class="radio">
-  <?php if ($quote['code'] == $code || !$code) { ?>
-  <?php $code = $quote['code']; ?>
-  <label for="shipping_method-<?php echo $count; ?>" class="checked">
-    <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" checked="checked" />
-    <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
-  </label>
+<div class="pull-left w">
+  <div class="pull-left delivery-title" title="<?php echo $shipping_method['title']; ?>"><strong><?php echo $shipping_method['title']; ?></strong></div>
+  
+  <?php if (!$shipping_method['error']) { ?>
+    <?php foreach ($shipping_method['quote'] as $quote) { ?>
+    <?php $count++;  ?>
+    <div class="radio">
+      <?php if ($quote['code'] == $code || !$code) { ?>
+      <?php $code = $quote['code']; ?>
+      <label for="shipping_method-<?php echo $count; ?>" class="checked">
+        <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" checked="checked" />
+        <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
+      </label>
+      <?php } else { ?>
+      <label for="shipping_method-<?php echo $count; ?>">
+        <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" />
+        <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
+      </label>
+      <?php } ?>
+    </div>
+    <?php } ?>
   <?php } else { ?>
-  <label for="shipping_method-<?php echo $count; ?>">
-    <input type="radio" id="shipping_method-<?php echo $count; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" />
-    <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
-  </label>
+  <div class="alert alert-danger"><?php echo $shipping_method['error']; ?></div>
   <?php } ?>
 </div>
-<?php } ?>
-<?php } else { ?>
-<div class="alert alert-danger"><?php echo $shipping_method['error']; ?></div>
-<?php } ?>
 <?php } ?>
 </form>
 <?php } ?>

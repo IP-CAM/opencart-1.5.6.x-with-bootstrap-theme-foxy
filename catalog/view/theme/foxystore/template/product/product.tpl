@@ -535,9 +535,9 @@
 														<span>*</span> <?php echo $entry_captcha; ?>
 													</td>
 													<td>
-														<div class="col-lg-4 col-md-12"><img src="index.php?route=product/product/captcha" alt="" id="captcha" /></div>
+														<div class="col-lg-4 col-md-12"><input type="text" name="captcha" value="" /></div>
 														
-														<div class="col-lg-8 col-md-12"><input type="text" name="captcha" value="" /></div>
+														<div class="col-lg-8 col-md-12"><img src="index.php?route=product/product/captcha" alt="" id="captcha" /></div>
 													</td>
 												</tr>
 												<tr>
@@ -588,7 +588,7 @@
 
 							<div class="img-holder">
 								<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="" alt=""></a>
-								<a href="#" class="quick-view-btn btn hidden-xs">Quick view</a>
+								<a href="#" class="quick-view-btn btn hidden-xs"><?php echo $text_quick_view; ?></a>
 							</div>
 							<a href="<?php echo $product['href']; ?>" class="title"><?php echo $product['name']; ?></a>
 							<hr class="short">
