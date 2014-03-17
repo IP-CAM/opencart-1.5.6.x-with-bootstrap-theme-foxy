@@ -51,6 +51,17 @@ $_['text_link_view_type_link']				= 'Простая ссылка';
 $_['text_link_view_type_heading']			= 'Заголовок';
 $_['text_link_view_type_banner']			= 'Баннер';
 
+// List description
+$_['item_name_text_description']				= 'Такст названия ссылки';
+$_['item_title_text_description']				= 'Всплывающий текст при навидении';
+$_['text_link_view_type_description']			= 'Простая ссылка - отображать как кликабельная ссылка. Заголовок - отображать как простой текст. Баннер - отображать как изображение с ссылкой.';
+$_['item_link_type_text_description']			= 'Тип материала (товар, категория...) для ссылки';
+$_['item_link_type_href_text_description']		= 'Ссылка';
+$_['item_link_type_params_text_description']	= 'Можно передать любые нужные параметры';
+$_['item_self_class_text_description']			= 'CSS клас';
+$_['item_target_link_text_description']         = 'Нужно ли открывать ссылку в новом окне?';
+$_['text_developer_mode_description']			= 'Отобразить поля для разкаботчиков';
+
 
 // Mesages
 $_['menu_saved_text']            			= 'Порядок меню успешно сохранен!';

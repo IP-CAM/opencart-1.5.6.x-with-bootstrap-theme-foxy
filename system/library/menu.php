@@ -30,6 +30,7 @@ class Menu {
         
         if (self::check($menu_code))
         {
+            // WHERE `menu_items`.`code` = '" . $menu_code . "' AND `menu_items_lang`.`language_id` = '" . self::$currentLanguageId . "'
             $result = self::query("SELECT * FROM `menu_items_lang` 
                                     JOIN `menu_items` ON (`menu_items_lang`.`menu_item_id` = `menu_items`.`id`)
                                     WHERE `menu_items`.`code` = '" . $menu_code . "' AND `menu_items_lang`.`language_id` = '" . self::$currentLanguageId . "'
@@ -37,6 +38,7 @@ class Menu {
 
 
             // echo print_r($result);
+
             echo self::renderMenu($result);
         }
         else

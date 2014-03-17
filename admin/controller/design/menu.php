@@ -104,6 +104,16 @@ class ControllerDesignMenu extends Controller {
             $this->data['text_link_view_type_heading'] = $this->language->get('text_link_view_type_heading');
             $this->data['text_link_view_type_banner'] = $this->language->get('text_link_view_type_banner');
 
+            $this->data['item_name_text_description'] = $this->language->get('item_name_text_description');
+            $this->data['item_title_text_description'] = $this->language->get('item_title_text_description');
+            $this->data['text_link_view_type_description'] = $this->language->get('text_link_view_type_description');
+            $this->data['item_link_type_text_description'] = $this->language->get('item_link_type_text_description');
+            $this->data['item_link_type_href_text_description'] = $this->language->get('item_link_type_href_text_description');
+            $this->data['item_link_type_params_text_description'] = $this->language->get('item_link_type_params_text_description');
+            $this->data['item_self_class_text_description'] = $this->language->get('item_self_class_text_description');
+            $this->data['item_target_link_text_description'] = $this->language->get('item_target_link_text_description');
+            $this->data['text_developer_mode_description'] = $this->language->get('text_developer_mode_description');
+
 
 
             // Render

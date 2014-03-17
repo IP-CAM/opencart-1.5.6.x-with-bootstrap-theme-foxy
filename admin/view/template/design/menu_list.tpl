@@ -65,7 +65,7 @@
 	<form id='form_table'>
 		<table>
 			<tr>
-				<td><?=$item_name_text?></td>
+				<td><span class="help-text-container"><?=$item_name_text?><span class="hover-help"><?=$item_name_text_description?></span></span></td>
 				<td>
 					<?php foreach ($languages as $key => $language) { ?>
 						<img src="/image/flags/<?=$language['image']?>">
@@ -75,7 +75,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><?=$item_title_text?></td>
+				<td><span class="help-text-container"><?=$item_title_text?><span class="hover-help"><?=$item_title_text_description?></span></span></td>
 				<td>
 					<?php foreach ($languages as $key => $language) { ?>
 						<img src="/image/flags/<?=$language['image']?>">
@@ -85,7 +85,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><?=$text_link_view_type;?></td>
+				<td><span class="help-text-container"><?=$text_link_view_type?><span class="hover-help"><?=$text_link_view_type_description?></span></span></td>
 				<td>
 					<select id='link_view_type' name='link_view_type'>
 						<option value='link'><?=$text_link_view_type_link;?></option>
@@ -95,7 +95,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><?=$item_link_type_text?></td>
+				<td><span class="help-text-container"><?=$item_link_type_text?><span class="hover-help"><?=$item_link_type_text_description?></span></span></td>
 				<td>
 					<select id='link_type'>
 						<option value='link'><?=$item_link_type_href_text?></option>
@@ -183,18 +183,18 @@
 			</tr>
 
 			<tr>
-				<td><?=$item_target_link_text?></td>
+				<td><span class="help-text-container"><?=$item_target_link_text?><span class="hover-help"><?=$item_target_link_text_description?></span></span></td>
 				<td><input type="checkbox" id="form_target" {{pageTarget item.target}}></td>
 			</tr>
 			
 			{{#if item.developer_mode}}
 				<tr class="self_class">
-					<td><?=$item_self_class_text?></td>
+					<td><span class="help-text-container"><?=$item_self_class_text?><span class="hover-help"><?=$item_self_class_text_description?></span></span></td>
 					<td><input type="text" value="{{item.self_class}}" id="form_self_class"></td>
 				</tr>
 
 				<tr class="params">
-					<td><?=$item_link_type_params_text?></td>
+					<td><span class="help-text-container"><?=$item_link_type_params_text?><span class="hover-help"><?=$item_link_type_params_text_description?></span></span></td>
 					<td><input type="text" value="{{item.params}}" id="form_params"></td>
 				</tr>
 			{{/if}}

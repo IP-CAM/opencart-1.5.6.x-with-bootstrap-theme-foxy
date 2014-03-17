@@ -136,7 +136,29 @@ table tr td:first-child {
     width: 150px;
     margin: 5px 0 0;
 }
-
+table tr td .help-text-container {
+    position: relative;
+    border-bottom: 1px dashed #000;
+    cursor: help;
+}
+table tr td .help-text-container .hover-help {
+    border: 1px solid #000;
+    position: absolute;
+    background: #FFF;
+    display: none;
+    position: absolute;
+    top: -50%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    left: 110%;
+    height: auto;
+    word-wrap: break-word;
+    overflow: hidden;
+    min-width: 140px;
+}
+table tr td .help-text-container:hover .hover-help {
+    display: block;
+}
 table tr td > input {
     width: 250px;
 }

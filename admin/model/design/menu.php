@@ -192,9 +192,9 @@ class ModelDesignMenu extends Model {
 		$title = isset($data['title']) ? $this->check_string($data['title']) : '';
 		$href = isset($data['href']) ? $this->check_string($data['href']) : '/';
 		$image = isset($data['image']) ? $this->check_string($data['image']) : '';
-		$params = isset($data['params']) ? $this->check_string($data['params']) : '/';
-		$self_class = isset($data['self_class']) ? $this->check_string($data['self_class']) : '/';
-		$link_view_type = isset($data['linkViewType']) ? $this->check_string($data['linkViewType']) : '/';
+		$params = isset($data['params']) ? $this->check_string($data['params']) : '';
+		$self_class = isset($data['self_class']) ? $this->check_string($data['self_class']) : '';
+		$link_view_type = isset($data['linkViewType']) ? $this->check_string($data['linkViewType']) : '';
 
 		$names = explode('&amp;', $name);
 		$titles = explode('&amp;', $title);
