@@ -38,6 +38,10 @@ class ControllerDesignMenuAjax extends Controller {
                 case 'save_data':
                     $result = $this->model_design_menu->updateMenuItem($this->request->post['data']);
                 break;
+
+                case 'save_order':
+                    $result = $this->model_design_menu->updateMenuOrder($this->request->post['data']);
+                break;
             }
             
 	}

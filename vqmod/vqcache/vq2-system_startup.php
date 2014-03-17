@@ -101,7 +101,7 @@ require_once(VQMod::modCheck(DIR_SYSTEM . 'library/request.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/response.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/session.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/template.php'));
-require_once(VQMod::modCheck(DIR_SYSTEM . 'library/menu.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'library/menu.php'));require_once(VQMod::modCheck(DIR_SYSTEM . 'library/menu_helper.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/openbay.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/play.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/ebay.php'));

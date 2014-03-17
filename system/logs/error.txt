@@ -3548,3 +3548,179 @@
 2014-03-17 10:50:49 - PHP Notice:  Undefined variable: item_target_link_text_description in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_list.tpl on line 186
 2014-03-17 10:50:49 - PHP Notice:  Undefined variable: item_self_class_text_description in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_list.tpl on line 192
 2014-03-17 10:50:49 - PHP Notice:  Undefined variable: item_link_type_params_text_description in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_list.tpl on line 197
+2014-03-17 15:22:40 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 401
+2014-03-17 17:09:43 - PHP Notice:  Undefined variable: menu_item_view_heading_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 88
+2014-03-17 17:09:43 - PHP Notice:  Undefined variable: menu_item_view_link_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 92
+2014-03-17 17:09:43 - PHP Notice:  Undefined variable: menu_item_view_banner_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 96
+2014-03-17 17:10:14 - PHP Notice:  Undefined variable: menu_item_view_heading_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 88
+2014-03-17 17:10:14 - PHP Notice:  Undefined variable: menu_item_view_link_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 92
+2014-03-17 17:10:14 - PHP Notice:  Undefined variable: menu_item_view_banner_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 96
+2014-03-17 17:18:59 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:37:29 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:37:42 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:38:03 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:38:30 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:39:07 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 17:39:41 - PHP Notice:  Undefined index: results in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 17
+2014-03-17 18:02:17 - PHP Notice:  Undefined variable: heading_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 87
+2014-03-17 18:02:17 - PHP Notice:  Undefined variable: link_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 91
+2014-03-17 18:02:17 - PHP Notice:  Undefined variable: banner_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 95
+2014-03-17 18:03:06 - PHP Notice:  Undefined variable: heading_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 86
+2014-03-17 18:03:06 - PHP Notice:  Undefined variable: link_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 90
+2014-03-17 18:03:06 - PHP Notice:  Undefined variable: banner_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 94
+2014-03-17 18:04:38 - PHP Notice:  Undefined variable: heading_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 86
+2014-03-17 18:04:38 - PHP Notice:  Undefined variable: link_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 90
+2014-03-17 18:04:38 - PHP Notice:  Undefined variable: banner_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 94
+2014-03-17 18:05:53 - PHP Notice:  Undefined variable: heading_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 86
+2014-03-17 18:05:53 - PHP Notice:  Undefined variable: link_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 90
+2014-03-17 18:05:53 - PHP Notice:  Undefined variable: banner_view_template_text in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 94
+2014-03-17 18:11:02 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 406
+2014-03-17 18:37:52 - PHP Notice:  Undefined variable: default_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 76
+2014-03-17 18:37:52 - PHP Notice:  Undefined variable: default_template_wrapper_responsive in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 83
+2014-03-17 18:37:52 - PHP Notice:  Undefined variable: menu_item_view_heading_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 95
+2014-03-17 18:37:52 - PHP Notice:  Undefined variable: menu_item_view_link_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 99
+2014-03-17 18:37:52 - PHP Notice:  Undefined variable: menu_item_view_banner_template in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 103
+2014-03-17 18:40:44 - PHP Notice:  Undefined variable: default_template_wrapper_responsive in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 111
+2014-03-17 18:41:45 - PHP Notice:  Undefined variable: default_template_wrapper_responsive in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 95
+2014-03-17 18:42:36 - PHP Notice:  Undefined variable: default_template_wrapper_responsive in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 95
+2014-03-17 18:43:21 - PHP Notice:  Undefined variable: default_template_responsive in C:\xampp2\sites\opencart.dev\www\admin\view\template\design\menu_form.tpl on line 120
+2014-03-17 18:47:06 - PHP Notice:  Error: Duplicate entry '' for key 'code'<br />Error No: 1062<br />INSERT INTO `menu`
+				SET 
+					`name` = 'asdasd',
+					`template_wrapper` = '&lt;ul&gt;{{content}}&lt;/ul&gt;',
+					`template_wrapper_responsive` = '&lt;li&gt;	&lt;a href=\'{{href}}\' target=\'{{target}}\' title=\'{{title}}\'&gt;{{name}}&lt;/a&gt;&lt;/li&gt;',
+
+					`heading_template_responsive` = '' ,
+					`link_template_responsive` = '' ,
+					`banner_template_responsive` = '' ,
+
+					`heading_template` = '' ,
+					`link_template` = '' ,
+					`banner_template` = '' in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-03-17 18:47:40 - PHP Notice:  Error: Duplicate entry '' for key 'code'<br />Error No: 1062<br />INSERT INTO `menu`
+				SET 
+					`name` = 'asdasd',
+					`template_wrapper` = '&lt;ul&gt;{{content}}&lt;/ul&gt;',
+					`template_wrapper_responsive` = '&lt;li&gt;	&lt;a href=\'{{href}}\' target=\'{{target}}\' title=\'{{title}}\'&gt;{{name}}&lt;/a&gt;&lt;/li&gt;',
+
+					`heading_template_responsive` = '' ,
+					`link_template_responsive` = '' ,
+					`banner_template_responsive` = '' ,
+
+					`heading_template` = '' ,
+					`link_template` = '' ,
+					`banner_template` = '' in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-03-17 19:05:00 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 215
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 215
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 216
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 219
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 220
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 221
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 224
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 225
+2014-03-17 19:05:53 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 226
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 215
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 216
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 219
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 220
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 221
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 224
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 225
+2014-03-17 19:07:05 - PHP Notice:  Undefined variable: menuInfo in C:\xampp2\sites\opencart.dev\www\admin\controller\design\menu.php on line 226
+2014-03-17 19:11:40 - PHP Notice:  Undefined index: developer_mode in C:\xampp2\sites\opencart.dev\www\admin\model\design\menu.php on line 429
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:14 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:16:15 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 96
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template_responsive in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 98
+2014-03-17 19:21:48 - PHP Notice:  Undefined index: template_responsive in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 98
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:12 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:14 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:15 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:25:16 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:30 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:32 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:33 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:26:47 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:27:56 - PHP Notice:  Undefined index: link_template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 99
+2014-03-17 19:30:32 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
+2014-03-17 19:30:32 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
+2014-03-17 19:31:02 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
+2014-03-17 19:31:02 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14

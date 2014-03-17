@@ -30,7 +30,11 @@ $_['edit_wrapper_text']          			= 'Обертка';
 $_['edit_template']           				= 'Шаблон';
 $_['edit_identifer_hint_text']            	= '(Указать идентификатор можно <b>только при создании меню!</b>)';
 $_['edit_wrapper_hint_text']              	= '<b>{{content}}</b> - отвечаэт за вывод шаблона ниже';
-$_['edit_template_hint_text']             	= '<b>{{id}}</b> - отвечаэт за вывод уникального id <i>(число)</i><br><b>{{name}}</b> - отвечаэт за вывод названия <i>(строка)</i><br><b>{{href}}</b> - отвечаэт за вывод ссылки <i>(строка)</i><br><b>{{title}}</b> - отвечаэт за атрибут title <i>(строка)</i><br><b>{{target}}</b> - отвечаэт за атрибут target <i>(строка)</i>';
+$_['edit_template_hint_text']             	= '<b>{{id}}</b> - уникальный идентификатор<br><b>{{num_children}}</b> - количество подпунктов(детей)<br><b>{{name}}</b> - название<br><b>{{href}}</b> - ссылка<br><b>{{params}}</b> - параметры<br><b>{{self_class}}</b> - CSS класс<br><b>{{title}}</b> - аттрибут TITE<br><b>{{target}}</b> - аттрибут TARGET (открывать в новом окне)<br><b>{{image}}</b> - изображение<br><b>{{active}}</b> - свойство активности пункта меню';
+$_['view_templates_text']		 			= 'Шаблоны пунктов меню';
+$_['heading_view_template_text'] 			= 'Шаблон типа "заголовок"';
+$_['link_view_template_text'] 				= 'Шаблон типа "ссылка"';
+$_['banner_view_template_text'] 			= 'Шаблон типа "баннер"';
 
 // List
 $_['item_name_text']						= 'Название';
@@ -50,6 +54,17 @@ $_['text_link_view_type']					= 'Способ отображения';
 $_['text_link_view_type_link']				= 'Простая ссылка';
 $_['text_link_view_type_heading']			= 'Заголовок';
 $_['text_link_view_type_banner']			= 'Баннер';
+
+// List description
+$_['item_name_text_description']				= 'Такст названия ссылки';
+$_['item_title_text_description']				= 'Всплывающий текст при навидении';
+$_['text_link_view_type_description']			= 'Простая ссылка - отображать как кликабельная ссылка. Заголовок - отображать как простой текст. Баннер - отображать как изображение с ссылкой.';
+$_['item_link_type_text_description']			= 'Тип материала (товар, категория...) для ссылки';
+$_['item_link_type_href_text_description']		= 'Ссылка';
+$_['item_link_type_params_text_description']	= 'Можно передать любые нужные параметры';
+$_['item_self_class_text_description']			= 'CSS клас';
+$_['item_target_link_text_description']         = 'Нужно ли открывать ссылку в новом окне?';
+$_['text_developer_mode_description']			= 'Отобразить поля для разкаботчиков';
 
 
 // Mesages

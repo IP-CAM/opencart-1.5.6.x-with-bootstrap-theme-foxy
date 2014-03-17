@@ -9,7 +9,7 @@
 	<file name="system/startup.php">
         <operation>
             <search position="after"><![CDATA[require_once(DIR_SYSTEM . 'library/template.php');]]></search>
-            <add><![CDATA[require_once(DIR_SYSTEM . 'library/menu.php');]]></add>
+            <add><![CDATA[require_once(DIR_SYSTEM . 'library/menu.php');require_once(DIR_SYSTEM . 'library/menu_helper.php');]]></add>
         </operation>
     </file>
 

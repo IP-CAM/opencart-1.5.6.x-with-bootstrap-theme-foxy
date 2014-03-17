@@ -34,6 +34,7 @@ var teilMenu = {
     bindEvents: function() {
         this.config.container.find('.edit_menu_item').on('click', this.onMenuItemClickHandler);
         this.config.container.find('.delete_menu_item').on('click', this.deleteMenuItem);
+
         $('#create_menu_item').on('click', this.createMenuItem);
     },
     
@@ -318,16 +319,22 @@ var teilMenu = {
             // Handlebars creates template
             _appendForm = function () {
                 var form = self.currentItem.after(self.template(data)).parent().find('#form_table'),
-                    height = form.height();
+                    height = 0;
 
-                form
-                    .height(0)
-                    .animate({height: height}, 300);
+                if (data.item.view_type) {
+                    form.find('#link_view_type .' + data.item.view_type)
+                        .attr('selected', 'selected');
+                };
             }
         
         // Append new form to current menu item
         $.extend(data, catalogInfo);
         _appendForm();
+
+        // Save data on enter key
+        $('#form_table').on('keyup', function(e) {
+            if (e.keyCode == '13') { $('#form_save').trigger('click'); };
+        });
 
         // Event listeners for SAVE, CANCEL form buttons
         $('#form_save').on('click', self.save);
@@ -339,9 +346,25 @@ var teilMenu = {
     // Triggerd after FORM is loaded ( func updateHtml() )
     itemLoaded: function() {
         var self = teilMenu;
-        
+
         // Change listener to 1st select (link type)
         $('#link_type').on('change', self.onChangeItemType);
+
+        // Change listener to link view type
+        $('#link_view_type').on('change', self.onChangeItemViewType).trigger('change');
+
+        // Store height
+        self.slideItemDown();
+    },
+
+    // Slide down edit form
+    slideItemDown: function () {
+        var $form = $('#form_table'),
+            height = $form.height();
+
+        // Animate form height
+        $form.height(0)
+            .animate({height: height}, 300);
     },
     
     // Trigger after user changes link type(1st select)
@@ -375,6 +398,36 @@ var teilMenu = {
                 _show('information');
             break;
         }
+
+        // Update edit form size
+        teilMenu.updateSizes();
+    },
+
+    // Trigger after user changes link view type
+    onChangeItemViewType: function() {
+        var $this = $(this),
+            selected = $this.val(),
+            container = $('#form_table'),
+            _show = function(target) {
+                container
+                    .find('.depending-field')
+                    .addClass('hidden')
+                    .end()
+                    .find('tr.' + target)
+                    .removeClass('hidden');
+
+                // If current item view is link or banner
+                // We are going to trigger change on item type
+                // In that case item type will display correctly
+                if (selected.match(/^(link|banner)$/i)) {
+                    $('#link_type').trigger('change');
+                };
+            }
+        
+        _show($this.find('option:checked').data('show-dependings'));
+
+        // Update edit form size
+        teilMenu.updateSizes();
     },
     
     // Prepare menu item information to be saved
@@ -382,7 +435,7 @@ var teilMenu = {
         var self = teilMenu,
             select = $('#link_type'),
             selectView = $('#link_view_type'),
-            linkType = select.val(),
+            linkType = '',
             theData = {
                 id: self.currentItemId,
                 linkViewType: selectView.val()
@@ -411,7 +464,15 @@ var teilMenu = {
                 });
 
                 return name;
-            }
+            };
+
+        // Clear old input
+        self.clearOldFormData(
+            selectView.find('option:selected').data('show-dependings')
+        );
+
+        // Get link type
+        linkType = select.val();
 
         // Get the linkType, get selected option id
         switch (linkType)
@@ -469,6 +530,14 @@ var teilMenu = {
         });
     },
 
+    // Update edit form size
+    updateSizes: function () {
+        var $form = $('#form_table'),
+            formHeight = $form.children('table').outerHeight();
+
+        $form.height(formHeight);
+    },
+
     // Just closes the form
     closeForm: function (e) {
         var self = teilMenu,
@@ -498,6 +567,18 @@ var teilMenu = {
             self_class: $('#form_self_class').val(),
             target: ~~ !! $('#form_target').attr('checked') // Convert to bool, then to int
         }
+    },
+
+    // Clear old input
+    // ex. User created new banner menu item, seved it and then change it to heading
+    // So, now we should clear item `image`, `href`, etc fileds
+    clearOldFormData: function (dependingType) { 
+        console.log(dependingType);
+        $('#form_table .depending-field:not(.' + dependingType + ')')
+            .find('input, select, input[type=checkbox]')
+            .val('')
+            .removeAttr('checked')
+            .removeAttr('selected');
     },
 
     // Get name, title list by difrent langs

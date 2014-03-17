@@ -30,7 +30,11 @@ $_['edit_wrapper_text']          			= 'Обертка';
 $_['edit_template']           				= 'Шаблон';
 $_['edit_identifer_hint_text']            	= '(Указать идентификатор можно <b>только при создании меню!</b>)';
 $_['edit_wrapper_hint_text']              	= '<b>{{content}}</b> - отвечаэт за вывод шаблона ниже';
-$_['edit_template_hint_text']             	= '<b>{{id}}</b> - отвечаэт за вывод уникального id <i>(число)</i><br><b>{{name}}</b> - отвечаэт за вывод названия <i>(строка)</i><br><b>{{href}}</b> - отвечаэт за вывод ссылки <i>(строка)</i><br><b>{{title}}</b> - отвечаэт за атрибут title <i>(строка)</i><br><b>{{target}}</b> - отвечаэт за атрибут target <i>(строка)</i>';
+$_['edit_template_hint_text']             	= '<b>{{id}}</b> - уникальный идентификатор<br><b>{{num_children}}</b> - количество подпунктов(детей)<br><b>{{name}}</b> - название<br><b>{{href}}</b> - ссылка<br><b>{{params}}</b> - параметры<br><b>{{self_class}}</b> - CSS класс<br><b>{{title}}</b> - аттрибут TITE<br><b>{{target}}</b> - аттрибут TARGET (открывать в новом окне)<br><b>{{image}}</b> - изображение<br><b>{{active}}</b> - свойство активности пункта меню';
+$_['view_templates_text']		 			= 'Шаблоны пунктов меню';
+$_['heading_view_template_text'] 			= 'Шаблон типа "заголовок"';
+$_['link_view_template_text'] 				= 'Шаблон типа "ссылка"';
+$_['banner_view_template_text'] 			= 'Шаблон типа "баннер"';
 
 // List
 $_['item_name_text']						= 'Название';

@@ -115,6 +115,7 @@ class ModelDesignMenu extends Model {
 		$data['params']          = htmlspecialchars_decode($results[0]['params']);
 		$data['id']              = $results[0]['menu_item_id'];
 		$data['parent']          = $results[0]['parent'];
+		$data['view_type']       = $results[0]['view_type'];
 		$data['sort_order']      = $results[0]['sort_order'];
 		$data['target']          = $results[0]['target'];
 		$data['type']            = $results[0]['type'];
@@ -358,16 +359,36 @@ class ModelDesignMenu extends Model {
 	{
 		$name = $this->request->post['menu_name'];
 		$code = $this->request->post['menu_code'];
+
+		$template_wrapper_responsive = $this->db->escape($this->request->post['menu_wrapper_responsive']);
 		$template_wrapper = $this->db->escape($this->request->post['menu_wrapper']);
-		$template = $this->db->escape($this->request->post['menu_template']);
+
+		// Item views templates responsive
+		$heading_template_responsive = $this->db->escape($this->request->post['heading_template_responsive']);
+		$link_template_responsive = $this->db->escape($this->request->post['link_template_responsive']);
+		$banner_template_responsive = $this->db->escape($this->request->post['banner_template_responsive']);
+		
+		// Item views templates
+		$heading_template = $this->db->escape($this->request->post['heading_template']);
+		$link_template = $this->db->escape($this->request->post['link_template']);
+		$banner_template = $this->db->escape($this->request->post['banner_template']);
 		
 		
 		$que = "INSERT INTO `menu`
 				SET 
 					`name` = '" . $name . "',
 					`code` = '" . $code . "',
+
 					`template_wrapper` = '" . $template_wrapper . "',
-					`template` = '" . $template . "'";
+					`template_wrapper_responsive` = '" . $template_wrapper_responsive . "',
+
+					`heading_template_responsive` = '" . $heading_template_responsive . "' ,
+					`link_template_responsive` = '" . $link_template_responsive . "' ,
+					`banner_template_responsive` = '" . $banner_template_responsive . "' ,
+
+					`heading_template` = '" . $heading_template . "' ,
+					`link_template` = '" . $link_template . "' ,
+					`banner_template` = '" . $banner_template . "'";
 		
 		$this->db->query($que);
 	}
@@ -391,8 +412,16 @@ class ModelDesignMenu extends Model {
 		$code = $this->request->post['menu_code'];
 		$template_wrapper_responsive = $this->db->escape($this->request->post['menu_wrapper_responsive']);
 		$template_wrapper = $this->db->escape($this->request->post['menu_wrapper']);
-		$template_responsive = $this->db->escape($this->request->post['menu_template_responsive']);
-		$template = $this->db->escape($this->request->post['menu_template']);
+
+		// Item views templates responsive
+		$heading_template_responsive = $this->db->escape($this->request->post['heading_template_responsive']);
+		$link_template_responsive = $this->db->escape($this->request->post['link_template_responsive']);
+		$banner_template_responsive = $this->db->escape($this->request->post['banner_template_responsive']);
+		
+		// Item views templates
+		$heading_template = $this->db->escape($this->request->post['heading_template']);
+		$link_template = $this->db->escape($this->request->post['link_template']);
+		$banner_template = $this->db->escape($this->request->post['banner_template']);
 
 		// Set developer mode
 		if (isset($this->request->post['menu_name']))
@@ -406,8 +435,14 @@ class ModelDesignMenu extends Model {
 					`name` = '" . $name . "',
 					`template_wrapper` = '" . $template_wrapper . "',
 					`template_wrapper_responsive` = '" . $template_wrapper_responsive . "',
-					`template` = '" . $template . "' ,
-					`template_responsive` = '" . $template_responsive . "' 
+
+					`heading_template_responsive` = '" . $heading_template_responsive . "' ,
+					`link_template_responsive` = '" . $link_template_responsive . "' ,
+					`banner_template_responsive` = '" . $banner_template_responsive . "' ,
+
+					`heading_template` = '" . $heading_template . "' ,
+					`link_template` = '" . $link_template . "' ,
+					`banner_template` = '" . $banner_template . "' 
 				WHERE `code` = '" . $code . "'";
 		//echo $que; die();
 		$this->db->query($que);
@@ -445,8 +480,9 @@ class ModelDesignMenu extends Model {
 		// Get the menu code
 		$code = $this->getMenuCodeById($id);
 		
-		$query = "SELECT * FROM `menu` WHERE `code` = '" . $code . "'";
-		return $this->db->query($query)->row;
+		$menuInfo = $this->db->query("SELECT * FROM `menu` WHERE `code` = '" . $code . "'");
+
+		return $menuInfo->row;
 	}
 	
 	
@@ -484,57 +520,65 @@ class ModelDesignMenu extends Model {
 							FROM `information_schema`.`TABLES` 
 							WHERE `information_schema`.`TABLES`.`TABLE_SCHEMA` = '" . DB_DATABASE . "' 
 							AND `information_schema`.`TABLES`.`TABLE_NAME` = 'menu'";
+		
 		// Create table `menu`
 		$query['create'] = "CREATE TABLE `menu` (
-								`id` INT(10) NOT NULL AUTO_INCREMENT,
-								`code` VARCHAR(20) NOT NULL,
-								`name` VARCHAR(50) NOT NULL,
-								`template` TEXT NOT NULL,
-								`template_wrapper` TEXT NOT NULL,
-								PRIMARY KEY (`id`),
-								UNIQUE INDEX `code` (`code`)
-							)
-							COMMENT='Opencart menu manager by Teil(Yurii Krevnyi)'
-							COLLATE='utf8_general_ci'
-							ENGINE=InnoDB
-							AUTO_INCREMENT=5;";
-
+			`id` INT(10) NOT NULL AUTO_INCREMENT,
+			`code` VARCHAR(20) NOT NULL,
+			`name` VARCHAR(50) NOT NULL,
+			`template_wrapper` TEXT NOT NULL,
+			`template_wrapper_responsive` TEXT NOT NULL,
+			`heading_template` TEXT NOT NULL,
+			`link_template` TEXT NOT NULL,
+			`banner_template` TEXT NOT NULL,
+			`heading_template_responsive` TEXT NOT NULL,
+			`link_template_responsive` TEXT NOT NULL,
+			`banner_template_responsive` TEXT NOT NULL,
+			PRIMARY KEY (`id`),
+			UNIQUE INDEX `code` (`code`)
+		)
+		COMMENT='Opencart menu manager by Teil(Yurii Krevnyi)'
+		COLLATE='utf8_general_ci'
+		ENGINE=InnoDB
+		AUTO_INCREMENT=10;";
 
 		// Create table `menu_items`
 		$query['create_child'] = "CREATE TABLE `menu_items` (
-									`id` INT(10) NOT NULL AUTO_INCREMENT,
-									`code` VARCHAR(20) NOT NULL,
-									`href` TEXT NOT NULL,
-									`params` TEXT NOT NULL,
-									`self_class` TEXT NOT NULL,
-									`parent` INT(11) NOT NULL,
-									`target` TINYINT(1) NOT NULL,
-									`sort_order` INT(10) NOT NULL,
-									`type` TINYINT(1) NOT NULL,
-									`created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-									PRIMARY KEY (`id`),
-									INDEX `code` (`code`),
-									CONSTRAINT `FK__menu` FOREIGN KEY (`code`) REFERENCES `menu` (`code`) ON DELETE CASCADE
-								)
-								COMMENT='Menu manager by Teil(Yurii Krevnyi)\r\nChildren of menu table'
-								COLLATE='utf8_general_ci'
-								ENGINE=InnoDB
-								AUTO_INCREMENT=171;";
+			`id` INT(10) NOT NULL AUTO_INCREMENT,
+			`code` VARCHAR(20) NOT NULL,
+			`href` TEXT NOT NULL,
+			`image` TEXT NOT NULL,
+			`params` TEXT NOT NULL,
+			`view_type` VARCHAR(100) NOT NULL,
+			`self_class` TEXT NOT NULL,
+			`parent` INT(11) NOT NULL,
+			`target` TINYINT(1) NOT NULL,
+			`sort_order` INT(10) NOT NULL,
+			`type` TINYINT(1) NOT NULL,
+			`created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+			PRIMARY KEY (`id`),
+			INDEX `code` (`code`),
+			CONSTRAINT `FK__menu` FOREIGN KEY (`code`) REFERENCES `menu` (`code`) ON DELETE CASCADE
+		)
+		COMMENT='Menu manager by Teil(Yurii Krevnyi)\r\nChildren of menu table'
+		COLLATE='utf8_general_ci'
+		ENGINE=InnoDB
+		AUTO_INCREMENT=206;";
 
 		// Create table `menu_items_lang`
 		$query['create_child_lang'] = "CREATE TABLE `menu_items_lang` (
-											`id` INT(10) NOT NULL AUTO_INCREMENT,
-											`menu_item_id` INT(10) NOT NULL,
-											`language_id` INT(10) NOT NULL,
-											`name` VARCHAR(50) NOT NULL,
-											`title` TEXT NOT NULL,
-											PRIMARY KEY (`id`),
-											INDEX `menu_item_id` (`menu_item_id`),
-											CONSTRAINT `FK_menu_items_lang_menu_items` FOREIGN KEY (`menu_item_id`) REFERENCES `menu_items` (`id`) ON DELETE CASCADE
-										)
-										COLLATE='utf8_general_ci'
-										ENGINE=InnoDB
-										AUTO_INCREMENT=88;";
+			`id` INT(10) NOT NULL AUTO_INCREMENT,
+			`menu_item_id` INT(10) NOT NULL,
+			`language_id` INT(10) NOT NULL,
+			`name` VARCHAR(50) NOT NULL,
+			`title` TEXT NOT NULL,
+			PRIMARY KEY (`id`),
+			INDEX `menu_item_id` (`menu_item_id`),
+			CONSTRAINT `FK_menu_items_lang_menu_items` FOREIGN KEY (`menu_item_id`) REFERENCES `menu_items` (`id`) ON DELETE CASCADE
+		)
+		COLLATE='utf8_general_ci'
+		ENGINE=InnoDB
+		AUTO_INCREMENT=147;";
 		
 		$result = $this->db->query($query['check'])->row;
 		

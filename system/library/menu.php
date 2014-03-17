@@ -1,10 +1,11 @@
 <?php
+
 class Menu {
-    
+
     static private 
             $code = 0,
             $responsive = 0,
-            $template = "",
+            $templates = array(),
             $wrapper = "",
             $currentLanguageId = 0;
     
@@ -23,10 +24,10 @@ class Menu {
     {
         self::$responsive = !! $layout_type;
         self::$code = $menu_code;
-        self::$template = self::getTemplate();
+        self::$templates = self::getTemplates();
         self::$wrapper = self::getWrapper();
-        self::$currentLanguageId = self::getCurrentLanguageId();
 
+        self::$currentLanguageId = self::getCurrentLanguageId();
         
         if (self::check($menu_code))
         {
@@ -36,10 +37,7 @@ class Menu {
                                     WHERE `menu_items`.`code` = '" . $menu_code . "' AND `menu_items_lang`.`language_id` = '" . self::$currentLanguageId . "'
                                     ORDER BY `menu_items`.`sort_order`")->rows;
 
-
-            // echo print_r($result);
-
-            echo self::renderMenu($result);
+            echo self::renderMenu($result); die();
         }
         else
         {
@@ -94,11 +92,22 @@ class Menu {
     {
         $result = "";
         // Replace last </li> to avoid errors
-        $template = (self::$responsive) ? self::$template['template_responsive'] : self::$template['template'];
-        $structure = str_replace(htmlspecialchars('</li>'), '', $template);
+        $template = "";
         
         foreach ($rows as $row)
         {
+            if (self::$responsive)
+            {
+                $template = self::$templates[ $row['view_type'] . '_template_responsive' ];
+            }
+            else
+            {
+                $template = self::$templates[ $row['view_type'] . '_template' ];
+            }
+
+            $structure = $template;
+            // $structure = str_replace(htmlspecialchars('</li>'), '', $template);
+
             // Define how mutch children has current menu item
             $num_children = 0;
 
@@ -257,17 +266,17 @@ class Menu {
     /*
      * Gets menu template to render
      */
-    static private function getTemplate()
+    static private function getTemplates()
     {
-        $template_field_name = 'template';
+        $template_field_name = '`heading_template`, `link_template`, `banner_template`';
 
         // Check if user want to generate responsive menu structure
         if (self::$responsive)
         {
-            $template_field_name = 'template_responsive';
+            $template_field_name = '`heading_template_responsive`, `link_template_responsive`, `banner_template_responsive`';
         }
 
-        return self::query("SELECT `" . $template_field_name . "` FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
+        return self::query("SELECT " . $template_field_name . " FROM `menu` WHERE `code` = '" . self::$code . "'")->row;
     }
     
     
@@ -333,4 +342,3 @@ class Menu {
     }
     
 }
-?>

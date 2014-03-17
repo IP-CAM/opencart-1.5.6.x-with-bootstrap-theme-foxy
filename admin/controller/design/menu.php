@@ -9,7 +9,7 @@ class ControllerDesignMenu extends Controller {
             $this->template = 'design/menu_list.tpl';
             
             // If form submited
-            if ($this->request->server['REQUEST_METHOD'] == 'POST')
+            if ($this->request->server['REQUEST_METHOD'] == 'POST' && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
             {
                 // ID to redirect the menu that was updated
                 $current_menu = empty($this->request->get['id']) ? 0 : $this->request->get['id'];
@@ -114,8 +114,6 @@ class ControllerDesignMenu extends Controller {
             $this->data['item_target_link_text_description'] = $this->language->get('item_target_link_text_description');
             $this->data['text_developer_mode_description'] = $this->language->get('text_developer_mode_description');
 
-
-
             // Render
             $this->children = array(
                 'common/header',
@@ -187,6 +185,10 @@ class ControllerDesignMenu extends Controller {
             $this->data['edit_identifer_text'] = $this->language->get('edit_identifer_text');
             $this->data['edit_wrapper_text'] = $this->language->get('edit_wrapper_text');
             $this->data['edit_template'] = $this->language->get('edit_template');
+            $this->data['heading_view_template_text'] = $this->language->get('heading_view_template_text');
+            $this->data['link_view_template_text'] = $this->language->get('link_view_template_text');
+            $this->data['banner_view_template_text'] = $this->language->get('banner_view_template_text');
+            $this->data['view_templates_text'] = $this->language->get('banner_view_template_text');
             $this->data['edit_identifer_hint_text'] = $this->language->get('edit_identifer_hint_text');
             $this->data['edit_wrapper_hint_text'] = $this->language->get('edit_wrapper_hint_text');
             $this->data['edit_template_hint_text'] = $this->language->get('edit_template_hint_text');
@@ -208,11 +210,31 @@ class ControllerDesignMenu extends Controller {
             $this->data['show_identifer'] = true;
             $this->data['default_name'] = isset($menuInfo['name']) ? $menuInfo['name'] : '';
             $this->data['default_identifer'] = isset($menuInfo['code']) ? $menuInfo['code'] : '';
-            $this->data['default_template'] = empty($menuInfo['template']) ? "<li class='{{id}}'>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template'];
-            $this->data['default_template_responsive'] = empty($menuInfo['template_responsive']) ? "<li>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['default_template_responsive'];
-            $this->data['default_template_wrapper'] = empty($menuInfo['template_wrapper']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper'];
-            $this->data['default_template_wrapper_responsive'] = empty($menuInfo['template_wrapper_responsive']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper_responsive'];
             
+            // Menu wrappers
+            $this->data['default_template_wrapper_responsive'] = MenuHelper::getTemplate(null, 'template_wrapper_responsive');
+            $this->data['default_template_wrapper'] = MenuHelper::getTemplate(null, 'template_wrapper');
+
+            // Item view templates
+            $this->data['heading_template'] = MenuHelper::getTemplate(null, 'heading_template');
+            $this->data['link_template'] = MenuHelper::getTemplate(null, 'link_template');
+            $this->data['banner_template'] = MenuHelper::getTemplate(null, 'banner_template');
+
+            // Item view templates responsive
+            $this->data['heading_template_responsive'] = MenuHelper::getTemplate(null, 'heading_template_responsive');
+            $this->data['link_template_responsive'] = MenuHelper::getTemplate(null, 'link_template_responsive');
+            $this->data['banner_template_responsive'] = MenuHelper::getTemplate(null, 'banner_template_responsive');
+        
+            // If user dont wanna to use developer mode ---> add class `hidden`
+            if (isset($this->session->data['teil_menu_developer_mode']) AND 
+                $this->session->data['teil_menu_developer_mode'])
+            {
+                $this->data['dev_mode_class'] = '';
+            }
+            else
+            {
+                $this->data['dev_mode_class'] = 'hidden';
+            }
             
             // Render
             $this->children = array(
@@ -283,12 +305,22 @@ class ControllerDesignMenu extends Controller {
             $this->data['show_identifer'] = false;
             $this->data['default_name'] = isset($menuInfo['name']) ? $menuInfo['name'] : '';
             $this->data['default_identifer'] = isset($menuInfo['code']) ? $menuInfo['code'] : '';
-            $this->data['default_template'] = empty($menuInfo['template']) ? "<li class='{{id}}'>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template'];
-            $this->data['default_template_responsive'] = empty($menuInfo['template_responsive']) ? "<li>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template_responsive'];
-            $this->data['default_template_wrapper'] = empty($menuInfo['template_wrapper']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper'];
-            $this->data['default_template_wrapper_responsive'] = empty($menuInfo['template_wrapper_responsive']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper_responsive'];
 
+            // Menu wrappers
+            $this->data['default_template_wrapper_responsive'] = empty($menuInfo['template_wrapper_responsive']) ? "<li>\n\t<a href='{{href}}' target='{{target}}' title='{{title}}'>{{name}}</a>\n</li>" : $menuInfo['template_wrapper_responsive'];
+            $this->data['default_template_wrapper'] = empty($menuInfo['template_wrapper']) ? "<ul>{{content}}</ul>" : $menuInfo['template_wrapper'];
+
+            // Item view templates
+            $this->data['heading_template'] = empty($menuInfo['heading_template']) ? null : $menuInfo['heading_template'];
+            $this->data['link_template'] = empty($menuInfo['link_template']) ? null : $menuInfo['link_template'];
+            $this->data['banner_template'] = empty($menuInfo['banner_template']) ? null : $menuInfo['banner_template'];
+
+            // Item view templates responsive
+            $this->data['heading_template_responsive'] = empty($menuInfo['heading_template_responsive']) ? null : $menuInfo['heading_template_responsive'];
+            $this->data['link_template_responsive'] = empty($menuInfo['link_template_responsive']) ? null : $menuInfo['link_template_responsive'];
+            $this->data['banner_template_responsive'] = empty($menuInfo['banner_template_responsive']) ? null : $menuInfo['banner_template_responsive'];
             
+
             // Multi languages
             $this->data['heading_title'] = $this->language->get('heading_title');
             $this->data['menu_saved_text'] = $this->language->get('menu_saved_text');
@@ -298,6 +330,10 @@ class ControllerDesignMenu extends Controller {
             $this->data['edit_identifer_text'] = $this->language->get('edit_identifer_text');
             $this->data['edit_wrapper_text'] = $this->language->get('edit_wrapper_text');
             $this->data['edit_template'] = $this->language->get('edit_template');
+            $this->data['heading_view_template_text'] = $this->language->get('heading_view_template_text');
+            $this->data['link_view_template_text'] = $this->language->get('link_view_template_text');
+            $this->data['banner_view_template_text'] = $this->language->get('banner_view_template_text');
+            $this->data['view_templates_text'] = $this->language->get('view_templates_text');
             $this->data['edit_identifer_hint_text'] = $this->language->get('edit_identifer_hint_text');
             $this->data['edit_wrapper_hint_text'] = $this->language->get('edit_wrapper_hint_text');
             $this->data['edit_template_hint_text'] = $this->language->get('edit_template_hint_text');
@@ -314,6 +350,17 @@ class ControllerDesignMenu extends Controller {
             $this->data['text_developer_mode'] = $this->language->get('text_developer_mode');
             $this->data['text_menu_template_static'] = $this->language->get('text_menu_template_static');
             $this->data['text_menu_template_responsive'] = $this->language->get('text_menu_template_responsive');
+
+            // If user dont wanna to use developer mode ---> add class `hidden`
+            if (isset($this->session->data['teil_menu_developer_mode']) AND 
+                $this->session->data['teil_menu_developer_mode'])
+            {
+                $this->data['dev_mode_class'] = '';
+            }
+            else
+            {
+                $this->data['dev_mode_class'] = 'hidden';
+            }
 
             // Render
             $this->children = array(

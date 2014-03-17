@@ -16,7 +16,6 @@
 		<h1><img src="view/image/category.png" alt=""><?=$heading_title?></h1>
 		<div class="buttons">
 			<a class="button" title="<?=$new_menu_item_btn_title_text?>" id="create_menu_item"><?=$new_menu_item_btn_text?></a>
-			<a class="button" title="<?=$save_btn_title_text?>" onclick="$('#form').submit()"><?=$save_btn_text?></a>
 			<a class="button" title="<?=$edit_btn_title_text?>" href="<?=$edit_menu?>"><?=$edit_btn_text?></a>
 			<a class="button" title="<?=$delete_btn_title_text?>" onclick="onDeleteMenu('<?=$delete_menu?>')"><?=$delete_btn_text?></a>
 		</div>
@@ -84,17 +83,19 @@
 					<?php } ?>
 				</td>
 			</tr>
+
 			<tr>
 				<td><span class="help-text-container"><?=$text_link_view_type?><span class="hover-help"><?=$text_link_view_type_description?></span></span></td>
 				<td>
 					<select id='link_view_type' name='link_view_type'>
-						<option value='link'><?=$text_link_view_type_link;?></option>
-						<option value='heading'><?=$text_link_view_type_heading;?></option>
-						<option value='banner'><?=$text_link_view_type_banner;?></option>
+						<option value='link' class="link" data-show-dependings="depends-on-link"><?=$text_link_view_type_link;?></option>
+						<option value='heading' class="heading" data-show-dependings="depends-on-heading"><?=$text_link_view_type_heading;?></option>
+						<option value='banner' class="banner" data-show-dependings="depends-on-banner"><?=$text_link_view_type_banner;?></option>
 					</select>
 				</td>
 			</tr>
-			<tr>
+			
+			<tr class="depending-field depends-on-link depends-on-banner">
 				<td><span class="help-text-container"><?=$item_link_type_text?><span class="hover-help"><?=$item_link_type_text_description?></span></span></td>
 				<td>
 					<select id='link_type'>
@@ -125,11 +126,13 @@
 					</select>
 				</td>
 			</tr>
-			<tr class="link {{#unless link}}hidden{{/unless}}">
+
+			<tr class="link depending-field depends-on-link depends-on-banner {{#unless link}}hidden{{/unless}}">
 				<td><?=$item_link_type_href_text?></td>
 				<td><input type="text" value="{{item.href}}" id="form_href"></td>
 			</tr>
-			<tr class="category {{#unless categoryId}}hidden{{/unless}}">
+
+			<tr class="category depending-field depends-on-banner {{#unless categoryId}}hidden{{/unless}}">
 				<td><?=$item_link_type_category_text?></td>
 				<td>
 					<select>
@@ -139,7 +142,8 @@
 					</select>
 				</td>
 			</tr>
-			<tr class="product {{#unless productId}}hidden{{/unless}}">
+			
+			<tr class="product depending-field depends-on-banner {{#unless productId}}hidden{{/unless}}">
 				<td><?=$item_link_type_product_text?></td>
 				<td>
 					<select>
@@ -149,7 +153,8 @@
 					</select>
 				</td>
 			</tr>
-			<tr class="manufacturer {{#unless manufactorerId}}hidden{{/unless}}">
+			
+			<tr class="manufacturer depending-field depends-on-banner {{#unless manufactorerId}}hidden{{/unless}}">
 				<td><?=$item_link_type_manufacturer_text?></td>
 				<td>
 					<select>
@@ -160,7 +165,7 @@
 				</td>
 			</tr>
 			
-			<tr class="information {{#unless informationId}}hidden{{/unless}}">
+			<tr class="information depending-field depends-on-banner {{#unless informationId}}hidden{{/unless}}">
 				<td><?=$item_link_type_information_text?></td>
 				<td>
 					<select>
@@ -171,7 +176,7 @@
 				</td>
 			</tr>
 
-			<tr>
+			<tr class="depending-field depends-on-banner hidden">
 				<td><?=$text_image_field;?></td>
 				<td>
 					<div class="image"><img src="{{item.thumb}}" alt="" id="thumb" /><br /><input type="hidden" name="image" value="{{item.image}}" id="image" />
@@ -182,7 +187,7 @@
 				</td>
 			</tr>
 
-			<tr>
+			<tr class="depending-field depends-on-link depends-on-banner">
 				<td><span class="help-text-container"><?=$item_target_link_text?><span class="hover-help"><?=$item_target_link_text_description?></span></span></td>
 				<td><input type="checkbox" id="form_target" {{pageTarget item.target}}></td>
 			</tr>
@@ -222,17 +227,27 @@
 			revert: 250,
 			tabSize: 25,
 			tolerance: 'pointer',
-			toleranceElement: '> div'
+			toleranceElement: '> div',
+			stop: function() {
+				var results = $('#sortable').nestedSortable('serialize');
+			
+				$.ajax({
+					url: '/admin/index.php?route=design/menu_ajax&token=<?=$token?>',
+					type: 'POST',
+					dataType: 'json',
+					data: {
+						method: 'save_order',
+		                data: results
+					},
+				})
+				.fail(function() {
+					alert('Error while saving menu order!');
+				});
+			}
 		});
 
 		// Language tabs
 		$('#languages a').tabs();
-
-		// Submiting form serialize results
-		$('#form').on('submit', function(){
-			var results = $('#sortable').nestedSortable('serialize');
-			$('#results_sortable').val(results);
-		});
 		
 		// Edit form initialization
 		teilMenu.init({
