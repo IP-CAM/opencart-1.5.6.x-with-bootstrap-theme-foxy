@@ -107,4 +107,5 @@ require_once(VQMod::modCheck(DIR_SYSTEM . 'library/play.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/ebay.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/amazon.php'));
 require_once(VQMod::modCheck(DIR_SYSTEM . 'library/amazonus.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'teil/loader.php'));
 ?>

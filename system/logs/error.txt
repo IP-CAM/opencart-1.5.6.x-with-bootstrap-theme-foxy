@@ -3727,3 +3727,1090 @@
 2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105
 2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105
 2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105
+2014-04-14 11:51:36 - PHP Notice:  Error: Could not load model teil/home! in C:\xampp2\sites\opencart.dev\www\vqmod\vqcache\vq2-system_engine_loader.php on line 48
+2014-04-14 13:00:31 - PHP Notice:  Undefined variable: timeout in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 21
+2014-04-14 13:00:31 - PHP Notice:  Undefined property: TeilLoader::$progress in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 24
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:31 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:00:32 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Notice:  Undefined property: TeilLoader::$progress in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 24
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  Invalid callback , no array or string given in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:01:17 - PHP Warning:  curl_exec(): Cannot call the CURLOPT_PROGRESSFUNCTION in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 29
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:02:56 - PHP Notice:  Undefined variable: done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 30
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined property: TeilLoader::$done_percent in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 33
+2014-04-14 13:09:55 - PHP Notice:  Undefined variable: filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:09:55 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system//downloads/): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:10:08 - PHP Notice:  Undefined variable: filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:10:08 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system//downloads/): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:10:22 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system//downloads/module.rar): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:10:34 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/downloads/module.rar): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 51
+2014-04-14 13:25:26 - PHP Warning:  Missing argument 1 for TeilLoader::__construct(), called in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 56 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 15
+2014-04-14 13:25:26 - PHP Warning:  Missing argument 2 for TeilLoader::__construct(), called in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 56 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 15
+2014-04-14 13:25:26 - PHP Notice:  Undefined variable: filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 17
+2014-04-14 13:25:26 - PHP Notice:  Undefined variable: url in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 18
+2014-04-14 13:25:26 - PHP Notice:  Undefined variable: filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 21
+2014-04-14 13:25:27 - PHP Notice:  Undefined property: TeilLoader::$download_dir in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 63
+2014-04-14 13:28:42 - PHP Notice:  Undefined property: TeilLoader::$download_dir in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 70
+2014-04-14 13:29:30 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/replace-menu): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 72
+2014-04-14 13:29:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/replace-menu): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 72
+2014-04-14 13:30:23 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/replace-menu.zip): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 72
+2014-04-14 13:31:52 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/replace-menu.zip): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 72
+2014-04-14 13:34:42 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/replace_menu.zip): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 72
+2014-04-14 13:48:18 - PHP Notice:  Undefined property: TeilLoader::$filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 39
+2014-04-14 13:48:19 - PHP Notice:  Undefined property: TeilLoader::$filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 96
+2014-04-14 13:48:19 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 98
+2014-04-14 13:49:21 - PHP Notice:  Undefined property: TeilLoader::$filename in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 96
+2014-04-14 13:49:21 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/downloads/): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 98
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:06 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/ad8104b223b9e50181092a459a01c969e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:51:58 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 79
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80
+2014-04-14 13:53:01 - PHP Warning:  file_put_contents(C:\xampp2\sites\opencart.dev\www/system/teil/C:\xampp2\sites\opencart.dev\www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/e1c96b38b41c5cf622fbcf3624f612ec.txt): failed to open stream: Invalid argument in C:\xampp2\sites\opencart.dev\www\system\teil\loader.php on line 80

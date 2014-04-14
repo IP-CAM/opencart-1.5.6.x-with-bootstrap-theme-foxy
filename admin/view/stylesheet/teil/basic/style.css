@@ -1,0 +1,55 @@
+.teil-container {
+	position: relative;
+}
+.teil-container *,
+.teil-container *:after,
+.teil-container *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.teil-container .clearfix:before,
+.teil-container .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.teil-container .clearfix:after {
+    clear: both;
+}
+
+.teil-container .clearfix {
+    *zoom: 1;
+}
+
+.teil-container {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #f9f9f9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.teil-container {
+	width: 100%;
+	position: relative;
+}
+
+.teil-container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.teil-container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+}
