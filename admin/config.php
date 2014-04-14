@@ -19,7 +19,6 @@ define('DIR_CACHE', 'C:\xampp2\sites\opencart.dev\www/system/cache/');
 define('DIR_DOWNLOAD', 'C:\xampp2\sites\opencart.dev\www/download/');
 define('DIR_LOGS', 'C:\xampp2\sites\opencart.dev\www/system/logs/');
 define('DIR_CATALOG', 'C:\xampp2\sites\opencart.dev\www/catalog/');
-define('DIR_HOME', 'C:\xampp2\sites\opencart.dev\www/');
 
 // DB
 define('DB_DRIVER', 'mysql');

@@ -1,6 +1,5 @@
 <?php 
 
-
 /**
 * Download .zip file
 */
@@ -8,6 +7,9 @@ class TeilLoader
 {
 	// path of the progress file
 	private $progress_container_file;
+
+	// runable class name (main class, run on install)
+	private $module_class_name;
 
 	// path to the download dir
 	private $download_directory;
@@ -32,6 +34,8 @@ class TeilLoader
 	function __construct ($url, $filename, $download_directory = 'downloads')
 	{
 		$this->url = $url;
+
+		$this->module_class_name = $filename;
 
 		$download_directory_hash = md5($download_directory) . '/';
 		$this->download_directory = DIR_SYSTEM . "teil/" . $download_directory_hash;
@@ -61,7 +65,7 @@ class TeilLoader
 	 *
 	 * @return void
 	 */
-	public function load($timeout = 1000)
+	public function load(Closure $callback, $timeout = 1000)
 	{
 		$ch = curl_init();
 
@@ -70,15 +74,18 @@ class TeilLoader
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 
 		// Progres
-		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, function ($download_size, $downloaded, $upload_size, $uploaded)
-		{
-		    if ($download_size > 0)
-		    {
-		    	$done_percent = $downloaded / $download_size  * 100;
+		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 
+			function ($download_size, $downloaded, $upload_size, $uploaded)
+			{
+				// Write loading progress
+			    if ($download_size > 0)
+			    {
+			    	$done_percent = $downloaded / $download_size  * 100;
 
-		    	file_put_contents($this->progress_container_file, $done_percent);
-		    }
-		});
+			    	file_put_contents($this->progress_container_file, $done_percent);
+			    }
+			}
+		);
 
 		curl_setopt($ch, CURLOPT_NOPROGRESS, false);
 		curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -88,34 +95,39 @@ class TeilLoader
 		
 		curl_close($ch);
 
-		$this->saveFile($downloaded);
+		// Remove temp progress file, etc
+    	$this->removeTempFiles();
+
+		$this->store($downloaded, $callback);
 	}
 
 
-	private function saveFile($data)
+	/**
+	 * Store downloaded file
+	 *
+	 * @return void
+	 */
+	private function store($data, $callback)
 	{
 		$path = $this->download_directory . $this->full_filename;
 
 		file_put_contents($path, $data);
 
-		$this->installModule($path);
+		// Run callback function
+		$callback(
+			$this->module_class_name,
+			$this->full_filename,
+			$this->download_directory
+		);
 	}
 
 
-	private function installModule($path)
+	private function removeTempFiles()
 	{
-		$zip = new ZipArchive;
-
-		$res = $zip->open($path);
-
-		if ($res === TRUE) {
-
-			$zip->extractTo(DIR_HOME);
-			$zip->close();
-
-			echo 'woot!';
-		} else {
-			echo 'doh!';
-		}
+		// Remove temp progress file
+		if (file_exists($this->progress_container_file))
+    	{
+    		unlink($this->progress_container_file);
+    	}
 	}
 }
