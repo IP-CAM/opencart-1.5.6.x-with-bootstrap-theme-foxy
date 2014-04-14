@@ -3724,3 +3724,6 @@
 2014-03-17 19:30:32 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
 2014-03-17 19:31:02 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
 2014-03-17 19:31:02 - PHP Notice:  Undefined index: code in C:\xampp2\sites\opencart.dev\www\catalog\model\design\menu.php on line 14
+2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105
+2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105
+2014-03-18 10:55:08 - PHP Notice:  Undefined index: _template in C:\xampp2\sites\opencart.dev\www\system\library\menu.php on line 105

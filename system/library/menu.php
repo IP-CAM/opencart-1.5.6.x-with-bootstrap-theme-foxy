@@ -105,8 +105,8 @@ class Menu {
                 $template = self::$templates[ $row['view_type'] . '_template' ];
             }
 
-            $structure = $template;
-            // $structure = str_replace(htmlspecialchars('</li>'), '', $template);
+            // $structure = $template;
+            $structure = str_replace(htmlspecialchars('</li>'), '', $template);
 
             // Define how mutch children has current menu item
             $num_children = 0;

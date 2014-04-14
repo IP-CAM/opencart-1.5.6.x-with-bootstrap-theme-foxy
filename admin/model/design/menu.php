@@ -543,13 +543,13 @@ class ModelDesignMenu extends Model {
 		AUTO_INCREMENT=10;";
 
 		// Create table `menu_items`
-		$query['create_child'] = "CREATE TABLE `menu_items` (
+		$query['create_child'] = "CREATE TABLE `menu_items` ( 
 			`id` INT(10) NOT NULL AUTO_INCREMENT,
 			`code` VARCHAR(20) NOT NULL,
 			`href` TEXT NOT NULL,
 			`image` TEXT NOT NULL,
 			`params` TEXT NOT NULL,
-			`view_type` VARCHAR(100) NOT NULL,
+			`view_type` VARCHAR(100) NOT NULL DEFAULT 'heading',
 			`self_class` TEXT NOT NULL,
 			`parent` INT(11) NOT NULL,
 			`target` TINYINT(1) NOT NULL,
@@ -563,7 +563,7 @@ class ModelDesignMenu extends Model {
 		COMMENT='Menu manager by Teil(Yurii Krevnyi)\r\nChildren of menu table'
 		COLLATE='utf8_general_ci'
 		ENGINE=InnoDB
-		AUTO_INCREMENT=206;";
+		AUTO_INCREMENT=208;";
 
 		// Create table `menu_items_lang`
 		$query['create_child_lang'] = "CREATE TABLE `menu_items_lang` (

@@ -2,16 +2,16 @@
 
 class MenuHelper
 {
-	private static $template_wrapper = "<ul>{{content}}</ul>";
-	private static $template_wrapper_responsive = "<ul class='responsive'>{{content}}</ul>";
+	static private $template_wrapper = "<ul>{{content}}</ul>";
+	static private $template_wrapper_responsive = "<ul class='responsive'>{{content}}</ul>";
 
-	private static $heading_template = "<li class='{{self_class}}'>{{name}}</li>1";
-	private static $link_template = "<li class='{{self_class}}'>{{name}}</li>2";
-	private static $banner_template = "<li class='{{self_class}}'>{{name}}</li>3";
+	static private $heading_template = "<li class='{{self_class}}'>{{name}}</li>";
+	static private $link_template = "<li class='{{self_class}}'><a href='{{name}}'>{{name}}</a></li>";
+	static private $banner_template = "<li class='{{self_class}}'><a href='{{name}}'>{{name}}</a></li>";
 
-	private static $heading_template_responsive = "<li class='{{self_class}}'>{{name}}</li>4";
-	private static $link_template_responsive = "<li class='{{self_class}}'>{{name}}</li>5";
-	private static $banner_template_responsive = "<li class='{{self_class}}'>{{name}}</li>6";
+	static private $heading_template_responsive = "<li class='{{self_class}}'>{{name}}</li>";
+	static private $link_template_responsive = "<li class='{{self_class}}'><a href='{{name}}'>{{name}}</a></li>";
+	static private $banner_template_responsive = "<li class='{{self_class}}'><a href='{{name}}'>{{name}}</a></li>";
 
 
 	/**
