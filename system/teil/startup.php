@@ -38,4 +38,5 @@ Facade::setFacadeApplication($app);
  */
 $app->getProviderRepository()->load($app);
 
+Menu::test();
 die('teil startup');

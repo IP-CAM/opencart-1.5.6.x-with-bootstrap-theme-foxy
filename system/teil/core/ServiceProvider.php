@@ -1,9 +1,6 @@
 <?php 
 
 
-use ReflectionClass;
-
-
 /**
  * Abstract class to every single service provider
  *

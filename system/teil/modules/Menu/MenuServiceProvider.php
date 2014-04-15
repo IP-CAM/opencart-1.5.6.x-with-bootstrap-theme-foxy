@@ -22,7 +22,7 @@ class MenuProvider extends ServiceProvider {
 	 */
 	protected function registerMenuBuilder()
 	{
-		$this->app->instance('Menu', new Menu);
+		$this->app->instance('Menu', new MenuBuilder);
 	}
 
 

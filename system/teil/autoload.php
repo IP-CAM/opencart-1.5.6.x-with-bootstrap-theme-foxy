@@ -15,7 +15,7 @@ require_once('lib/TeilAutoload.php');
  */
 $teilautoload = new TeilAutoload(
     array('Container.php', 'App.php'),
-    array('autoload.php')
+    array('autoload.php', 'startup.php')
 );
 
 
