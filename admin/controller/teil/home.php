@@ -52,26 +52,6 @@ class ControllerTeilHome extends Controller {
             'common/header',
             'common/footer'
         );
-
-        $loader = new TeilDownloader(
-            "http://pimi.website-builder.ru/Menu.zip",
-            'Menu'
-        );
-
-        $file = $loader->load(
-            function($moduleName, $filename, $dir) 
-            {
-                $moduleInstaller = new ModuleInstaller(
-                    $this->db,
-                    $moduleName,
-                    $filename,
-                    $dir
-                );
-                
-                $moduleInstaller->unzip();
-                $moduleInstaller->boot();
-            }
-        );
         
         $this->response->setOutput($this->render());
 	}
@@ -109,7 +89,27 @@ class ControllerTeilHome extends Controller {
     // install module
     public function install()
     {
-        
+        $loader = new TeilDownloader(
+            "http://pimi.website-builder.ru/Menu.zip",
+            'Menu'
+        );
+
+        $file = $loader->load(
+            function($moduleName, $filename, $dir) 
+            {
+                $moduleInstaller = new ModuleInstaller(
+                    $this->db,
+                    $moduleName,
+                    $filename,
+                    $dir
+                );
+                
+                $moduleInstaller->unzip();
+                $moduleInstaller->boot();
+            }
+        );
+
+        $this->redirect(HTTPS_SERVER . 'index.php?route=teil/home&token=' . $this->session->data['token']);
     }
 
 

@@ -5262,3 +5262,6 @@ DROP TABLE IF EXISTS `test_table`;
 2014-04-15 14:13:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
 2014-04-15 14:13:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
 2014-04-15 14:13:58 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:18:39 - PHP Notice:  Undefined variable: moduleFiles in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 79
+2014-04-15 14:18:41 - PHP Notice:  Undefined variable: moduleFiles in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 79
+2014-04-15 14:18:42 - PHP Notice:  Undefined variable: moduleFiles in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 79

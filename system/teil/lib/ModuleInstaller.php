@@ -75,14 +75,13 @@ class ModuleInstaller
 	 */
 	private function autoloadModuleFiles()
 	{
-		// $autoload = new TeilAutoload();
-		// print_r($moduleFiles); die();
-		// $moduleFiles = $autoload->getLoaderPaths(DIR_TEIL_MODULES . $this->moduleName . '/');
+		$autoload = new TeilAutoload();
+		$moduleFiles = $autoload->getLoaderPaths(DIR_TEIL_MODULES . $this->moduleName . '/');
 
-		// foreach ($moduleFiles as $file)
-		// {
-		// 	require_once($file);
-		// }
+		foreach ($moduleFiles as $file)
+		{
+			require_once($file);
+		}
 	}
 
 
