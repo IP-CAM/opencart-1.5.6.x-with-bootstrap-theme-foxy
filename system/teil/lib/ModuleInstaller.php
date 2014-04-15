@@ -59,4 +59,5 @@ class ModuleInstaller
 		$command->execute(); die();
 	}
 
+
 }

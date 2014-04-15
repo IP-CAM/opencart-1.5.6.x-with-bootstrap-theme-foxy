@@ -6,10 +6,9 @@
  *
  * @return void
  */
-class MenuModuleCommand implements Command {
+class MenuCommand implements Command {
 	
 	private $module;
-	private $modulePath;
 
 
 	public function __construct($module)

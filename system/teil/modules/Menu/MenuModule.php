@@ -7,7 +7,11 @@
 class MenuModule extends ModuleCore 
 {
 	
-	function __construct() {}
+	function __construct()
+	{
+		echo "Hello, from menu";
+	}
+	
 
 	public function installDatabase()
 	{

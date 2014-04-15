@@ -1,36 +1,35 @@
 <?php 
 
-$teil_directory = DIR_SYSTEM . 'teil/';
-$teil_files = array();
+/**
+ * Include autoloader for loading all the application classes
+ */
+require_once('lib/TeilAutoload.php');
 
-function recurseDirs($main, $count = 0)
+
+/**
+ * Init autoloader
+ *
+ *  1st param - priority files
+ *  2nd param - files to exclude
+ *
+ */
+$teilautoload = new TeilAutoload(
+    array('Container.php', 'App.php'),
+    array('autoload.php')
+);
+
+
+/**
+ * Simply load all the files (limit 100)
+ */
+$teil_files = $teilautoload->getLoaderPaths(DIR_SYSTEM . 'teil/');
+foreach ($teil_files as $teil_file_path)
 {
-    GLOBAL $teil_files;
-
-    $dirHandle = opendir($main);
-
-    while($file = readdir($dirHandle))
-    {
-        if(is_dir($main . $file . "/") AND $file != '.' AND $file != '..')
-        {
-            $count = recurseDirs($main . $file . "/", $count);
-        }
-        elseif (preg_match("/\.php$/i", $file))
-        {
-            $count++;
-            $teil_files[] = $main . $file;
-        }
-    }
-
-    if ($count > 100)
-    {
-        throw new Exception("Too, many files to include");
-    }
+    require_once($teil_file_path);
 }
 
-recurseDirs($teil_directory);
 
-foreach ($teil_files as $file_path)
-{
-    require_once($file_path);
-}
+/**
+ * Startup the application
+ */
+require_once('startup.php');

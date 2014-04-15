@@ -4856,3 +4856,5 @@
 2014-04-14 18:12:11 - PHP Notice:  Undefined variable: modulePath in C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule\command\MenuModuleCommand.php on line 24
 2014-04-14 18:12:12 - PHP Notice:  Undefined variable: modulePath in C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule\command\MenuModuleCommand.php on line 24
 2014-04-14 18:14:20 - PHP Warning:  file_get_contents(C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule/install.sql): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule\MenuModule.php on line 18
+2014-04-15 8:24:46 - PHP Notice:  Undefined variable: registry in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 61
+2014-04-15 8:24:46 - PHP Notice:  Undefined variable: registry in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 62

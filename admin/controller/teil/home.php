@@ -58,9 +58,6 @@ class ControllerTeilHome extends Controller {
             'MenuModule'
         );
 
-        $loader = new Loader($registry);
-        $registry->set('load', $loader);
-
         $file = $loader->load(
             function($classname, $filename, $dir) 
             {
