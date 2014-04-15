@@ -28,4 +28,6 @@ class MenuCommand implements Command {
 		$this->module->removeFiles();
 		$this->module->uninstallDatabase();
 	}
+
+	
 }

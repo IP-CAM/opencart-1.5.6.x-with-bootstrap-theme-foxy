@@ -9,7 +9,7 @@ class App extends Container {
 		// Get global providers
 		$this->providers = array(
 			'providers' => array(
-				"MenuProvider",
+				"MenuServiceProvider",
 			)
 		);
 	}

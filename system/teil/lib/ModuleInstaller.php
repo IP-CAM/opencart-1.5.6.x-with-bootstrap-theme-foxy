@@ -6,16 +6,20 @@
 */
 class ModuleInstaller 
 {
-	private $classname;
+	private $moduleName;
 	private $filename;
 	private $path;
 	private $dir;
 
+	private $db;
+
 	
 	// Store module info
-	function __construct($classname, $filename, $dir)
+	function __construct($db, $moduleName, $filename, $dir)
 	{
-		$this->classname = $classname;
+		$this->db = $db;
+
+		$this->moduleName = $moduleName;
 		$this->filename = $filename;
 		$this->dir = $dir;
 
@@ -49,14 +53,15 @@ class ModuleInstaller
 	public function boot()
 	{
 		// Get module command name
-		$commandName = $this->classname . 'Command';
+		$commandName = $this->moduleName . 'Command';
+		$className = $this->moduleName . 'Module';
 
 		// Create new command and pass module to it
-		$module = new $this->classname();
+		$module = new $className($this->db);
 		$command = new $commandName($module);
 		
 		// Execute ;)
-		$command->execute(); die();
+		$command->execute();
 	}
 
 

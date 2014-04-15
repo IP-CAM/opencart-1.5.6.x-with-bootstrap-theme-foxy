@@ -1,7 +1,7 @@
 <?php 
 
 
-class MenuProvider extends ServiceProvider {
+class MenuServiceProvider extends ServiceProvider {
 
 
 	/**
@@ -22,7 +22,7 @@ class MenuProvider extends ServiceProvider {
 	 */
 	protected function registerMenuBuilder()
 	{
-		$this->app->instance('Menu', new MenuBuilder);
+		$this->app->instance('Menu', new MenuBuilder($this->app));
 	}
 
 

@@ -4858,3 +4858,376 @@
 2014-04-14 18:14:20 - PHP Warning:  file_get_contents(C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule/install.sql): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\modules\MenuModule\MenuModule.php on line 18
 2014-04-15 8:24:46 - PHP Notice:  Undefined variable: registry in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 61
 2014-04-15 8:24:46 - PHP Notice:  Undefined variable: registry in C:\xampp2\sites\opencart.dev\www\admin\controller\teil\home.php on line 62
+2014-04-15 12:13:35 - PHP Notice:  Undefined variable: local_filename in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 115
+2014-04-15 12:37:16 - PHP Warning:  Missing argument 1 for ModuleCore::__construct(), called in C:\xampp2\sites\opencart.dev\www\system\teil\modules\Menu\MenuModule.php on line 12 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 13
+2014-04-15 12:37:16 - PHP Notice:  Undefined variable: db in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 15
+2014-04-15 12:37:26 - PHP Warning:  Missing argument 1 for ModuleCore::__construct(), called in C:\xampp2\sites\opencart.dev\www\system\teil\modules\Menu\MenuModule.php on line 12 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 13
+2014-04-15 12:37:26 - PHP Notice:  Undefined variable: db in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 15
+2014-04-15 12:37:28 - PHP Warning:  Missing argument 1 for ModuleCore::__construct(), called in C:\xampp2\sites\opencart.dev\www\system\teil\modules\Menu\MenuModule.php on line 12 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 13
+2014-04-15 12:37:28 - PHP Notice:  Undefined variable: db in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleCore.php on line 15
+2014-04-15 12:48:01 - PHP Notice:  Error: Table 'test_table' already exists<br />Error No: 1050<br />CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:48:08 - PHP Notice:  Error: Table 'test_table' already exists<br />Error No: 1050<br />CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:48:47 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:50:10 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:50:39 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 2<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:50:57 - PHP Notice:  Error: Table 'test_table' already exists<br />Error No: 1050<br />
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:51:33 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT N' at line 2<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:51:37 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT N' at line 2<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`
+CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:51:41 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` IN' at line 1<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;;
+CREATE TABLE IF NOT EXISTS `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:53:39 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:53:40 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:53:40 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:53:41 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:53:41 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:56:26 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:56:27 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:56:27 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:56:27 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:57:04 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:57:07 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+);
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:57:13 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+); in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:57:17 - PHP Notice:  Error: Table 'test_table' already exists<br />Error No: 1050<br />
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:57:32 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:58:08 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY' at line 3<br />Error No: 1064<br />DROP TABLE IF EXISTS `test_table`;
+
+CREATE TABLE `test_table` (
+	`id` INT NOT NULL,
+	`testval` INT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB; in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:59:24 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, F' at line 9<br />Error No: 1064<br />-- --------------------------------------------------------
+-- Сервер:                       127.0.0.1
+-- Версія сервера:               5.5.32 - MySQL Community Server (GPL)
+-- ОС сервера:                   Win32
+-- HeidiSQL Версія:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping structure for таблиця opencart.dev.test_table
+DROP TABLE IF EXISTS `test_table`;
+CREATE TABLE IF NOT EXISTS `test_table` (
+  `id` int(11) NOT NULL,
+  `testval` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table opencart.dev.test_table: ~0 rows (приблизно)
+DELETE FROM `test_table`;
+/*!40000 ALTER TABLE `test_table` DISABLE KEYS */;
+/*!40000 ALTER TABLE `test_table` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+ in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:59:28 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, F' at line 9<br />Error No: 1064<br />-- --------------------------------------------------------
+-- Сервер:                       127.0.0.1
+-- Версія сервера:               5.5.32 - MySQL Community Server (GPL)
+-- ОС сервера:                   Win32
+-- HeidiSQL Версія:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping structure for таблиця opencart.dev.test_table
+DROP TABLE IF EXISTS `test_table`;
+CREATE TABLE IF NOT EXISTS `test_table` (
+  `id` int(11) NOT NULL,
+  `testval` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table opencart.dev.test_table: ~0 rows (приблизно)
+DELETE FROM `test_table`;
+/*!40000 ALTER TABLE `test_table` DISABLE KEYS */;
+/*!40000 ALTER TABLE `test_table` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+ in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:59:32 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, F' at line 9<br />Error No: 1064<br />-- --------------------------------------------------------
+-- Сервер:                       127.0.0.1
+-- Версія сервера:               5.5.32 - MySQL Community Server (GPL)
+-- ОС сервера:                   Win32
+-- HeidiSQL Версія:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping structure for таблиця opencart.dev.test_table
+
+CREATE TABLE IF NOT EXISTS `test_table` (
+  `id` int(11) NOT NULL,
+  `testval` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table opencart.dev.test_table: ~0 rows (приблизно)
+DELETE FROM `test_table`;
+/*!40000 ALTER TABLE `test_table` DISABLE KEYS */;
+/*!40000 ALTER TABLE `test_table` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+ in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 12:59:36 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, F' at line 9<br />Error No: 1064<br />-- --------------------------------------------------------
+-- Сервер:                       127.0.0.1
+-- Версія сервера:               5.5.32 - MySQL Community Server (GPL)
+-- ОС сервера:                   Win32
+-- HeidiSQL Версія:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping structure for таблиця opencart.dev.test_table
+DROP TABLE IF EXISTS `test_table`;
+ in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50

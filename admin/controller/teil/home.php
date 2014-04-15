@@ -53,15 +53,20 @@ class ControllerTeilHome extends Controller {
             'common/footer'
         );
 
-        $loader = new TeilLoader(
+        $loader = new TeilDownloader(
             "http://pimi.website-builder.ru/MenuModule.zip",
-            'MenuModule'
+            'Menu'
         );
 
         $file = $loader->load(
-            function($classname, $filename, $dir) 
+            function($moduleName, $filename, $dir) 
             {
-                $moduleInstaller = new ModuleInstaller($classname, $filename, $dir);
+                $moduleInstaller = new ModuleInstaller(
+                    $this->db,
+                    $moduleName,
+                    $filename,
+                    $dir
+                );
                 // $moduleInstaller->unzip();
                 $moduleInstaller->boot();
             }

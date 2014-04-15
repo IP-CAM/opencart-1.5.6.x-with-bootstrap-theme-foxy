@@ -6,28 +6,29 @@
 */
 class MenuModule extends ModuleCore 
 {
-	
-	function __construct()
+
+	public function __construct($db)
 	{
-		echo "Hello, from menu";
+		parent::__construct(__FILE__, $db);
 	}
-	
 
 	public function installDatabase()
 	{
-		// Get abs path(main folder) of the module
-		$modulePath = realpath(dirname(__FILE__));
-		
 		// Get install sql
-		
-		$file = file_get_contents($modulePath . '/resources/install.sql');
-		
-		echo "installing db";
+		$installSql = file_get_contents($this->modulePath . '/resources/install.sql');
+		$unInstallSql = file_get_contents($this->modulePath . '/resources/uninstall.sql');
+
+		$this->db->query($unInstallSql);
+		$this->db->query($installSql);
 	}
+
 
 	public function uninstallDatabase()
 	{
-		echo "uninstalling db";
+		// Get install sql
+		$unInstallSql = file_get_contents($this->modulePath . '/resources/uninstall.sql');
+
+		$this->db->query($unInstallSql);
 	}
 
 
@@ -35,4 +36,6 @@ class MenuModule extends ModuleCore
 	{
 		echo "removing files";
 	}
+
+	
 }

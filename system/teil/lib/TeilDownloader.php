@@ -3,21 +3,21 @@
 /**
 * Download .zip file
 */
-class TeilLoader 
+class TeilDownloader 
 {
 	// path of the progress file
 	private $progress_container_file;
 
 	// runable class name (main class, run on install)
-	private $module_class_name;
+	private $module_name;
 
 	// path to the download dir
 	private $download_directory;
 
-	// local name of the file (name_of_the_file)
+	// !is hashed! local name of the file (name_of_the_file)
 	private $local_filename;
 
-	// name of the file with extension (name_of_the_file.zip)
+	// !is hashed! Name of the file with extension (name_of_the_file.zip)
 	private $full_filename;
 
 	// Url to the sourse
@@ -27,20 +27,20 @@ class TeilLoader
 	/**
 	 * All the instalable modules should be .zip
 	 * They should be in the $url directory
-	 * Than url will be like $url . $filename.zip
+	 * Than url will be like $url . $moduleName.zip
 	 *
 	 * @return void
 	 */
-	function __construct ($url, $filename, $download_directory = 'downloads')
+	function __construct ($url, $moduleName, $download_directory = 'downloads')
 	{
 		$this->url = $url;
 
-		$this->module_class_name = $filename;
+		$this->module_name = $moduleName;
 
 		$download_directory_hash = md5($download_directory) . '/';
 		$this->download_directory = DIR_SYSTEM . "teil/" . $download_directory_hash;
 
-		$this->local_filename = md5($filename);
+		$this->local_filename = md5($moduleName);
 		$this->full_filename = $this->local_filename . '.zip';
 
 		// temp progress container
@@ -115,7 +115,7 @@ class TeilLoader
 
 		// Run callback function
 		$callback(
-			$this->module_class_name,
+			$this->module_name,
 			$this->full_filename,
 			$this->download_directory
 		);
