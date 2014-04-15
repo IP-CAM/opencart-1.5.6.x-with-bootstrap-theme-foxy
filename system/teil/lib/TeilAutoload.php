@@ -22,7 +22,7 @@ class TeilAutoload
     private $totalLoadFileLimit = 100;
 
 
-    public function __construct($priority_files, $files_to_exclude)
+    public function __construct($priority_files = array(), $files_to_exclude = array())
     {
         $this->priority_files = $priority_files;
         $this->files_to_exclude = $files_to_exclude;

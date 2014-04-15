@@ -5231,3 +5231,34 @@ DELETE FROM `test_table`;
 -- Dumping structure for таблиця opencart.dev.test_table
 DROP TABLE IF EXISTS `test_table`;
  in C:\xampp2\sites\opencart.dev\www\system\database\mysql.php on line 50
+2014-04-15 14:02:58 - PHP Warning:  opendir(C:\xampp2\sites\opencart.dev\www/system/test1/,C:\xampp2\sites\opencart.dev\www/system/test1/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:02:58 - PHP Warning:  opendir(C:\xampp2\sites\opencart.dev\www/system/test1/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:02:58 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:08:54 - PHP Warning:  Missing argument 1 for ModuleInstaller::autoloadModuleFiles(), called in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 60 and defined in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 76
+2014-04-15 14:08:54 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/teil/modules/Menu,C:/xampp2/sites/opencart.dev/www/teil/modules/Menu):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:08:54 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/teil/modules/Menu): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:08:54 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:09:12 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/teil/modules/Menu,C:/xampp2/sites/opencart.dev/www/teil/modules/Menu):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:09:12 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/teil/modules/Menu): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:09:12 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:09:49 - PHP Notice:  Array to string conversion in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 83
+2014-04-15 14:09:49 - PHP Warning:  require_once(Array): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 83
+2014-04-15 14:10:21 - PHP Warning:  require_once(C:/xampp2/sites/opencart.dev/www/system/teil/modules/MenuMenuBuilder.php): failed to open stream: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 83
+2014-04-15 14:11:37 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:11:37 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:11:37 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:11:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:11:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:11:58 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:12:54 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:12:54 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:12:54 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:13:21 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:21 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:21 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:13:25 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:25 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:25 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41
+2014-04-15 14:13:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/,C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/):  in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:58 - PHP Warning:  opendir(C:/xampp2/sites/opencart.dev/www/system/teil/modules/Menu/): failed to open dir: No such file or directory in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 39
+2014-04-15 14:13:58 - PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in C:\xampp2\sites\opencart.dev\www\system\teil\lib\TeilAutoload.php on line 41

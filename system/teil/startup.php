@@ -1,7 +1,8 @@
 <?php 
 
 define("DIR_HOME", $_SERVER['DOCUMENT_ROOT'] . '/');
-define("DIR_TEIL_HOME", $_SERVER['DOCUMENT_ROOT'] . '/teil/');
+define("DIR_TEIL_HOME", $_SERVER['DOCUMENT_ROOT'] . '/system/teil/');
+define("DIR_TEIL_MODULES", $_SERVER['DOCUMENT_ROOT'] . '/system/teil/modules/');
 
 
 /**

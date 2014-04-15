@@ -54,7 +54,7 @@ class ControllerTeilHome extends Controller {
         );
 
         $loader = new TeilDownloader(
-            "http://pimi.website-builder.ru/MenuModule.zip",
+            "http://pimi.website-builder.ru/Menu.zip",
             'Menu'
         );
 
@@ -67,7 +67,8 @@ class ControllerTeilHome extends Controller {
                     $filename,
                     $dir
                 );
-                // $moduleInstaller->unzip();
+                
+                $moduleInstaller->unzip();
                 $moduleInstaller->boot();
             }
         );

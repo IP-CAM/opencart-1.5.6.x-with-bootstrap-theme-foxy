@@ -56,12 +56,33 @@ class ModuleInstaller
 		$commandName = $this->moduleName . 'Command';
 		$className = $this->moduleName . 'Module';
 
+		// Autoload all the module files
+		$this->autoloadModuleFiles();
+
 		// Create new command and pass module to it
 		$module = new $className($this->db);
 		$command = new $commandName($module);
 		
 		// Execute ;)
 		$command->execute();
+	}
+
+
+	/**
+	 * Autoload module files
+	 *
+	 * @return void
+	 */
+	private function autoloadModuleFiles()
+	{
+		// $autoload = new TeilAutoload();
+		// print_r($moduleFiles); die();
+		// $moduleFiles = $autoload->getLoaderPaths(DIR_TEIL_MODULES . $this->moduleName . '/');
+
+		// foreach ($moduleFiles as $file)
+		// {
+		// 	require_once($file);
+		// }
 	}
 
 
