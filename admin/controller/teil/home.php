@@ -15,7 +15,7 @@ class ControllerTeilHome extends Controller {
         }
         
         // DOM elements
-        $this->document->setTitle('Менеджер меню');
+        $this->document->setTitle('Hello, world');
         
         // Breadcrumbs
         $this->data['breadcrumbs'] = array();
@@ -32,20 +32,6 @@ class ControllerTeilHome extends Controller {
         
         // Success and warning
         $this->getActionStatuses();
-        
-        // // Install
-        // if ($this->model_design_menu->needInstall())
-        //     $this->redirect($this->url->link('design/menu', 'token=' . $this->session->data['token'], 'SSL'));
-        
-        // // If there isn't any menus
-        // if ( ! $this->model_design_menu->getMenuNumber())
-        //     $this->redirect($this->url->link('design/menu/welcome', 'token=' . $this->session->data['token'], 'SSL'));
-
-        // Database
-        // $menus = $this->model_design_menu->getMenuList();
-        // $items = $this->model_design_menu->getMenuItems();
-        // $languages = $this->model_localisation_language->getLanguages();
-        // $adminLang = $this->model_design_menu->getAdminLang();
 
         $this->data['token'] = $this->session->data['token'];
 
@@ -88,7 +74,11 @@ class ControllerTeilHome extends Controller {
     }
 
 
-    // install module
+    /**
+     * Download and install new module
+     *
+     * @return void
+     */
     public function install()
     {
         $result = array(
@@ -128,12 +118,15 @@ class ControllerTeilHome extends Controller {
         }
 
         echo json_encode($result); die();
-
-        // $this->redirect(HTTPS_SERVER . 'index.php?route=teil/home&token=' . $this->session->data['token']);
     }
 
 
-    public function getProgress($module = NULL)
+    /**
+     * Get progress of module that is currently loading
+     *
+     * @return mixed
+     */
+    public function getProgress()
     {
         $progress = 0;
 
@@ -149,6 +142,21 @@ class ControllerTeilHome extends Controller {
         }
 
         echo $progress; die();
+    }
+
+
+    /**
+     * Get list of already installed modules
+     *
+     * @return mixed
+     */
+    public function my()
+    {
+        $result = array(
+            'apps' => $GLOBALS['TeilServiceProviders']
+        );
+
+        echo json_encode($result); die();
     }
 
 

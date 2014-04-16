@@ -5,8 +5,11 @@ function AppCatalog(token) {
 	AppCatalog.prototype.token = token;
 
 	// Set default template
-	AppCatalog.prototype.appTemplate = '#app-template';
-	AppCatalog.prototype.$appTemplate = $(AppCatalog.prototype.appTemplate);
+	AppCatalog.prototype.appTemplateNotInstalled = '#app-template-not-installed';
+	AppCatalog.prototype.$appTemplateNotInstalled = $(AppCatalog.prototype.appTemplateNotInstalled);
+
+	AppCatalog.prototype.appTemplateInstalled = '#app-template-installed';
+	AppCatalog.prototype.$appTemplateInstalled = $(AppCatalog.prototype.appTemplateInstalled);
 
 	AppCatalog.prototype.$container = $('#apps-container');
 };
@@ -27,9 +30,8 @@ AppCatalog.prototype.$container = null;
  * @return void
  */
 AppCatalog.prototype.init = function() {
-	this.loadApps().done(this.render);
+	this.loadApps().done(this.appsLoaded);
 };
-
 
 
 /**
@@ -49,6 +51,40 @@ AppCatalog.prototype.loadApps = function() {
 
 
 /**
+ * Get list of already installed apps
+ *
+ * @return void
+ */
+AppCatalog.prototype.loadMyApps = function() {
+	var promise = $.ajax({
+		url: '/admin/index.php?route=teil/home/my&token=' + AppCatalog.prototype.token,
+		type: 'post',
+		dataType: 'json'
+	});
+
+	return promise;
+};
+
+
+/**
+ * Triggers when apps(list of all apps) are fetched
+ *
+ * @return void
+ */
+AppCatalog.prototype.appsLoaded = function(allAppsJson) {
+	var filtered;
+
+	// List of nstalled apps (my apps) are loaded
+	AppCatalog.prototype.loadMyApps().done(function(myAppsJson) {
+		// Filter apps, and get `not installed` list of apps
+		filtered = AppCatalog.prototype.filter(allAppsJson, myAppsJson);
+
+		AppCatalog.prototype.render(filtered);
+	});
+};
+
+
+/**
  * Bind events
  *
  * @return void
@@ -64,11 +100,20 @@ AppCatalog.prototype.bindEvents = function() {
  * @return void
  */
 AppCatalog.prototype.render = function(json) {
-	var source = AppCatalog.prototype.$appTemplate.html(),
-		template = Handlebars.compile(source),
-		html = template(json);
+	var notInstalledTemplateSource = AppCatalog.prototype.$appTemplateNotInstalled.html(),
+		installedTemplateSource = AppCatalog.prototype.$appTemplateInstalled.html();
 
-	AppCatalog.prototype.$container.find('.app-list').html(html);
+	var appTemplate, html;
+
+	// Append already installed apps
+	appTemplate = Handlebars.compile(installedTemplateSource);
+	html = appTemplate(json.installed);
+	AppCatalog.prototype.$container.find('.app-list-installed').html(html);
+
+	// Append not installed apps
+	appTemplate = Handlebars.compile(notInstalledTemplateSource);
+	html = appTemplate(json.notInstalled);
+	AppCatalog.prototype.$container.find('.app-list-not-installed').html(html);
 
 	AppCatalog.prototype.bindEvents();
 };
@@ -103,4 +148,35 @@ AppCatalog.prototype.downloadModule = function($btn, moduleName, modulePath) {
 	var moduleDownloader = new ModuleDownloader($btn, moduleName, modulePath, this.token);
 	moduleDownloader.download();
 	moduleDownloader.progress();
+};
+
+
+/**
+ * Here we are going to divide all json apps to:
+ * - already installed (my)
+ * - avalible to be installed (apps)
+ *
+ * @return void
+ */
+AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
+	var installed = { apps: [] },
+		notInstalled = { apps: [] };
+
+	$.each(allAppsJson.apps, function(index, module) {
+		$.each(myAppsJson.apps, function(moduleName, moduleServiceProvider) {
+			
+			if (module.download_name == moduleName) {
+				installed.apps.push(module);
+			} else {
+				notInstalled.apps.push(module);
+			};
+
+		});
+	});
+
+	return {
+		installed: installed,
+		notInstalled: notInstalled,
+		all: allAppsJson
+	};
 };

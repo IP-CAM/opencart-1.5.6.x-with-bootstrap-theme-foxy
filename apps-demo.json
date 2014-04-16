@@ -24,7 +24,7 @@
 			"category": "Management",
 			"updated_at": "Updated 11 April, 2014",
 			"price": "FREE",
-			"download_name": "Menu",
+			"download_name": "CSVExport",
 			"download_path": "http://pimi.website-builder.ru/Menu.zip"
 		},
 		{
@@ -33,7 +33,7 @@
 			"category": "Management",
 			"updated_at": "Updated 11 April, 2014",
 			"price": "0.99$",
-			"download_name": "Menu",
+			"download_name": "FormManager",
 			"download_path": "http://pimi.website-builder.ru/Menu.zip"
 		},
 		{
@@ -42,7 +42,7 @@
 			"category": "Management",
 			"updated_at": "Updated 11 April, 2014",
 			"price": "30$",
-			"download_name": "Menu",
+			"download_name": "SimpleRegister",
 			"download_path": "http://pimi.website-builder.ru/Menu.zip"
 		}
 	]

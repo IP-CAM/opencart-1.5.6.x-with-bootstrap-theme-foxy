@@ -19,14 +19,13 @@
 		</div><!-- end .heading -->
 		
 		<div class="content teil-container">
-		    <h2>Hello, world</h2>
-
-		    <?php Menu::test(); ?>
-
 		    <div id="apps-container">
-		    	<ol class="app-list"></ol>
-		    </div>
+		    	<h2>Already installed apps:</h2>
+		    	<ol class="app-list app-list-installed"></ol>
 
+		    	<h2>Discover more:</h2>
+		    	<ol class="app-list app-list-not-installed"></ol>
+		    </div>
 		</div><!-- end .content -->
 
     </div><!-- end .box -->
@@ -38,7 +37,9 @@
 <script src="/admin/view/javascript/teil/basic/module-downloader.js"></script>
 <script src="/admin/view/javascript/teil/basic/apps-catalog.js"></script>
 
-<script type="template/x-handlebars" id="app-template">
+
+<!-- Template for not installed app -->
+<script type="template/x-handlebars" id="app-template-not-installed">
 	{{#each apps}}
 		<li>
 			<figure>
@@ -54,16 +55,43 @@
 						data-module-name="{{download_name}}" 
 						data-module-download-path="{{download_path}}" 
 						href="#" 
-					>Buy app for {{price}}</a>
+					>Get app for {{price}}</a>
 				</figcaption>
 			</figure>
 		</li>
 	{{/each}}
 </script>
 
-<script type="text/javascript">
-	var Apps = new AppCatalog('<?php echo $token ?>');
-	Apps.init();
+
+<!-- Template for installed app -->
+<script type="template/x-handlebars" id="app-template-installed">
+	{{#each apps}}
+		<li>
+			<figure>
+				<img class="main-app-image" src="{{image}}">
+
+				<figcaption>
+					<span class="app-title">{{title}}</span>
+					<span class="app-category">{{category}}</span>
+					<span class="app-updated-at">{{updated_at}}</span>
+
+					<a 
+						class="point-make-button download-app-action" 
+						data-module-name="{{download_name}}" 
+						data-module-download-path="{{download_path}}" 
+						href="#" 
+					>Remove app</a>
+				</figcaption>
+			</figure>
+		</li>
+	{{/each}}
 </script>
+
+
+<script type="text/javascript">
+	var appsCatalog = new AppCatalog('<?php echo $token ?>');
+	appsCatalog.init();
+</script>
+
 
 <?php echo $footer; ?>
