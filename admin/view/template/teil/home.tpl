@@ -21,6 +21,8 @@
 		<div class="content teil-container">
 		    <h2>Hello, world</h2>
 
+		    <?php Menu::test(); ?>
+
 		    <div id="apps-container">
 		    	<ol class="app-list"></ol>
 		    </div>

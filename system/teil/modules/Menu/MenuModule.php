@@ -1,6 +1,9 @@
 <?php 
 
+
+// $key string (is our case - 'Menu') is not required
 $GLOBALS['TeilServiceProviders']['Menu'] = 'MenuServiceProvider';
+
 
 /**
 * Simple menu module

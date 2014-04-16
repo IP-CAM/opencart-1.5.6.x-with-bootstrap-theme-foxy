@@ -22,7 +22,7 @@ class ProviderRepository {
 	 */
 	public function __construct($providers)
 	{
-		$this->providers = $providers['TeilServiceProviders'];
+		$this->providers = $providers;
 	}
 
 
