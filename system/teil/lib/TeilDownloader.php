@@ -31,12 +31,13 @@ class TeilDownloader
 	 *
 	 * @return void
 	 */
-	function __construct ($url, $moduleName, $download_directory = 'downloads')
+	function __construct ($url, $moduleName)
 	{
 		$this->url = $url;
 
 		$this->module_name = $moduleName;
 
+		$download_directory = 'downloads';
 		$download_directory_hash = md5($download_directory) . '/';
 		$this->download_directory = DIR_SYSTEM . "teil/" . $download_directory_hash;
 
@@ -82,7 +83,7 @@ class TeilDownloader
 			    {
 			    	$done_percent = $downloaded / $download_size  * 100;
 
-			    	file_put_contents($this->progress_container_file, $done_percent);
+			    	file_put_contents($this->progress_container_file, (int) $done_percent);
 			    }
 			}
 		);

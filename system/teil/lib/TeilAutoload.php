@@ -116,12 +116,28 @@ class TeilAutoload
 
 
     /**
+     * Check if directory exitst
+     *
+     * @return void
+     */
+    private function directoryExists($directory)
+    {
+        if ( ! is_dir($directory))
+        {
+            throw new Exception("No such directory");
+        }
+    }
+
+
+    /**
      * Get the result paths
      *
      * @return array
      */
     public function getLoaderPaths($base_directory)
     {
+        $this->directoryExists($base_directory);
+
         $this->recurse($base_directory);
 
         $this->excludeFiles();
