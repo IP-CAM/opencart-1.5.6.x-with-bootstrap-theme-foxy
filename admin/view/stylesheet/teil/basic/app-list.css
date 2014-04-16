@@ -1,0 +1,48 @@
+#apps-container {}
+#apps-container .app-list {
+	list-style-type: decimal;
+	overflow: hidden;
+}
+#apps-container .app-list > li {
+	float: left;
+	width: 330px;
+	height: 157px;
+}
+#apps-container .app-list > li figure {
+    overflow: hidden;
+}
+#apps-container .app-list > li figure img.main-app-image {
+	width: 150px;
+	float: left;
+}
+#apps-container .app-list > li figure figcaption {
+    overflow: hidden;
+    padding: 20px 0 10px;
+    position: relative;
+    left: 5px;
+}
+#apps-container .app-list > li figure figcaption .app-title {
+    font-weight: 700;
+    font-size: 21px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+}
+#apps-container .app-list > li figure figcaption .app-category {
+    display: block;
+    margin: 4px 0 0 2px;
+    overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;
+    padding-right: 6px;
+}
+#apps-container .app-list > li figure figcaption .app-updated-at {
+    display: block;
+    margin: 5px 0 0 2px;
+    font-style: italic;
+    overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;
+    padding-right: 5px;
+}
+#apps-container .app-list > li figure figcaption .point-make-button {
+    margin: 15px 0 0px;
+}

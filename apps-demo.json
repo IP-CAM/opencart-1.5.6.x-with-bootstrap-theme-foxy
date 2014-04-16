@@ -1,0 +1,49 @@
+{
+	"apps": [
+		{
+			"image": "/system/teil/modules/Menu/resources/img/app-filter.png",
+			"title": "Filter Pro",
+			"category": "Management",
+			"updated_at": "Updated 11 April, 2014",
+			"price": "79$",
+			"download_name": "Menu2",
+			"download_path": "http://pimi.website-builder.ru/Menu2.zip"
+		},
+		{
+			"image": "/system/teil/modules/Menu/resources/img/app-menu.png",
+			"title": "Menu Builder",
+			"category": "Management",
+			"updated_at": "Updated 11 April, 2014",
+			"price": "99$",
+			"download_name": "Menu",
+			"download_path": "http://pimi.website-builder.ru/Menu.zip"
+		},
+		{
+			"image": "/system/teil/modules/Menu/resources/img/app-scv.png",
+			"title": "CSV Export/Import",
+			"category": "Management",
+			"updated_at": "Updated 11 April, 2014",
+			"price": "FREE",
+			"download_name": "Menu",
+			"download_path": "http://pimi.website-builder.ru/Menu.zip"
+		},
+		{
+			"image": "/system/teil/modules/Menu/resources/img/app-form.png",
+			"title": "Form Manager",
+			"category": "Management",
+			"updated_at": "Updated 11 April, 2014",
+			"price": "0.99$",
+			"download_name": "Menu",
+			"download_path": "http://pimi.website-builder.ru/Menu.zip"
+		},
+		{
+			"image": "/system/teil/modules/Menu/resources/img/app-register.png",
+			"title": "Simple Registration",
+			"category": "Management",
+			"updated_at": "Updated 11 April, 2014",
+			"price": "30$",
+			"download_name": "Menu",
+			"download_path": "http://pimi.website-builder.ru/Menu.zip"
+		}
+	]
+}
