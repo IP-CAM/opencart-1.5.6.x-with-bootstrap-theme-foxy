@@ -3,20 +3,29 @@
 }
 #apps-container {}
 #apps-container .app-list {
-	list-style-type: decimal;
-	overflow: hidden;
+    list-style-type: decimal;
+    overflow: hidden;
 }
 #apps-container .app-list > li {
-	float: left;
-	width: 330px;
-	height: 157px;
+    float: left;
+    width: 330px;
+    height: 157px;
+    transition: all 0.15s ease-out;
+}
+#apps-container .app-list > li:first-child {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+}
+#apps-container .app-list > li.show {
+    -webkit-transform: scale(1);
+    opacity: 1;
 }
 #apps-container .app-list > li figure {
     overflow: hidden;
 }
 #apps-container .app-list > li figure img.main-app-image {
-	width: 150px;
-	float: left;
+    width: 150px;
+    float: left;
 }
 #apps-container .app-list > li figure figcaption {
     overflow: hidden;

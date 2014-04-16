@@ -91,6 +91,7 @@ AppCatalog.prototype.appsLoaded = function(allAppsJson) {
  */
 AppCatalog.prototype.bindEvents = function() {
 	this.$container.find('.download-app-action').on('click', this.installModule);
+	this.$container.find('.remove-app-action').on('click', this.removeModule);
 };
 
 
@@ -140,6 +141,34 @@ AppCatalog.prototype.installModule = function(e) {
 
 
 /**
+ * Remove app
+ *
+ * @return void
+ */
+AppCatalog.prototype.removeModule = function(e) {
+	var $this = $(this);
+
+	$.ajax({
+		url: '/admin/index.php?route=teil/home/remove&token=' + AppCatalog.prototype.token,
+		type: 'post',
+		dataType: 'json',
+		data: {
+			module_name: $this.data('module-name')
+		}
+	})
+	.done(function() {
+		console.log("Module `" + $this.data('module-name') + "` has been removed");
+	})
+	.fail(function() {
+		console.log("error");
+	});
+	
+
+	e.preventDefault();
+};
+
+
+/**
  * Perform download a new app(module)
  *
  * @return void
@@ -161,6 +190,12 @@ AppCatalog.prototype.downloadModule = function($btn, moduleName, modulePath) {
 AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 	var installed = { apps: [] },
 		notInstalled = { apps: [] };
+
+	// If there is no installed apps 
+	// we will simply push all apps into `uninstalled` list
+	if (myAppsJson.apps.length <= 0) {
+		notInstalled = allAppsJson;
+	};
 
 	$.each(allAppsJson.apps, function(index, module) {
 		$.each(myAppsJson.apps, function(moduleName, moduleServiceProvider) {

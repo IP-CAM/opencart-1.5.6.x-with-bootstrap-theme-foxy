@@ -31,6 +31,10 @@ class ModuleCore implements Module
 	public function uninstallDatabase()
 	{
 		throw new Exception("You should redeclare `uninstallDatabase` method!");
-		
+	}
+
+	public function getPath()
+	{
+		return $this->modulePath;
 	}
 }

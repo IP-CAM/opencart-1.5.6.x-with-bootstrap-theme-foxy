@@ -1,8 +1,7 @@
 <?php 
 
 
-// $key string (is our case - 'Menu') is REQUIRED!
-// It should math the main module name (the name of the folder)
+// $key string (is our case - 'Menu') is not required
 $GLOBALS['TeilServiceProviders']['Menu'] = 'MenuServiceProvider';
 
 

@@ -106,7 +106,7 @@ class ControllerTeilHome extends Controller {
                         $filename,
                         $dir
                     );
-                    
+
                     $moduleInstaller->unzip();
                     $moduleInstaller->boot();
                 }
@@ -155,6 +155,32 @@ class ControllerTeilHome extends Controller {
         $result = array(
             'apps' => $GLOBALS['TeilServiceProviders']
         );
+
+        echo json_encode($result); die();
+    }
+
+
+    /**
+     * Remove module
+     *
+     * @return void
+     */
+    public function remove()
+    {
+        $result = array(
+            'status' => true
+        );
+
+        $module_name = $this->request->post['module_name'];
+
+        $moduleInstaller = new ModuleInstaller(
+            $this->db,
+            $module_name,
+            NULL,
+            NULL
+        );
+        
+        $moduleInstaller->remove();
 
         echo json_encode($result); die();
     }

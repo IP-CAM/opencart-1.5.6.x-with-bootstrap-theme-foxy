@@ -76,9 +76,8 @@
 					<span class="app-updated-at">{{updated_at}}</span>
 
 					<a 
-						class="point-make-button download-app-action" 
+						class="point-make-button remove-app-action" 
 						data-module-name="{{download_name}}" 
-						data-module-download-path="{{download_path}}" 
 						href="#" 
 					>Remove app</a>
 				</figcaption>

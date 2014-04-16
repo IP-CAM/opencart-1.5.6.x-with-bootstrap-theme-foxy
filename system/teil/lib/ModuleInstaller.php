@@ -85,4 +85,65 @@ class ModuleInstaller
 	}
 
 
+	/**
+	 * Simply remove module files
+	 *
+	 * @return void
+	 */
+	public function remove()
+	{
+        // Get module command name
+		$commandName = $this->moduleName . 'Command';
+		$className = $this->moduleName . 'Module';
+
+		// Create new command and pass module to it
+		$module = new $className($this->db);
+		$command = new $commandName($module);
+		
+		// Run module uninstall
+		$command->undo();
+
+		$this->removeDirectory($module->getPath());
+	}
+
+
+	/**
+	 * Remove directory completely (with all files and folders inside)
+	 *
+	 * @return bool
+	 */
+	private function removeDirectory($dirname)
+	{
+		if (is_dir($dirname))
+		{
+			$dir_handle = opendir($dirname);
+		}
+
+		if (!$dir_handle)
+		{
+			return false;
+		}
+
+		while($file = readdir($dir_handle))
+		{
+			if ($file != "." && $file != "..")
+			{
+				if (!is_dir($dirname."/".$file))
+				{
+					unlink($dirname."/".$file);
+				}
+				else
+				{
+					$this->removeDirectory($dirname.'/'.$file);
+				}
+			}
+		}
+		
+		closedir($dir_handle);
+		rmdir($dirname);
+
+		return true;
+	}
+
+
 }
