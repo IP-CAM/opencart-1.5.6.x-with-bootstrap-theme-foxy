@@ -31,7 +31,7 @@ ModuleDownloader.prototype.download = function() {
 	var _this = this;
 
 	// Wend request to load new app(module)
-	$.ajax({
+	var promise = $.ajax({
 		url: '/admin/index.php?route=teil/home/install&token=' + _this.token,
 		type: 'post',
 		dataType: 'json',
@@ -39,12 +39,6 @@ ModuleDownloader.prototype.download = function() {
 			module_path: _this.modulePath,
 			module_name: _this.moduleName
 		},
-	})
-	.done(function() {
-		console.log("Module installed");
-	})
-	.fail(function() {
-		console.log("Error while installing module");
 	})
 	.always(function() {
 		clearTimeout(_this.progressTimerId);
@@ -57,6 +51,8 @@ ModuleDownloader.prototype.download = function() {
 		// Add class `done` to the progress btn
 		_this.$el.addClass('done');
 	});
+
+	return promise;
 };
 
 

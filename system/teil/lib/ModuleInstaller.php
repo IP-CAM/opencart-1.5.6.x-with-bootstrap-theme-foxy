@@ -138,7 +138,7 @@ class ModuleInstaller
 				}
 			}
 		}
-		
+
 		closedir($dir_handle);
 		rmdir($dirname);
 

@@ -38,7 +38,7 @@
 <script src="/admin/view/javascript/teil/basic/apps-catalog.js"></script>
 
 
-<!-- Template for not installed app -->
+<!-- Template for not installed apps -->
 <script type="template/x-handlebars" id="app-template-not-installed">
 	{{#each apps}}
 		<li>
@@ -52,7 +52,7 @@
 
 					<a 
 						class="point-make-button download-app-action" 
-						data-module-name="{{download_name}}" 
+						data-module-name="{{system_name}}" 
 						data-module-download-path="{{download_path}}" 
 						href="#" 
 					>Get app for {{price}}</a>
@@ -63,7 +63,7 @@
 </script>
 
 
-<!-- Template for installed app -->
+<!-- Template for installed apps -->
 <script type="template/x-handlebars" id="app-template-installed">
 	{{#each apps}}
 		<li>
@@ -77,13 +77,35 @@
 
 					<a 
 						class="point-make-button remove-app-action" 
-						data-module-name="{{download_name}}" 
+						data-module-name="{{system_name}}" 
 						href="#" 
 					>Remove app</a>
 				</figcaption>
 			</figure>
 		</li>
 	{{/each}}
+</script>
+
+
+<!-- Template for just installed app (single) -->
+<script type="template/x-handlebars" id="app-template-installed-single">
+	<li class="app-hidden">
+		<figure>
+			<img class="main-app-image" src="{{image}}">
+
+			<figcaption>
+				<span class="app-title">{{title}}</span>
+				<span class="app-category">{{category}}</span>
+				<span class="app-updated-at">{{updated_at}}</span>
+
+				<a 
+					class="point-make-button remove-app-action" 
+					data-module-name="{{system_name}}" 
+					href="#" 
+				>Remove app</a>
+			</figcaption>
+		</figure>
+	</li>
 </script>
 
 

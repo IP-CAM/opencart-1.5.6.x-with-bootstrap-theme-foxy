@@ -35,11 +35,5 @@ class MenuModule extends ModuleCore
 		$this->db->query($unInstallSql);
 	}
 
-
-	public function removeFiles()
-	{
-		echo "removing files";
-	}
-
 	
 }

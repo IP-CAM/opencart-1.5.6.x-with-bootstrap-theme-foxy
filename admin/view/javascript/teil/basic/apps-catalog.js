@@ -4,12 +4,18 @@
 function AppCatalog(token) {
 	AppCatalog.prototype.token = token;
 
-	// Set default template
+	// Template for NOT installed apps
 	AppCatalog.prototype.appTemplateNotInstalled = '#app-template-not-installed';
 	AppCatalog.prototype.$appTemplateNotInstalled = $(AppCatalog.prototype.appTemplateNotInstalled);
 
+	// Template for installed apps
 	AppCatalog.prototype.appTemplateInstalled = '#app-template-installed';
 	AppCatalog.prototype.$appTemplateInstalled = $(AppCatalog.prototype.appTemplateInstalled);
+	
+	// Template for just installed app (single app)
+	AppCatalog.prototype.appTemplateInstalledSingle = '#app-template-installed-single';
+	AppCatalog.prototype.$appTemplateInstalledSingle = $(AppCatalog.prototype.appTemplateInstalledSingle);
+	
 
 	AppCatalog.prototype.$container = $('#apps-container');
 };
@@ -74,6 +80,8 @@ AppCatalog.prototype.loadMyApps = function() {
 AppCatalog.prototype.appsLoaded = function(allAppsJson) {
 	var filtered;
 
+	AppCatalog.prototype.apps = allAppsJson;
+
 	// List of nstalled apps (my apps) are loaded
 	AppCatalog.prototype.loadMyApps().done(function(myAppsJson) {
 		// Filter apps, and get `not installed` list of apps
@@ -90,8 +98,8 @@ AppCatalog.prototype.appsLoaded = function(allAppsJson) {
  * @return void
  */
 AppCatalog.prototype.bindEvents = function() {
-	this.$container.find('.download-app-action').on('click', this.installModule);
-	this.$container.find('.remove-app-action').on('click', this.removeModule);
+	this.$container.find('.download-app-action').off('click').on('click', this.installModule);
+	this.$container.find('.remove-app-action').off('click').on('click', this.removeModule);
 };
 
 
@@ -157,7 +165,7 @@ AppCatalog.prototype.removeModule = function(e) {
 		}
 	})
 	.done(function() {
-		console.log("Module `" + $this.data('module-name') + "` has been removed");
+		$this.closest('li').addClass('app-hidden');
 	})
 	.fail(function() {
 		console.log("error");
@@ -173,10 +181,48 @@ AppCatalog.prototype.removeModule = function(e) {
  *
  * @return void
  */
-AppCatalog.prototype.downloadModule = function($btn, moduleName, modulePath) {
-	var moduleDownloader = new ModuleDownloader($btn, moduleName, modulePath, this.token);
-	moduleDownloader.download();
+AppCatalog.prototype.downloadModule = function($btn, moduleSystemName, modulePath) {
+	var moduleDownloader = new ModuleDownloader($btn, moduleSystemName, modulePath, this.token);
+	
+	// Download module
+	moduleDownloader.download()
+		.done(function() {
+			AppCatalog.prototype.moduleDownloaded(moduleSystemName);
+		})
+		.fail(function() {
+			console.log("Module `" + moduleSystemName + "` failed");
+		});
+	
+	// Get download progress of the module
 	moduleDownloader.progress();
+};
+
+
+/**
+ * Module is successfully installed
+ *
+ * @return void
+ */
+AppCatalog.prototype.moduleDownloaded = function(moduleSystemName) {
+	// Get module info by its name
+	var module = this.findAppBySystemName(moduleSystemName);
+
+	// Append installed app
+	var installedTemplateSource = this.$appTemplateInstalledSingle.html(),
+		appTemplate = Handlebars.compile(installedTemplateSource),
+		html = appTemplate(module);
+
+	this.$container.find('.app-list-installed').append(html);
+	
+	// Animate just created app
+	var timerId = setTimeout(function() {
+		AppCatalog.prototype.$container.find('li.app-hidden').removeClass('app-hidden');
+
+		clearTimeout(timerId);
+	}, 200);
+
+	// Rebind all the events
+	this.bindEvents();
 };
 
 
@@ -198,9 +244,9 @@ AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 	};
 
 	$.each(allAppsJson.apps, function(index, module) {
-		$.each(myAppsJson.apps, function(moduleName, moduleServiceProvider) {
+		$.each(myAppsJson.apps, function(moduleSystemName, moduleServiceProvider) {
 			
-			if (module.download_name == moduleName) {
+			if (module.system_name == moduleSystemName) {
 				installed.apps.push(module);
 			} else {
 				notInstalled.apps.push(module);
@@ -214,4 +260,24 @@ AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 		notInstalled: notInstalled,
 		all: allAppsJson
 	};
+};
+
+
+/**
+ * Get app(module) by its system name
+ *
+ * @return mixed
+ */
+AppCatalog.prototype.findAppBySystemName = function(moduleSystemName) {
+	var allApps = AppCatalog.prototype.apps, needleApp;
+
+	$.each(allApps.apps, function(index, module) {
+		if (module.system_name == moduleSystemName) {
+			needleApp = module;
+
+			return false;
+		};
+	});
+
+	return needleApp;
 };

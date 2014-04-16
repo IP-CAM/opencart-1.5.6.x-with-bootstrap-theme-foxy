@@ -95,8 +95,8 @@ class ControllerTeilHome extends Controller {
         // If not ---> user cant watch download progress at all
         session_write_close();
 
-        try
-        {
+        // try
+        // {
             $loader->load(
                 function($module_name, $filename, $dir) 
                 {
@@ -111,11 +111,11 @@ class ControllerTeilHome extends Controller {
                     $moduleInstaller->boot();
                 }
             );
-        }
-        catch (Exception $e)
-        {
-            $result['status'] = false;
-        }
+        // }
+        // catch (Exception $e)
+        // {
+        //     $result['status'] = false;
+        // }
 
         echo json_encode($result); die();
     }

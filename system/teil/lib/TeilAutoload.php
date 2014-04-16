@@ -124,7 +124,7 @@ class TeilAutoload
     {
         if ( ! is_dir($directory))
         {
-            throw new Exception("No such directory");
+            throw new Exception("No such directory"); die();
         }
     }
 

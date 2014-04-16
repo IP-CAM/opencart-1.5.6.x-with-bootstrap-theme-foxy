@@ -33,8 +33,11 @@ class ModuleCore implements Module
 		throw new Exception("You should redeclare `uninstallDatabase` method!");
 	}
 
+
 	public function getPath()
 	{
 		return $this->modulePath;
 	}
+
+	
 }

@@ -25,7 +25,6 @@ class MenuCommand implements Command {
 
 	public function undo()
 	{
-		$this->module->removeFiles();
 		$this->module->uninstallDatabase();
 	}
 
