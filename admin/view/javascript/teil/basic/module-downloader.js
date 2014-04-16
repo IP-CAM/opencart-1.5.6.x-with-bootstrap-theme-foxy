@@ -52,7 +52,7 @@ ModuleDownloader.prototype.download = function() {
 		_this.downloadComplete = true;
 		
 		// Animate progress button to the 100%
-		_this.$el.html(100);
+		_this.$el.html('100%');
 
 		// Add class `done` to the progress btn
 		_this.$el.addClass('done');
@@ -87,7 +87,7 @@ ModuleDownloader.prototype.progress = function() {
 		progress = _this.validateProgress(progress);
 
 		// Animate progress button
-		_this.$el.html(Number(progress));
+		_this.$el.html(Number(progress) + '%');
 
 		// Clear timer
 		clearTimeout(_this.progressTimerId);
@@ -97,7 +97,7 @@ ModuleDownloader.prototype.progress = function() {
 		if ( ! _this.downloadComplete) {
         	_this.progressTimerId = setTimeout($.proxy(ModuleDownloader.prototype.progress, _this), 500);
 		} else {
-			_this.$el.html(100);
+			_this.$el.html('100%');
 		};
 	});
 };

@@ -1,3 +1,6 @@
+#apps-container a[disabled] {
+    pointer-events: none;
+}
 #apps-container {}
 #apps-container .app-list {
 	list-style-type: decimal;

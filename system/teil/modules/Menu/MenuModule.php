@@ -1,5 +1,6 @@
 <?php 
 
+$GLOBALS['TeilServiceProviders']['Menu'] = 'MenuServiceProvider';
 
 /**
 * Simple menu module

@@ -7,11 +7,7 @@ class App extends Container {
 	function __construct() {
 
 		// Get global providers
-		$this->providers = array(
-			'providers' => array(
-				// "MenuServiceProvider",
-			)
-		);
+		$this->providers = $GLOBALS['TeilServiceProviders'];
 	}
 
 

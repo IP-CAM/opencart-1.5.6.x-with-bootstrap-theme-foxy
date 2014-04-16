@@ -82,7 +82,7 @@ AppCatalog.prototype.render = function(json) {
 AppCatalog.prototype.installModule = function(e) {
 	var $this = $(this);
 
-	$this.addClass('loading');
+	$this.attr('disabled', 'disabled').addClass('loading');
 
 	AppCatalog.prototype.downloadModule(
 		$this,
@@ -103,6 +103,4 @@ AppCatalog.prototype.downloadModule = function($btn, moduleName, modulePath) {
 	var moduleDownloader = new ModuleDownloader($btn, moduleName, modulePath, this.token);
 	moduleDownloader.download();
 	moduleDownloader.progress();
-	
-	console.log(this);
 };
