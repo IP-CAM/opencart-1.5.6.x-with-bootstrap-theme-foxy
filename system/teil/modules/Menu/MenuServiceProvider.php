@@ -4,6 +4,14 @@
 class MenuServiceProvider extends ServiceProvider {
 
 
+	public function __construct($app)
+	{
+		parent::__construct($app);
+
+		$this->MODULE_CODE = 'Menu';
+	}
+
+
 	/**
 	 * Register the service provider.
 	 *
@@ -11,6 +19,8 @@ class MenuServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+		parent::register();
+
 		$this->registerMenuBuilder();
 	}
 

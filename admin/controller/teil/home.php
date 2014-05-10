@@ -3,7 +3,7 @@ class ControllerTeilHome extends Controller {
  
     public function index() {
         $this->load->model('teil/home');
-
+        
         $this->template = 'teil/home.tpl';
         
         // If form submited

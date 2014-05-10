@@ -7,6 +7,8 @@
  */
 abstract class ServiceProvider {
 
+	protected $MODULE_CODE = NULL;
+
 
 	/**
 	 * The application instance.
@@ -39,7 +41,45 @@ abstract class ServiceProvider {
 	 *
 	 * @return void
 	 */
-	abstract public function register();
+	protected function register() {
+		$this->validate();
+	}
+
+
+	/**
+	 * Validate module license key
+	 *
+	 * @return bool
+	 */
+	private function validate()
+	{
+		// this is the url where you have your server script
+		$serverurl = "http://website-builder.ru/padl/Keyauth/Implementation/server.php";
+
+		// start a curl session
+		$ch = curl_init ($serverurl);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+		curl_setopt ($ch, CURLOPT_POST, true);
+		curl_setopt ($ch, CURLOPT_POSTFIELDS, array(
+			'key' => 'DEMO',
+			'domain' => 'opencart.dev',
+			'module_code' => $this->MODULE_CODE
+		));
+		$result = curl_exec($ch);
+
+		// convert the json to an array
+		$result = json_decode($result, true);
+
+		// check if the key was valid
+		if(empty($result['valid']) OR $result['valid'] == false)
+		{
+			die("Invalid Key!");
+		}
+		else
+		{
+			// print_r($result); die();
+		}
+	}
 
 
 	/**

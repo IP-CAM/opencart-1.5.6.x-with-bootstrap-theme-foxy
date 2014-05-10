@@ -73,6 +73,10 @@ class TeilDownloader
 		curl_setopt($ch, CURLOPT_URL, $this->url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+		curl_setopt ($ch, CURLOPT_POSTFIELDS, array(
+			'domain' => $_SERVER['SERVER_NAME'],
+			'module_code' => $this->module_name
+		));
 
 		// Progres
 		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 
