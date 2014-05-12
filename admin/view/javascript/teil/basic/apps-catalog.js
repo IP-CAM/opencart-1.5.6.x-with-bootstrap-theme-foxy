@@ -47,9 +47,10 @@ AppCatalog.prototype.init = function() {
  */
 AppCatalog.prototype.loadApps = function() {
 	var promise = $.ajax({
-		url: '/apps-demo.json',
-		type: 'post',
-		dataType: 'json'
+		url: 'http://dev.website-builder.ru/app/module_list.php?callback=?',
+		type: 'get',
+		dataType: 'jsonp',
+		crossDomain: true
 	});
 
 	return promise;
@@ -78,6 +79,9 @@ AppCatalog.prototype.loadMyApps = function() {
  * @return void
  */
 AppCatalog.prototype.appsLoaded = function(allAppsJson) {
+	console.log('hey 1');
+	console.log(allAppsJson);
+	console.log('hey');
 	var filtered;
 
 	AppCatalog.prototype.apps = allAppsJson;

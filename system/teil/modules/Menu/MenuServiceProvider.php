@@ -21,7 +21,11 @@ class MenuServiceProvider extends ServiceProvider {
 	{
 		parent::register();
 
-		$this->registerMenuBuilder();
+		// STATUS defines if current module has valid license
+		if ($this->MODULE_STATUS)
+		{
+			$this->registerMenuBuilder();
+		}
 	}
 
 

@@ -21,7 +21,7 @@ class TeilDownloader
 	private $full_filename;
 
 	// Url to the sourse
-	private $url;
+	private $url = "http://dev.website-builder.ru/app/get_module.php";
 
 
 	/**
@@ -31,10 +31,8 @@ class TeilDownloader
 	 *
 	 * @return void
 	 */
-	function __construct ($url, $moduleName)
+	function __construct ($moduleName)
 	{
-		$this->url = $url;
-
 		$this->module_name = $moduleName;
 
 		$download_directory = 'downloads';

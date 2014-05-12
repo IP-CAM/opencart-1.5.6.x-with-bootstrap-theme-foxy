@@ -8,6 +8,7 @@
 abstract class ServiceProvider {
 
 	protected $MODULE_CODE = NULL;
+	protected $MODULE_STATUS = false;
 
 
 	/**
@@ -45,8 +46,7 @@ abstract class ServiceProvider {
 
 		// Validate module license key
 		try {
-			$this
-				->app
+			$this->MODULE_STATUS = $this->app
 				->make('security')
 				->validate(
 					$_SERVER['SERVER_NAME'],

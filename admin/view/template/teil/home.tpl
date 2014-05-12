@@ -3,6 +3,8 @@
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/make-buttons.css" />
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/app-list.css" />
 
+<?php Menu::test(); ?>
+
 <div id="content">
     <div class="breadcrumb">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -48,7 +50,14 @@
 				<figcaption>
 					<span class="app-title">{{title}}</span>
 					<span class="app-category">{{category}}</span>
-					<span class="app-updated-at">{{updated_at}}</span>
+					<span class="app-updated-at">
+						{{updated_at}}
+						
+						{{#if days_left}}
+							<div>{{days_left}} days left</div>
+							<div>Expired at {{expired_at}}</div>
+						{{/if}}
+					</span>
 
 					<a 
 						class="point-make-button download-app-action" 
@@ -73,7 +82,14 @@
 				<figcaption>
 					<span class="app-title">{{title}}</span>
 					<span class="app-category">{{category}}</span>
-					<span class="app-updated-at">{{updated_at}}</span>
+					<span class="app-updated-at">
+						{{updated_at}}
+
+						{{#if days_left}}
+							<div>{{days_left}} days left</div>
+							<div>Expired at {{expired_at}}</div>
+						{{/if}}
+					</span>
 
 					<a 
 						class="point-make-button remove-app-action" 

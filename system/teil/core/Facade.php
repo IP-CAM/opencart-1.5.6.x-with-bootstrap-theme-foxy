@@ -67,7 +67,15 @@ abstract class Facade {
 			return static::$resolvedInstance[$name];
 		}
 
-		return static::$resolvedInstance[$name] = static::$app->make($name);
+		try {
+			$instance = static::$app->make($name);
+		} catch (Exception $e) {
+			echo "You can not use `$name` module!";
+
+			return false;
+		}
+
+		return static::$resolvedInstance[$name] = $instance;
 	}
 
 

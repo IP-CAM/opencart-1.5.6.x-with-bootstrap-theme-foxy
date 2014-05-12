@@ -13,7 +13,7 @@ class Security
 	 *
 	 * @const string
 	 */
-	const SERVER_URL = 'http://website-builder.ru/padl/Keyauth/Implementation/server.php';
+	const SERVER_URL = 'http://dev.website-builder.ru/app/server.php';
 	
 	
 	function __construct() {}

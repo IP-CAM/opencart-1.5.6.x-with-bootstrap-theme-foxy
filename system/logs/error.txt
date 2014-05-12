@@ -5339,3 +5339,5 @@ DROP TABLE IF EXISTS `test_table`;
 2014-05-10 14:19:25 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart.dev\www\system\library\cache.php on line 36
 2014-05-10 17:01:23 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
 2014-05-10 17:01:23 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
+2014-05-12 11:58:18 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
+2014-05-12 12:56:16 - PHP Notice:  Undefined variable: instance in C:\xampp\htdocs\opencart.dev\www\system\teil\core\Facade.php on line 76
