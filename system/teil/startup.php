@@ -23,7 +23,7 @@ $app->instance('app', $app);
 /**
  * Security system
  */
-
+$app->instance('security', new Security);
 
 
 
