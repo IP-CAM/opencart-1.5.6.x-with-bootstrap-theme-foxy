@@ -3,8 +3,6 @@
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/make-buttons.css" />
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/app-list.css" />
 
-<?php Menu::test(); ?>
-
 <div id="content">
     <div class="breadcrumb">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -12,7 +10,6 @@
         <?php } ?>
     </div>
     <div class="box">
-
 		<div class="heading">
 		    <h1><img src="view/image/category.png" alt=""> Teil</h1>
 		    <div class="buttons">
@@ -48,7 +45,11 @@
 				<img class="main-app-image" src="{{image}}">
 
 				<figcaption>
-					<span class="app-title">{{title}}</span>
+					<span class="app-title">
+						{{#if is_installed}}+{{/if}}
+
+						{{title}}
+					</span>
 					<span class="app-category">{{category}}</span>
 					<span class="app-updated-at">
 						{{updated_at}}
@@ -59,12 +60,14 @@
 						{{/if}}
 					</span>
 
-					<a 
-						class="point-make-button download-app-action" 
-						data-module-name="{{system_name}}" 
-						data-module-download-path="{{download_path}}" 
-						href="#" 
-					>Get app for {{price}}</a>
+					{{#unless is_installed}}
+						<a 
+							class="point-make-button download-app-action" 
+							data-module-name="{{system_name}}" 
+							data-module-download-path="{{download_path}}" 
+							href="#" 
+						>Get app for {{price}}</a>
+					{{/unless}}
 				</figcaption>
 			</figure>
 		</li>

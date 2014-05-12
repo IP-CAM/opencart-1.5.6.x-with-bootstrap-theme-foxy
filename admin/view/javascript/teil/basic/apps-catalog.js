@@ -79,9 +79,6 @@ AppCatalog.prototype.loadMyApps = function() {
  * @return void
  */
 AppCatalog.prototype.appsLoaded = function(allAppsJson) {
-	console.log('hey 1');
-	console.log(allAppsJson);
-	console.log('hey');
 	var filtered;
 
 	AppCatalog.prototype.apps = allAppsJson;
@@ -252,6 +249,9 @@ AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 			
 			if (module.system_name == moduleSystemName) {
 				installed.apps.push(module);
+
+				module.is_installed = true;
+				notInstalled.apps.push(module);
 			} else {
 				notInstalled.apps.push(module);
 			};
