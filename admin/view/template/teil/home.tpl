@@ -3,6 +3,8 @@
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/make-buttons.css" />
 <link rel="stylesheet" type="text/css" href="/admin/view/stylesheet/teil/basic/app-list.css" />
 
+<?php // Menu::test(); ?>
+
 <div id="content">
     <div class="breadcrumb">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
