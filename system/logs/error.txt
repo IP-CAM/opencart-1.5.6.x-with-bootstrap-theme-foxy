@@ -5352,3 +5352,6 @@ DROP TABLE IF EXISTS `test_table`;
 2014-06-02 21:26:32 - PHP Warning:  fopen(/Users/yuriikrevnyi/sites/license.dev/www/system/cache/cache.store.1401740792): failed to open stream: No such file or directory in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 32
 2014-06-02 21:26:32 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 34
 2014-06-02 21:26:32 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 36
+2014-06-07 14:07:05 - PHP Notice:  Error: Could not load template /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/menu.tpl! in /Users/yuriikrevnyi/sites/license.dev/www/system/engine/controller.php on line 90
+2014-06-07 15:35:03 - PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/home.tpl on line 6
+2014-06-07 15:44:47 - PHP Unknown:  Non-static method Facade::validateAndGet() should not be called statically in /Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/Facade.php on line 70
