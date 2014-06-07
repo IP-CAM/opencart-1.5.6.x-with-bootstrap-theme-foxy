@@ -35,6 +35,8 @@
 <script src="/admin/view/javascript/teil/basic/modernizr.custom.js"></script>
 <script src="/admin/view/javascript/teil/libs/handlebars/handlebars-v1.3.0.js"></script>
 
+
+<!-- hey -->
 <script src="/admin/view/javascript/teil/basic/module-downloader.js"></script>
 <script src="/admin/view/javascript/teil/basic/apps-catalog.js"></script>
 
