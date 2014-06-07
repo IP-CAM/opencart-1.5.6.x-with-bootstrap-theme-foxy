@@ -5345,3 +5345,10 @@ DROP TABLE IF EXISTS `test_table`;
 2014-05-12 17:46:53 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
 2014-05-12 17:46:53 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
 2014-05-13 17:38:22 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 143
+2014-06-02 21:26:31 - PHP Warning:  fopen(/Users/yuriikrevnyi/sites/license.dev/www/system/cache/test): failed to open stream: No such file or directory in /Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php on line 82
+2014-06-02 21:26:31 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php on line 84
+2014-06-02 21:26:31 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php on line 86
+2014-06-02 21:26:31 - PHP Warning:  sprintf(): Too few arguments in /Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php on line 89
+2014-06-02 21:26:32 - PHP Warning:  fopen(/Users/yuriikrevnyi/sites/license.dev/www/system/cache/cache.store.1401740792): failed to open stream: No such file or directory in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 32
+2014-06-02 21:26:32 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 34
+2014-06-02 21:26:32 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /Users/yuriikrevnyi/sites/license.dev/www/system/library/cache.php on line 36

@@ -68,7 +68,16 @@
 							data-module-name="{{system_name}}" 
 							data-module-download-path="{{download_path}}" 
 							href="#" 
-						>Get app for {{price}}</a>
+						>
+
+						{{#if days_left}}
+							Download
+						{{else}}
+							Get app for {{price}}
+						{{/if}}
+
+						</a>
+
 					{{/unless}}
 				</figcaption>
 			</figure>
