@@ -9,6 +9,7 @@ abstract class ServiceProvider {
 
 	protected $MODULE_CODE = NULL;
 	protected $MODULE_STATUS = false;
+	protected $KEY_INFO = NULL;
 
 
 	/**
@@ -43,15 +44,34 @@ abstract class ServiceProvider {
 	 * @return void
 	 */
 	protected function register() {
+		$this->checkLicense();
+	}
 
+
+	/**
+	 * Check and store license info and module info
+	 *
+	 * @return mixed
+	 */
+	private function checkLicense()
+	{
 		// Validate module license key
 		try {
-			$this->MODULE_STATUS = $this->app
+			$validationResult = $this->app
 				->make('security')
 				->validate(
 					$_SERVER['SERVER_NAME'],
 					$this->MODULE_CODE
 				);
+
+			// Set module `is valid`
+			$this->MODULE_STATUS = $validationResult['valid'];
+
+			// Store module key info (credentials)
+			if ($validationResult['valid'])
+			{
+				$this->KEY_INFO = $validationResult['info'];
+			}
 		} catch (Exception $e) {
 			echo "License file not found! Module name is - <b>" . $this->MODULE_CODE . "</b>";
 		}

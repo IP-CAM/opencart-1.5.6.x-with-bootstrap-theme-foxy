@@ -67,6 +67,19 @@ abstract class Facade {
 			return static::$resolvedInstance[$name];
 		}
 
+		$instance = static::validateAndGet($name);
+
+		return static::$resolvedInstance[$name] = $instance;
+	}
+
+
+	/**
+	 * Check license and get the module instance
+	 *
+	 * @return void
+	 */
+	private static function validateAndGet($name)
+	{
 		try {
 			$instance = static::$app->make($name);
 		} catch (Exception $e) {
@@ -74,8 +87,6 @@ abstract class Facade {
 
 			return false;
 		}
-
-		return static::$resolvedInstance[$name] = $instance;
 	}
 
 

@@ -35,6 +35,8 @@
 <script src="/admin/view/javascript/teil/basic/modernizr.custom.js"></script>
 <script src="/admin/view/javascript/teil/libs/handlebars/handlebars-v1.3.0.js"></script>
 
+
+<!-- hey -->
 <script src="/admin/view/javascript/teil/basic/module-downloader.js"></script>
 <script src="/admin/view/javascript/teil/basic/apps-catalog.js"></script>
 
@@ -67,7 +69,16 @@
 							class="point-make-button download-app-action" 
 							data-module-name="{{system_name}}" 
 							href="#" 
-						>Get app for {{price}}</a>
+						>
+
+						{{#if days_left}}
+							Download
+						{{else}}
+							Get app for {{price}}
+						{{/if}}
+
+						</a>
+
 					{{/unless}}
 				</figcaption>
 			</figure>

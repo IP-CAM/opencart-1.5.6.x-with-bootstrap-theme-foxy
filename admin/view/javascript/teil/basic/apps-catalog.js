@@ -81,6 +81,8 @@ AppCatalog.prototype.loadMyApps = function() {
 AppCatalog.prototype.appsLoaded = function(allAppsJson) {
 	var filtered;
 
+	console.log(allAppsJson);
+
 	AppCatalog.prototype.apps = allAppsJson;
 
 	// List of nstalled apps (my apps) are loaded

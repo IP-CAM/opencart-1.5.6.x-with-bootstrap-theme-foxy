@@ -11,7 +11,7 @@ class ControllerTeilHome extends Controller {
             && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) 
             && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
         {
-            
+            // Perform some type of action
         }
         
         // DOM elements

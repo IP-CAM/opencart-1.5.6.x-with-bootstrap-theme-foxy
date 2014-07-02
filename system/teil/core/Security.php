@@ -40,18 +40,9 @@ class Security
 			$domain,
 			$module_code
 		);
-		
-		// Check if the key was valid
-		if(empty($result['valid']) OR $result['valid'] == false)
-		{
-			// Key is NOT valid
-			return FALSE;
-		}
-		else
-		{
-			// Its ok. Key is valid
-			return TRUE;
-		}
+
+		// Return license information
+		return $result;
 	}
 
 
