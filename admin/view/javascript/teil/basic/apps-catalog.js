@@ -47,7 +47,7 @@ AppCatalog.prototype.init = function() {
  */
 AppCatalog.prototype.loadApps = function() {
 	var promise = $.ajax({
-		url: 'http://dev.website-builder.ru/app/module_list.php?callback=?',
+		url: 'http://dev.website-builder.ru/modules?callback=?',
 		type: 'get',
 		dataType: 'jsonp',
 		crossDomain: true
@@ -141,8 +141,7 @@ AppCatalog.prototype.installModule = function(e) {
 
 	AppCatalog.prototype.downloadModule(
 		$this,
-		$this.data('module-name'),
-		$this.data('module-download-path')
+		$this.data('module-name')
 	);
 
 	e.preventDefault();
@@ -182,8 +181,8 @@ AppCatalog.prototype.removeModule = function(e) {
  *
  * @return void
  */
-AppCatalog.prototype.downloadModule = function($btn, moduleSystemName, modulePath) {
-	var moduleDownloader = new ModuleDownloader($btn, moduleSystemName, modulePath, this.token);
+AppCatalog.prototype.downloadModule = function($btn, moduleSystemName) {
+	var moduleDownloader = new ModuleDownloader($btn, moduleSystemName, this.token);
 	
 	// Download module
 	moduleDownloader.download()

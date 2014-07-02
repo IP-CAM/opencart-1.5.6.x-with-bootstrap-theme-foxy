@@ -37,6 +37,7 @@ class ModuleInstaller
 		$zip = new ZipArchive;
 
 		$res = $zip->open($this->path);
+
 		if ($res === TRUE)
 		{
 			$zip->extractTo(DIR_HOME);
