@@ -21,7 +21,7 @@ class TeilDownloader
 	private $full_filename;
 
 	// Url to the sourse
-	private $url = "http://dev.website-builder.ru/app/get_module.php";
+	private $url = "http://dev.website-builder.ru/modules/get";
 
 
 	/**
@@ -66,15 +66,12 @@ class TeilDownloader
 	 */
 	public function load(Closure $callback, $timeout = 1000)
 	{
+		$query = '?domain=' . $_SERVER['SERVER_NAME'] . '&module_code=' . $this->module_name;
 		$ch = curl_init();
 
-		curl_setopt($ch, CURLOPT_URL, $this->url);
+		curl_setopt($ch, CURLOPT_URL, $this->url . $query);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-		curl_setopt ($ch, CURLOPT_POSTFIELDS, array(
-			'domain' => $_SERVER['SERVER_NAME'],
-			'module_code' => $this->module_name
-		));
 
 		// Progres
 		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 
@@ -97,7 +94,7 @@ class TeilDownloader
 		$downloaded = curl_exec($ch);
 		
 		curl_close($ch);
-
+		
 		// Remove temp progress file, etc
     	$this->removeTempFiles();
 

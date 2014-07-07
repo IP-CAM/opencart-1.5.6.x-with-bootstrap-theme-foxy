@@ -68,7 +68,6 @@
 						<a 
 							class="point-make-button download-app-action" 
 							data-module-name="{{system_name}}" 
-							data-module-download-path="{{download_path}}" 
 							href="#" 
 						>
 

@@ -22,7 +22,7 @@ require_once('lib/TeilAutoload.php');
  */
 $teilautoload = new TeilAutoload(
     array('Container.php', 'App.php'),
-    array('autoload.php', 'startup.php', 'keyauth.class.php', 'client.php')
+    array('autoload.php', 'startup.php', 'client.php')
 );
 
 
@@ -34,12 +34,6 @@ foreach ($teil_files as $teil_file_path)
 {
     require_once($teil_file_path);
 }
-
-
-/**
- * Include security system
- */
-include_once('lib/keyauth.class.php');
 
 
 /**

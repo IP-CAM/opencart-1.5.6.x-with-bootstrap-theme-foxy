@@ -4,12 +4,11 @@
  *
  * @return void
  */
-function ModuleDownloader($btn, moduleName, modulePath, token) {
+function ModuleDownloader($btn, moduleName, token) {
 	this.token = token;
 	this.$el = $btn;
 
 	this.moduleName = moduleName;
-	this.modulePath = modulePath;
 
 	// If module is downloaded
 	this.downloadComplete = false;
@@ -36,7 +35,6 @@ ModuleDownloader.prototype.download = function() {
 		type: 'post',
 		dataType: 'json',
 		data: {
-			module_path: _this.modulePath,
 			module_name: _this.moduleName
 		},
 	})

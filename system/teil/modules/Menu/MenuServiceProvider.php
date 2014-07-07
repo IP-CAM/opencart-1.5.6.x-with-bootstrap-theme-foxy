@@ -20,7 +20,7 @@ class MenuServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		parent::register();
-		
+
 		// If module licence is ok, we will register it
 		if ($this->MODULE_STATUS)
 		{
