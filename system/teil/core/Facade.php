@@ -81,7 +81,7 @@ abstract class Facade {
 	private static function validateAndGet($name)
 	{
 		try {
-			$instance = static::$app->make($name);
+			return static::$app->make($name);
 		} catch (Exception $e) {
 			echo "You can not use `$name` module!";
 

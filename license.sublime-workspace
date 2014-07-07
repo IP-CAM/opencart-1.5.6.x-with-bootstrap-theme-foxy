@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"valida",
+				"validationResult"
+			],
+			[
 				"curre",
 				"currencies"
 			],
@@ -164,18 +168,21 @@
 	"buffers":
 	[
 		{
-			"file": "admin/config.php",
+			"file": "admin/view/template/teil/modules/menu/menu.tpl",
 			"settings":
 			{
-				"buffer_size": 1313,
+				"buffer_size": 2730,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "system/teil/startup.php",
+			"contents": "<?php \nclass ControllerTeilMenu extends Controller { \n \n\n    public function index() {\n        $this->template = 'teil/modules/menu/menu.tpl';\n        \n        // If form submited\n        if ($this->request->server['REQUEST_METHOD'] == 'POST' \n            && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) \n            && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')\n        {\n            // Perform some type of action\n        }\n        \n        // DOM elements\n        $this->document->setTitle('Menu module');\n        \n        // Breadcrumbs\n        $this->data['breadcrumbs'] = array();\n        $this->data['breadcrumbs'][] = array(\n            'text' => 'Главная',\n            'href' => $this->url->link('common/home', 'token=' . $this->session->data['token'], 'SSL'),\n            'separator' => false\n        );\n        $this->data['breadcrumbs'][] = array(\n            'text' => 'Teil',\n            'href' => $this->url->link('teil/home', 'token=' . $this->session->data['token'], 'SSL'),\n            'separator' => ' :: '\n        );\n        $this->data['breadcrumbs'][] = array(\n            'text' => 'Menu module',\n            'href' => $this->url->link('teil/menu', 'token=' . $this->session->data['token'], 'SSL'),\n            'separator' => ' :: '\n        );\n        \n        // Success and warning\n        $this->getActionStatuses();\n\n        $this->data['token'] = $this->session->data['token'];\n\n        // Render\n        $this->children = array(\n            'common/header',\n            'common/footer'\n        );  \n\n\n        \n        $this->response->setOutput($this->render());\n	}\n\n\n    /*\n     * Get success and warning statuses\n     */\n    private function getActionStatuses()\n    {\n        // Success\n        if (isset($this->session->data['success']))\n        {\n            $this->data['success'] = $this->session->data['success'];\n            $this->session->data['success'] = '';\n        }\n        else\n        {\n            $this->data['success'] = '';\n        }\n        \n        // Warning\n        if (isset($this->session->data['warning']))\n        {\n            $this->data['warning'] = $this->session->data['warning'];\n            $this->session->data['warning'] = '';\n        }\n        else\n        {\n            $this->data['warning'] = '';\n        }\n    }\n\n\n}",
+			"file": "admin/controller/teil/menu.php",
+			"file_size": 2313,
+			"file_write_time": 130466250050000000,
 			"settings":
 			{
-				"buffer_size": 784,
+				"buffer_size": 2308,
 				"line_ending": "Unix"
 			}
 		},
@@ -183,17 +190,101 @@
 			"file": "system/teil/modules/Menu/MenuServiceProvider.php",
 			"settings":
 			{
-				"buffer_size": 734,
+				"buffer_size": 753,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "system/teil/modules/Menu/MenuBuilder.php",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "system/teil/core/ServiceProvider.php",
+			"settings":
+			{
+				"buffer_size": 1401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "system/teil/core/Security.php",
+			"settings":
+			{
+				"buffer_size": 2074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/server.php",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/keyauth.class.php",
+			"settings":
+			{
+				"buffer_size": 19840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Course.php",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Enrollment.php",
+			"settings":
+			{
+				"buffer_size": 464,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Lecture.php",
+			"settings":
+			{
+				"buffer_size": 301,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Payment.php",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/User.php",
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"close",
+				"Project: Close"
+			],
 			[
 				"refresh",
 				"Project: Refresh Folders"
@@ -255,11 +346,90 @@
 	},
 	"file_history":
 	[
-		"/Users/yuriikrevnyi/sites/license.dev/www/config.php",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/etc/hosts",
+		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/TicketCommentAttachments.php",
+		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/User.php",
+		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/LocationGroup.php",
+		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/Location.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/vqmod/mods.cache",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/Security.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/lib/ModuleInstaller.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/extension/module.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/lib/ModuleCore.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/teil/home.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/config-dist.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/config.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/vqmod/vqcache/vq2-admin_controller_common_header.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/vqmod/vqcache/vq2-admin_model_catalog_category.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/apps-demo.json",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/menu.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/item_links.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/module/information.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/ebay/edit.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/ajax_shippinginfo.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/common.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/module/welcome.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/stylesheet/invoice.css",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/ebay/template.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/tool/error_log.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/catalog/category_form.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/startup.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/home.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/ServiceProvider.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/modules/Menu/MenuServiceProvider.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/Facade.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/modules/Menu/resources/license.dat",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/foxystore/template/payment/authorizenet_aim.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/design/menu.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/download/foxystorecart.jpg.7971033b9a7f18dc1fab22427544179b",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/localisation/length_class_form.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/localisation/country_form.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/vqmod/vqcache/vq2-system_engine_controller.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/flot/examples/turning-series.html",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/startup.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/foxystore/js/handlebars.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/javascript/jquery/superfish/js/jquery-1.2.6.min.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/teil/libs/handlebars/handlebars-v1.3.0.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/teilMenu/handlebars.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/superfish/js/jquery-1.2.6.min.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/flot/jquery.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/category.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/attribute.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/latest.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/account.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/information.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/teil/menu.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/module/modules/menu.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/default/template/common/content_bottom.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/model/localisation/country.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/moneybookers.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/sale/recurring.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/ebaydisplay.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/nochex.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/header.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/filemanager.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/option.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/amazon/listing.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/review.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/localisation/tax_rate.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/teilMenu/teilMenu.js",
+		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/get_module.php",
+		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/module_list.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/teil/basic/apps-catalog.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/.git/config",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/stylesheet/teil/basic/app-list.css",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/amazon/product.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/model/teil/home.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/ckeditor/plugins/codemirror/js/util/closetag.js",
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/error/not_found.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/controller/account/account.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/controller/account/transaction.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/default/template/payment/amazon_checkout_address.tpl",
+		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/App.php",
+		"/Users/yuriikrevnyi/sites/license.dev/www/config.php",
+		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/pay.php",
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/routes.php",
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/CurrencyController.php",
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/AccountsController.php",
@@ -303,96 +473,18 @@
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/translation/Symfony/Component/Translation/Extractor/ChainExtractor.php",
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constantDeref.test",
 		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/predis/predis/lib/Predis/BasicClientInterface.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/AdminController.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/test/code/parser/stmt/controlFlow.test",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/database/migrations/teil_crm_dev_2014-03-03.sql",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/database/migrations/.gitkeep",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/blank.stub",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/admin/common/home.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/models/ExchangeRate.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/monolog/monolog/tests/Monolog/Handler/AmqpExchangeMock.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/database/migrations/SQL/30.04.14_12-20.sql",
-		"/Users/yuriikrevnyi/sites/curl-loader.dev/www/charge.php",
-		"/Users/yuriikrevnyi/sites/curl-loader.dev/www/index.php",
-		"/Users/yuriikrevnyi/Desktop/stripe-php-1.13.0/lib/Stripe.php",
-		"/Users/yuriikrevnyi/Library/Application Support/Sublime Text 3/Packages/User/console-log.sublime-snippet",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/css/jquery.fancybox.css",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/UsersController.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/debug/Symfony/Component/Debug/FatalErrorHandler/ClassNotFoundFatalErrorHandler.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/jeremeamia/SuperClosure/demo/factorial.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/projects/form_to_add_users.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/filters.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/css/style.css",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nesbot/carbon/tests/SubTest.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/swiftmailer/swiftmailer/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/ResponseEventTest.php",
-		"/etc/hosts",
-		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/ShiftLeft.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/HomeController.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/purposes/create.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/purposes/edit.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/priorities/create.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/priorities/edit.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/test/code/prettyPrinter/parentheses.test",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/models/TransactionPurpose.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/predis/predis/lib/Predis/Cluster/Distribution/KetamaPureRing.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/process/Symfony/Component/Process/ProcessUtils.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/css/create_project_page_transition.css",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/patchwork/utf8/CHANGELOG.md",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/projects/user_to_project_form.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/translation/Symfony/Component/Translation/README.md",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/translation/Symfony/Component/Translation/CHANGELOG.md",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/Identical.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/config/cache.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/UsersRoleController.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/users/roles/index.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/models/UserRole.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/process/Symfony/Component/Process/Exception/ProcessTimedOutException.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/test/code/prettyPrinter/onlyPHP.file-test",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/TransactionPurposeController.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/purposes/index.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/robots.txt",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/patchwork/utf8/README.md",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/css/bootstrap-colorpicker.css",
-		"/Users/yuriikrevnyi/Desktop/bootstrap-colorpicker-master/index.html",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/finder/Symfony/Component/Finder/Adapter/AdapterInterface.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/views/priorities/index.blade.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/test/code/prettyPrinter/onlyInlineHTML.file-test",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/process/Symfony/Component/Process/Exception/InvalidArgumentException.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/PreInc.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/routing/Symfony/Component/Routing/Tests/RouteTest.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/TasksController.php",
-		"/Users/yuriikrevnyi/Library/Application Support/Sublime Text 3/Packages/User/odie.sublime-snippet",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/js/moment.js",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/models/Tools.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/config/mail.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/public/css/auth-page.css",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/composer/autoload_classmap.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/artisan",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/ContentEncoder/QpContentEncoderAcceptanceTest.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/DataCollector/ConfigDataCollector.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/laravel/framework/src/Illuminate/Auth/Console/RemindersControllerCommand.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/DependencyInjection/AddClassesToCachePass.php",
-		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/DataCollector/ExceptionDataCollectorTest.php"
+		"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app/controllers/AdminController.php"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/yuriikrevnyi/sites/license.dev",
 			"/Users/yuriikrevnyi/sites/teil-crm.dev/www/app"
 		]
 	},
@@ -401,6 +493,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"www",
+			"gr8-app.de",
+			"app",
+			"return",
+			"ou can not us",
+			"menu",
+			"valid",
+			"valida",
+			"</label>",
+			"radio",
+			"Radio",
+			"radio",
+			"Radio",
+			"radio",
+			"design",
+			"pro",
+			"data",
+			"general",
+			"tabs",
+			"boots",
+			"install",
 			"opencart",
 			"C:/xampp/htdocs/opencart.dev",
 			"$",
@@ -507,28 +620,7 @@
 			"role",
 			"roles.",
 			"account",
-			"price_per_hour",
-			"id",
-			"# code...",
-			"_payable",
-			"required",
-			"alpha_dash",
-			"price_per_hour",
-			"name",
-			"account",
-			"accounts",
-			"transactions.purposes.",
-			"'purposes.",
-			"purposes",
-			"role->",
-			"->",
-			"role_price['",
-			"id",
-			"account",
-			"accounts.",
-			"post",
-			"role",
-			"purposes"
+			"price_per_hour"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -546,44 +638,307 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/config.php",
+					"file": "admin/view/template/teil/modules/menu/menu.tpl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1313,
+						"buffer_size": 2730,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1278,
-								1278
+								22,
+								22
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "system/teil/startup.php",
+					"file": "admin/controller/teil/menu.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 784,
+						"buffer_size": 2308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 572.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "system/teil/modules/Menu/MenuServiceProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								606,
+								606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "system/teil/modules/Menu/MenuBuilder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								317,
+								317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "system/teil/core/ServiceProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 716.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "system/teil/core/Security.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/server.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/keyauth.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8361,
+								8361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5952.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Course.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Enrollment.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Lecture.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 301,
 						"regions":
 						{
 						},
@@ -602,16 +957,45 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/Payment.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "system/teil/modules/Menu/MenuServiceProvider.php",
-					"semi_transient": true,
+					"buffer": 12,
+					"file": "/Users/yuriikrevnyi/Desktop/Online_Lecture_Site_539432c26aed1/models/User.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 734,
+						"buffer_size": 360,
 						"regions":
 						{
 						},
@@ -683,6 +1067,98 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"secut",
+				"system/teil/core/Security.php"
+			],
+			[
+				"menubuil",
+				"system/teil/modules/Menu/MenuBuilder.php"
+			],
+			[
+				"ser",
+				"system/teil/core/ServiceProvider.php"
+			],
+			[
+				"moduelser",
+				"system/teil/modules/Menu/MenuServiceProvider.php"
+			],
+			[
+				"admin/controller/teilmenu",
+				"admin/controller/teil/menu.php"
+			],
+			[
+				"admin/view/teil/menu",
+				"admin/view/template/teil/modules/menu.tpl"
+			],
+			[
+				"secur",
+				"system/teil/core/Security.php"
+			],
+			[
+				"seriprovider",
+				"system/teil/core/ServiceProvider.php"
+			],
+			[
+				"menu/licen",
+				"system/teil/modules/Menu/resources/license.dat"
+			],
+			[
+				"faca",
+				"system/teil/core/Facade.php"
+			],
+			[
+				"menuser",
+				"system/teil/modules/Menu/MenuServiceProvider.php"
+			],
+			[
+				"facade",
+				"system/teil/core/Facade.php"
+			],
+			[
+				"admin/view/teil/home",
+				"admin/view/template/teil/home.tpl"
+			],
+			[
+				"admin/cont/home",
+				"admin/controller/common/home.php"
+			],
+			[
+				"seripro",
+				"system/teil/core/ServiceProvider.php"
+			],
+			[
+				"moduleco",
+				"system/teil/lib/ModuleCore.php"
+			],
+			[
+				"admin/categoryfo",
+				"admin/view/template/catalog/category_form.tpl"
+			],
+			[
+				"module/license",
+				"system/teil/modules/Menu/resources/license.dat"
+			],
+			[
+				"admin/controller/teil/home",
+				"admin/controller/teil/home.php"
+			],
+			[
+				"admin/controller/common/home",
+				"admin/controller/common/home.php"
+			],
+			[
+				"admin/teil/home",
+				"admin/view/template/teil/home.tpl"
+			],
+			[
+				"admin/appcatalog",
+				"admin/view/javascript/teil/basic/apps-catalog.js"
+			],
+			[
+				"admin/con/teil/",
+				"admin/controller/teil/home.php"
+			],
 			[
 				"admin/con",
 				"admin/config.php"
@@ -1102,62 +1578,6 @@
 			[
 				"transac",
 				"www/app/models/Transaction.php"
-			],
-			[
-				"transa",
-				"www/app/controllers/TransactionController.php"
-			],
-			[
-				"url",
-				"www/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php"
-			],
-			[
-				"html",
-				"www/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
-			],
-			[
-				"projc",
-				"www/app/controllers/Projects.php"
-			],
-			[
-				"transacont",
-				"www/app/controllers/TransactionController.php"
-			],
-			[
-				"con/home",
-				"www/app/controllers/HomeController.php"
-			],
-			[
-				"validator",
-				"www/vendor/laravel/framework/src/Illuminate/Validation/Validator.php"
-			],
-			[
-				"homecont",
-				"www/app/controllers/HomeController.php"
-			],
-			[
-				"app/view/adm/header",
-				"www/app/views/admin/common/header.blade.php"
-			],
-			[
-				"transacti",
-				"www/app/models/Transaction.php"
-			],
-			[
-				"noty",
-				"www/public/js/noty.js"
-			],
-			[
-				"app/view/ad/head",
-				"www/app/views/admin/common/header.blade.php"
-			],
-			[
-				"basecontrolle",
-				"www/app/controllers/BaseController.php"
-			],
-			[
-				"auth",
-				"www/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php"
 			]
 		],
 		"width": 0.0

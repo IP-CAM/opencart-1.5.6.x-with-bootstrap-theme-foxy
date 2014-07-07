@@ -5355,3 +5355,5 @@ DROP TABLE IF EXISTS `test_table`;
 2014-06-07 14:07:05 - PHP Notice:  Error: Could not load template /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/menu.tpl! in /Users/yuriikrevnyi/sites/license.dev/www/system/engine/controller.php on line 90
 2014-06-07 15:35:03 - PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/home.tpl on line 6
 2014-06-07 15:44:47 - PHP Unknown:  Non-static method Facade::validateAndGet() should not be called statically in /Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/Facade.php on line 70
+2014-06-07 15:56:33 - PHP Notice:  Error: Could not load template /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/modules/menu.tpl! in /Users/yuriikrevnyi/sites/license.dev/www/system/engine/controller.php on line 90
+2014-06-07 16:30:07 - PHP Notice:  Undefined variable: account in /Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/menu/menu.tpl on line 1
