@@ -1,12 +1,15 @@
 <?php 
 
 
+use Teil\Core\CommandInterface;
+
+
 /**
  * Menu module command
  *
  * @return void
  */
-class MenuCommand implements Command {
+class MenuCommand implements CommandInterface {
 	
 	private $module;
 
