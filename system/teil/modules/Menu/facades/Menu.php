@@ -1,6 +1,9 @@
 <?php 
 
 
+use Teil\Core\Facade;
+
+
 class Menu extends Facade {
 
 

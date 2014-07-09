@@ -10,7 +10,7 @@ define("DIR_TEIL_MODULES", $_SERVER['DOCUMENT_ROOT'] . '/system/teil/modules/');
  * It contains all injected instances.
  *
  */
-$app = new App();
+$app = new Teil\Core\App();
 
 
 /**
@@ -23,7 +23,7 @@ $app->instance('app', $app);
 /**
  * Security system
  */
-$app->instance('security', new Security);
+$app->instance('security', new Teil\Lib\Security);
 
 
 
@@ -34,8 +34,8 @@ $app->instance('security', new Security);
  * Set application to build on.
  *
  */
-Facade::clearResolvedInstances();
-Facade::setFacadeApplication($app);
+Teil\Core\Facade::clearResolvedInstances();
+Teil\Core\Facade::setFacadeApplication($app);
 
 
 /**

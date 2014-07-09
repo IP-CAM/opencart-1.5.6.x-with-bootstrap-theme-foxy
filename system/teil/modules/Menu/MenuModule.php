@@ -5,6 +5,9 @@
 $GLOBALS['TeilServiceProviders']['Menu'] = 'MenuServiceProvider';
 
 
+use Teil\Lib\ModuleCore;
+
+
 /**
 * Simple menu module
 */

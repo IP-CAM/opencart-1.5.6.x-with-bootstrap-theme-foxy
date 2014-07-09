@@ -1,4 +1,5 @@
-<?php 
+<?php namespace Teil\Lib;
+
 
 /**
 * Download .zip file

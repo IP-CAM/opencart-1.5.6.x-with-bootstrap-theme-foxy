@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Teil\Core;
 
 
 /**
@@ -6,7 +6,7 @@
  *
  * @return void
  */
-interface Command {
+interface CommandInterface {
 	public function execute();
 
 	public function undo();

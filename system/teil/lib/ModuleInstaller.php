@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Teil\Lib;
 
 
 /**
@@ -34,7 +34,7 @@ class ModuleInstaller
 	 */
 	public function unzip()
 	{
-		$zip = new ZipArchive;
+		$zip = new \ZipArchive;
 
 		$res = $zip->open($this->path);
 		
@@ -45,7 +45,7 @@ class ModuleInstaller
 		}
 		else
 		{
-			throw new Exception("Error while installing module");
+			throw new \Exception("Error while installing module");
 		}
 	}
 

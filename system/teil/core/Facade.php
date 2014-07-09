@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Teil\Core;
 
 
 abstract class Facade {
@@ -82,7 +82,7 @@ abstract class Facade {
 	{
 		try {
 			return static::$app->make($name);
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			echo "You can not use `$name` module!";
 
 			return false;

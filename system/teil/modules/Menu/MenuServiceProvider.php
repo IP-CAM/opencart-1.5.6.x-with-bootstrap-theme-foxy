@@ -1,6 +1,9 @@
 <?php 
 
 
+use Teil\Core\ServiceProvider;
+
+
 class MenuServiceProvider extends ServiceProvider {
 
 

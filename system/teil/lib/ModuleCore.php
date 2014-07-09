@@ -1,10 +1,13 @@
-<?php 
+<?php namespace Teil\Lib;
+
+
+use Teil\Core\ModuleInterface;
 
 
 /**
 * Every module should extend this class
 */
-class ModuleCore implements Module 
+class ModuleCore implements ModuleInterface 
 {
 
 	// Link to default Opencart DB manager
@@ -24,13 +27,13 @@ class ModuleCore implements Module
 
 	public function installDatabase()
 	{
-		throw new Exception("You should redeclare `installDatabase` method!");
+		throw new \Exception("You should redeclare `installDatabase` method!");
 	}
 
 
 	public function uninstallDatabase()
 	{
-		throw new Exception("You should redeclare `uninstallDatabase` method!");
+		throw new \Exception("You should redeclare `uninstallDatabase` method!");
 	}
 
 
