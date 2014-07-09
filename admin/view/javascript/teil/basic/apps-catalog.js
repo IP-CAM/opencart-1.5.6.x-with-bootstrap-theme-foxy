@@ -248,7 +248,7 @@ AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 	$.each(allAppsJson.apps, function(index, module) {
 		$.each(myAppsJson.apps, function(moduleSystemName, moduleServiceProvider) {
 			
-			if (module.system_name == moduleSystemName) {
+			if (module.code == moduleSystemName) {
 				installed.apps.push(module);
 
 				module.is_installed = true;
@@ -259,7 +259,7 @@ AppCatalog.prototype.filter = function(allAppsJson, myAppsJson) {
 
 		});
 	});
-
+console.log(myAppsJson);
 	return {
 		installed: installed,
 		notInstalled: notInstalled,
@@ -277,7 +277,7 @@ AppCatalog.prototype.findAppBySystemName = function(moduleSystemName) {
 	var allApps = AppCatalog.prototype.apps, needleApp;
 
 	$.each(allApps.apps, function(index, module) {
-		if (module.system_name == moduleSystemName) {
+		if (module.code == moduleSystemName) {
 			needleApp = module;
 
 			return false;

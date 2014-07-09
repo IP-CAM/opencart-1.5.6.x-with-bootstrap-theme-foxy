@@ -65,11 +65,11 @@ class TeilDownloader
 	 *
 	 * @return void
 	 */
-	public function load(Closure $callback, $timeout = 1000)
+	public function load(\Closure $callback, $timeout = 1000)
 	{
-		$query = '?domain=' . $_SERVER['SERVER_NAME'] . '&module_code=' . $this->module_name;
+		$query = "?domain=" . $_SERVER['SERVER_NAME'] . "&module_code=" . $this->module_name;
 		$ch = curl_init();
-
+		
 		curl_setopt($ch, CURLOPT_URL, $this->url . $query);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);

@@ -87,7 +87,7 @@ class ControllerTeilHome extends Controller {
 
         $module_name = $this->request->post['module_name'];
 
-        $loader = new TeilDownloader($module_name);
+        $loader = new Teil\Lib\TeilDownloader($module_name);
         
         // Close write session
         // We do this to bring user of getting download progress on air
@@ -99,7 +99,7 @@ class ControllerTeilHome extends Controller {
             $loader->load(
                 function($module_name, $filename, $dir) 
                 {
-                    $moduleInstaller = new ModuleInstaller(
+                    $moduleInstaller = new Teil\Lib\ModuleInstaller(
                         $this->db,
                         $module_name,
                         $filename,
@@ -172,7 +172,7 @@ class ControllerTeilHome extends Controller {
 
         $module_name = $this->request->post['module_name'];
 
-        $moduleInstaller = new ModuleInstaller(
+        $moduleInstaller = new Teil\Lib\ModuleInstaller(
             $this->db,
             $module_name,
             NULL, NULL

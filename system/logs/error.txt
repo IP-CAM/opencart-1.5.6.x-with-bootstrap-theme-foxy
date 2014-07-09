@@ -5376,3 +5376,5 @@ DROP TABLE IF EXISTS `test_table`;
 2014-07-05 12:31:03 - PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\opencart.dev\www\system\teil\core\Facade.php on line 166
 2014-07-05 12:31:03 - PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\opencart.dev\www\system\teil\core\Facade.php on line 166
 >>>>>>> 2f68a85d823b9688d1e819741680a0b88107cd73
+2014-07-09 15:48:04 - PHP Unknown:  Argument 1 passed to Teil\Lib\TeilDownloader::load() must be an instance of Teil\Lib\Closure, instance of Closure given, called in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 112 and defined in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 68
+2014-07-09 15:57:08 - PHP Warning:  curl_setopt() expects exactly 3 parameters, 2 given in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 74
