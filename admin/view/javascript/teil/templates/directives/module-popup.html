@@ -1,0 +1,19 @@
+<div id="module-popup" class="white-popup mfp-with-anim">
+
+	<header class="image-header">
+		<img ng-src="{{ module.image }}">
+	</header>
+
+	<h2 class="__h2-title">{{ module.title }}</h2>
+
+	<div class="category-small">{{ module.category }}</div>
+
+	<h3 class="__h2">Pricing</h3>
+	
+	<select ng-change="changeModuleType()" ng-model="selectedType" ng-options="type.name for type in module.types">
+	</select>
+
+	<strong>Module price is: </strong> {{ totalPrice }}
+	
+
+</div>

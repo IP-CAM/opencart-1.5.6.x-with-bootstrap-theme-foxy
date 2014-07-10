@@ -4,7 +4,7 @@ class ControllerTeilHome extends Controller {
     public function index() {
         $this->load->model('teil/home');
         
-        $this->template = 'teil/home.tpl';
+        $this->template = 'teil/default.tpl';
         
         // If form submited
         if ($this->request->server['REQUEST_METHOD'] == 'POST' 
