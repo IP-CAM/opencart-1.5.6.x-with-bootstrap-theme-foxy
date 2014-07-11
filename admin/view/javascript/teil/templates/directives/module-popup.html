@@ -10,10 +10,25 @@
 
 	<h3 class="__h2">Pricing</h3>
 	
-	<select ng-change="changeModuleType()" ng-model="selectedType" ng-options="type.name for type in module.types">
+	<select 
+		ng-model="selectedType" 
+		ng-options="type.name for type in module.types" 
+	>
 	</select>
 
-	<strong>Module price is: </strong> {{ totalPrice }}
-	
+	<span ng-hide="isActiveType">
+		<strong>Module price is: </strong> {{ totalPrice }}
+	</span>
+
+	<span ng-show="isActiveType">
+		Already installed
+	</span>
+{{module.installed}}
+	<btn-progress 
+		ng-class="{__error: module.installed, " 
+		progress="0" 
+		ng-click="download($event, module);" 
+		class="btn__blue btn__block" 
+	></btn-progress>
 
 </div>

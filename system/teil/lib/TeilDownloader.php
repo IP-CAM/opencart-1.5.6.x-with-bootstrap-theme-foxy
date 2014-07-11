@@ -76,12 +76,12 @@ class TeilDownloader
 
 		// Progres
 		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 
-			function ($download_size, $downloaded, $upload_size, $uploaded)
+			function ($p, $download_size, $downloaded, $upload_size, $uploaded)
 			{
 				// Write loading progress
 			    if ($download_size > 0)
 			    {
-			    	$done_percent = $downloaded / $download_size  * 100;
+			    	$done_percent = $downloaded / $download_size * 100;
 
 			    	file_put_contents($this->progress_container_file, (int) $done_percent);
 			    }

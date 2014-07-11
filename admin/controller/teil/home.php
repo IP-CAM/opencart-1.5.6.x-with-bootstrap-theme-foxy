@@ -85,9 +85,9 @@ class ControllerTeilHome extends Controller {
             'status' => true
         );
 
-        $module_name = $this->request->post['module_name'];
+        $module_code = $this->request->post['module_code'];
 
-        $loader = new Teil\Lib\TeilDownloader($module_name);
+        $loader = new Teil\Lib\TeilDownloader($module_code);
         
         // Close write session
         // We do this to bring user of getting download progress on air
@@ -97,11 +97,11 @@ class ControllerTeilHome extends Controller {
         // try
         // {
             $loader->load(
-                function($module_name, $filename, $dir) 
+                function($module_code, $filename, $dir) 
                 {
                     $moduleInstaller = new Teil\Lib\ModuleInstaller(
                         $this->db,
-                        $module_name,
+                        $module_code,
                         $filename,
                         $dir
                     );
@@ -129,11 +129,11 @@ class ControllerTeilHome extends Controller {
     {
         $progress = 0;
 
-        $module_name = $this->request->post['module_name'];
-        $module_name_hashed = md5($module_name);
+        $module_code = $this->request->post['module_code'];
+        $module_code_hashed = md5($module_code);
         $download_directory_hash = md5('downloads') . '/';
 
-        $progress_file = DIR_SYSTEM . "teil/" . $download_directory_hash . $module_name_hashed . '.txt';
+        $progress_file = DIR_SYSTEM . "teil/" . $download_directory_hash . $module_code_hashed . '.txt';
 
         if (file_exists($progress_file))
         {
@@ -170,11 +170,11 @@ class ControllerTeilHome extends Controller {
             'status' => true
         );
 
-        $module_name = $this->request->post['module_name'];
+        $module_code = $this->request->post['module_code'];
 
         $moduleInstaller = new Teil\Lib\ModuleInstaller(
             $this->db,
-            $module_name,
+            $module_code,
             NULL, NULL
         );
         

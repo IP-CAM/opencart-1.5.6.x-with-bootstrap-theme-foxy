@@ -6,8 +6,9 @@ window.teil.controller(
 		'$scope', 
 		'$http', 
 		'$compile', 
+		'$timeout', 
 		'MODULES_LIST_URL', 
-		function CommonController($scope, $http, $compile, url) {
+		function CommonController($scope, $http, $compile, $timeout, url) {
 			// Parse all the modules
 			$http.jsonp(url)
 				.success(function(data) {
@@ -28,5 +29,9 @@ window.teil.controller(
 				// Append popup to the body
 				angular.element('body').append(popup);
 			};
+
+			$scope.$watch('modules', function() {
+				console.log('Controller changed');
+			}, true);
 		}
 ]);
