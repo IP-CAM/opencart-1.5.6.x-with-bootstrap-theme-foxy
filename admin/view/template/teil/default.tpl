@@ -8,6 +8,7 @@
 
 <!-- Token -->
 <input type="hidden" value="<?php echo $token ?>" id="token">
+<input type="hidden" value="<?php echo $this->config->get('config_email') ?>" id="admin-email">
 
 
 <!-- Entry application -->

@@ -4,7 +4,6 @@
 teil.directive('btnProgress', function ($timeout) {
 	var controller = function ($scope) {
 		$scope.disabled = false;
-		$scope.btnText = 'Preview module - FREE';
 		$scope.btnAnimationFinished = false;
 
 		$scope.disable = function() {
@@ -37,21 +36,29 @@ teil.directive('btnProgress', function ($timeout) {
 			$scope.btnAnimationFinished = true;
 
 			var promise = $timeout(function() {
-				$scope.disabled = false;
 				$scope.btnAnimationFinished = false;
-				$scope.btnText = 'Remove module';
 				element.attr('progress', 0);
 
 				// Clear timeout
 				$timeout.cancel(promise);
 			}, 1500);
+
+			var removeDisableTimer = $timeout(function() {
+				$scope.disabled = false;
+
+				// Clear timeout
+				$timeout.cancel(removeDisableTimer);
+			}, 2600);
+
 		};
 	};
 
 	return {
 		restrict: 'E',
 		replace: true,
-		scope: {},
+		scope: {
+			module: '='
+		},
 		templateUrl: '/admin/view/javascript/teil/templates/directives/btn-progress.html',
 		link: link,
 		controller: controller

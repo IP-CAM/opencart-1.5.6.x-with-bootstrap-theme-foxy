@@ -4,10 +4,11 @@
 		<img ng-src="{{ module.image }}">
 	</header>
 
+	<!-- Module info -->
 	<h2 class="__h2-title">{{ module.title }}</h2>
-
 	<div class="category-small">{{ module.category }}</div>
 
+	<!-- Pricing sections -->
 	<h3 class="__h2">Pricing</h3>
 	
 	<select 
@@ -16,19 +17,38 @@
 	>
 	</select>
 
-	<span ng-hide="isActiveType">
+	<span ng-if="isActiveType && !isTrialKey">
+		Active!
+	</span>
+
+	<span ng-if="isActiveType && isTrialKey">
+		Active! (trial version)
+	</span>
+
+	<span ng-if="!isActiveType || isActiveType && isTrialKey">
 		<strong>Module price is: </strong> {{ totalPrice }}
 	</span>
 
-	<span ng-show="isActiveType">
-		Already installed
-	</span>
-{{module.installed}}
+	<!-- Buy it now buttons -->
+	<button 
+		ng-if="!module.purchased && !isActiveType && !isTrialKey" 
+		class="btn__blue" 
+		ng-click="purchase($event)" 
+	>Buy it now!</button>
+
+	<button 
+		ng-if="module.purchased && !isActiveType && !isTrialKey" 
+		class="btn__blue" 
+		ng-click="purchase($event)" 
+	>Upgrade!</button>
+
+	<!-- Download / remove button -->
 	<btn-progress 
 		ng-class="{__error: module.installed, " 
 		progress="0" 
-		ng-click="download($event, module);" 
+		ng-click="action($event);" 
 		class="btn__blue btn__block" 
+		module="module"
 	></btn-progress>
 
 </div>

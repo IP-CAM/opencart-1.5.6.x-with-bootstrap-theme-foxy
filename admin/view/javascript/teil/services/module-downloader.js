@@ -61,6 +61,29 @@ teil.factory('ModuleDownloader', function ($http) {
 	};
 
 
+	// Remove module from the system
+	ModuleDownloader.prototype.remove = function() {
+		var _this = this;
+
+		// Set starting progress
+		_this.$el.attr('progress', 10);
+
+		// Wend request to load new app(module)
+		var promise = $http({
+			url: '/admin/index.php?route=teil/home/remove&token=' + _this.token,
+			method: 'post',
+			responseType: 'json',
+			data: $.param({module_code: _this.moduleCode}),
+			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+		})
+		.success(function() {
+			_this.$el.attr('progress', 100);
+		});
+
+		return promise;
+	};
+
+
 	// Get current progress in percents
 	ModuleDownloader.prototype.progress = function() {
 		var _this = this;

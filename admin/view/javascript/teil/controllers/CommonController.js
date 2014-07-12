@@ -8,15 +8,33 @@ window.teil.controller(
 		'$compile', 
 		'$timeout', 
 		'MODULES_LIST_URL', 
-		function CommonController($scope, $http, $compile, $timeout, url) {
+		'INSTALLED_MODULES_LIST_URL', 
+		'TOKEN', 
+		function CommonController($scope, $http, $compile, $timeout, url, installedUrl, token) {
 			// Parse all the modules
 			$http.jsonp(url)
 				.success(function(data) {
 					$scope.modules = data.apps;
 				})
 				.error(function(data) {
-					console.log('error');
+					console.log('Error loading module list');
 				});
+
+			// Get list of already installed apps
+			$http.get(installedUrl + '&token=' + token)
+				.success(function(data) {
+					var installedModules = data.apps;
+
+					angular.forEach($scope.modules, function(el, index) {
+						if (installedModules[el.code] != undefined) {
+							$scope.modules[index].installed = true;
+						};
+					});
+				})
+				.error(function(data) {
+					console.log('Error loading module list');
+				});
+
 
 			// Open popup with detail info of module
 			$scope.openPopup = function(module) {

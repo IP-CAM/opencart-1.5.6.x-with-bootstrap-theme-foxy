@@ -28,7 +28,10 @@ color: #8fa6b3;
   pointer-events: none;
 }
 .__error{
-	background: #f00!important;
+	background: #C72A26!important;
+}
+.__error:hover{
+	background: #DF342F!important;
 }
 .btn__blue{
 outline: none;
@@ -39,6 +42,7 @@ font: bold 14px/1.2em Arial, sans-serif;
 padding: 13px 20px;
 border-radius: 4px;
 position: relative;
+transition: all 0.3s linear;
 }
 .btn__blue .text{
   position: relative;
@@ -121,6 +125,9 @@ height: auto;
 width: auto;
 background: #1259A5;
 transition: width 1s ease-in-out, opacity 0.3s ease-out 1.2s;  border-radius: 4px;  z-index: 5;  opacity: 1;
+}
+.progress-btn.__error .over {
+background: #DD3733!important;
 }
 
 .btn__blue[data-progress="0"] .over{width: 0%;}
