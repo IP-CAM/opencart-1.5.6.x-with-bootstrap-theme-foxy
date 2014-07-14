@@ -6,26 +6,13 @@ teil.directive('moduleMinPrice', function () {
 
 		// Show needle price message
 		$scope.formatPrice = function() {
-			var minPrice = $scope.getTheCheapestType();
+			var minPrice = $scope.module.min_price;
 
 			if (minPrice == 0) {
 				return 'FREE';
 			};
 
 			return 'from $' + minPrice;
-		};
-
-		// Get the cheepes module type
-		$scope.getTheCheapestType = function() {
-			var minPrice = null;
-
-			angular.forEach($scope.module.types, function(el) {
-				if (minPrice == null || el.price < minPrice) {
-					minPrice = el.price;
-				};
-			});
-
-			return minPrice;
 		};
 	};
 

@@ -1,9 +1,13 @@
 'use strict';
 
 
-teil.directive('modulePopup', function (TOKEN, ModuleDownloader, $timeout, CONFIG_ADMIN_EMAIL) {
+teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, $timeout, CONFIG_ADMIN_EMAIL, MODULES_DETAIL_URL, STORE_KEY_URL) {
 
 	var controller = function ($scope) {
+		$scope.userLicenseKey = '';
+		$scope.purchasedTypePrice = 0;
+		$scope.storeKeyStatus = true;
+
 		// Open popup
 		$.magnificPopup.open({
 			midClick: true,
@@ -20,6 +24,94 @@ teil.directive('modulePopup', function (TOKEN, ModuleDownloader, $timeout, CONFI
 				}
 			}
 		});
+
+		// Load detail module info
+		$scope.load = function() {
+			var url = MODULES_DETAIL_URL.replace('{module}', $scope.module.code);
+
+			$http.jsonp(url)
+				.success(function(module) {
+					// Set if module is installed from prev state
+					module.installed = $scope.module.installed;
+					module.key = $scope.module.key;
+
+					$scope.module = module;
+					$scope.init();
+				})
+				.error(function(data) {
+					console.log('Error loading module info');
+				});
+		};
+
+		// Initialize application
+		$scope.init = function() {
+			$scope.loading = false;
+			$scope.isActiveType = false;
+			$scope.isTrialKey = true;
+
+			// Validate key.
+			$scope.validateKey();
+			
+			// Set default selected option
+			$scope.selectedType = $scope.module.types[0];
+
+			angular.forEach($scope.module.types, function(el, index) {
+				if (el.active) {
+					$scope.selectedType = $scope.module.types[index];
+					$scope.module.module_type_name = $scope.module.types[index].name;
+					return false;
+				};
+			});
+
+			// Change price depending on module type selected
+			$scope.$watch('selectedType', function(value, old) {
+				$scope.getPurchasedTypePrice();
+
+				$scope.totalPrice = value.price;
+				$scope.isActiveType = false;
+				$scope.isTrialKey = true;
+				$scope.isGreaterType = false;
+
+				// Check if we should show 'purchase' button
+				if (parseFloat($scope.selectedType.price) > parseFloat($scope.purchasedTypePrice)) {
+					$scope.isGreaterType = true;
+				};
+
+				// Check if current module type is purchased one
+				if (value.active) {
+					$scope.isActiveType = true;
+				};
+
+				// Check if current key is trial
+				if ($scope.module.purchased) {
+					$scope.isTrialKey = false;
+				};
+			}, true);
+		};
+
+
+		// Validate license key
+		$scope.validateKey = function() {
+			// We will compare local key, that is located in module folder
+			// and real key from out server
+			$scope.keyValid = false;
+			$scope.keyValidTrial = false;
+
+			if ($scope.module.purchased_key && $scope.module.purchased_key == $scope.module.key) {
+				$scope.keyValid = true;
+			};
+
+			// Or if we have trial key
+			if ( ! $scope.module.purchased_key && $scope.module.key == 'DEMO') {
+				$scope.keyValid = true;
+				$scope.keyValidTrial = true;
+			};
+
+			// Validate key time
+			if ( ! $scope.module.days_left) {
+				$scope.keyValid = false;
+			};
+		};
 
 		// Perform action on button click (install or remove module)
 		$scope.action = function(e) {
@@ -60,8 +152,15 @@ teil.directive('modulePopup', function (TOKEN, ModuleDownloader, $timeout, CONFI
 				angular.forEach($scope.$parent.modules, function(el, i) {
 					if ($scope.module.code == el.code) {
 						$scope.$parent.modules[i].installed = installed;
+						$scope.module.installed = installed;
+
+						$scope.$parent.modules[i].key = 'DEMO';
+						$scope.module.key = 'DEMO';
 					};
 				});
+
+				// Pull module info
+				$scope.load();
 
 				// Clear timeout
 				$timeout.cancel(changeModuleInfoTimer);
@@ -81,44 +180,67 @@ teil.directive('modulePopup', function (TOKEN, ModuleDownloader, $timeout, CONFI
 			};
 
 			window.open(
-				'http://dev.website-builder.ru/pay?' + $.param(purchasingData)
+				'http://dev.website-builder.ru/pay?' + $.param(purchasingData),
+				'_blank'
 			);
 
-			console.log($.param(purchasingData));
+			// Open `enter license key` layer
+			$scope.showEnterKeyField = true;
+		};
+
+
+		// Store new license key
+		$scope.storeKey = function() {
+			$scope.loading = true;
+
+			// Store key
+			$http({
+				url: STORE_KEY_URL + '&token=' + TOKEN,
+				method: 'post',
+				responseType: 'json',
+				data: $.param({
+					module_code: $scope.module.code,
+					key: $scope.userLicenseKey
+				}),
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			})
+			.then(function(resp) {
+				$scope.storeKeyStatus = resp.data.status;
+				$scope.loading = false;
+
+				if ($scope.storeKeyStatus) {
+					$scope.module.key = $scope.userLicenseKey;
+
+					// angular.forEach($scope.$parent.modules, function(el, i) {
+					// 	if ($scope.module.code == el.code) {
+					// 		$scope.$parent.modules[i].key = $scope.userLicenseKey;
+					// 	};
+					// });
+
+					$scope.showEnterKeyField = false;
+					$scope.userLicenseKey = '';
+
+					$scope.load();
+				};
+			});
+		};
+
+		// Get price of current module type
+		$scope.getPurchasedTypePrice = function() {
+			angular.forEach($scope.module.types, function(el, index) {
+				if (el.active) {
+					$scope.purchasedTypePrice = el.price;
+				};
+			});
 		};
 	};
 
 	// Set selected module
 	var link = function($scope) {
 		$scope.module = $scope.$parent.selectedModule;
-		
-		$scope.isActiveType = false;
-		$scope.isTrialKey = false;
-		
-		// Set default selected option
-		angular.forEach($scope.module.types, function(el, index) {
-			if (el.active) {
-				$scope.selectedType = $scope.module.types[index];
-				return false;
-			};
-		});
 
-		// Change price depending on module type selected
-		$scope.$watch('selectedType', function(value, old) {
-			$scope.totalPrice = value.price;
-			$scope.isActiveType = false;
-			$scope.isTrialKey = false;
-
-			// Check if current module type is purchased one
-			if (value.active) {
-				$scope.isActiveType = true;
-			};
-
-			// Check if current key is trial
-			if (value.is_trial) {
-				$scope.isTrialKey = true;
-			};
-		}, true);
+		$scope.loading = true;
+		$scope.load();
 	};
 
 	return {

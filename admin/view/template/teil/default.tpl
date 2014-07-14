@@ -9,7 +9,7 @@
 <!-- Token -->
 <input type="hidden" value="<?php echo $token ?>" id="token">
 <input type="hidden" value="<?php echo $this->config->get('config_email') ?>" id="admin-email">
-
+<input type="hidden" value="<?php echo DIR_TEIL_MODULES ?>" id="dir-teil-modules">
 
 <!-- Entry application -->
 <div ng-app="teil">
@@ -44,6 +44,7 @@
 <script src="/admin/view/javascript/teil/directives/module-popup.js"></script>
 <script src="/admin/view/javascript/teil/directives/module-thumb.js"></script>
 <script src="/admin/view/javascript/teil/directives/btn-progress.js"></script>
+<script src="/admin/view/javascript/teil/directives/capitalize.js"></script>
 
 <!-- Services -->
 <script src="/admin/view/javascript/teil/services/module-downloader.js"></script>

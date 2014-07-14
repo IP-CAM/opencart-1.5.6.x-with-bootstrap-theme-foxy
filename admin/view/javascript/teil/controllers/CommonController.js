@@ -14,7 +14,7 @@ window.teil.controller(
 			// Parse all the modules
 			$http.jsonp(url)
 				.success(function(data) {
-					$scope.modules = data.apps;
+					$scope.modules = data;
 				})
 				.error(function(data) {
 					console.log('Error loading module list');
@@ -23,11 +23,14 @@ window.teil.controller(
 			// Get list of already installed apps
 			$http.get(installedUrl + '&token=' + token)
 				.success(function(data) {
-					var installedModules = data.apps;
+					var installedModules = data;
+
+					console.log(installedModules);
 
 					angular.forEach($scope.modules, function(el, index) {
 						if (installedModules[el.code] != undefined) {
 							$scope.modules[index].installed = true;
+							$scope.modules[index].key = installedModules[el.code].key;
 						};
 					});
 				})

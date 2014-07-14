@@ -37,7 +37,8 @@
   content: '';
   display: inline-block;
   height: 100%;
-  vertical-align: middle; }
+  vertical-align: middle; 
+}
 
 .mfp-align-top .mfp-container:before {
   display: none; }

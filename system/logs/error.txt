@@ -5394,3 +5394,21 @@ DROP TABLE IF EXISTS `test_table`;
 2014-07-11 15:38:57 - PHP Warning:  unlink(C:/xampp/htdocs/opencart.dev/www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/8d6ab84ca2af9fccd4e4048694176ebf.txt): Permission denied in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 131
 2014-07-11 15:52:00 - PHP Warning:  unlink(C:/xampp/htdocs/opencart.dev/www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/8d6ab84ca2af9fccd4e4048694176ebf.txt): Permission denied in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 131
 2014-07-11 15:52:01 - PHP Warning:  file_put_contents(C:/xampp/htdocs/opencart.dev/www/system/teil/d07d50a751bc6ddf12bf3af0efee9b45/8d6ab84ca2af9fccd4e4048694176ebf.txt): failed to open stream: Permission denied in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\TeilDownloader.php on line 86
+2014-07-14 11:08:07 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\Menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 15:11:02 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 15:24:22 - PHP Notice:  Undefined index: module_code in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 132
+2014-07-14 15:24:22 - PHP Notice:  Undefined index: key in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 133
+2014-07-14 15:24:51 - PHP Notice:  Undefined index: module_code in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 132
+2014-07-14 15:24:51 - PHP Notice:  Undefined index: key in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 133
+2014-07-14 15:25:50 - PHP Notice:  Undefined index: module_code in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 132
+2014-07-14 15:25:50 - PHP Notice:  Undefined index: key in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 133
+2014-07-14 15:35:45 - PHP Notice:  Undefined index: key in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 137
+2014-07-14 17:50:29 - PHP Warning:  file_put_contents(C:/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/resources/license.dat): failed to open stream: No such file or directory in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 151
+2014-07-14 18:04:13 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 18:36:39 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 18:37:37 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 18:42:13 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 18:42:13 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 19:01:43 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 19:04:07 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144
+2014-07-14 19:04:07 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 144

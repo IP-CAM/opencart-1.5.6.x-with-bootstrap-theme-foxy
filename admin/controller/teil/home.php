@@ -121,6 +121,43 @@ class ControllerTeilHome extends Controller {
 
 
     /**
+     * Store license key
+     *
+     * @return void
+     */
+    public function store()
+    {
+        $result = array();
+
+        if (isset($this->request->post['module_code'])) {
+            $module_code = $this->request->post['module_code'];
+        } else {
+            $module_code = NULL;
+        }
+
+        if (isset($this->request->post['key'])) {
+            $key = $this->request->post['key'];
+        } else {
+            $key = NULL;
+        }
+
+        if (empty($module_code) OR empty($key))
+        {
+            echo json_encode(array('status' => false)); die();
+        }
+
+
+        // Store key
+        if (file_put_contents(DIR_TEIL_MODULES . $module_code . '/resources/license.dat', $key))
+        {
+            echo json_encode(array('status' => true)); die();
+        }
+
+        echo json_encode(array('status' => false)); die();
+    }
+
+
+    /**
      * Get progress of module that is currently loading
      *
      * @return mixed
@@ -151,9 +188,17 @@ class ControllerTeilHome extends Controller {
      */
     public function my()
     {
-        $result = array(
-            'apps' => $GLOBALS['TeilServiceProviders']
-        );
+        $result = array();
+
+        foreach ($GLOBALS['TeilServiceProviders'] as $module_code => $module_provider)
+        {
+            $key = file_get_contents(DIR_TEIL_MODULES . $module_code . '/resources/license.dat');
+
+            $result[$module_code] = array(
+                'provider'  => $module_provider,
+                'key'       => $key
+            );
+        }
 
         echo json_encode($result); die();
     }

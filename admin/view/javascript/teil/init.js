@@ -4,6 +4,9 @@
 // Declare app level module which depends on filters, and services
 window.teil = angular.module('teil', [])
 	.value('TOKEN', angular.element('#token').val())
+	.value('DIR_TEIL_MODULES', angular.element('#dir-teil-modules').val())
 	.value('CONFIG_ADMIN_EMAIL', angular.element('#admin-email').val())
 	.value('MODULES_LIST_URL', 'http://dev.website-builder.ru/modules?callback=JSON_CALLBACK')
-	.value('INSTALLED_MODULES_LIST_URL', '/admin/index.php?route=teil/home/my');
+	.value('MODULES_DETAIL_URL', 'http://dev.website-builder.ru/modules/{module}?jsonp=Y&callback=JSON_CALLBACK')
+	.value('INSTALLED_MODULES_LIST_URL', '/admin/index.php?route=teil/home/my')
+	.value('STORE_KEY_URL', '/admin/index.php?route=teil/home/store');
