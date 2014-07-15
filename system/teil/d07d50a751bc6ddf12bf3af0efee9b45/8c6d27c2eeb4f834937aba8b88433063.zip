@@ -1065,7 +1065,7 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>REMOTE_PORT</td>
-                          <td>51462</td>
+                          <td>63715</td>
                         </tr>
                                               <tr>
                           <td>REDIRECT_QUERY_STRING</td>
@@ -1105,7 +1105,7 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>REQUEST_TIME</td>
-                          <td>1405434085</td>
+                          <td>1405434872</td>
                         </tr>
                                             </table>
                                   </div>

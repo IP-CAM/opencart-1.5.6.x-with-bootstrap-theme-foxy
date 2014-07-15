@@ -151,13 +151,8 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, $timeout
 				// Set module attribute `installed` to be true
 				angular.forEach($scope.$parent.modules, function(el, i) {
 					if ($scope.module.code == el.code) {
-						
 						$scope.module.installed = installed;
-
-						
 						$scope.module.key = 'DEMO';
-
-						
 					};
 				});
 
@@ -212,14 +207,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, $timeout
 
 				if ($scope.storeKeyStatus) {
 					$scope.module.key = $scope.userLicenseKey;
-
-					// Update parent scope module key
-					angular.forEach($scope.$parent.modules, function(el, i) {
-						if ($scope.module.code == el.code) {
-							$scope.$parent.modules[i].key = $scope.userLicenseKey;
-						};
-					});
-
+					
 					$scope.showEnterKeyField = false;
 					$scope.userLicenseKey = '';
 

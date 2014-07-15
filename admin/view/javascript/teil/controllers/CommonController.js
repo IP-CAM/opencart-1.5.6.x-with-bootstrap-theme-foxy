@@ -63,9 +63,7 @@ window.teil.controller(
 						};
 					});
 
-
 					$scope.totalInstalledModules = totalInstalled;
-					console.log($scope.totalInstalledModules);
 				}, true);
 			};
 

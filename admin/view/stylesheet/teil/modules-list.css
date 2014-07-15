@@ -770,3 +770,4 @@ border-left-color: #3c763d;
     z-index: 5;
 
 }
+[ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
