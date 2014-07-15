@@ -229,4 +229,47 @@ class ControllerTeilHome extends Controller {
     }
 
 
+    /**
+     * Perform self update
+     *
+     * @return void
+     */
+    public function selfupdate()
+    {
+        $result = array(
+            'status' => true
+        );
+
+        $loader = new Teil\Lib\TeilDownloader('self');
+        
+        // Close write session
+        // We do this to bring user of getting download progress on air
+        // If not ---> user cant watch download progress at all
+        session_write_close();
+
+        // try
+        // {
+            $loader->load(
+                function($module_code, $filename, $dir) 
+                {
+                    $moduleInstaller = new Teil\Lib\ModuleInstaller(
+                        $this->db,
+                        $module_code,
+                        $filename,
+                        $dir
+                    );
+
+                    $moduleInstaller->unzip();
+                }
+            );
+        // }
+        // catch (Exception $e)
+        // {
+        //     $result['status'] = false;
+        // }
+
+        echo json_encode($result); die();
+    }
+
+
 }

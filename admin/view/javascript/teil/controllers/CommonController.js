@@ -1,5 +1,11 @@
 'use strict';
 
+
+// angular.extend(scope.module, {
+//     title: 'Redeclared',
+//     test: 'hello'
+// });
+
 window.teil.controller(
 	'CommonController',
 	[
@@ -7,36 +13,61 @@ window.teil.controller(
 		'$http', 
 		'$compile', 
 		'$timeout', 
-		'MODULES_LIST_URL', 
-		'INSTALLED_MODULES_LIST_URL', 
-		'TOKEN', 
-		function CommonController($scope, $http, $compile, $timeout, url, installedUrl, token) {
+		'Module',
+		function CommonController($scope, $http, $compile, $timeout, Module) {
+
+			// Number of total installed modules
+			$scope.totalInstalledModules = 1;
+			$scope.loading = true;
+
 			// Parse all the modules
-			$http.jsonp(url)
-				.success(function(data) {
-					$scope.modules = data;
-				})
-				.error(function(data) {
-					console.log('Error loading module list');
-				});
+			$scope.modulesLoaded = function(resp) {
+				$scope.modules = resp;
+
+				Module.my().success($scope.myModulesLoaded);
+			};
 
 			// Get list of already installed apps
-			$http.get(installedUrl + '&token=' + token)
-				.success(function(data) {
-					var installedModules = data;
+			$scope.myModulesLoaded = function(resp) {
+				var modules = resp;
 
-					console.log(installedModules);
+				angular.forEach($scope.modules, function(el, index) {
+					if (modules[el.code] != undefined) {
+						$scope.modules[index].installed = true;
+						$scope.modules[index].key = modules[el.code].key;
+
+						$scope.totalInstalledModules++;
+					};
+				});
+
+				// Start watching
+				$scope.setUpWatchers();
+
+				// Remove loading
+				$scope.loading = false;
+			};
+
+
+			// Request for modules
+			Module.all().success($scope.modulesLoaded);
+
+			// Watch modules change
+			$scope.setUpWatchers = function() {
+				// Recalculate already installed modules
+				$scope.$watch('modules', function(val) {
+					var totalInstalled = 0;
 
 					angular.forEach($scope.modules, function(el, index) {
-						if (installedModules[el.code] != undefined) {
-							$scope.modules[index].installed = true;
-							$scope.modules[index].key = installedModules[el.code].key;
+						if (el.installed) {
+							totalInstalled++;
 						};
 					});
-				})
-				.error(function(data) {
-					console.log('Error loading module list');
-				});
+
+
+					$scope.totalInstalledModules = totalInstalled;
+					console.log($scope.totalInstalledModules);
+				}, true);
+			};
 
 
 			// Open popup with detail info of module
@@ -50,9 +81,5 @@ window.teil.controller(
 				// Append popup to the body
 				angular.element('body').append(popup);
 			};
-
-			$scope.$watch('modules', function() {
-				console.log('Controller changed');
-			}, true);
 		}
 ]);
