@@ -11,6 +11,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		// Open popup
 		$.magnificPopup.open({
 			midClick: true,
+			removalDelay: 300,
 			items: {
 				src: '#module-popup',
 				type: 'inline'

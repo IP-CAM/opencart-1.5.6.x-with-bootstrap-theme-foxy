@@ -269,21 +269,14 @@ padding: 0;
 overflow: hidden;
 }
 .modules__item {
-width: 22.74336%;
+width: 0px;
 float: left;
-margin-right: 3.00885%;
-display: inline;
-position: relative;
-}
-.modules__item {
-width: 225px;
-float: left;
-margin-right: 25px;
+margin-right: 0px;
 display: inline;
 transform: scale(0);
 -webkit-transform: scale(0);
 opacity: 0;
-transition: all 0.1s ease-out;
+transition: all 0.2s ease-out;
 position: relative;
 height: 250px;
 overflow: hidden;
@@ -306,8 +299,10 @@ overflow: hidden;
 }
 .modules__item.show-module {
     opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  margin-right: 25px;
+  width: 225px;
 }
 .modules__item .preview-item-icon-container {
     position: absolute;
@@ -442,6 +437,7 @@ z-index: 10;
   transition: all 0.2s ease-in-out;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
+
 }
 .mfp-zoom-in.mfp-bg {
   opacity: 0;
