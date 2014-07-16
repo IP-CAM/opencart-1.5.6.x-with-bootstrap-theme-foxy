@@ -10,6 +10,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 
 		// Open popup
 		$.magnificPopup.open({
+			removalDelay: 300,
 			midClick: true,
 			removalDelay: 300,
 			items: {
@@ -21,7 +22,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 					this.st.mainClass = 'mfp-zoom-in';
 				},
 				afterClose: function() {
-					$('#module-popup').remove();
+					// $('#module-popup').remove();
 				}
 			}
 		});
