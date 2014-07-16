@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-window.teil = angular.module('teil', [])
+window.teil = angular.module('teil', ['ngCookies'])
 	.value('VERSION', '0.2')
 	.value('TOKEN', angular.element('#token').val())
 
@@ -11,8 +11,9 @@ window.teil = angular.module('teil', [])
 	.value('CONFIG_ADMIN_EMAIL', angular.element('#admin-email').val())
 	
 	.value('SELF_CHECK_VERSION', 'http://dev.website-builder.ru/version?callback=JSON_CALLBACK')
-	.value('MODULES_LIST_URL', 'http://dev.website-builder.ru/modules?callback=JSON_CALLBACK')
-	.value('MODULES_DETAIL_URL', 'http://dev.website-builder.ru/modules/{module}?jsonp=Y&callback=JSON_CALLBACK')
+
+	.value('MODULES_LIST_URL', 'http://dev.website-builder.ru/modules?callback=JSON_CALLBACK&language_code=')
+	.value('MODULES_DETAIL_URL', 'http://dev.website-builder.ru/modules/{module}?jsonp=Y&callback=JSON_CALLBACK&language_code=')
 	.value('INSTALLED_MODULES_LIST_URL', '/admin/index.php?route=teil/home/my')
 	.value('SELF_UPDATE_URL', '/admin/index.php?route=teil/home/selfupdate')
 	.value('STORE_KEY_URL', '/admin/index.php?route=teil/home/store');

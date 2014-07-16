@@ -63,6 +63,7 @@
 <!-- Angular core -->
 <script src="/admin/view/javascript/teil/bower_components/angular/angular.js"></script>
 <script src="/admin/view/javascript/teil/bower_components/angular-route/angular-route.min.js"></script>
+<script src="/admin/view/javascript/teil/bower_components/angular-cookies/angular-cookies.min.js"></script>
 
 <!-- Init -->
 <script src="/admin/view/javascript/teil/init.js"></script>

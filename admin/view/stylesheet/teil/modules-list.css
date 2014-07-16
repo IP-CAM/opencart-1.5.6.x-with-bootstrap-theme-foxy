@@ -276,7 +276,7 @@ display: inline;
 position: relative;
 }
 .modules__item {
-width: 226px;
+width: 225px;
 float: left;
 margin-right: 25px;
 display: inline;
@@ -285,7 +285,7 @@ transform: scale(0);
 opacity: 0;
 transition: all 0.1s ease-out;
 position: relative;
-height: 240px;
+height: 250px;
 overflow: hidden;
 }
 .modules__item .modules__item-thumbnail {
@@ -349,9 +349,14 @@ display: block;
 width: 100%;
 }
 .modules__item-info {
-padding: 4px 12px 30px;
+padding: 129px 12px 30px;
 border: solid 1px #e4e4e4;
 border-top: none;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
 }
 .modules__topic.topic-code {
 color: #575757;
