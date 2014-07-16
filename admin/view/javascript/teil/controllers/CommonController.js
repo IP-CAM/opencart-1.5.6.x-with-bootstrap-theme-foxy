@@ -23,7 +23,7 @@ window.teil.controller(
 			// Parse all the modules
 			$scope.modulesLoaded = function(resp) {
 				$scope.modules = resp;
-
+				
 				Module.my().success($scope.myModulesLoaded);
 			};
 

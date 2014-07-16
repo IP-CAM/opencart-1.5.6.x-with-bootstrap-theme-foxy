@@ -1,7 +1,7 @@
 'use strict';
 
 
-teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, $timeout, CONFIG_ADMIN_EMAIL, MODULES_DETAIL_URL, STORE_KEY_URL) {
+teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, $timeout, CONFIG_ADMIN_EMAIL, STORE_KEY_URL) {
 
 	var controller = function ($scope) {
 		$scope.userLicenseKey = '';
@@ -27,9 +27,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, $timeout
 
 		// Load detail module info
 		$scope.load = function() {
-			var url = MODULES_DETAIL_URL.replace('{module}', $scope.module.code);
-
-			$http.jsonp(url)
+			Module.find($scope.module.code)
 				.success(function(module) {
 					// Set if module is installed from prev state
 					module.installed = $scope.module.installed;

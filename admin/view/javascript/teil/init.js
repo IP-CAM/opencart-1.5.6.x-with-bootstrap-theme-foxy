@@ -5,6 +5,7 @@
 window.teil = angular.module('teil', ['ngCookies'])
 	.value('VERSION', '0.2')
 	.value('TOKEN', angular.element('#token').val())
+	.value('ADMIN_LANGUAGE', angular.element('#admin-language').val())
 
 	.value('DIR_TEIL_MODULES', angular.element('#dir-teil-modules').val())
 

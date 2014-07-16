@@ -11,6 +11,7 @@
 <input type="hidden" value="<?php echo $token ?>" id="token">
 <input type="hidden" value="<?php echo $this->config->get('config_email') ?>" id="admin-email">
 <input type="hidden" value="<?php echo DIR_TEIL_MODULES ?>" id="dir-teil-modules">
+<input type="hidden" value="<?php echo $this->config->get('config_admin_language') ?>" id="admin-language">
 
 <!-- Entry application -->
 <div ng-app="teil" id="content">
