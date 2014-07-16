@@ -3,7 +3,7 @@
 
 // Declare app level module which depends on filters, and services
 window.teil = angular.module('teil', [])
-	.value('VERSION', '0.2')
+	.value('VERSION', '0.1')
 	.value('TOKEN', angular.element('#token').val())
 
 	.value('DIR_TEIL_MODULES', angular.element('#dir-teil-modules').val())

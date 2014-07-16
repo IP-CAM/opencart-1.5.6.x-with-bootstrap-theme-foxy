@@ -1,2 +1,12 @@
+# Basic vendor
+/vendor
+
+# Cache
 /system/cache/*
-/image/cache/*
+
+# Config
+/config.php
+/admin/config.php
+
+# Logs
+/system/logs/*
