@@ -55,7 +55,7 @@
 
 	<!-- Pricing sections -->
 	<h3 class="__h2">{{ 'PRICING_TEXT' | translate }}</h3>
-	{{ selectedType | json }}
+	
 	<select 
 		ng-model="selectedType" 
 		ng-options="type.name for type in module.types" 

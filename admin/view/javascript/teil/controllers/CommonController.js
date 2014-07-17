@@ -31,14 +31,9 @@ window.teil.controller(
 			$scope.myModulesLoaded = function(resp) {
 				var modules = resp;
 
-				angular.forEach($scope.modules, function(el, index) {
-					if (modules[el.code] != undefined) {
-						$scope.modules[index].installed = true;
-						$scope.modules[index].key = modules[el.code].key;
-
-						$scope.totalInstalledModules++;
-					};
-				});
+				// Check if some of modules are installed (set them `installed` = true)
+				$scope.checkForInstalled(modules);
+				$scope.checkUpdates(modules);
 
 				// Start watching
 				$scope.setUpWatchers();
@@ -67,6 +62,29 @@ window.teil.controller(
 				}, true);
 			};
 
+			// Check if some of modules are installed (set them `installed` = true)
+			$scope.checkForInstalled = function(modules) {
+				angular.forEach($scope.modules, function(el, index) {
+
+					// If there is module in our local index -> it is installed
+					if (modules[el.code] != undefined) {
+						$scope.modules[index].installed = true;
+						$scope.modules[index].key = modules[el.code].key;
+
+						$scope.totalInstalledModules++;
+						
+						// Check for version
+						if (modules[el.code].version < el.version) {
+							$scope.modules[index].hasUpdate = true;
+						};
+					};
+				});
+			};
+
+			// Check modules for avalible updates
+			$scope.checkUpdates = function() {
+
+			};
 
 			// Open popup with detail info of module
 			$scope.openPopup = function(module) {

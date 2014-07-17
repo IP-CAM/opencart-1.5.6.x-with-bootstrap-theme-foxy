@@ -17,7 +17,13 @@
 
 	<div class="modules__item-info">
 		<div class="modules__topic topic-code">{{ module.category }}</div>
-		<h3 class="modules__title nolinks">{{ module.title }}</h3>
+		<h3 class="modules__title nolinks">
+			{{ module.title }}
+
+			<div ng-if="module.hasUpdate">
+				Update are avalible
+			</div>
+		</h3>
 
 		<div class="description">
 			{{ module.description }}

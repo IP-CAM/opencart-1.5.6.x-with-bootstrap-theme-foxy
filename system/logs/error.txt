@@ -7442,3 +7442,10 @@ DROP TABLE IF EXISTS `test_table`;
 2014-07-16 10:54:14 - PHP Warning:  Missing argument 5 for Teil\Lib\TeilDownloader::Teil\Lib\{closure}() in C:\xampp\sites\foxystore.dev\www\system\teil\lib\TeilDownloader.php on line 79
 2014-07-16 10:54:14 - PHP Warning:  Missing argument 5 for Teil\Lib\TeilDownloader::Teil\Lib\{closure}() in C:\xampp\sites\foxystore.dev\www\system\teil\lib\TeilDownloader.php on line 79
 >>>>>>> 7f7058b63dae43ed1c48e24e1253eab97ec2fb84
+2014-07-17 15:40:34 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 203
+2014-07-17 15:40:35 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 203
+2014-07-17 15:40:36 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 203
+2014-07-17 15:40:37 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 203
+2014-07-17 15:44:06 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 203
+2014-07-17 15:46:11 - PHP Warning:  Missing argument 1 for MenuServiceProvider::__construct(), called in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 202 and defined in C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu\MenuServiceProvider.php on line 10
+2014-07-17 15:46:11 - PHP Notice:  Undefined variable: app in C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu\MenuServiceProvider.php on line 12

@@ -190,13 +190,16 @@ class ControllerTeilHome extends Controller {
     {
         $result = array();
 
-        foreach ($GLOBALS['TeilServiceProviders'] as $module_code => $module_provider)
+        foreach ($GLOBALS['TeilServiceProviders'] as $module_code_version => $module_provider)
         {
+            $module_code = preg_replace("/___v.+/i", "", $module_code_version);
+            $version = preg_replace("/.+___v/i", "", $module_code_version);
             $key = file_get_contents(DIR_TEIL_MODULES . $module_code . '/resources/license.dat');
 
             $result[$module_code] = array(
                 'provider'  => $module_provider,
-                'key'       => $key
+                'key'       => $key,
+                'version'   => $version
             );
         }
 

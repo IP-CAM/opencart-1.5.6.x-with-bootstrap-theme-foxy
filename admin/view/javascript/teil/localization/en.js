@@ -39,6 +39,5 @@ teil.config(['$translateProvider', function ($translateProvider) {
 
     'AAAAAAAA': 'AAAAAAAA',
   });
- 
-  $translateProvider.preferredLanguage('en');
+
 }]);

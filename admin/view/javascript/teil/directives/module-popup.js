@@ -21,7 +21,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 					this.st.mainClass = 'mfp-zoom-in';
 				},
 				afterClose: function() {
-					// $('#module-popup').remove();
+					$('#module-popup').remove();
 				}
 			}
 		});
