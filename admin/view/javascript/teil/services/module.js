@@ -11,7 +11,7 @@ teil.service('Module', function ($http, $cookies, ADMIN_LANGUAGE, TOKEN, MODULES
 	};
 	// Get list of already installed apps
 	var getInstalledModules = function() {
-		return $http.get(INSTALLED_MODULES_LIST_URL + languageCode + '&token=' + TOKEN);
+		return $http.get(INSTALLED_MODULES_LIST_URL + '&token=' + TOKEN);
 	};
 
 	var getModule = function(moduleСode) {

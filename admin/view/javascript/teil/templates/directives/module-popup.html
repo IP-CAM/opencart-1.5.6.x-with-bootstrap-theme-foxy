@@ -14,64 +14,63 @@
 
 	<!-- Key info -->
 	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial">
-		<h4>Seems like your key is deprecated</h4>
+		<h4>{{ 'KEY_IS_DEPRECATED_TEXT' | translate }}</h4>
 		<p>Your current key is <code>{{ module.key }}</code></p>
 
-		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">Enter key</button>
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
 	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && keyValidTrial && module.expired_at">
-		<h4>Your trial period has ended :(</h4>
-		<p>Key was active untill <code>{{ module.expired_at }}</code></p>
+		<h4>{{ 'TRIAL_ENDED_TEXT' | translate }}</h4>
+		<p>{{ 'KEY_ACTIVE_PERIOD_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
 
-		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">Enter key</button>
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
 	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed">
-		<h4>Key information</h4>
+		<h4>{{ 'KEY_INFO_TEXT' | translate }}</h4>
 		
-		<p ng-show="keyValidTrial">You are using <code>trial key</code></p>
+		<p ng-show="keyValidTrial">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
 
-		<p>Days left <code>{{ module.days_left }}</code></p>
-		<p>Expired at <code>{{ module.expired_at }}</code></p>
-		<p>Key <code>{{ module.key }}</code></p>
-		<p>Module type <code>{{ module.module_type_name }}</code></p>
+		<p>{{ 'DAY_LEFT_TEXT' | translate }} <code>{{ module.days_left }}</code></p>
+		<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
+		<p>{{ 'KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
+		<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
 		
-		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">Enter new key</button>
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_NEW_KEY_TEXT' | translate }}</button>
 	</div>
 
 
 	<!-- Enter key section -->
 	<div class="key-section" ng-class="{'show-insert-layer': showEnterKeyField}">
 		<div class="insert-key-container">
-			<input type="text" value="" placeholder="Enter your license key here (XXXX-XXXX-XXXX-XXXX-XXXX)" class="key-input" ng-class="{'input-error': !storeKeyStatus}" ng-model="userLicenseKey" capitalize>
+			<input type="text" value="" placeholder="{{ 'ENTER_KEY_PLACEHOLDER_TEXT' | translate }} (XXXX-XXXX-XXXX-XXXX-XXXX)" class="key-input" ng-class="{'input-error': !storeKeyStatus}" ng-model="userLicenseKey" capitalize>
 
 			<div class="insert-key-buttons">
-				<button class="inser-key-cancel btn__blue" ng-click="showEnterKeyField = !showEnterKeyField">Cancel</button>
-				<button class="inser-key-apply btn__blue" ng-click="storeKey()">Apply</button>
+				<button class="inser-key-cancel btn__blue" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'CANCEL_TEXT' | translate }}</button>
+				<button class="inser-key-apply btn__blue" ng-click="storeKey()">{{ 'APPLY_KEY_TEXT' | translate }}</button>
 			</div>
 		</div>
 	</div>
 
 	<!-- Pricing sections -->
-	<h3 class="__h2">Pricing</h3>
-	
+	<h3 class="__h2">{{ 'PRICING_TEXT' | translate }}</h3>
+	{{ selectedType | json }}
 	<select 
 		ng-model="selectedType" 
 		ng-options="type.name for type in module.types" 
-	>
-	</select>
+	></select>
 
 	<span ng-if="isActiveType && !isTrialKey || !isGreaterType && !isTrialKey">
-		Active!
+		{{ 'IS_ACTIVE_TEXT' | translate }}
 	</span>
 
 	<span ng-if="isActiveType && isTrialKey && module.days_left || !isGreaterType && isTrialKey && module.days_left">
-		Active! (trial version)
+		{{ 'IS_TRIAL_ACTIVE' | translate }}
 	</span>
 
 	<span ng-if="isGreaterType && !isActiveType || isTrialKey">
-		<strong>Module price is: </strong> {{ totalPrice }}
+		<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
 	</span>
 
 	<!-- Buy it now buttons -->
@@ -80,14 +79,14 @@
 		class="btn__blue"
 		ng-show="isGreaterType || isTrialKey" 
  		ng-click="purchase($event)" 
-	>Buy it now!</button>
+	>{{ 'BUT_IT_NOW_TEXT' | translate }}</button>
 
 	<button 
 		ng-if="module.purchased && !isActiveType && !isTrialKey" 
 		class="btn__blue" 
 		ng-show="isGreaterType || isTrialKey" 
 		ng-click="purchase($event)" 
-	>Upgrade!</button>
+	>{{ 'UPGRADE_TEXT' | translate }}</button>
 
 	<!-- Download / remove button -->
 	<btn-progress 

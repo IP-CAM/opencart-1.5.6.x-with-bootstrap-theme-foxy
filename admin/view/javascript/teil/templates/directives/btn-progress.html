@@ -12,8 +12,8 @@
 	</span>
 
 	<span class="text">
-		<span ng-if="module.installed">Remove</span>
-		<span ng-if="!module.installed">Preview module - FREE!</span>
+		<span ng-if="module.installed">{{ 'REMOVE_BTN_TEXT' | translate }}</span>
+		<span ng-if="!module.installed">{{ 'INSTALL_MODULE_TEXT' | translate }}</span>
 	</span>
 
 </button>

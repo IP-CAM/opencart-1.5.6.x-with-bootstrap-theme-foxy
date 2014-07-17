@@ -17,9 +17,9 @@
 <div ng-app="teil" id="content">
 	<div id="self-updater" ng-controller="SelfController">
 		<div ng-cloak class="__has-progress bs-callout bs-callout-warning" ng-show="showUpdate" data-progress="{{ progress }}">
-			<h4>There is new version avalible</h4>
+			<h4>{{ 'NEW_VERSION_TEXT' | translate }}</h4>
 
-			<button class="btn__blue ng-pristine ng-valid" ng-click="update()" ng-disabled="disableButton">Update now!</button>
+			<button class="btn__blue ng-pristine ng-valid" ng-click="update()" ng-disabled="disableButton">{{ 'UPDATE_TEXT' | translate }}</button>
 
 			<div class="over"></div>
 		</div>
@@ -32,14 +32,14 @@
 
 		<div ng-cloak class="boxed-block" ng-class="{'show-me': !totalInstalledModules}" class="ng-hide">
 			<span class="glyphicon glyphicon-bullhorn"></span>
-			<h5 class="__h2">You havn't install any modules, yet</h5>
-			<div class="info__small">Try it out and install some - it's free!.</div>
+			<h5 class="__h2">{{ 'YOU_HAVE_0_MODULES' | translate }}</h5>
+			<div class="info__small">{{ 'YOU_HAVE_0_MODULES_DESC' | translate }}</div>
 		</div><!-- end .boxed-block -->
 
 		<!-- List of already installed modules -->
 		<div ng-cloak class="installed-modules" ng-show="totalInstalledModules">
-			<h3 class="__h2">Your modules</h3>
-			<div class="info__small">A huge range of learning resources across 10 creative topics, all in one convenient place.</div>
+			<h3 class="__h2">{{ 'INSTALLED_MODULES_TEXT' | translate }}</h3>
+			<div class="info__small">{{ 'INSTALLED_MODULES_DESC' | translate }}</div>
 
 			<ul class="modules__list">
 				<module-thumb ng-repeat="module in modules" ng-class="{'show-module popin': module.installed}"></module-thumb>
@@ -47,8 +47,8 @@
 		</div><!-- end .installed-modules -->
 
 		<!-- List of all avalible modules -->
-		<h3 class="__h2">Discover our great modules</h3>
-		<div class="info__small">A huge range of best emarket modules across 10 creative topics, all in one convenient place.</div>
+		<h3 class="__h2">{{ 'NOT_INSTALLED_MODULES_TEXT' | translate }}</h3>
+		<div class="info__small">{{ 'NOT_INSTALLED_MODULES_DESC' | translate }}</div>
 
 		<ul class="modules__list">
 			<module-thumb ng-repeat="module in modules" class="show-module"></module-thumb>
@@ -65,9 +65,14 @@
 <script src="/admin/view/javascript/teil/bower_components/angular/angular.js"></script>
 <script src="/admin/view/javascript/teil/bower_components/angular-route/angular-route.min.js"></script>
 <script src="/admin/view/javascript/teil/bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="/admin/view/javascript/teil/bower_components/angular-translate/angular-translate.min.js"></script>
 
 <!-- Init -->
 <script src="/admin/view/javascript/teil/init.js"></script>
+
+<!-- Localization -->
+<script src="/admin/view/javascript/teil/localization/en.js"></script>
+<script src="/admin/view/javascript/teil/localization/ru.js"></script>
 
 <!-- Controllers -->
 <script src="/admin/view/javascript/teil/controllers/CommonController.js"></script>
