@@ -1,8 +1,13 @@
 <?php 
 
 
-// $key string (is our case - 'Menu') is not required
-$GLOBALS['TeilServiceProviders']['Menu'] = 'MenuServiceProvider';
+// $key string (is our case - 'menu') is required (defines if module is installed or not)
+// MenuServiceProvider - class that will be resolved [required]
+// `menu___v0.1` -> ___v[VERSION]
+$GLOBALS['TeilServiceProviders']['menu___v0.1'] = 'MenuServiceProvider';
+
+
+use Teil\Lib\ModuleCore;
 
 
 /**

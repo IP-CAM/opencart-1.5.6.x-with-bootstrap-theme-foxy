@@ -67,7 +67,7 @@
 					{{#unless is_installed}}
 						<a 
 							class="point-make-button download-app-action" 
-							data-module-name="{{system_name}}" 
+							data-module-name="{{code}}" 
 							href="#" 
 						>
 
@@ -108,7 +108,7 @@
 
 					<a 
 						class="point-make-button remove-app-action" 
-						data-module-name="{{system_name}}" 
+						data-module-name="{{code}}" 
 						href="#" 
 					>Remove app</a>
 				</figcaption>
@@ -131,7 +131,7 @@
 
 				<a 
 					class="point-make-button remove-app-action" 
-					data-module-name="{{system_name}}" 
+					data-module-name="{{code}}" 
 					href="#" 
 				>Remove app</a>
 			</figcaption>

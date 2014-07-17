@@ -20,7 +20,7 @@ require_once('lib/TeilAutoload.php');
  *  2nd param - files to exclude
  *
  */
-$teilautoload = new TeilAutoload(
+$teilautoload = new Teil\Lib\TeilAutoload(
     array('Container.php', 'App.php'),
     array('autoload.php', 'startup.php', 'client.php')
 );

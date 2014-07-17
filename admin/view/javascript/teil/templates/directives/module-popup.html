@@ -1,0 +1,100 @@
+<div id="module-popup" class="white-popup mfp-with-anim" ng-class="{'loading': loading}">
+
+	<div id="clock-loading" ng-class="{'show-loading popin': loading}" class="clock-loading">
+		<img src="/admin/view/image/teil/loading_clock.png" class="loading-icon">
+	</div>
+
+	<header class="image-header">
+		<img ng-src="{{ module.image }}">
+	</header>
+
+	<!-- Module info -->
+	<h2 class="__h2-title">{{ module.title }}</h2>
+	<div class="category-small">{{ module.category }}</div>
+
+	<!-- Key info -->
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial">
+		<h4>{{ 'KEY_IS_DEPRECATED_TEXT' | translate }}</h4>
+		<p>Your current key is <code>{{ module.key }}</code></p>
+
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
+	</div>
+
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && keyValidTrial && module.expired_at">
+		<h4>{{ 'TRIAL_ENDED_TEXT' | translate }}</h4>
+		<p>{{ 'KEY_ACTIVE_PERIOD_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
+
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
+	</div>
+
+	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed">
+		<h4>{{ 'KEY_INFO_TEXT' | translate }}</h4>
+		
+		<p ng-show="keyValidTrial">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
+
+		<p>{{ 'DAY_LEFT_TEXT' | translate }} <code>{{ module.days_left }}</code></p>
+		<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
+		<p>{{ 'KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
+		<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
+		
+		<button class="btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_NEW_KEY_TEXT' | translate }}</button>
+	</div>
+
+
+	<!-- Enter key section -->
+	<div class="key-section" ng-class="{'show-insert-layer': showEnterKeyField}">
+		<div class="insert-key-container">
+			<input type="text" value="" placeholder="{{ 'ENTER_KEY_PLACEHOLDER_TEXT' | translate }} (XXXX-XXXX-XXXX-XXXX-XXXX)" class="key-input" ng-class="{'input-error': !storeKeyStatus}" ng-model="userLicenseKey" capitalize>
+
+			<div class="insert-key-buttons">
+				<button class="inser-key-cancel btn__blue" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'CANCEL_TEXT' | translate }}</button>
+				<button class="inser-key-apply btn__blue" ng-click="storeKey()">{{ 'APPLY_KEY_TEXT' | translate }}</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pricing sections -->
+	<h3 class="__h2">{{ 'PRICING_TEXT' | translate }}</h3>
+	
+	<select 
+		ng-model="selectedType" 
+		ng-options="type.name for type in module.types" 
+	></select>
+
+	<span ng-if="isActiveType && !isTrialKey || !isGreaterType && !isTrialKey">
+		{{ 'IS_ACTIVE_TEXT' | translate }}
+	</span>
+
+	<span ng-if="isActiveType && isTrialKey && module.days_left || !isGreaterType && isTrialKey && module.days_left">
+		{{ 'IS_TRIAL_ACTIVE' | translate }}
+	</span>
+
+	<span ng-if="isGreaterType && !isActiveType || isTrialKey">
+		<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
+	</span>
+
+	<!-- Buy it now buttons -->
+	<button 
+		ng-if="!module.purchased && !isActiveType && !isTrialKey || isTrialKey" 
+		class="btn__blue"
+		ng-show="isGreaterType || isTrialKey" 
+ 		ng-click="purchase($event)" 
+	>{{ 'BUT_IT_NOW_TEXT' | translate }}</button>
+
+	<button 
+		ng-if="module.purchased && !isActiveType && !isTrialKey" 
+		class="btn__blue" 
+		ng-show="isGreaterType || isTrialKey" 
+		ng-click="purchase($event)" 
+	>{{ 'UPGRADE_TEXT' | translate }}</button>
+
+	<!-- Download / remove button -->
+	<btn-progress 
+		ng-class="{__error: module.installed, " 
+		progress="0" 
+		ng-click="action($event);" 
+		class="btn__blue btn__block" 
+		module="module"
+	></btn-progress>
+
+</div>

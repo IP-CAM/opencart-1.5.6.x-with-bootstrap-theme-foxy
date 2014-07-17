@@ -1,4 +1,4 @@
-<?php
+<?php namespace Teil\Lib;
 
 
 /**
@@ -53,7 +53,7 @@ class TeilAutoload
 
         if ($count > $this->totalLoadFileLimit)
         {
-            throw new Exception("Too, many files to include");
+            throw new \Exception("Too, many files to include");
         }
     }
 
@@ -124,7 +124,7 @@ class TeilAutoload
     {
         if ( ! is_dir($directory))
         {
-            throw new Exception("No such directory"); die();
+            throw new \Exception("No such directory"); die();
         }
     }
 

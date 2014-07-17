@@ -1,0 +1,19 @@
+<button 
+	class="progress-btn" 
+	ng-class="animate_loaded: btnAnimationFinished}" 
+	ng-disabled="disabled" 
+	ng-click="disable()" 
+>
+	<div class="over"></div>
+
+	<span class="icon-container">
+		<span ng-if="module.installed">-</span>
+		<span ng-if="!module.installed">+</span>
+	</span>
+
+	<span class="text">
+		<span ng-if="module.installed">{{ 'REMOVE_BTN_TEXT' | translate }}</span>
+		<span ng-if="!module.installed">{{ 'INSTALL_MODULE_TEXT' | translate }}</span>
+	</span>
+
+</button>

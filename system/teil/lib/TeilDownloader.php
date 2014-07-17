@@ -1,4 +1,5 @@
-<?php 
+<?php namespace Teil\Lib;
+
 
 /**
 * Download .zip file
@@ -64,23 +65,23 @@ class TeilDownloader
 	 *
 	 * @return void
 	 */
-	public function load(Closure $callback, $timeout = 1000)
+	public function load(\Closure $callback, $timeout = 1000)
 	{
-		$query = '?domain=' . $_SERVER['SERVER_NAME'] . '&module_code=' . $this->module_name;
+		$query = "?domain=" . $_SERVER['SERVER_NAME'] . "&module_code=" . $this->module_name;
 		$ch = curl_init();
-
+		
 		curl_setopt($ch, CURLOPT_URL, $this->url . $query);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 
 		// Progres
 		curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 
-			function ($download_size, $downloaded, $upload_size, $uploaded)
+			function ($p, $download_size, $downloaded, $upload_size, $uploaded)
 			{
 				// Write loading progress
 			    if ($download_size > 0)
 			    {
-			    	$done_percent = $downloaded / $download_size  * 100;
+			    	$done_percent = $downloaded / $download_size * 100;
 
 			    	file_put_contents($this->progress_container_file, (int) $done_percent);
 			    }
