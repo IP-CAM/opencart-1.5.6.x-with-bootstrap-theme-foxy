@@ -107,6 +107,7 @@ class ControllerTeilHome extends Controller {
                     );
 
                     $moduleInstaller->unzip();
+                    $moduleInstaller->writeDemoKey();
                     $moduleInstaller->boot();
                 }
             );

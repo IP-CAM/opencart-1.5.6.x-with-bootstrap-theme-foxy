@@ -94,7 +94,12 @@ background: #1268c4;
   background: #fff;
   z-index: 250;
 }
-
+.progress-btn.update-button {
+    margin: 0 auto;
+    width: 110px;
+    float: none;
+    display: block;
+}
 .progress-btn {
   height: 50px;
   overflow: hidden;
@@ -114,7 +119,7 @@ padding: 0;
 -webkit-transform: translateY(-50px);
 transform: translateY(-50px);
 z-index: 10;
-font-size: 30px;
+font-size: 22px;
 }
 .progress-btn .text {
 transition: all 0.3s ease-out 1.2s;
@@ -133,8 +138,14 @@ line-height: 30px;
 transform: translateY(0px);
 }
 .progress-btn.animate_loaded .icon-container {
--webkit-transform: translateY(8px);
-transform: translateY(8px);
+-webkit-transform: translateY(5px);
+transform: translateY(5px);
+}
+.progress-btn.update-button.animate_loaded .icon-container {
+	-webkit-transform: translateY(5px);
+
+	transform: translateY(5px);
+	font-size: 21px;
 }
 .progress-btn.animate_loaded .text {
 -webkit-transform: translateY(50px);
@@ -288,9 +299,9 @@ overflow: hidden;
 }
 .modules__item .installed {
     z-index: 2;  position: absolute;  
-    top: 22px;  
-    left: -30px;  
-    width: 125px;  height: 21px;  line-height: 21px;  -webkit-transform: translateZ(0) rotate(-45deg);  -moz-transform: translateZ(0) rotate(-45deg);  -ms-transform: translateZ(0) rotate(-45deg);  -o-transform: translateZ(0) rotate(-45deg);  transform: translateZ(0) rotate(-45deg);  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  box-shadow: 0 1px 5px rgba(0,0,0,0.5);  text-align: center;
+    top: 26px;  
+    left: -28px;  
+    width: 130px;  height: 21px;  line-height: 22px;  -webkit-transform: translateZ(0) rotate(-45deg);  -moz-transform: translateZ(0) rotate(-45deg);  -ms-transform: translateZ(0) rotate(-45deg);  -o-transform: translateZ(0) rotate(-45deg);  transform: translateZ(0) rotate(-45deg);  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  box-shadow: 0 1px 5px rgba(0,0,0,0.5);  text-align: center;
     background: #5eaf00;
     color: #fff;
     font-weight: 700;
@@ -352,6 +363,15 @@ left: 0;
 right: 0;
 top: 0;
 bottom: 0;
+}
+.modules__item .update-avalible {
+    position: absolute;
+	
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    color: #fff;
+    z-index: 5;
 }
 .modules__topic.topic-code {
 color: #575757;

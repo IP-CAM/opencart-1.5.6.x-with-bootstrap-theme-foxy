@@ -1,7 +1,11 @@
 <li class="modules__item">
 	<span class="installed" ng-if="module.installed">
-		installed
+		{{ 'INSTALLED_MODULE_TEXT' | translate }}
 	</span><!-- end .installed -->
+
+	<span ng-if="module.hasUpdate" class="update-avalible">
+		<span class="glyphicon glyphicon-refresh"></span>
+	</span>
 
 	<div class="modules__item-thumbnail">
 		<span class="preview-item-icon-container">
@@ -19,10 +23,6 @@
 		<div class="modules__topic topic-code">{{ module.category }}</div>
 		<h3 class="modules__title nolinks">
 			{{ module.title }}
-
-			<div ng-if="module.hasUpdate">
-				Update are avalible
-			</div>
 		</h3>
 
 		<div class="description">

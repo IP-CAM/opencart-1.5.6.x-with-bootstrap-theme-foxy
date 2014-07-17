@@ -88,7 +88,7 @@ class Security
 		}
 		else
 		{
-			throw new Exception("License file not found!");
+			throw new \Exception("License file not found!");
 		}
 
 		return $this->clean($licenseCode);

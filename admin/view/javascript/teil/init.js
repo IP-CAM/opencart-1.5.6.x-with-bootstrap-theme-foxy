@@ -3,10 +3,9 @@
 
 // Declare app level module which depends on filters, and services
 window.teil = angular.module('teil', ['ngCookies', 'pascalprecht.translate'])
-	.constant('VERSION', '0.1')
-	.constant('TOKEN', angular.element('#token').val())
-	.constant('ADMIN_LANGUAGE', angular.element('#admin-language').val())
-	
+	.value('VERSION', '0.2')
+	.value('TOKEN', angular.element('#token').val())
+	.value('ADMIN_LANGUAGE', angular.element('#admin-language').val())
 
 	.value('DIR_TEIL_MODULES', angular.element('#dir-teil-modules').val())
 
@@ -18,8 +17,4 @@ window.teil = angular.module('teil', ['ngCookies', 'pascalprecht.translate'])
 	.value('MODULES_DETAIL_URL', 'http://dev.website-builder.ru/modules/{module}?jsonp=Y&callback=JSON_CALLBACK&language_code=')
 	.value('INSTALLED_MODULES_LIST_URL', '/admin/index.php?route=teil/home/my')
 	.value('SELF_UPDATE_URL', '/admin/index.php?route=teil/home/selfupdate')
-	.value('STORE_KEY_URL', '/admin/index.php?route=teil/home/store')
-
-	.config(function($translateProvider, ADMIN_LANGUAGE) {
-		$translateProvider.preferredLanguage(ADMIN_LANGUAGE);
-	});
+	.value('STORE_KEY_URL', '/admin/index.php?route=teil/home/store');

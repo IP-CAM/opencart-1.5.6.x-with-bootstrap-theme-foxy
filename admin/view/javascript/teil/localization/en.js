@@ -36,6 +36,8 @@ teil.config(['$translateProvider', function ($translateProvider) {
     'UPGRADE_TEXT': 'Upgrade!',
     'REMOVE_BTN_TEXT': 'Remove',
     'INSTALL_MODULE_TEXT': 'Preview module - FREE!',
+    'INSTALLED_MODULE_TEXT': 'Installed',
+    'MODULE_HAS_UPDATES_TEXT': 'Updates avalible',
 
     'AAAAAAAA': 'AAAAAAAA',
   });

@@ -50,6 +50,18 @@ class ModuleInstaller
 	}
 
 
+	// Simply create license.dat file with 'DEMO' content
+	public function writeDemoKey()
+	{
+		try {
+			file_put_contents(
+				DIR_TEIL_MODULES . $this->moduleName . '/resources/license.dat',
+				'DEMO'
+			);
+		} catch (Exception $e) {}
+	}
+
+
 	// Run needle command
 	public function boot()
 	{

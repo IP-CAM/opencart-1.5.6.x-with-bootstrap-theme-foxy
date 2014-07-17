@@ -12,6 +12,18 @@
 	<h2 class="__h2-title">{{ module.title }}</h2>
 	<div class="category-small">{{ module.category }}</div>
 
+	<!-- Update button -->
+	<div ng-if="module.hasUpdate">
+		<btn-progress 
+			ng-class="{" 
+			progress="0" 
+			ng-click="action($event, 'download');" 
+			class="btn__blue update-button" 
+			module="module" 
+			update="true" 
+		></btn-progress>
+	</div>
+
 	<!-- Key info -->
 	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial">
 		<h4>{{ 'KEY_IS_DEPRECATED_TEXT' | translate }}</h4>

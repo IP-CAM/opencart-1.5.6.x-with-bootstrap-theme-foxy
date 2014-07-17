@@ -57,7 +57,8 @@ teil.directive('btnProgress', function ($timeout) {
 		restrict: 'E',
 		replace: true,
 		scope: {
-			module: '='
+			module: '=',
+			update: '='
 		},
 		templateUrl: '/admin/view/javascript/teil/templates/directives/btn-progress.html',
 		link: link,

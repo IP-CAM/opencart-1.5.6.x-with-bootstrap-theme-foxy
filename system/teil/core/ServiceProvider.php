@@ -72,7 +72,7 @@ abstract class ServiceProvider {
 			{
 				$this->KEY_INFO = $validationResult['info'];
 			}
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			echo "License file not found! Module name is - <b>" . $this->MODULE_CODE . "</b>";
 		}
 	}

@@ -113,10 +113,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		};
 
 		// Perform action on button click (install or remove module)
-		$scope.action = function(e) {
+		$scope.action = function(e, target) {
+			var target = target || false;
 			var $btn = angular.element(e.currentTarget);
 
-			if ($scope.module.installed) {
+			if ($scope.module.installed && !target || target == 'remove') {
 				$scope.removeModule($btn);
 			} else {
 				$scope.downloadModule($btn);
