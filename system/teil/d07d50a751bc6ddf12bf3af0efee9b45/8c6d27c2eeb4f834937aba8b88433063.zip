@@ -1012,7 +1012,7 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>HTTP_USER_AGENT</td>
-                          <td>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36</td>
+                          <td>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36</td>
                         </tr>
                                               <tr>
                           <td>HTTP_HOST</td>
@@ -1065,15 +1065,11 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>REMOTE_PORT</td>
-<<<<<<< HEAD
-                          <td>63158</td>
-=======
-                          <td>60694</td>
->>>>>>> 7f7058b63dae43ed1c48e24e1253eab97ec2fb84
+                          <td>58045</td>
                         </tr>
                                               <tr>
                           <td>REDIRECT_QUERY_STRING</td>
-                          <td>domain=foxystore.dev&amp;module_code=menu2</td>
+                          <td>domain=opencart.dev&amp;module_code=menu2</td>
                         </tr>
                                               <tr>
                           <td>REDIRECT_URL</td>
@@ -1093,11 +1089,11 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>QUERY_STRING</td>
-                          <td>domain=foxystore.dev&amp;module_code=menu2</td>
+                          <td>domain=opencart.dev&amp;module_code=menu2</td>
                         </tr>
                                               <tr>
                           <td>REQUEST_URI</td>
-                          <td>/modules/get?domain=foxystore.dev&amp;module_code=menu2</td>
+                          <td>/modules/get?domain=opencart.dev&amp;module_code=menu2</td>
                         </tr>
                                               <tr>
                           <td>SCRIPT_NAME</td>
@@ -1109,11 +1105,7 @@ $app-&gt;run();
                         </tr>
                                               <tr>
                           <td>REQUEST_TIME</td>
-<<<<<<< HEAD
-                          <td>1405509310</td>
-=======
-                          <td>1405500357</td>
->>>>>>> 7f7058b63dae43ed1c48e24e1253eab97ec2fb84
+                          <td>1405672057</td>
                         </tr>
                                             </table>
                                   </div>
@@ -1128,7 +1120,7 @@ $app-&gt;run();
                         </thead>
                                               <tr>
                           <td>domain</td>
-                          <td>foxystore.dev</td>
+                          <td>opencart.dev</td>
                         </tr>
                                               <tr>
                           <td>module_code</td>

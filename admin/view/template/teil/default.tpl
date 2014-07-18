@@ -84,6 +84,7 @@
 <script src="/admin/view/javascript/teil/directives/module-thumb.js"></script>
 <script src="/admin/view/javascript/teil/directives/btn-progress.js"></script>
 <script src="/admin/view/javascript/teil/directives/capitalize.js"></script>
+<script src="/admin/view/javascript/teil/directives/progress-block-btn.js"></script>
 
 <!-- Services -->
 <script src="/admin/view/javascript/teil/services/module-downloader.js"></script>

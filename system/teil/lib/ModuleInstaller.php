@@ -53,11 +53,13 @@ class ModuleInstaller
 	// Simply create license.dat file with 'DEMO' content
 	public function writeDemoKey()
 	{
+		$license_path = DIR_TEIL_MODULES . $this->moduleName . '/resources/license.dat';
+
 		try {
-			file_put_contents(
-				DIR_TEIL_MODULES . $this->moduleName . '/resources/license.dat',
-				'DEMO'
-			);
+			if ( ! file_exists($license_path))
+			{
+				file_put_contents($license_path, 'DEMO');
+			}
 		} catch (Exception $e) {}
 	}
 

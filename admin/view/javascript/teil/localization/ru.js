@@ -38,6 +38,7 @@ teil.config(['$translateProvider', function ($translateProvider) {
     'INSTALL_MODULE_TEXT': 'Посмотреть модуль - БЕСПЛАТНО!',
     'INSTALLED_MODULE_TEXT': 'Установлен',
     'MODULE_HAS_UPDATES_TEXT': 'Доступны обновление',
+    'MODULE_HAS_UPDATES_DESC': 'Установите последние обновления для наилучшей работы модуля',
     'UPDATE_BTN_TEXT': 'Обновить',
 
     'AAAAAAAA': 'AAAAAAAA',

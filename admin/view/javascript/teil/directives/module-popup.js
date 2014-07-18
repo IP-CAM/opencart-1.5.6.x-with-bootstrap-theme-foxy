@@ -1,7 +1,7 @@
 'use strict';
 
 
-teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, $timeout, CONFIG_ADMIN_EMAIL, STORE_KEY_URL) {
+teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, $timeout, CONFIG_ADMIN_EMAIL, STORE_KEY_URL, $rootScope) {
 
 	var controller = function ($scope) {
 		$scope.userLicenseKey = '';
@@ -28,17 +28,20 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 
 		// Load detail module info
 		$scope.load = function() {
+			var module, installedModules;
+console.log($scope); return 0;
 			Module.find($scope.module.code)
-				.success(function(module) {
+				.then(function(resp) {
+					module = resp.module;
+					installedModules = resp.installedModules;
+
 					// Set if module is installed from prev state
 					module.installed = $scope.module.installed;
-					module.key = $scope.module.key;
 
+					angular.extend($scope.module, Module.getLicenseKey($scope.module.code, installedModules));
 					angular.extend($scope.module, module);
+
 					$scope.init();
-				})
-				.error(function(data) {
-					console.log('Error loading module info');
 				});
 		};
 
@@ -116,6 +119,9 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		$scope.action = function(e, target) {
 			var target = target || false;
 			var $btn = angular.element(e.currentTarget);
+			
+			// Set loading state
+			$scope.loading = true;
 
 			if ($scope.module.installed && !target || target == 'remove') {
 				$scope.removeModule($btn);
@@ -152,12 +158,14 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				angular.forEach($scope.$parent.modules, function(el, i) {
 					if ($scope.module.code == el.code) {
 						$scope.module.installed = installed;
-						$scope.module.key = 'DEMO';
 					};
 				});
 
 				// Pull module info
 				$scope.load();
+
+				// Update installed modules info
+				$rootScope.$broadcast('modules.installed.update');
 
 				// Clear timeout
 				$timeout.cancel(changeModuleInfoTimer);

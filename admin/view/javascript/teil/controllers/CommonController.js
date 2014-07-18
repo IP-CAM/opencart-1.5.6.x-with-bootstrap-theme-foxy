@@ -13,8 +13,14 @@ window.teil.controller(
 		'$http', 
 		'$compile', 
 		'$timeout', 
+		'$rootScope', 
 		'Module',
-		function CommonController($scope, $http, $compile, $timeout, Module) {
+		function CommonController($scope, $http, $compile, $timeout, $rootScope, Module) {
+
+			// Subscribe events
+			$rootScope.$on('modules.installed.update', function() {
+				Module.my().success($scope.myModulesLoaded);
+			});
 
 			// Number of total installed modules
 			$scope.totalInstalledModules = 1;
@@ -33,7 +39,6 @@ window.teil.controller(
 
 				// Check if some of modules are installed (set them `installed` = true)
 				$scope.checkForInstalled(modules);
-				$scope.checkUpdates(modules);
 
 				// Start watching
 				$scope.setUpWatchers();
@@ -59,12 +64,16 @@ window.teil.controller(
 					});
 
 					$scope.totalInstalledModules = totalInstalled;
+					console.log('!!! Modules changed...', val);
 				}, true);
 			};
 
 			// Check if some of modules are installed (set them `installed` = true)
 			$scope.checkForInstalled = function(modules) {
 				angular.forEach($scope.modules, function(el, index) {
+
+					// Rollback
+					$scope.modules[index].hasUpdate = false;
 
 					// If there is module in our local index -> it is installed
 					if (modules[el.code] != undefined) {
@@ -79,11 +88,6 @@ window.teil.controller(
 						};
 					};
 				});
-			};
-
-			// Check modules for avalible updates
-			$scope.checkUpdates = function() {
-
 			};
 
 			// Open popup with detail info of module

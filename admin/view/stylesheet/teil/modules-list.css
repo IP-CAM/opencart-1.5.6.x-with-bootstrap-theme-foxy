@@ -43,6 +43,8 @@ padding: 13px 20px;
 border-radius: 4px;
 position: relative;
 transition: all 0.3s linear;
+cursor: pointer;
+z-index: 10;
 }
 .btn__blue .text{
   position: relative;
@@ -300,7 +302,7 @@ overflow: hidden;
 .modules__item .installed {
     z-index: 2;  position: absolute;  
     top: 26px;  
-    left: -28px;  
+    left: -29px;  
     width: 130px;  height: 21px;  line-height: 22px;  -webkit-transform: translateZ(0) rotate(-45deg);  -moz-transform: translateZ(0) rotate(-45deg);  -ms-transform: translateZ(0) rotate(-45deg);  -o-transform: translateZ(0) rotate(-45deg);  transform: translateZ(0) rotate(-45deg);  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);  box-shadow: 0 1px 5px rgba(0,0,0,0.5);  text-align: center;
     background: #5eaf00;
     color: #fff;
@@ -713,6 +715,22 @@ margin: 20px 0;
 border: 1px solid #eee;
 border-left-width: 5px;
 border-radius: 3px;
+position: relative;
+}
+.bs-callout .aware-action-button {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    height: 50px;
+    margin: auto;
+    background-color: #f0ad4e;
+    
+    background-position-y: 50%;
+    min-width: 120px;
+}
+.bs-callout .aware-action-button:disabled {
 }
 .bs-callout-warning {
 border-left-color: #f0ad4e;
@@ -746,6 +764,9 @@ border-radius: 3px;
 }
 .bs-callout-success {
 border-left-color: #3c763d;
+}
+.bs-callout-success .aware-action-button {
+    background-color: #3c763d;
 }
 .bs-callout-success h4 {
   color: #3c763d;
@@ -791,4 +812,11 @@ border-left-color: #3c763d;
     z-index: 5;
 
 }
+.progress-block .over {
+    border-radius: 0;
+	
+    background: #f0ad4e;
+    opacity: 0.2;
+}
+
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
