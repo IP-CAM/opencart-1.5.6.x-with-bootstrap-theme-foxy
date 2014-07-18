@@ -29,7 +29,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		// Load detail module info
 		$scope.load = function() {
 			var module, installedModules;
-console.log($scope); return 0;
+
 			Module.find($scope.module.code)
 				.then(function(resp) {
 					module = resp.module;
@@ -113,6 +113,7 @@ console.log($scope); return 0;
 			if ( ! $scope.module.days_left) {
 				$scope.keyValid = false;
 			};
+
 		};
 
 		// Perform action on button click (install or remove module)

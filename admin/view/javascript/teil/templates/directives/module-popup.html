@@ -14,27 +14,28 @@
 
 	<!-- Update button -->
 	<progress-block-btn 
-		ng-if="module.hasUpdate" 
+		ng-cloak 
+		ng-show="module.hasUpdate" 
 		module="module" 
 		progress="0" 
 	></progress-block-btn>
 
 	<!-- Key info -->
-	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial">
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial" ng-cloak>
 		<h4>{{ 'KEY_IS_DEPRECATED_TEXT' | translate }}</h4>
 		<p>Your current key is <code>{{ module.key }}</code></p>
 
 		<button class="aware-action-button btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
-	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && keyValidTrial && module.expired_at">
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && keyValidTrial && module.expired_at" ng-cloak>
 		<h4>{{ 'TRIAL_ENDED_TEXT' | translate }}</h4>
 		<p>{{ 'KEY_ACTIVE_PERIOD_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
 
 		<button class="aware-action-button btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
-	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed">
+	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed" ng-cloak>
 		<h4>{{ 'KEY_INFO_TEXT' | translate }}</h4>
 		
 		<p ng-show="keyValidTrial">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
