@@ -40,6 +40,10 @@ teil.config(['$translateProvider', function ($translateProvider) {
     'MODULE_HAS_UPDATES_TEXT': 'Доступны обновление',
     'MODULE_HAS_UPDATES_DESC': 'Установите последние обновления для наилучшей работы модуля',
     'UPDATE_BTN_TEXT': 'Обновить',
+    'EXTEND_LICENSE_TEXT': 'Продлить лицензию',
+    'FREE_MODULE_TYPE_TEXT': 'Бесплатная версия модуля',
+    'KEY_IS_NOT_AVALIBLE_TEXT': 'недоступный',
+    'FREE_MODULE_TYPE__PAYABLE_TEXT': 'Бесплатно!',
 
     'AAAAAAAA': 'AAAAAAAA',
   });

@@ -70,6 +70,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				$scope.getPurchasedTypePrice();
 
 				$scope.totalPrice = value.price;
+				$scope.totalMaxPrice = value.real_max_price;
 				$scope.isActiveType = false;
 				$scope.isTrialKey = true;
 				$scope.isGreaterType = false;
@@ -98,6 +99,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 			// and real key from out server
 			$scope.keyValid = false;
 			$scope.keyValidTrial = false;
+			$scope.keyFree = false;
 
 			if ($scope.module.purchased_key && $scope.module.purchased_key == $scope.module.key) {
 				$scope.keyValid = true;
@@ -114,6 +116,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				$scope.keyValid = false;
 			};
 
+			if ($scope.module.purchased_key == 'FREE') {
+				$scope.keyFree = true;
+				$scope.keyValid = true;
+			};
+
 		};
 
 		// Perform action on button click (install or remove module)
@@ -122,7 +129,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 			var $btn = angular.element(e.currentTarget);
 			
 			// Set loading state
-			$scope.loading = true;
+			// $scope.loading = true;
 
 			if ($scope.module.installed && !target || target == 'remove') {
 				$scope.removeModule($btn);
@@ -191,7 +198,9 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 			);
 
 			// Open `enter license key` layer
-			$scope.showEnterKeyField = true;
+			if ($scope.module.installed) {
+				$scope.showEnterKeyField = true;
+			};
 		};
 
 
@@ -238,6 +247,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 	// Set selected module
 	var link = function($scope) {
 		$scope.module = $scope.$parent.selectedModule;
+		$scope.validateKey();
 
 		$scope.loading = true;
 		$scope.load();

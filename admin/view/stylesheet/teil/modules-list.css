@@ -759,8 +759,14 @@ color: #c7254e;
 background-color: #f9f2f4;
 border-radius: 4px;
 }
-.bs-callout code {
+li {
 border-radius: 3px;
+}
+.bs-callout code.large {
+    font-size: 25px;
+    padding: 0 4px;
+    position: relative;
+    top: 3px;
 }
 .bs-callout-success {
 border-left-color: #3c763d;
@@ -819,4 +825,12 @@ border-left-color: #3c763d;
     opacity: 0.2;
 }
 
+.bs-callout.ng-hide {
+	-webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }

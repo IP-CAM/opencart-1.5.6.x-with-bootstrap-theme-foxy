@@ -7,6 +7,9 @@
 <!-- Mignify popup -->
 <link rel="stylesheet" href="/admin/view/javascript/teil/bower_components/magnific-popup/dist/magnific-popup.css">
 
+<!-- Animate.css -->
+<link rel="stylesheet" href="/admin/view/javascript/teil/bower_components/animate.css/animate.css">
+
 <!-- Token -->
 <input type="hidden" value="<?php echo $token ?>" id="token">
 <input type="hidden" value="<?php echo $this->config->get('config_email') ?>" id="admin-email">
@@ -66,6 +69,7 @@
 <script src="/admin/view/javascript/teil/bower_components/angular-route/angular-route.min.js"></script>
 <script src="/admin/view/javascript/teil/bower_components/angular-cookies/angular-cookies.min.js"></script>
 <script src="/admin/view/javascript/teil/bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="/admin/view/javascript/teil/bower_components/angular-animate/angular-animate.min.js"></script>
 
 <!-- Init -->
 <script src="/admin/view/javascript/teil/init.js"></script>

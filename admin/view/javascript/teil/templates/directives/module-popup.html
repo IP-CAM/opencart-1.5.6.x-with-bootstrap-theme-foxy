@@ -40,12 +40,28 @@
 		
 		<p ng-show="keyValidTrial">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
 
-		<p>{{ 'DAY_LEFT_TEXT' | translate }} <code>{{ module.days_left }}</code></p>
-		<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
-		<p>{{ 'KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
-		<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
+		<!-- Module hasn't got a free version -->
+		<div ng-if="keyFree">
+			<p class="category-small">{{ 'FREE_MODULE_TYPE_TEXT' | translate }}</p>
+			<p>{{ 'DAY_LEFT_TEXT' | translate }} <code class="large">&infin;</code></p>
+			<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code class="large">&infin;</code></p>
+			<p>{{ 'KEY_TEXT' | translate }} <code>{{ 'KEY_IS_NOT_AVALIBLE_TEXT' | translate }}</code></p>
+			<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
+		</div>
+
+		<!-- Module has free verion -->
+		<div ng-if="!keyFree">
+			<p>{{ 'DAY_LEFT_TEXT' | translate }} <code>{{ module.days_left }}</code></p>
+			<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
+			<p>{{ 'KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
+			<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
+		</div>
 		
-		<button class="aware-action-button btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_NEW_KEY_TEXT' | translate }}</button>
+		<button 
+			class="aware-action-button btn__blue" 
+			ng-model="showEnterKeyField" 
+			ng-click="showEnterKeyField = !showEnterKeyField" 
+		>{{ 'ENTER_NEW_KEY_TEXT' | translate }}</button>
 	</div>
 
 
@@ -70,7 +86,21 @@
 	></select>
 
 	<span ng-if="isActiveType && !isTrialKey || !isGreaterType && !isTrialKey">
-		{{ 'IS_ACTIVE_TEXT' | translate }}
+		<span ng-if="totalMaxPrice > 0">
+			{{ 'IS_ACTIVE_TEXT' | translate }}
+			<button 
+				class="btn__blue" 
+				ng-if="!keyFree" 
+				ng-click="purchase($event)" 
+			>{{ 'EXTEND_LICENSE_TEXT' | translate }}</button>
+
+			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
+		</span>
+
+		<span ng-if="totalMaxPrice <= 0">
+			{{ 'IS_ACTIVE_TEXT' | translate }} 
+			<strong>{{ 'FREE_MODULE_TYPE_TEXT' | translate }}</strong>
+		</span>
 	</span>
 
 	<span ng-if="isActiveType && isTrialKey && module.days_left || !isGreaterType && isTrialKey && module.days_left">
@@ -78,12 +108,18 @@
 	</span>
 
 	<span ng-if="isGreaterType && !isActiveType || isTrialKey">
-		<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
+		<span ng-if="totalMaxPrice > 0">
+			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
+		</span>
+		
+		<span ng-if="totalMaxPrice <= 0">
+			<strong>{{ 'FREE_MODULE_TYPE_TEXT' | translate }}</strong>
+		</span>
 	</span>
 
 	<!-- Buy it now buttons -->
 	<button 
-		ng-if="!module.purchased && !isActiveType && !isTrialKey || isTrialKey" 
+		ng-if="!module.purchased && !isActiveType && !isTrialKey || isTrialKey && totalMaxPrice > 0" 
 		class="btn__blue"
 		ng-show="isGreaterType || isTrialKey" 
  		ng-click="purchase($event)" 
