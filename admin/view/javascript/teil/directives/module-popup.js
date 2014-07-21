@@ -70,7 +70,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				$scope.getPurchasedTypePrice();
 
 				$scope.totalPrice = value.price;
-				$scope.totalMaxPrice = value.real_max_price;
+				$scope.totalRealPrice = value.real_price;
 				$scope.isActiveType = false;
 				$scope.isTrialKey = true;
 				$scope.isGreaterType = false;

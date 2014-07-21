@@ -86,7 +86,7 @@
 	></select>
 
 	<span ng-if="isActiveType && !isTrialKey || !isGreaterType && !isTrialKey">
-		<span ng-if="totalMaxPrice > 0">
+		<span ng-if="totalRealPrice > 0">
 			{{ 'IS_ACTIVE_TEXT' | translate }}
 			<button 
 				class="btn__blue" 
@@ -97,7 +97,7 @@
 			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
 		</span>
 
-		<span ng-if="totalMaxPrice <= 0">
+		<span ng-if="totalRealPrice <= 0">
 			{{ 'IS_ACTIVE_TEXT' | translate }} 
 			<strong>{{ 'FREE_MODULE_TYPE_TEXT' | translate }}</strong>
 		</span>
@@ -108,18 +108,18 @@
 	</span>
 
 	<span ng-if="isGreaterType && !isActiveType || isTrialKey">
-		<span ng-if="totalMaxPrice > 0">
+		<span ng-if="totalRealPrice > 0">
 			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
 		</span>
 		
-		<span ng-if="totalMaxPrice <= 0">
+		<span ng-if="totalRealPrice <= 0">
 			<strong>{{ 'FREE_MODULE_TYPE_TEXT' | translate }}</strong>
 		</span>
 	</span>
 
 	<!-- Buy it now buttons -->
 	<button 
-		ng-if="!module.purchased && !isActiveType && !isTrialKey || isTrialKey && totalMaxPrice > 0" 
+		ng-if="!module.purchased && !isActiveType && !isTrialKey || isTrialKey && totalRealPrice > 0" 
 		class="btn__blue"
 		ng-show="isGreaterType || isTrialKey" 
  		ng-click="purchase($event)" 
