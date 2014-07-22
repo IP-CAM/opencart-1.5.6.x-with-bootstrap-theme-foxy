@@ -51,9 +51,24 @@
 
 		<!-- Module has free verion -->
 		<div ng-if="!keyFree">
-			<p>{{ 'DAY_LEFT_TEXT' | translate }} <code>{{ module.days_left }}</code></p>
-			<p>{{ 'EXPIRED_AT_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
-			<p>{{ 'KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
+			<p>
+				{{ 'DAY_LEFT_TEXT' | translate }} 
+				<code ng-if="module.regular_payment">{{ module.days_left }}</code>
+				<code ng-if="!module.regular_payment" class="large">&infin;</code>
+			</p>
+
+			<p>
+				{{ 'EXPIRED_AT_TEXT' | translate }} 
+				<code ng-if="module.regular_payment">{{ module.expired_at }}</code>
+				<code ng-if="!module.regular_payment" class="large">&infin;</code>
+			</p>
+
+			<p>
+				{{ 'KEY_TEXT' | translate }} 
+				<code ng-if="module.regular_payment">{{ module.key }}</code>
+				<code ng-if="!module.regular_payment">{{ 'KEY_IS_NOT_AVALIBLE_TEXT' | translate }}</code>
+			</p>
+
 			<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>
 		</div>
 		
@@ -80,21 +95,44 @@
 	<!-- Pricing sections -->
 	<h3 class="__h2">{{ 'PRICING_TEXT' | translate }}</h3>
 	
-	<select 
-		ng-model="selectedType" 
-		ng-options="type.name for type in module.types" 
-	></select>
+	<div class="module-type-pricing-table">
+		<label class="pricing-item" ng-repeat="type in module.types">
+			<input type="radio" ng-model="$parent.selectedType" ng-value="type" name="radio-module-selected-type">
+
+			<div class="heading">{{ type.name }}</div>
+
+			<ul class="attrs">
+				<li>Custom Design</li>
+				<li>Basic SEO</li>
+				<li>Graphic Design</li>
+				<li>Detailed Documentation</li>
+				<li>Lorem ipsum dolor sit amet, consectetur</li>
+			</ul>
+
+			<div>
+				Prices<br>
+				{{ type.price }}
+			</div>
+
+			<button class="btn__blue">Buy</button>
+		</label><!-- end .pricing-item -->
+	</div><!-- end .module-type-radio-list -->
 
 	<span ng-if="isActiveType && !isTrialKey || !isGreaterType && !isTrialKey">
-		<span ng-if="totalRealPrice > 0">
-			{{ 'IS_ACTIVE_TEXT' | translate }}
+		<span ng-if="module.regular_payment && totalRealPrice > 0">
+			<span ng-if="module.days_left > 0">{{ 'IS_ACTIVE_TEXT' | translate }}</span>
+
 			<button 
 				class="btn__blue" 
 				ng-if="!keyFree" 
 				ng-click="purchase($event)" 
 			>{{ 'EXTEND_LICENSE_TEXT' | translate }}</button>
 
-			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }}
+			<strong>{{ 'MODULE_PRICE_TEXT' | translate }}: </strong> {{ totalPrice }} 
+		</span>
+
+		<span ng-if="!module.regular_payment && totalRealPrice > 0">
+			<span>{{ 'IS_ACTIVE_TEXT' | translate }}</span>
 		</span>
 
 		<span ng-if="totalRealPrice <= 0">

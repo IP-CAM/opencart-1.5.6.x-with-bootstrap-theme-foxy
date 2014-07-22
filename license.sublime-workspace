@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"selec",
+				"selectedType"
+			],
+			[
+				"mod",
+				"modules"
+			],
+			[
 				"valida",
 				"validationResult"
 			],
@@ -171,15 +179,7 @@
 			"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
 			"settings":
 			{
-				"buffer_size": 5441,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/laravel.log",
-			"settings":
-			{
-				"buffer_size": 702,
+				"buffer_size": 5815,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,7 +187,7 @@
 			"file": "admin/view/javascript/teil/directives/module-popup.js",
 			"settings":
 			{
-				"buffer_size": 6691,
+				"buffer_size": 7070,
 				"line_ending": "Unix"
 			}
 		}
@@ -263,6 +263,17 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Юрий/AppData/Local/Temp/fz3temp-1/laravel.log",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/controller/information/information.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/init.js",
+		"/C/xampp/htdocs/opencart.dev/www/index.php",
+		"/C/xampp/htdocs/opencart.dev/www/config.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/config.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/config-dist.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_controller_common_header.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_model_catalog_category.php",
+		"/C/xampp/htdocs/opencart.dev/www/apps-demo.json",
+		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/laravel.log",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/jstree/demo/keyboard.html",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/klarna_account.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/lib/ModuleCore.php",
@@ -272,7 +283,6 @@
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/stylesheet/teil/modules-list.css",
 		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/lib/ModuleInstaller.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/ServiceProvider.php",
-		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/laravel.log",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/teil/home.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/teil/directives/btn-progress.js",
 		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/lib/Security.php",
@@ -380,21 +390,11 @@
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/account.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/information.php",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/module/modules/menu.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/default/template/common/content_bottom.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/model/localisation/country.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/moneybookers.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/sale/recurring.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/ebaydisplay.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/nochex.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/header.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/filemanager.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/option.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/amazon/listing.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/review.php"
+		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/default/template/common/content_bottom.tpl"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -411,6 +411,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[2014-07-22",
+			"regular",
+			"keyValidT",
+			"isTrialKey",
+			"IS_TRIAL_ACTIVE",
+			"keyFree",
+			"isTrialKey",
+			"\">&infin",
+			"<code ng-if=\"module.regular_payment\">&infin;</code>",
+			"days",
+			"info",
+			"license",
+			"/Users/yuriikrevnyi/sites/license.dev/www",
+			"license",
 			"totalMaxPrice",
 			"totalRealPrice",
 			"totalMaxPrice",
@@ -524,21 +538,7 @@
 			"perce",
 			"td",
 			"role",
-			"projects",
-			"'tasks",
-			"projects",
-			"projects'",
-			"projects",
-			"project",
-			"projects",
-			"getRelatedUsersTotal",
-			"URP",
-			"getTotalUserMoneyOfPersents",
-			"getRelatedUsersTotal",
-			"getUserProjectsList",
-			"getUserProjects",
-			"getTasks",
-			"getUserProjects"
+			"projects"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -565,15 +565,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5441,
+						"buffer_size": 5815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3843,
-								3843
+								4486,
+								4486
 							]
 						],
 						"settings":
@@ -582,7 +582,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1447.0,
+						"translation.y": 1517.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -590,47 +590,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/laravel.log",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "admin/view/javascript/teil/directives/module-popup.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6691,
+						"buffer_size": 7070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1843,
-								1843
+								2701,
+								2701
 							]
 						],
 						"settings":
@@ -639,10 +611,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 801.0,
+						"translation.y": 1085.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -695,6 +667,18 @@
 		"selected_items":
 		[
 			[
+				"inif",
+				"catalog\\controller\\information\\information.php"
+			],
+			[
+				"admin/config",
+				"admin\\config.php"
+			],
+			[
+				"config",
+				"config.php"
+			],
+			[
 				"modulepopup",
 				"admin/view/javascript/teil/directives/module-popup.js"
 			],
@@ -713,14 +697,6 @@
 			[
 				"modrepo",
 				"admin/model/report/online.php"
-			],
-			[
-				"admin/config",
-				"admin/config.php"
-			],
-			[
-				"config",
-				"config.php"
 			],
 			[
 				"init",
@@ -1201,10 +1177,6 @@
 			[
 				"edit",
 				"www/app/views/projects/edit.blade.php"
-			],
-			[
-				"projcontroll",
-				"www/app/controllers/ProjectsController.php"
 			]
 		],
 		"width": 0.0
@@ -1214,6 +1186,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\licence-laravel.dev\\www\\licence-laravel.sublime-project"
+			],
 			[
 				"licence",
 				"~/sites/licence-laravel.dev/licence-laravel.sublime-project"

@@ -7470,3 +7470,5 @@ DROP TABLE IF EXISTS `test_table`;
 2014-07-18 16:08:14 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 158
 2014-07-18 16:08:14 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 158
 2014-07-18 16:16:52 - PHP Warning:  file_put_contents(C:/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/resources/license.dat): failed to open stream: No such file or directory in C:\xampp\htdocs\opencart.dev\www\admin\controller\teil\home.php on line 152
+2014-07-22 9:02:54 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu/resources): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 158
+2014-07-22 9:02:54 - PHP Warning:  rmdir(C:\xampp\htdocs\opencart.dev\www\system\teil\modules\menu): Directory not empty in C:\xampp\htdocs\opencart.dev\www\system\teil\lib\ModuleInstaller.php on line 158

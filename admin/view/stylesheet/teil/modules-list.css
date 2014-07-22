@@ -834,3 +834,47 @@ border-left-color: #3c763d;
   animation-fill-mode: both;
 }
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
+.module-type-pricing-table {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.module-type-pricing-table .pricing-item {
+    display: inline-block;
+    width: 23%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    margin: 0 1%;
+    box-sizing: border-box;
+}
+.module-type-pricing-table .pricing-item .heading {
+    background: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.module-type-pricing-table .pricing-item .attrs {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    width: 100%;
+    background: #ddd;
+}
+.module-type-pricing-table .pricing-item .attrs li {
+    border-radius: 0;
+    
+    text-align: center;
+    padding: 6px 0;
+}
+.module-type-pricing-table .pricing-item .attrs li:nth-child(2n) {
+    background: #fff;
+}
+.module-type-pricing-table .pricing-item button {}
+.module-type-pricing-table .pricing-item input[type="radio"] {
+    visibility: hidden;
+    display: none;
+}
