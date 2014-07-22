@@ -32,7 +32,7 @@ teil.config(['$translateProvider', function ($translateProvider) {
     'IS_ACTIVE_TEXT': 'Активен!',
     'IS_TRIAL_ACTIVE': 'Активен! (пробная версия)',
     'MODULE_PRICE_TEXT': 'Цена модуля',
-    'BUT_IT_NOW_TEXT': 'Купить сейчас!',
+    'BUT_IT_NOW_TEXT': 'Купить!',
     'UPGRADE_TEXT': 'Улучшить!',
     'REMOVE_BTN_TEXT': 'Удалить',
     'INSTALL_MODULE_TEXT': 'Посмотреть модуль - БЕСПЛАТНО!',

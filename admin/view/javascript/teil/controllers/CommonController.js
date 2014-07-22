@@ -64,7 +64,6 @@ window.teil.controller(
 					});
 
 					$scope.totalInstalledModules = totalInstalled;
-					console.log('!!! Modules changed...', val);
 				}, true);
 			};
 

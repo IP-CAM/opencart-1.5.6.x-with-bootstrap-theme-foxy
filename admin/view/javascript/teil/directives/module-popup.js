@@ -65,31 +65,68 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				};
 			});
 
+			//////////////////////////////
+			//////////////////////////////
+			//////////////////////////////
+			var activeTypeID = 0;
 
-			// Change price depending on module type selected
-			$scope.$watch('selectedType', function(value, old) {
-				$scope.getPurchasedTypePrice();
+			$scope.validateTrialKey();
+			$scope.validateKey();
 
-				$scope.totalPrice = value.price;
-				$scope.totalRealPrice = value.real_price;
-				$scope.isActiveType = false;
-				$scope.isTrialKey = false;
-				$scope.isGreaterType = false;
+			angular.forEach($scope.module.types, function(el, index) {
+				if (el.active) {
+					activeTypeID = el.id;
+				};
+			});
 
-				// Check if we should show 'purchase' button
-				if (parseFloat($scope.selectedType.price) > parseFloat($scope.purchasedTypePrice)) {
-					$scope.isGreaterType = true;
+			angular.forEach($scope.module.types, function(el, index) {
+				
+				// Check for better types
+				if (activeTypeID > 0 && el.id <= activeTypeID) {
+					el.hasBetterType = true;
 				};
 
-				// Check if current module type is purchased one
-				if (value.active) {
-					$scope.isActiveType = true;
+				// Check if module type is free
+				if (el.real_price <= 0) {
+					el.isFree = true;
 				};
 
-				$scope.validateTrialKey();
+				// Check if user can extend license
+				if (!el.isFree && el.active || !el.isFree && el.hasBetterType) {
+					el.extendable = true;
+				};
 
-				console.log('CHANGE ---- !!!');
-			}, true);
+				$scope.module.types[index] = el;
+			});
+
+			console.log($scope.module);
+			//////////////////////////////
+			//////////////////////////////
+			//////////////////////////////
+
+
+			// // Change price depending on module type selected
+			// $scope.$watch('selectedType', function(value, old) {
+			// 	$scope.getPurchasedTypePrice();
+
+			// 	$scope.totalPrice = value.price;
+			// 	$scope.totalRealPrice = value.real_price;
+			// 	$scope.isActiveType = false;
+			// 	$scope.isTrialKey = false;
+			// 	$scope.isGreaterType = false;
+
+			// 	// Check if we should show 'purchase' button
+			// 	if (parseFloat($scope.selectedType.price) > parseFloat($scope.purchasedTypePrice)) {
+			// 		$scope.isGreaterType = true;
+			// 	};
+
+			// 	// Check if current module type is purchased one
+			// 	if (value.active) {
+			// 		$scope.isActiveType = true;
+			// 	};
+
+			// 	$scope.validateTrialKey();
+			// }, true);
 		};
 
 
@@ -135,9 +172,6 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				$scope.keyFree = true;
 				$scope.keyValid = true;
 			};
-
-			console.log($scope);
-
 		};
 
 		// Perform action on button click (install or remove module)
@@ -198,13 +232,12 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		};
 
 		// Open billing page
-		$scope.purchase = function(e) {
+		$scope.purchase = function(e, moduleTypeId) {
 			var $btn = angular.element(e.currentTarget);
 
 			var purchasingData = {
 				module_code: $scope.module.code,
-				module_type: $scope.selectedType.id,
-				price: $scope.selectedType.price,
+				module_type: moduleTypeId,
 				domain: window.location.hostname,
 				email: CONFIG_ADMIN_EMAIL
 			};

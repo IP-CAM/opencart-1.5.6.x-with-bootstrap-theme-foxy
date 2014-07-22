@@ -3,7 +3,7 @@
 
 // Declare app level module which depends on filters, and services
 window.teil = angular.module('teil', ['ngCookies', 'pascalprecht.translate', 'ngAnimate'])
-	.constant('VERSION', '0.2')
+	.constant('VERSION', '0.1')
 	.constant('TOKEN', angular.element('#token').val())
 	.constant('ADMIN_LANGUAGE', angular.element('#admin-language').val())
 	

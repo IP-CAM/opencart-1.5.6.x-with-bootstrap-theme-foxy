@@ -96,10 +96,22 @@
 	<h3 class="__h2">{{ 'PRICING_TEXT' | translate }}</h3>
 	
 	<div class="module-type-pricing-table">
-		<label class="pricing-item" ng-repeat="type in module.types">
+		<label 
+			class="pricing-item" 
+			ng-repeat="type in module.types" 
+			ng-class="{'unlocked': type.active || type.hasBetterType}" 
+		>
 			<input type="radio" ng-model="$parent.selectedType" ng-value="type" name="radio-module-selected-type">
 
-			<div class="heading">{{ type.name }}</div>
+			<!-- Lock icon -->
+			<div class="lock-icon">
+				<span class="glyphicon glyphicon-lock"></span>
+			</div>
+
+			<div class="heading">
+				{{ type.name }} 
+				<i ng-if="type.isFree">(free)</i>
+			</div>
 
 			<ul class="attrs">
 				<li>Custom Design</li>
@@ -109,12 +121,42 @@
 				<li>Lorem ipsum dolor sit amet, consectetur</li>
 			</ul>
 
+			
 			<div>
-				Prices<br>
-				{{ type.price }}
+				<div ng-if="!type.active && !type.hasBetterType">{{ type.price | number:0 }}</div>
+
+				<!-- Buy it now buttons -->
+				<button 
+					ng-if="keyFree && !type.active && !isTrialKey || !module.purchased && !type.active && !isTrialKey || isTrialKey && type.real_price > 0" 
+					class="btn__blue"
+					ng-show="!type.hasBetterType || isTrialKey" 
+			 		ng-click="purchase($event, type.id)" 
+				>
+					{{ 'BUT_IT_NOW_TEXT' | translate }}
+					<span class="price">{{ type.price | number:0 }}$</span>
+				</button>
+
+				<button 
+					ng-if="!keyFree && module.purchased && !type.active && !isTrialKey" 
+					class="btn__blue" 
+					ng-show="!type.hasBetterType" 
+					ng-click="purchase($event, type.id)" 
+				>
+					{{ 'UPGRADE_TEXT' | translate }}
+					<span class="price">{{ type.price | number:0 }}$</span>
+				</button>
+
+				<button 
+					class="btn__blue" 
+					ng-if="type.extendable && !isTrialKey && module.regular_payment" 
+					ng-click="purchase($event, type.id)" 
+				>
+					{{ 'EXTEND_LICENSE_TEXT' | translate }}
+					<span class="price">{{ type.price | number:0 }}$</span>
+				</button>
 			</div>
 
-			<button class="btn__blue">Buy</button>
+
 		</label><!-- end .pricing-item -->
 	</div><!-- end .module-type-radio-list -->
 
