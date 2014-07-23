@@ -21,21 +21,43 @@
 	></progress-block-btn>
 
 	<!-- Key info -->
-	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyValidTrial" ng-cloak>
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && !keyFree && !isTrialKey" ng-cloak>
 		<h4>{{ 'KEY_IS_DEPRECATED_TEXT' | translate }}</h4>
-		<p>Your current key is <code>{{ module.key }}</code></p>
+		<p>{{ 'CURRENT_INSERTED_KEY_TEXT' | translate }} <code>{{ module.key }}</code></p>
+
+		<h3>{{ 'KEY_INFORMATION_TEXT' | translate }}:</h3>
+		<p ng-show="isTrialKey">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
+
+		<p>
+			{{ 'MODULE_TYPE_TEXT' | translate }} - 
+			<code>{{ module.module_type_name }}</code>
+		</p>
+		
+		<p>
+			{{ 'KEY_ACTIVE_UNTILL_TEXT' | translate }} - 
+			<code ng-if="module.regular_payment || isTrialKey">{{ module.expired_at }}</code>
+			<code ng-if="!module.regular_payment && !isTrialKey" class="large">&infin;</code>
+		</p>
+		
+		<p>
+			{{ 'DAYS_LEFT_TEXT' | translate }} - 
+			<code ng-if="module.regular_payment || isTrialKey">{{ module.days_left || 0 }}</code>
+			<code ng-if="!module.regular_payment && !isTrialKey" class="large">&infin;</code>
+		</p>
+		
+		<p><small><a ng-click="showEnterKeyField = !showEnterKeyField">{{ 'INSERT_KEY_ACTION_TEXT' | translate }}</a> {{ 'INSERT_KEY_ACTION_POST_TEXT' | translate }}</small></p>
 
 		<button class="aware-action-button btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
-	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && keyValidTrial && module.expired_at" ng-cloak>
+	<div class="bs-callout bs-callout-warning" ng-show="!keyValid && module.installed && isTrialKey && module.expired_at" ng-cloak>
 		<h4>{{ 'TRIAL_ENDED_TEXT' | translate }}</h4>
 		<p>{{ 'KEY_ACTIVE_PERIOD_TEXT' | translate }} <code>{{ module.expired_at }}</code></p>
 
 		<button class="aware-action-button btn__blue" ng-model="showEnterKeyField" ng-click="showEnterKeyField = !showEnterKeyField">{{ 'ENTER_KEY_TEXT' | translate }}</button>
 	</div>
 
-	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed" ng-cloak>
+	<div class="bs-callout bs-callout-success" ng-show="keyValid && module.installed || keyFree && moduel.installed" ng-cloak>
 		<h4>{{ 'KEY_INFO_TEXT' | translate }}</h4>
 		
 		<p ng-show="keyValidTrial">{{ 'IS_TRIAL_KEY_MESSAGE' | translate }} <code>{{ 'IS_TRIAL_KEY_MESSAGE_VALUE' | translate }}</code></p>
@@ -53,20 +75,20 @@
 		<div ng-if="!keyFree">
 			<p>
 				{{ 'DAY_LEFT_TEXT' | translate }} 
-				<code ng-if="module.regular_payment">{{ module.days_left }}</code>
-				<code ng-if="!module.regular_payment" class="large">&infin;</code>
+				<code ng-if="module.regular_payment || isTrialKey">{{ module.days_left }}</code>
+				<code ng-if="!module.regular_payment && !isTrialKey" class="large">&infin;</code>
 			</p>
 
 			<p>
 				{{ 'EXPIRED_AT_TEXT' | translate }} 
-				<code ng-if="module.regular_payment">{{ module.expired_at }}</code>
-				<code ng-if="!module.regular_payment" class="large">&infin;</code>
+				<code ng-if="module.regular_payment || isTrialKey">{{ module.expired_at }}</code>
+				<code ng-if="!module.regular_payment && !isTrialKey" class="large">&infin;</code>
 			</p>
 
 			<p>
 				{{ 'KEY_TEXT' | translate }} 
-				<code ng-if="module.regular_payment">{{ module.key }}</code>
-				<code ng-if="!module.regular_payment">{{ 'KEY_IS_NOT_AVALIBLE_TEXT' | translate }}</code>
+				<code ng-if="module.regular_payment || isTrialKey">{{ module.key }}</code>
+				<code ng-if="!module.regular_payment && !isTrialKey">{{ 'KEY_IS_NOT_AVALIBLE_TEXT' | translate }}</code>
 			</p>
 
 			<p>{{ 'MODULE_TYPE_TEXT' | translate }} <code>{{ module.module_type_name }}</code></p>

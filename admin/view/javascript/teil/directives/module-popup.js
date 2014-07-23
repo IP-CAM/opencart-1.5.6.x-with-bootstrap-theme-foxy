@@ -65,9 +65,6 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				};
 			});
 
-			//////////////////////////////
-			//////////////////////////////
-			//////////////////////////////
 			var activeTypeID = 0;
 
 			$scope.validateTrialKey();
@@ -99,49 +96,22 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				$scope.module.types[index] = el;
 			});
 
-			console.log($scope.module);
-			//////////////////////////////
-			//////////////////////////////
-			//////////////////////////////
-
-
-			// // Change price depending on module type selected
-			// $scope.$watch('selectedType', function(value, old) {
-			// 	$scope.getPurchasedTypePrice();
-
-			// 	$scope.totalPrice = value.price;
-			// 	$scope.totalRealPrice = value.real_price;
-			// 	$scope.isActiveType = false;
-			// 	$scope.isTrialKey = false;
-			// 	$scope.isGreaterType = false;
-
-			// 	// Check if we should show 'purchase' button
-			// 	if (parseFloat($scope.selectedType.price) > parseFloat($scope.purchasedTypePrice)) {
-			// 		$scope.isGreaterType = true;
-			// 	};
-
-			// 	// Check if current module type is purchased one
-			// 	if (value.active) {
-			// 		$scope.isActiveType = true;
-			// 	};
-
-			// 	$scope.validateTrialKey();
-			// }, true);
+			console.log($scope);
 		};
 
 
 		// Validate trial key
 		$scope.validateTrialKey = function() {
 			// Because free keys always have zero price
-			if ($scope.selectedType.real_price > 0) {
-				if ( ! $scope.module.purchased && $scope.module.days_left == '-' && ! $scope.module.regular_payment) {
+			// if ($scope.selectedType.real_price > 0) {
+				if ( ! $scope.module.purchased && ! $scope.module.regular_payment) {
 					$scope.isTrialKey = true;
 				};
 
-				if ( ! $scope.module.purchased && $scope.module.days_left != '-' && $scope.module.regular_payment) {
+				if ( ! $scope.module.purchased && $scope.module.regular_payment) {
 					$scope.isTrialKey = true;
 				};
-			};
+			// };
 		};
 
 

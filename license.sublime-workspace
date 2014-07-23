@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"free",
+				"isFree"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"class",
+				"class	Attr"
+			],
+			[
 				"selec",
 				"selectedType"
 			],
@@ -176,18 +188,26 @@
 	"buffers":
 	[
 		{
-			"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
+			"file": "admin/view/javascript/teil/directives/module-popup.js",
 			"settings":
 			{
-				"buffer_size": 5815,
+				"buffer_size": 7041,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "admin/view/javascript/teil/directives/module-popup.js",
+			"file": "admin/view/javascript/teil/localization/ru.js",
 			"settings":
 			{
-				"buffer_size": 7070,
+				"buffer_size": 2611,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
+			"settings":
+			{
+				"buffer_size": 8889,
 				"line_ending": "Unix"
 			}
 		}
@@ -198,6 +218,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ref",
+				"Project: Refresh Folders"
+			],
 			[
 				"refre",
 				"Project: Refresh Folders"
@@ -213,10 +237,6 @@
 			[
 				"proje",
 				"Project: Add Folder"
-			],
-			[
-				"ref",
-				"Project: Refresh Folders"
 			],
 			[
 				"resh",
@@ -243,7 +263,7 @@
 				"View: Toggle Open Files in Side Bar"
 			]
 		],
-		"width": 467.0
+		"width": 480.0
 	},
 	"console":
 	{
@@ -263,11 +283,39 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Юрий/AppData/Local/Temp/fz3temp-1/laravel.log",
-		"/C/xampp/htdocs/opencart.dev/www/catalog/controller/information/information.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/readme.txt",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/templates/directives/module-popup.html",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/stylesheet/teil/modules-list.css",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/mods.cache",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/directives/module-popup.js",
+		"/C/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/MenuServiceProvider.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/controller/extension/module.php",
+		"/C/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/MenuModule.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/init.js",
-		"/C/xampp/htdocs/opencart.dev/www/index.php",
+		"/C/xampp/htdocs/opencart.dev/www/__modules/system/teil/modules/menu/MenuModule.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/language/russian/extension/module.php",
+		"/C/xampp/htdocs/opencart.dev/www/__modules/system/teil/modules/menu/MenuServiceProvider.php",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/view/theme/foxystore/template/module/menu.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/view/theme/default/template/module/menu.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/teil/modules/menu/menu.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/__modules/system/teil/modules/menu/command/MenuCommand.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/xml/teilMenu.xml",
+		"/C/xampp/htdocs/opencart.dev/www/admin/controller/design/menu.php",
+		"/C/xampp/htdocs/opencart.dev/www/download/foxystorecart.jpg.7971033b9a7f18dc1fab22427544179b",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/ebay/profile_form_returns.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/admin/controller/shipping/free.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/catalog/review_form.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/localization/ru.js",
+		"/C/xampp/htdocs/xmarkup.dev/issue/issue.php",
+		"/C/xampp/htdocs/xmarkup.dev/issue/function.php",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/controller/information/information.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/ckeditor/lang/ru.js",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/view/javascript/unitpngfix/README-unitpngfix.txt",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/controllers/CommonController.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/common.js",
 		"/C/xampp/htdocs/opencart.dev/www/config.php",
+		"/C/Users/Юрий/AppData/Local/Temp/fz3temp-1/laravel.log",
+		"/C/xampp/htdocs/opencart.dev/www/index.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/config.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/config-dist.php",
 		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_controller_common_header.php",
@@ -362,35 +410,7 @@
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/item_links.tpl",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/module/information.tpl",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/ebay/edit.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/ajax_shippinginfo.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/common.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/module/welcome.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/stylesheet/invoice.css",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/ebay/template.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/tool/error_log.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/catalog/category_form.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/startup.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/home.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/core/Facade.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/system/teil/modules/Menu/resources/license.dat",
-		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/foxystore/template/payment/authorizenet_aim.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/download/foxystorecart.jpg.7971033b9a7f18dc1fab22427544179b",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/localisation/length_class_form.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/localisation/country_form.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/flot/examples/turning-series.html",
-		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/foxystore/js/handlebars.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/javascript/jquery/superfish/js/jquery-1.2.6.min.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/teil/libs/handlebars/handlebars-v1.3.0.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/teilMenu/handlebars.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/superfish/js/jquery-1.2.6.min.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/flot/jquery.js",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/category.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/catalog/attribute.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/latest.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/account.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/module/information.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/module/modules/menu.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/catalog/view/theme/default/template/common/content_bottom.tpl"
+		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/ajax_shippinginfo.tpl"
 	],
 	"find":
 	{
@@ -411,6 +431,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"istrial",
+			"istrialkey",
+			"Ваш ключ",
+			"Похоже на то",
+			"Похоже на то, что в",
+			"Похоже на то, что ваш",
+			"CURRENT_KEY_TEXT",
+			"CURRENT_KEY_TEXT ",
+			"UPDATE_BTN_TEXT",
+			"EXTEND_LICENSE_TEXT",
+			"FREE_MODULE_TYPE_TEXT",
+			"KEY_IS_NOT_AVALIBLE_TEXT",
+			"FREE_MODULE_TYPE__PAYABLE_TEXT",
+			"CURRENT_KEY_TEXT",
+			"KEY_INFORMATION_TEXT",
+			"MODULE_TYPE_TEXT",
+			"type.price",
+			"$event)",
+			"free",
+			"isTrialKey",
+			"totalRealPrice",
+			"$scope.module.types[index]",
+			"span",
+			".[",
+			"el",
+			"validatetria",
+			"value",
+			"$scope",
+			"getPurchasedTypePrice",
+			"//////////////////////////////",
+			"log",
+			"totalPrice",
+			"div",
+			"selectedType",
+			"select",
+			"button",
+			"regular",
+			"IS_ACTIVE_TEXT",
+			"$scope.selectedType.real_price > 0",
 			"[2014-07-22",
 			"regular",
 			"keyValidT",
@@ -499,46 +558,7 @@
 			"exchanges",
 			"exchange",
 			"Currencies",
-			"ExchangeRate",
-			"ExchangeController",
-			"exchage",
-			"exhange_rates",
-			"priority",
-			"exchange",
-			"priority",
-			"Цвет",
-			"приоритет",
-			"priorities",
-			"color",
-			"Цвет",
-			"priorities",
-			"priority",
-			"color",
-			"priority",
-			"priorities",
-			"color",
-			"priority",
-			"priorities",
-			"priorities.",
-			"ProjectPriority",
-			"PrioritiesController",
-			"utf16",
-			"/Stripe",
-			"/stripe",
-			"total_common",
-			"total_price",
-			"total",
-			"total_price_percents",
-			"projec",
-			"user-project-invoice-action",
-			"invoi",
-			"f9f9f9",
-			".fancybox-skin",
-			"user_persents_price",
-			"perce",
-			"td",
-			"role",
-			"projects"
+			"ExchangeRate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -556,24 +576,90 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
+					"file": "admin/view/javascript/teil/directives/module-popup.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5815,
+						"buffer_size": 7041,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4486,
-								4486
+								2718,
+								2718
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1489.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/view/javascript/teil/localization/ru.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2249,
+								2249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 262.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3500,
+								3502
 							]
 						],
 						"settings":
@@ -582,36 +668,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1517.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "admin/view/javascript/teil/directives/module-popup.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7070,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2701,
-								2701
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1085.0,
+						"translation.y": 1206.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -637,11 +694,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -667,6 +731,42 @@
 		"selected_items":
 		[
 			[
+				"ru.js",
+				"admin\\view\\javascript\\teil\\localization\\ru.js"
+			],
+			[
+				"modulepopup.html",
+				"admin\\view\\javascript\\teil\\templates\\directives\\module-popup.html"
+			],
+			[
+				"modulepopup",
+				"admin\\view\\javascript\\teil\\directives\\module-popup.js"
+			],
+			[
+				"menumodul",
+				"__modules\\system\\teil\\modules\\menu\\MenuModule.php"
+			],
+			[
+				"menumo",
+				"C:\\xampp\\htdocs\\opencart.dev\\www\\system\\teil\\modules\\menu\\MenuModule.php"
+			],
+			[
+				"init.js",
+				"admin\\view\\javascript\\teil\\init.js"
+			],
+			[
+				"menumodule",
+				"system\\teil\\modules\\menu\\MenuModule.php"
+			],
+			[
+				"comcon",
+				"admin\\view\\javascript\\teil\\controllers\\CommonController.js"
+			],
+			[
+				"modlist",
+				"admin\\view\\stylesheet\\teil\\modules-list.css"
+			],
+			[
 				"inif",
 				"catalog\\controller\\information\\information.php"
 			],
@@ -679,10 +779,6 @@
 				"config.php"
 			],
 			[
-				"modulepopup",
-				"admin/view/javascript/teil/directives/module-popup.js"
-			],
-			[
 				"modpopup.html",
 				"admin/view/javascript/teil/templates/directives/module-popup.html"
 			],
@@ -691,20 +787,12 @@
 				"admin/view/javascript/teil/bower_components/angular-route/angular-route.js"
 			],
 			[
-				"menumodule",
-				"system/teil/modules/menu/MenuModule.php"
-			],
-			[
 				"modrepo",
 				"admin/model/report/online.php"
 			],
 			[
 				"init",
 				"admin/view/javascript/teil/init.js"
-			],
-			[
-				"ru.js",
-				"admin/view/javascript/teil/localization/ru.js"
 			],
 			[
 				"btnpro",
@@ -1153,30 +1241,6 @@
 			[
 				"proj/form",
 				"www/app/views/projects/form_to_add_users.blade.php"
-			],
-			[
-				"pro/user",
-				"www/app/views/projects/user_to_project_form.blade.php"
-			],
-			[
-				"proj/user",
-				"www/app/views/projects/user_to_project_form.blade.php"
-			],
-			[
-				"route",
-				"www/vendor/laravel/framework/src/Illuminate/Routing/Router.php"
-			],
-			[
-				"ad/hea",
-				"www/app/views/admin/common/header.blade.php"
-			],
-			[
-				"ad/defa",
-				"www/app/views/admin/default.blade.php"
-			],
-			[
-				"edit",
-				"www/app/views/projects/edit.blade.php"
 			]
 		],
 		"width": 0.0
@@ -1230,13 +1294,19 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		]
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 231.0,
 	"status_bar_visible": true,
 	"template_settings":
