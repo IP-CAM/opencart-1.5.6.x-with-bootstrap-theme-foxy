@@ -83,6 +83,7 @@
 <script src="/admin/view/javascript/teil/controllers/SelfController.js"></script>
 
 <!-- Directives -->
+<script src="/admin/view/javascript/teil/directives/ng-enter.js"></script>
 <script src="/admin/view/javascript/teil/directives/module-min-price.js"></script>
 <script src="/admin/view/javascript/teil/directives/module-popup.js"></script>
 <script src="/admin/view/javascript/teil/directives/module-thumb.js"></script>
@@ -94,5 +95,7 @@
 <script src="/admin/view/javascript/teil/services/module-downloader.js"></script>
 <script src="/admin/view/javascript/teil/services/module.js"></script>
 
+<!-- Filters -->
+<script src="/admin/view/javascript/teil/filters/date-format.js"></script>
 
 <?php echo $footer; ?>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inser",
+				"inserted_key"
+			],
+			[
 				"free",
 				"isFree"
 			],
@@ -191,7 +195,7 @@
 			"file": "admin/view/javascript/teil/directives/module-popup.js",
 			"settings":
 			{
-				"buffer_size": 7041,
+				"buffer_size": 7719,
 				"line_ending": "Unix"
 			}
 		},
@@ -199,7 +203,7 @@
 			"file": "admin/view/javascript/teil/localization/ru.js",
 			"settings":
 			{
-				"buffer_size": 2611,
+				"buffer_size": 2630,
 				"line_ending": "Windows"
 			}
 		},
@@ -207,7 +211,7 @@
 			"file": "admin/view/javascript/teil/templates/directives/module-popup.html",
 			"settings":
 			{
-				"buffer_size": 8889,
+				"buffer_size": 9169,
 				"line_ending": "Unix"
 			}
 		}
@@ -283,7 +287,26 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/filters/date-format.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/ckeditor/lang/da.js",
+		"/C/xampp/htdocs/opencart.dev/www/apps-demo.json",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/init.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/teil/default.tpl",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/bower_components/jquery/src/css/defaultDisplay.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/jquery/jstree/demo/xml_flat_with_languages.html",
+		"/C/xampp/htdocs/opencart.dev/www/admin/language/english/extension/default.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/config-dist.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/config.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/controller/catalog/filter.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_controller_common_header.php",
+		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_model_catalog_category.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/jquery/flot/examples/data-eu-gdp-growth.json",
+		"/C/xampp/htdocs/opencart.dev/www/catalog/controller/information/information.php",
 		"/C/xampp/htdocs/opencart.dev/www/vqmod/readme.txt",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/localization/ru.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/language/russian/russian.php",
+		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/jquery/ui/i18n/jquery.ui.datepicker-he.js",
+		"/C/xampp/htdocs/opencart.dev/www/admin/language/russian/payment/pp_pro_uk.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/templates/directives/module-popup.html",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/stylesheet/teil/modules-list.css",
 		"/C/xampp/htdocs/opencart.dev/www/vqmod/mods.cache",
@@ -291,7 +314,6 @@
 		"/C/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/MenuServiceProvider.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/controller/extension/module.php",
 		"/C/xampp/htdocs/opencart.dev/www/system/teil/modules/menu/MenuModule.php",
-		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/init.js",
 		"/C/xampp/htdocs/opencart.dev/www/__modules/system/teil/modules/menu/MenuModule.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/language/russian/extension/module.php",
 		"/C/xampp/htdocs/opencart.dev/www/__modules/system/teil/modules/menu/MenuServiceProvider.php",
@@ -305,10 +327,8 @@
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/ebay/profile_form_returns.tpl",
 		"/C/xampp/htdocs/opencart.dev/www/admin/controller/shipping/free.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/template/catalog/review_form.tpl",
-		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/localization/ru.js",
 		"/C/xampp/htdocs/xmarkup.dev/issue/issue.php",
 		"/C/xampp/htdocs/xmarkup.dev/issue/function.php",
-		"/C/xampp/htdocs/opencart.dev/www/catalog/controller/information/information.php",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/ckeditor/lang/ru.js",
 		"/C/xampp/htdocs/opencart.dev/www/catalog/view/javascript/unitpngfix/README-unitpngfix.txt",
 		"/C/xampp/htdocs/opencart.dev/www/admin/view/javascript/teil/controllers/CommonController.js",
@@ -316,11 +336,6 @@
 		"/C/xampp/htdocs/opencart.dev/www/config.php",
 		"/C/Users/Юрий/AppData/Local/Temp/fz3temp-1/laravel.log",
 		"/C/xampp/htdocs/opencart.dev/www/index.php",
-		"/C/xampp/htdocs/opencart.dev/www/admin/config.php",
-		"/C/xampp/htdocs/opencart.dev/www/admin/config-dist.php",
-		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_controller_common_header.php",
-		"/C/xampp/htdocs/opencart.dev/www/vqmod/vqcache/vq2-admin_model_catalog_category.php",
-		"/C/xampp/htdocs/opencart.dev/www/apps-demo.json",
 		"/private/var/folders/q5/7vrg4nsn4qx0hz52vpy0h9gc0000gn/T/fz3temp-1/laravel.log",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/javascript/jquery/jstree/demo/keyboard.html",
 		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/payment/klarna_account.php",
@@ -399,18 +414,7 @@
 		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
 		"/etc/hosts",
 		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/TicketCommentAttachments.php",
-		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/User.php",
-		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/LocationGroup.php",
-		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/Location.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/extension/module.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/controller/common/home.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/config-dist.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/vqmod/vqcache/vq2-admin_model_catalog_category.php",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/teil/modules/menu.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/item_links.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/module/information.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/ebay/edit.tpl",
-		"/Users/yuriikrevnyi/sites/license.dev/www/admin/view/template/amazon/ajax_shippinginfo.tpl"
+		"/Users/yuriikrevnyi/Desktop/it_helpdesk_5394330bc4ebc/models/User.php"
 	],
 	"find":
 	{
@@ -431,6 +435,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"module",
+			"isKeyFree",
+			"iskeyvalid",
+			"success",
+			"module_type_name",
+			"fore",
+			"module_type",
+			"isKeyFree",
+			"free",
+			"success",
+			"price",
+			"iskeyfree",
+			"module.key",
+			"isKeyValidTrial",
+			"isTrialKeyValid",
+			"if",
+			"trial",
+			"isKeyFree",
+			"keyFree",
+			"free",
+			"KeyValid",
+			"keyValid",
+			"KeyValid",
+			"keyValid",
+			"KeyValid",
+			"is",
+			"showEnterKeyField",
+			"keyFree",
+			"keyValid",
+			"installe",
 			"istrial",
 			"istrialkey",
 			"Ваш ключ",
@@ -528,37 +562,7 @@
 			"boots",
 			"install",
 			"opencart",
-			"C:/xampp/htdocs/opencart.dev",
-			"$",
-			"glyphicon glyphicon-usd ",
-			"feed",
-			"glyphicon glyphicon-usd ",
-			"fee",
-			"$",
-			"transa",
-			"$",
-			"}}</",
-			"$",
-			"name",
-			"price",
-			"unit",
-			"price",
-			"name",
-			"account",
-			"exchange",
-			"currency.",
-			"exchange",
-			"currency.",
-			"exchange",
-			"currency.",
-			"exchange",
-			"exchanges",
-			"currency_rates",
-			"exchange",
-			"exchanges",
-			"exchange",
-			"Currencies",
-			"ExchangeRate"
+			"C:/xampp/htdocs/opencart.dev"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -585,15 +589,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7041,
+						"buffer_size": 7719,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2718,
-								2718
+								2781,
+								2781
 							]
 						],
 						"settings":
@@ -603,10 +607,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1489.0,
+						"translation.y": 1201.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -615,19 +619,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2611,
+						"buffer_size": 2630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2249,
-								2249
+								2268,
+								2268
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -636,7 +641,7 @@
 						"translation.y": 262.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -651,15 +656,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8889,
+						"buffer_size": 9169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3500,
-								3502
+								2557,
+								2557
 							]
 						],
 						"settings":
@@ -668,10 +673,41 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1206.0,
+						"translation.y": 666.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/view/javascript/teil/localization/ru.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2082,
+								2082
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -705,7 +741,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.386458333333,
 			1.0
 		],
 		"rows":
@@ -730,6 +766,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"date-fomr",
+				"admin\\view\\javascript\\teil\\filters\\date-format.js"
+			],
+			[
+				"init",
+				"admin\\view\\javascript\\teil\\init.js"
+			],
+			[
+				"admin/default.tpl",
+				"admin\\view\\template\\teil\\default.tpl"
+			],
 			[
 				"ru.js",
 				"admin\\view\\javascript\\teil\\localization\\ru.js"
@@ -789,10 +837,6 @@
 			[
 				"modrepo",
 				"admin/model/report/online.php"
-			],
-			[
-				"init",
-				"admin/view/javascript/teil/init.js"
 			],
 			[
 				"btnpro",
@@ -1233,14 +1277,6 @@
 			[
 				"admin/headr",
 				"www/app/views/admin/common/header.blade.php"
-			],
-			[
-				"proj/edi",
-				"www/app/views/projects/edit.blade.php"
-			],
-			[
-				"proj/form",
-				"www/app/views/projects/form_to_add_users.blade.php"
 			]
 		],
 		"width": 0.0

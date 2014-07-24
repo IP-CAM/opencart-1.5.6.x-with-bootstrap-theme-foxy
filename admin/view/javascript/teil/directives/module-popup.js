@@ -7,6 +7,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		$scope.userLicenseKey = '';
 		$scope.purchasedTypePrice = 0;
 		$scope.storeKeyStatus = true;
+		$scope.showEnterKeyField = false;
 
 		// Open popup
 		$.magnificPopup.open({
@@ -60,7 +61,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 			angular.forEach($scope.module.types, function(el, index) {
 				if (el.active) {
 					$scope.selectedType = $scope.module.types[index];
-					$scope.module.module_type_name = $scope.module.types[index].name;
+					
+					$scope.module.module_type_name 
+						= $scope.module.module_type_name_free 
+							= $scope.module.types[index].name;
+
 					return false;
 				};
 			});
@@ -71,6 +76,7 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 			$scope.validateKey();
 
 			angular.forEach($scope.module.types, function(el, index) {
+				// if (el.active && $scope.isKeyValid) {
 				if (el.active) {
 					activeTypeID = el.id;
 				};
@@ -78,6 +84,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 
 			angular.forEach($scope.module.types, function(el, index) {
 				
+				// Remove active state if local key != inserted_key
+				if (! $scope.isKeyValid && el.active) {
+					el.active = false;
+				};
+
 				// Check for better types
 				if (activeTypeID > 0 && el.id <= activeTypeID) {
 					el.hasBetterType = true;
@@ -86,6 +97,14 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 				// Check if module type is free
 				if (el.real_price <= 0) {
 					el.isFree = true;
+				};
+
+				// Set active state to free key if local key != inserted_key
+				if (! $scope.isKeyValid && el.isFree) {
+					el.active = true;
+					$scope.module.module_type_name_free = el.name;
+					
+					$scope.isKeyFree = true;
 				};
 
 				// Check if user can extend license
@@ -104,11 +123,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		$scope.validateTrialKey = function() {
 			// Because free keys always have zero price
 			// if ($scope.selectedType.real_price > 0) {
-				if ( ! $scope.module.purchased && ! $scope.module.regular_payment) {
+				if ($scope.module.is_demo_key && ! $scope.module.purchased && ! $scope.module.regular_payment) {
 					$scope.isTrialKey = true;
 				};
 
-				if ( ! $scope.module.purchased && $scope.module.regular_payment) {
+				if ($scope.module.is_demo_key && ! $scope.module.purchased && $scope.module.regular_payment) {
 					$scope.isTrialKey = true;
 				};
 			// };
@@ -119,28 +138,34 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 		$scope.validateKey = function() {
 			// We will compare local key, that is located in module folder
 			// and real key from out server
-			$scope.keyValid = false;
-			$scope.keyValidTrial = false;
-			$scope.keyFree = false;
+			$scope.isKeyValid = false;
+			$scope.isKeyValidTrial = false;
+			$scope.isKeyFree = false;
+			$scope.isInsertedKeysMatch = false;
 
-			if ($scope.module.purchased_key && $scope.module.purchased_key == $scope.module.key) {
-				$scope.keyValid = true;
+			if ($scope.module.purchased && $scope.module.purchased_key == $scope.module.key) {
+				$scope.isKeyValid = true;
 			};
 
 			// Or if we have trial key
-			if ( ! $scope.module.purchased_key && $scope.module.key == 'DEMO') {
-				$scope.keyValid = true;
-				$scope.keyValidTrial = true;
+			if ( ! $scope.module.purchased && $scope.module.key == 'DEMO') {
+				$scope.isKeyValid = true;
+				$scope.isKeyValidTrial = true;
 			};
 
 			// Validate key time
 			if ( ! $scope.module.days_left) {
-				$scope.keyValid = false;
+				$scope.isKeyValid = false;
 			};
 
 			if ($scope.module.purchased_key == 'FREE') {
-				$scope.keyFree = true;
-				$scope.keyValid = true;
+				$scope.isKeyFree = true;
+				$scope.isKeyValid = true;
+			};
+
+			// Check if inserted keys mathc (in database and local)
+			if ($scope.module.inserted_key == $scope.module.key) {
+				$scope.isInsertedKeysMatch = true;
 			};
 		};
 
@@ -261,6 +286,11 @@ teil.directive('modulePopup', function ($http, TOKEN, ModuleDownloader, Module, 
 					$scope.purchasedTypePrice = el.price;
 				};
 			});
+		};
+
+		// Toggle `enter new key` overlay
+		$scope.toggleEnterKeyOverlay = function() {
+			$scope.showEnterKeyField = !$scope.showEnterKeyField;
 		};
 	};
 
